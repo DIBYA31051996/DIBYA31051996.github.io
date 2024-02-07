@@ -27,8 +27,8 @@
       "name": "Aryabhatta Research Institute of Observational Sciences (ARIES)",
       "position": "Senior Research Fellow (SRF)",
       "url": "",
-      "startDate": "2020-09",
-      "endDate": "",
+      "startDate": "2020",
+      "endDate": "-",
       "summary": "Working on long-term study of the Sun",
       "highlights": ["Solar Physics"]
     }
@@ -40,10 +40,21 @@
       "url": "",
       "area": "Solar Physics",
       "studyType": "PhD",
-      "startDate": "2020-09",
-      "endDate": "",
+      "startDate": "2020",
+      "endDate": "-",
       "score": "",
-      "courses": [""]
+      "courses": ""
+    },
+     {
+      "institution": "Central University of Kerala",
+      "location": "Kerala",
+      "url": "",
+      "area": "Physics",
+      "studyType": "Master of Science",
+      "startDate": "2017",
+      "endDate": "2019",
+      "score": "",
+      "courses": ""
     }
   ],
   "publications": [
