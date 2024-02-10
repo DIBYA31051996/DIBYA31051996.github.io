@@ -2,15 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: SRF, <a href='#'>Aries, Nainital</a>
+subtitle: Senior Research Fellow, <a href='#'>ARIES, Nainital, India</a>
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    <p>555 ARIES</p>
-    <p>123 Manora Campus</p>
+    <p> ARIES</p>
+    <p> Manora Campus</p>
     <p>Nainital, Uttarakhand 263001</p>
 
 news: false # includes a list of news items
@@ -19,5 +19,5 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
- #[subreddit](http://reddit.com). 
-I am a Senior Research fellow at ARIES. 
+ 
+I am a Senior Research Fellow (SRF) at [Aryabhatta Research Institute of Observational Sciences (ARIES)](https://aries.res.in/), Nainital, Uttarakhand, India. My research area is solar astrophysics. I mostly study the long-term phenomena in the Sun using archival ground-based data like [Kodaikanal Solar Observatory](https://kso.iiap.res.in/new) and space-based data. 
