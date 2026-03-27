@@ -30,7 +30,7 @@ nav_order: 1
       </div>
 
       <div class="glass neo-story">
-        <h3>My Journey: From a Village in Bihar to Solar Physics</h3>
+        <h3>My Journey: From Odisha to Solar Physics</h3>
         <p>
           I am currently a Senior Research Fellow at ARIES, Nainital. My work focuses on
           long-term solar activity, chromospheric/sunspot analysis, and machine-learning-based
