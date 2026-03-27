@@ -334,3 +334,7 @@ body:has(main .post[role="main"]) .post-title {
   .neo-grid { grid-template-columns: 1fr; }
   .profile-card img { max-height: 280px; }
 }
+/* Hide top-left site title/brand */
+.navbar .navbar-brand {
+  display: none !important;
+}
