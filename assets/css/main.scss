@@ -488,4 +488,18 @@ body {
   .pub-shell { grid-template-columns: 1fr; }
   .pub-left { border-right: none; padding-right: 0; }
 }
+html, body {
+  min-height: 100%;
+}
 
+body {
+  background: url("/assets/img/astronomy-bg.jpg") center center / cover no-repeat fixed !important;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 10, 25, 0.55);
+  z-index: -1;
+}
