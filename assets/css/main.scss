@@ -269,3 +269,7 @@ $max-content-width: {{ site.max_width }};
   .neo-grid { grid-template-columns: 1fr; }
   .neo-stats { grid-template-columns: 1fr; }
 }
+/* Hide default page title only on home page */
+body:has(main .post[role="main"]) .post-title {
+  display: none;
+}
