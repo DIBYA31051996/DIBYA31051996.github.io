@@ -385,3 +385,35 @@ footer {
   position: relative;
   z-index: 1;
 }
+/* ===== Global uniform look ===== */
+:root {
+  --neo-bg: #060b1a;
+  --neo-card: rgba(255, 255, 255, 0.05);
+  --neo-border: rgba(255, 255, 255, 0.14);
+  --neo-text: #dbe4ff;
+  --neo-sub: #b8c6ef;
+  --neo-accent: #6a5cff;
+}
+
+body {
+  background:
+    radial-gradient(1100px 500px at -10% -20%, rgba(117, 84, 255, .25), transparent 55%),
+    radial-gradient(900px 420px at 110% 0%, rgba(0, 173, 139, .2), transparent 45%),
+    var(--neo-bg);
+  color: var(--neo-text);
+}
+
+.page-container,
+.post,
+.post-content {
+  max-width: 1320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.glass-card {
+  border: 1px solid var(--neo-border);
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+}
+
