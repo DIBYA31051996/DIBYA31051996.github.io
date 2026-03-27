@@ -65,3 +65,6 @@ nav_order: 1
     </aside>
   </div>
 </div>
+.post-title {
+  display: none;
+}
