@@ -338,3 +338,19 @@ body:has(main .post[role="main"]) .post-title {
 .navbar .navbar-brand {
   display: none !important;
 }
+.section-block { margin-top: 1rem; padding: 1rem; }
+.section-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.section-head h3 { margin: 0; }
+
+.themes-grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(160px, 1fr));
+  gap: .8rem;
+}
+.theme-card { padding: .9rem; }
+.theme-card h4 { margin-top: 0; color: #fff; }
+
+@media (max-width: 980px) {
+  .themes-grid { grid-template-columns: 1fr; }
+}
