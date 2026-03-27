@@ -354,3 +354,34 @@ body:has(main .post[role="main"]) .post-title {
 @media (max-width: 980px) {
   .themes-grid { grid-template-columns: 1fr; }
 }
+/* Astronomy outer background */
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  background-color: #05070f;
+  background-image: url("/assets/img/astronomy-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/* Dark overlay for readability */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(4, 8, 20, 0.62);
+  z-index: -1;
+}
+
+/* keep content above overlay */
+main,
+.navbar,
+footer {
+  position: relative;
+  z-index: 1;
+}
