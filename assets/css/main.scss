@@ -18,3 +18,74 @@ $max-content-width: {{ site.max_width }};
   "font-awesome/solid",
   "font-awesome/regular"
 ;
+
+/* ---------- custom research homepage ---------- */
+.research-home {
+  border: 1px solid var(--global-divider-color);
+  border-radius: 16px;
+  padding: 1.2rem;
+  background:
+    radial-gradient(900px 420px at 0% 0%, rgba(120, 78, 255, 0.30), transparent 50%),
+    radial-gradient(700px 380px at 100% 0%, rgba(0, 174, 138, 0.20), transparent 45%),
+    #060b1a;
+  color: #dbe4ff;
+}
+.rh-tag {
+  display: inline-block;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 999px;
+  padding: .35rem .8rem;
+  margin-bottom: 1rem;
+  background: rgba(255,255,255,.05);
+}
+.rh-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 1rem;
+}
+.rh-left, .rh-right, .rh-cards > div {
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 14px;
+  background: rgba(255,255,255,.04);
+}
+.rh-left { padding: 1rem; }
+.rh-left h1 { color: #f7fbff; }
+.rh-left h1 span { color: #5da5ff; }
+
+.rh-actions { display: flex; gap: .6rem; flex-wrap: wrap; margin: 1rem 0; }
+.rh-btn {
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 10px;
+  padding: .5rem .9rem;
+  text-decoration: none;
+  color: #dbe4ff;
+  background: rgba(10,16,35,.7);
+}
+.rh-btn-primary {
+  border-color: transparent;
+  background: linear-gradient(90deg, #7b55ff, #2c8bff);
+  color: #fff;
+}
+
+.rh-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(90px, 1fr));
+  gap: .6rem;
+}
+.rh-cards > div { padding: .7rem; }
+.rh-cards strong { display:block; color:#fff; font-size:1.2rem; }
+.rh-cards span { color:#b9c7ef; }
+
+.rh-right { padding: .8rem; }
+.rh-right img { width:100%; border-radius: 10px; margin-bottom:.7rem; }
+.rh-right p { color:#b9c7ef; }
+.rh-pill {
+  display:inline-block; margin-top:.4rem;
+  border:1px solid rgba(255,255,255,.2); border-radius:999px;
+  padding:.35rem .7rem; text-decoration:none; color:#dbe4ff;
+}
+
+@media (max-width: 900px) {
+  .rh-grid { grid-template-columns: 1fr; }
+  .rh-cards { grid-template-columns: 1fr; }
+}
