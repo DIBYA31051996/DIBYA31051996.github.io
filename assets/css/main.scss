@@ -89,3 +89,98 @@ $max-content-width: {{ site.max_width }};
   .rh-grid { grid-template-columns: 1fr; }
   .rh-cards { grid-template-columns: 1fr; }
 }
+/* ===== Publications page ===== */
+.pub-shell {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.pub-left {
+  border-right: 1px solid var(--neo-border);
+  padding-right: 1rem;
+}
+.pub-pill {
+  display: inline-block;
+  border: 1px solid var(--neo-border);
+  border-radius: 999px;
+  padding: .35rem .75rem;
+  margin-bottom: .7rem;
+  background: rgba(255,255,255,.04);
+}
+.pub-nav {
+  list-style: none;
+  padding: 0;
+  margin: .8rem 0 0 0;
+}
+
+.pub-nav li { margin-bottom: .55rem; }
+.pub-nav-btn {
+  width: 100%;
+  text-align: left;
+  border: 1px solid var(--neo-border);
+  border-radius: 12px;
+  padding: .65rem .8rem;
+  color: var(--neo-sub);
+  background: transparent;
+}
+.pub-nav-btn.active {
+  border-color: rgba(122, 93, 255, .65);
+  background: rgba(122, 93, 255, .15);
+  color: #fff;
+}
+
+.pub-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.pub-year-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  color: var(--neo-sub);
+}
+.pub-year-filter select {
+  border: 1px solid var(--neo-border);
+  border-radius: 8px;
+  background: rgba(15, 20, 35, .7);
+  color: #fff;
+  padding: .25rem .5rem;
+}
+
+.pub-right h1 { margin: 0 0 .35rem 0; }
+.pub-sub { color: var(--neo-sub); margin-bottom: .8rem; }
+
+.pub-list .bibliography li {
+  border: 1px solid var(--neo-border);
+  border-radius: 14px;
+  padding: .9rem;
+  margin-bottom: .8rem;
+  background: linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+}
+.pub-list .bibliography li .title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+.pub-list .bibliography li .author,
+.pub-list .bibliography li .periodical {
+  color: var(--neo-sub);
+}
+.pub-list .bibliography li .links a {
+  border: 1px solid var(--neo-border);
+  border-radius: 999px;
+  padding: .25rem .65rem;
+  margin-right: .35rem;
+  text-decoration: none;
+  color: var(--neo-text);
+  display: inline-block;
+}
+
+@media (max-width: 980px) {
+  .pub-shell { grid-template-columns: 1fr; }
+  .pub-left { border-right: none; padding-right: 0; }
+}
