@@ -12,20 +12,31 @@ description: Refereed articles, proceedings, invited talks, software, and datase
     <div class="pub-pill">🟢 Home • Publications</div>
     <h3>Publication Archive</h3>
     <ul class="pub-nav">
-      <li class="active">Refereed Articles</li>
-      <li>Proceedings</li>
-      <li>Invited Talks</li>
-      <li>Published Software</li>
-      <li>Data</li>
+      <li><button type="button" class="pub-nav-btn active" data-target="articles">Refereed Articles</button></li>
+      <li><button type="button" class="pub-nav-btn" data-target="proceedings">Proceedings</button></li>
     </ul>
   </aside>
 
   <section class="pub-right">
-    <h1>Refereed Articles</h1>
-    <p class="pub-sub">Journal articles and preprints</p>
+    <div class="pub-header-row">
+      <div>
+        <h1 id="pub-section-title">Refereed Articles</h1>
+        <p class="pub-sub" id="pub-section-subtitle">Journal articles and preprints</p>
+      </div>
+      <label class="pub-year-filter" for="pub-year-select">
+        <span>Year</span>
+        <select id="pub-year-select">
+          <option value="all">All Years</option>
+        </select>
+      </label>
+    </div>
 
-    <div class="pub-list">
-      {% bibliography %}
+    <div class="pub-list" data-section="articles">
+      {% bibliography --query @article %}
+    </div>
+
+    <div class="pub-list" data-section="proceedings" hidden>
+      {% bibliography --query @inproceedings %}
     </div>
   </section>
 </div>
@@ -39,19 +50,11 @@ description: Refereed articles, proceedings, invited talks, software, and datase
     const sectionSubtitle = document.getElementById('pub-section-subtitle');
 
     const sectionMeta = {
-      articles: {
-        title: 'Refereed Articles',
-        subtitle: 'Journal articles and preprints'
-      },
-      proceedings: {
-        title: 'Proceedings',
-        subtitle: 'Conference and symposium papers'
-      }
+      articles: { title: 'Refereed Articles', subtitle: 'Journal articles and preprints' },
+      proceedings: { title: 'Proceedings', subtitle: 'Conference and symposium papers' }
     };
 
-    function getVisibleSection() {
-      return sections.find((s) => !s.hidden);
-    }
+    function getVisibleSection() { return sections.find((s) => !s.hidden); }
 
     function collectYears(section) {
       const years = Array.from(section.querySelectorAll('h2.year')).map((h) => h.textContent.trim());
@@ -87,24 +90,16 @@ description: Refereed articles, proceedings, invited talks, software, and datase
     }
 
     function switchSection(target) {
-      sections.forEach((section) => {
-        section.hidden = section.dataset.section !== target;
-      });
-      navButtons.forEach((btn) => {
-        btn.classList.toggle('active', btn.dataset.target === target);
-      });
+      sections.forEach((section) => { section.hidden = section.dataset.section !== target; });
+      navButtons.forEach((btn) => { btn.classList.toggle('active', btn.dataset.target === target); });
       sectionTitle.textContent = sectionMeta[target].title;
       sectionSubtitle.textContent = sectionMeta[target].subtitle;
       fillYearOptions();
       applyYearFilter();
     }
 
-    navButtons.forEach((btn) => {
-      btn.addEventListener('click', () => switchSection(btn.dataset.target));
-    });
-
+    navButtons.forEach((btn) => btn.addEventListener('click', () => switchSection(btn.dataset.target)));
     yearSelect.addEventListener('change', applyYearFilter);
-
     switchSection('articles');
   });
 </script>
