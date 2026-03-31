@@ -97,29 +97,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const sectionTitle = document.getElementById('pub-section-title');
   const sectionSubtitle = document.getElementById('pub-section-subtitle');
 
-  let revealObserver = null;
-
   const sectionMeta = {
-    articles: {
-      title: 'Refereed Articles',
-      subtitle: 'Journal articles and preprints',
-      yearFilter: true
-    },
-    proceedings: {
-      title: 'Proceedings',
-      subtitle: 'Conference and symposium papers',
-      yearFilter: true
-    },
-    software: {
-      title: 'Published Software',
-      subtitle: 'Open-source tools and research software',
-      yearFilter: false
-    },
-    data: {
-      title: 'Published Data',
-      subtitle: 'Datasets, catalogs, and archives',
-      yearFilter: false
-    }
+    articles: { title: 'Refereed Articles', subtitle: 'Journal articles and preprints', yearFilter: true },
+    proceedings: { title: 'Proceedings', subtitle: 'Conference and symposium papers', yearFilter: true },
+    software: { title: 'Published Software', subtitle: 'Open-source tools and research software', yearFilter: false },
+    data: { title: 'Published Data', subtitle: 'Datasets, catalogs, and archives', yearFilter: false }
   };
 
   function getVisibleSection() {
@@ -131,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
       .map((el) => (el.textContent.match(/\b(19|20)\d{2}\b/) || [])[0])
       .filter(Boolean);
 
-    if (years.length === 0) {
+    if (!years.length) {
       const txt = section.textContent || '';
       years = txt.match(/\b(19|20)\d{2}\b/g) || [];
     }
@@ -151,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function () {
       opt.textContent = year;
       yearSelect.appendChild(opt);
     });
-
     yearSelect.value = years.includes(prev) ? prev : 'all';
   }
 
@@ -171,7 +152,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Fix corrupted author text in 3rd article
   function cleanBrokenAuthorText() {
     document.querySelectorAll('.pub-list .bibliography li .author').forEach((el) => {
       el.innerHTML = el.innerHTML
@@ -216,38 +196,22 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       if (!href) return;
-
       const titleText = titleEl.textContent.trim();
       titleEl.innerHTML = `<a class="pub-title-link" href="${href}" target="_blank" rel="noopener">${titleText}</a>`;
     });
   }
 
   function showArticleCards() {
-  const cards = document.querySelectorAll('.pub-list[data-section="articles"] .bibliography li');
-  cards.forEach((card, i) => {
-    card.classList.remove('reveal-in');
-    card.style.animationDelay = `${i * 90}ms`;
-    void card.offsetWidth; // restart animation
-    card.classList.add('reveal-in');
-    card.style.opacity = '1';      // safety
-    card.style.filter = 'blur(0)'; // safety
-    card.style.transform = 'none'; // safety
-  });
-}
-
-    revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        const el = entry.target;
-        const siblings = Array.from(el.parentNode.children).filter((n) => n.matches('li'));
-        const idx = siblings.indexOf(el);
-        el.style.transitionDelay = `${Math.min(idx * 85, 420)}ms`;
-        el.classList.add('is-visible');
-        revealObserver.unobserve(el);
-      });
-    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
-
-    cards.forEach((card) => revealObserver.observe(card));
+    const cards = document.querySelectorAll('.pub-list[data-section="articles"] .bibliography li');
+    cards.forEach((card, i) => {
+      card.classList.remove('reveal-in');
+      card.style.animationDelay = `${i * 90}ms`;
+      void card.offsetWidth;
+      card.classList.add('reveal-in');
+      card.style.opacity = '1';
+      card.style.filter = 'blur(0)';
+      card.style.transform = 'none';
+    });
   }
 
   function runArticleEnhancements() {
@@ -280,10 +244,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (target === 'articles') runArticleEnhancements();
   }
 
-  navButtons.forEach((btn) => {
-    btn.addEventListener('click', () => switchSection(btn.dataset.target));
-  });
-
+  navButtons.forEach((btn) => btn.addEventListener('click', () => switchSection(btn.dataset.target)));
   yearSelect.addEventListener('change', applyYearFilter);
 
   switchSection('articles');
