@@ -222,17 +222,18 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  function initScrollReveal() {
-    const cards = document.querySelectorAll('.pub-list[data-section="articles"] .bibliography li');
-    if (!cards.length) return;
-
-    if (revealObserver) revealObserver.disconnect();
-
-    cards.forEach((card) => {
-      card.classList.remove('is-visible');
-      card.classList.add('reveal-card');
-      card.style.transitionDelay = '0ms';
-    });
+  function showArticleCards() {
+  const cards = document.querySelectorAll('.pub-list[data-section="articles"] .bibliography li');
+  cards.forEach((card, i) => {
+    card.classList.remove('reveal-in');
+    card.style.animationDelay = `${i * 90}ms`;
+    void card.offsetWidth; // restart animation
+    card.classList.add('reveal-in');
+    card.style.opacity = '1';      // safety
+    card.style.filter = 'blur(0)'; // safety
+    card.style.transform = 'none'; // safety
+  });
+}
 
     revealObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -253,7 +254,7 @@ document.addEventListener('DOMContentLoaded', function () {
     cleanBrokenAuthorText();
     highlightAuthorName();
     makeTitlesClickable();
-    initScrollReveal();
+    showArticleCards();
   }
 
   function switchSection(target) {
