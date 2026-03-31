@@ -7,19 +7,6 @@ nav_order: 4
 description: Refereed articles, proceedings, software, and datasets.
 ---
 
-<style>
-  /* hide default page heading on this page */
-  .post-header .post-title,
-  .post-header .post-description,
-  .post-header .desc {
-    display: none !important;
-  }
-  .post-header {
-    margin-bottom: 0.4rem !important;
-    padding-bottom: 0 !important;
-  }
-</style>
-
 <div class="pub-shell glass-card">
   <aside class="pub-left">
     <div class="pub-pill">Home • Publications</div>
@@ -48,14 +35,17 @@ description: Refereed articles, proceedings, software, and datasets.
       </label>
     </div>
 
+    <!-- Refereed Articles -->
     <div class="pub-list" data-section="articles">
       {% bibliography --query @article %}
     </div>
 
+    <!-- Proceedings -->
     <div class="pub-list" data-section="proceedings" hidden>
       {% bibliography --query @inproceedings %}
     </div>
 
+    <!-- Published Software -->
     <div class="pub-list" data-section="software" hidden>
       <ul class="bibliography">
         <li>
@@ -71,6 +61,7 @@ description: Refereed articles, proceedings, software, and datasets.
       </ul>
     </div>
 
+    <!-- Published Data -->
     <div class="pub-list" data-section="data" hidden>
       <ul class="bibliography">
         <li>
@@ -89,192 +80,184 @@ description: Refereed articles, proceedings, software, and datasets.
 </div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const navButtons = Array.from(document.querySelectorAll('.pub-nav-btn'));
-  const sections = Array.from(document.querySelectorAll('.pub-list[data-section]'));
-  const yearSelect = document.getElementById('pub-year-select');
-  const yearWrap = document.getElementById('pub-year-wrap');
-  const sectionTitle = document.getElementById('pub-section-title');
-  const sectionSubtitle = document.getElementById('pub-section-subtitle');
+  document.addEventListener('DOMContentLoaded', function () {
+    const navButtons = Array.from(document.querySelectorAll('.pub-nav-btn'));
+    const sections = Array.from(document.querySelectorAll('.pub-list[data-section]'));
+    const yearSelect = document.getElementById('pub-year-select');
+    const yearWrap = document.getElementById('pub-year-wrap');
+    const sectionTitle = document.getElementById('pub-section-title');
+    const sectionSubtitle = document.getElementById('pub-section-subtitle');
 
-  let revealObserver = null;
+    const sectionMeta = {
+      articles: {
+        title: 'Refereed Articles',
+        subtitle: 'Journal articles and preprints',
+        yearFilter: true
+      },
+      proceedings: {
+        title: 'Proceedings',
+        subtitle: 'Conference and symposium papers',
+        yearFilter: true
+      },
+      software: {
+        title: 'Published Software',
+        subtitle: 'Open-source tools and research software',
+        yearFilter: false
+      },
+      data: {
+        title: 'Published Data',
+        subtitle: 'Datasets, catalogs, and archives',
+        yearFilter: false
+      }
+    };
 
-  const sectionMeta = {
-    articles: {
-      title: 'Refereed Articles',
-      subtitle: 'Journal articles and preprints',
-      yearFilter: true
-    },
-    proceedings: {
-      title: 'Proceedings',
-      subtitle: 'Conference and symposium papers',
-      yearFilter: true
-    },
-    software: {
-      title: 'Published Software',
-      subtitle: 'Open-source tools and research software',
-      yearFilter: false
-    },
-    data: {
-      title: 'Published Data',
-      subtitle: 'Datasets, catalogs, and archives',
-      yearFilter: false
-    }
-  };
-
-  function getVisibleSection() {
-    return sections.find((s) => !s.hidden);
-  }
-
-  function collectYears(section) {
-    let years = Array.from(section.querySelectorAll('h2.year, h2, h3'))
-      .map((el) => (el.textContent.match(/\b(19|20)\d{2}\b/) || [])[0])
-      .filter(Boolean);
-
-    if (years.length === 0) {
-      const txt = section.textContent || '';
-      years = txt.match(/\b(19|20)\d{2}\b/g) || [];
+    function getVisibleSection() {
+      return sections.find((s) => !s.hidden);
     }
 
-    return [...new Set(years)].sort((a, b) => Number(b) - Number(a));
-  }
+    function collectYears(section) {
+      // First try headings
+      let years = Array.from(section.querySelectorAll('h2.year, h2, h3'))
+        .map((el) => (el.textContent.match(/\b(19|20)\d{2}\b/) || [])[0])
+        .filter(Boolean);
 
-  function fillYearOptions() {
-    const section = getVisibleSection();
-    const years = collectYears(section);
-    const prev = yearSelect.value || 'all';
+      // Fallback: scan whole section text
+      if (years.length === 0) {
+        const txt = section.textContent || '';
+        years = txt.match(/\b(19|20)\d{2}\b/g) || [];
+      }
 
-    yearSelect.innerHTML = '<option value="all">All Years</option>';
-    years.forEach((year) => {
-      const opt = document.createElement('option');
-      opt.value = year;
-      opt.textContent = year;
-      yearSelect.appendChild(opt);
-    });
+      return [...new Set(years)].sort((a, b) => Number(b) - Number(a));
+    }
 
-    yearSelect.value = years.includes(prev) ? prev : 'all';
-  }
+    function fillYearOptions() {
+      const section = getVisibleSection();
+      const years = collectYears(section);
+      const prevValue = yearSelect.value || 'all';
 
-  function applyYearFilter() {
-    const section = getVisibleSection();
-    const selected = yearSelect.value;
-    const yearHeaders = Array.from(section.querySelectorAll('h2.year, h2, h3'));
+      yearSelect.innerHTML = '<option value="all">All Years</option>';
 
-    yearHeaders.forEach((header) => {
-      const y = (header.textContent.match(/\b(19|20)\d{2}\b/) || [])[0];
-      const list = header.nextElementSibling;
-      if (!y || !list) return;
-
-      const show = selected === 'all' || selected === y;
-      header.style.display = show ? '' : 'none';
-      list.style.display = show ? '' : 'none';
-    });
-  }
-
-  function cleanBrokenAuthorText() {
-    document.querySelectorAll('.pub-list .bibliography li .author').forEach((el) => {
-      el.innerHTML = el.innerHTML
-        .replace(/var\s+cursorPosition[\s\S]*$/i, '')
-        .replace(/setInterval\([\s\S]*$/i, '')
-        .replace(/'\);\s*>.*$/i, '')
-        .trim();
-    });
-  }
-
-  function highlightAuthorName() {
-    document.querySelectorAll('.pub-list .bibliography li .author').forEach((el) => {
-      let html = el.innerHTML;
-      html = html.replace(/<span class="me-highlight">(.*?)<\/span>/g, '$1');
-      html = html.replace(/Dibya Kirti Mishra/g, '<span class="me-highlight">Dibya Kirti Mishra</span>');
-      el.innerHTML = html;
-    });
-  }
-
-  function makeTitlesClickable() {
-    document.querySelectorAll('.pub-list .bibliography li').forEach((li) => {
-      const titleEl = li.querySelector('.title');
-      if (!titleEl || titleEl.querySelector('a')) return;
-
-      const links = Array.from(li.querySelectorAll('.links a'));
-      if (!links.length) return;
-
-      const pick =
-        links.find((a) => /doi/i.test(a.textContent)) ||
-        links.find((a) => /ads/i.test(a.textContent)) ||
-        links.find((a) => /arxiv/i.test(a.textContent)) ||
-        links[0];
-
-      const href = pick && pick.getAttribute('href');
-      if (!href) return;
-
-      const txt = titleEl.textContent.trim();
-      titleEl.innerHTML = `<a class="pub-title-link" href="${href}" target="_blank" rel="noopener">${txt}</a>`;
-    });
-  }
-
-  function initScrollReveal() {
-    const cards = document.querySelectorAll('.pub-list[data-section="articles"] .bibliography li');
-    if (!cards.length) return;
-
-    if (revealObserver) revealObserver.disconnect();
-
-    cards.forEach((card) => {
-      card.classList.remove('is-visible');
-      card.classList.add('reveal-card');
-      card.style.transitionDelay = '0ms';
-    });
-
-    revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        const el = entry.target;
-        const siblings = Array.from(el.parentNode.children).filter((n) => n.matches('li'));
-        const idx = siblings.indexOf(el);
-        el.style.transitionDelay = `${Math.min(idx * 85, 420)}ms`;
-        el.classList.add('is-visible');
-        revealObserver.unobserve(el);
+      years.forEach((year) => {
+        const opt = document.createElement('option');
+        opt.value = year;
+        opt.textContent = year;
+        yearSelect.appendChild(opt);
       });
-    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
 
-    cards.forEach((card) => revealObserver.observe(card));
-  }
+      yearSelect.value = years.includes(prevValue) ? prevValue : 'all';
+    }
 
-  function runArticleEnhancements() {
-    cleanBrokenAuthorText();
-    highlightAuthorName();
-    makeTitlesClickable();
-    initScrollReveal();
-  }
+    function applyYearFilter() {
+      const section = getVisibleSection();
+      const selected = yearSelect.value;
 
-  function switchSection(target) {
-    sections.forEach((section) => {
-      section.hidden = section.dataset.section !== target;
-    });
+      // Works with bibliography output grouped by year headings
+      const yearHeaders = Array.from(section.querySelectorAll('h2.year, h2, h3'));
+
+      yearHeaders.forEach((header) => {
+        const matchedYear = (header.textContent.match(/\b(19|20)\d{2}\b/) || [])[0];
+        const list = header.nextElementSibling;
+
+        if (!matchedYear || !list) return;
+
+        const show = selected === 'all' || selected === matchedYear;
+        header.style.display = show ? '' : 'none';
+        list.style.display = show ? '' : 'none';
+      });
+    }
+    function animateArticleCards() {
+  const articleSection = document.querySelector('.pub-list[data-section="articles"]');
+  if (!articleSection) return;
+  const cards = Array.from(articleSection.querySelectorAll('.bibliography li'));
+
+  cards.forEach((card, i) => {
+    card.classList.remove('reveal-in');
+    card.style.animationDelay = `${i * 110}ms`;
+    void card.offsetWidth; // restart animation
+    card.classList.add('reveal-in');
+  });
+}
+
+function highlightAuthorName() {
+  document.querySelectorAll('.pub-list .bibliography li .author').forEach((el) => {
+    let html = el.innerHTML;
+
+    // remove old full-name wraps if already applied
+    html = html.replace(/<span class="me-highlight">(.*?)<\/span>/g, '$1');
+
+    // highlight full name once (single border, no double look)
+    html = html.replace(/Dibya Kirti Mishra/g, '<span class="me-highlight">Dibya Kirti Mishra</span>');
+
+    // inside that, color only Kirti Mishra
+    html = html.replace(/Kirti Mishra/g, '<span class="km-name">Kirti Mishra</span>');
+
+    el.innerHTML = html;
+  });
+}
+
+
+    function switchSection(target) {
+      sections.forEach((section) => {
+        section.hidden = section.dataset.section !== target;
+      });
+      if (target === 'articles') {
+  highlightAuthorName();
+  animateArticleCards();
+}
+
+      navButtons.forEach((btn) => {
+        btn.classList.toggle('active', btn.dataset.target === target);
+      });
+
+      sectionTitle.textContent = sectionMeta[target].title;
+      sectionSubtitle.textContent = sectionMeta[target].subtitle;
+
+      if (sectionMeta[target].yearFilter) {
+        yearWrap.style.display = '';
+        fillYearOptions();
+        applyYearFilter();
+      } else {
+        yearWrap.style.display = 'none';
+      }
+      // 👇 put it here
+     if (target === 'articles') animateArticleCards();
+    }
 
     navButtons.forEach((btn) => {
-      btn.classList.toggle('active', btn.dataset.target === target);
+      btn.addEventListener('click', () => switchSection(btn.dataset.target));
     });
 
-    sectionTitle.textContent = sectionMeta[target].title;
-    sectionSubtitle.textContent = sectionMeta[target].subtitle;
+    yearSelect.addEventListener('change', applyYearFilter);
 
-    if (sectionMeta[target].yearFilter) {
-      yearWrap.style.display = '';
-      fillYearOptions();
-      applyYearFilter();
-    } else {
-      yearWrap.style.display = 'none';
-    }
+    switchSection('articles');
+    highlightAuthorName();
+    animateArticleCards();
+  
+  });
+  function animateArticleCards() {
+  const articleSection = document.querySelector('.pub-list[data-section="articles"]');
+  if (!articleSection) return;
 
-    if (target === 'articles') runArticleEnhancements();
+  const cards = Array.from(articleSection.querySelectorAll('.bibliography li'));
+  cards.forEach((card, i) => {
+    card.classList.remove('reveal-in');
+    card.style.animationDelay = `${i * 90}ms`;
+    void card.offsetWidth; // reflow for restart
+    card.classList.add('reveal-in');
+  });
+}
+</script>
+<style>
+  /* Hide page title + description only on publications page */
+  .post-header .post-title,
+  .post-header .post-description,
+  .post-header .desc {
+    display: none !important;
   }
 
-  navButtons.forEach((btn) => {
-    btn.addEventListener('click', () => switchSection(btn.dataset.target));
-  });
-
-  yearSelect.addEventListener('change', applyYearFilter);
-
-  switchSection('articles');
-});
-</script>
+  /* optional: remove extra top gap after hiding */
+  .post-header {
+    margin-bottom: 0.4rem !important;
+    padding-bottom: 0 !important;
+  }
+</style>
