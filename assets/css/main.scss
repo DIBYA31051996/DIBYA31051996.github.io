@@ -1,505 +1,190 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@charset "utf-8";
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const navButtons = Array.from(document.querySelectorAll('.pub-nav-btn'));
+  const sections = Array.from(document.querySelectorAll('.pub-list[data-section]'));
+  const yearSelect = document.getElementById('pub-year-select');
+  const yearWrap = document.getElementById('pub-year-wrap');
+  const sectionTitle = document.getElementById('pub-section-title');
+  const sectionSubtitle = document.getElementById('pub-section-subtitle');
 
-// Dimensions
-$max-content-width: {{ site.max_width }};
+  let revealObserver = null;
 
-@import
-  "variables",
-  "themes",
-  "layout",
-  "base",
-  "distill",
-  "cv",
-  "font-awesome/fontawesome",
-  "font-awesome/brands",
-  "font-awesome/solid",
-  "font-awesome/regular"
-;
+  const sectionMeta = {
+    articles: {
+      title: 'Refereed Articles',
+      subtitle: 'Journal articles and preprints',
+      yearFilter: true
+    },
+    proceedings: {
+      title: 'Proceedings',
+      subtitle: 'Conference and symposium papers',
+      yearFilter: true
+    },
+    software: {
+      title: 'Published Software',
+      subtitle: 'Open-source tools and research software',
+      yearFilter: false
+    },
+    data: {
+      title: 'Published Data',
+      subtitle: 'Datasets, catalogs, and archives',
+      yearFilter: false
+    }
+  };
 
-/* ---------- custom research homepage ---------- */
-.research-home {
-  border: 1px solid var(--global-divider-color);
-  border-radius: 16px;
-  padding: 1.2rem;
-  background:
-    radial-gradient(900px 420px at 0% 0%, rgba(120, 78, 255, 0.30), transparent 50%),
-    radial-gradient(700px 380px at 100% 0%, rgba(0, 174, 138, 0.20), transparent 45%),
-    #060b1a;
-  color: #dbe4ff;
-}
-.rh-tag {
-  display: inline-block;
-  border: 1px solid rgba(255,255,255,.2);
-  border-radius: 999px;
-  padding: .35rem .8rem;
-  margin-bottom: 1rem;
-  background: rgba(255,255,255,.05);
-}
-.rh-grid {
-  display: grid;
-  grid-template-columns: 1.6fr 1fr;
-  gap: 1rem;
-}
-.rh-left, .rh-right, .rh-cards > div {
-  border: 1px solid rgba(255,255,255,.14);
-  border-radius: 14px;
-  background: rgba(255,255,255,.04);
-}
-.rh-left { padding: 1rem; }
-.rh-left h1 { color: #f7fbff; }
-.rh-left h1 span { color: #5da5ff; }
+  function getVisibleSection() {
+    return sections.find((s) => !s.hidden);
+  }
 
-.rh-actions { display: flex; gap: .6rem; flex-wrap: wrap; margin: 1rem 0; }
-.rh-btn {
-  border: 1px solid rgba(255,255,255,.2);
-  border-radius: 10px;
-  padding: .5rem .9rem;
-  text-decoration: none;
-  color: #dbe4ff;
-  background: rgba(10,16,35,.7);
-}
-.rh-btn-primary {
-  border-color: transparent;
-  background: linear-gradient(90deg, #7b55ff, #2c8bff);
-  color: #fff;
-}
+  function collectYears(section) {
+    let years = Array.from(section.querySelectorAll('h2.year, h2, h3'))
+      .map((el) => (el.textContent.match(/\b(19|20)\d{2}\b/) || [])[0])
+      .filter(Boolean);
 
-.rh-cards {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(90px, 1fr));
-  gap: .6rem;
-}
-.rh-cards > div { padding: .7rem; }
-.rh-cards strong { display:block; color:#fff; font-size:1.2rem; }
-.rh-cards span { color:#b9c7ef; }
+    if (years.length === 0) {
+      const txt = section.textContent || '';
+      years = txt.match(/\b(19|20)\d{2}\b/g) || [];
+    }
 
-.rh-right { padding: .8rem; }
-.rh-right img { width:100%; border-radius: 10px; margin-bottom:.7rem; }
-.rh-right p { color:#b9c7ef; }
-.rh-pill {
-  display:inline-block; margin-top:.4rem;
-  border:1px solid rgba(255,255,255,.2); border-radius:999px;
-  padding:.35rem .7rem; text-decoration:none; color:#dbe4ff;
-}
+    return [...new Set(years)].sort((a, b) => Number(b) - Number(a));
+  }
 
-@media (max-width: 900px) {
-  .rh-grid { grid-template-columns: 1fr; }
-  .rh-cards { grid-template-columns: 1fr; }
-}
-.neo-home {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 18px;
-  padding: 1.4rem;
-  background:
-    radial-gradient(1100px 520px at -10% -15%, rgba(117, 84, 255, 0.35), transparent 55%),
-    radial-gradient(900px 420px at 110% 0%, rgba(0, 173, 139, 0.22), transparent 45%),
-    #060b1a;
-  color: #dbe4ff;
-}
+  function fillYearOptions() {
+    const section = getVisibleSection();
+    const years = collectYears(section);
+    const prev = yearSelect.value || 'all';
 
-.glass {
-  border: 1px solid rgba(255, 255, 255, 0.13);
-  border-radius: 16px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
-}
+    yearSelect.innerHTML = '<option value="all">All Years</option>';
+    years.forEach((year) => {
+      const opt = document.createElement('option');
+      opt.value = year;
+      opt.textContent = year;
+      yearSelect.appendChild(opt);
+    });
 
-.neo-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.45rem 0.9rem;
-  margin-bottom: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-}
-.neo-pill .dot { width: 10px; height: 10px; border-radius: 50%; background: #00d084; }
+    yearSelect.value = years.includes(prev) ? prev : 'all';
+  }
 
-.neo-grid { display: grid; grid-template-columns: 1.7fr 1fr; gap: 1rem; }
+  function applyYearFilter() {
+    const section = getVisibleSection();
+    const selected = yearSelect.value;
+    const yearHeaders = Array.from(section.querySelectorAll('h2.year, h2, h3'));
 
-.neo-left { padding: 1rem; }
-.neo-left h1 { color: #f8fbff; font-size: 2.1rem; margin-top: 0; }
-.neo-left h1 span { color: #58a8ff; }
+    yearHeaders.forEach((header) => {
+      const y = (header.textContent.match(/\b(19|20)\d{2}\b/) || [])[0];
+      const list = header.nextElementSibling;
+      if (!y || !list) return;
 
-.neo-actions { display: flex; gap: .6rem; flex-wrap: wrap; margin: 1rem 0; }
-.neo-actions .btn {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px; padding: .55rem 1rem; text-decoration: none;
-  color: #dbe4ff; background: rgba(11, 18, 38, 0.7);
-}
-.neo-actions .btn-primary {
-  background: linear-gradient(90deg, #7f58ff, #2f8dff);
-  border-color: transparent; color: #fff;
-}
+      const show = selected === 'all' || selected === y;
+      header.style.display = show ? '' : 'none';
+      list.style.display = show ? '' : 'none';
+    });
+  }
 
-.neo-stats { display: grid; grid-template-columns: repeat(3, minmax(100px, 1fr)); gap: .7rem; }
-.neo-stats > div { padding: .75rem; }
-.neo-stats strong { display: block; color: #fff; font-size: 1.9rem; }
-.neo-stats span { color: #bcc9ef; }
+  function cleanBrokenAuthorText() {
+    document.querySelectorAll('.pub-list .bibliography li .author').forEach((el) => {
+      el.innerHTML = el.innerHTML
+        .replace(/var\s+cursorPosition[\s\S]*$/i, '')
+        .replace(/setInterval\([\s\S]*$/i, '')
+        .replace(/'\);\s*>.*$/i, '')
+        .trim();
+    });
+  }
 
-.neo-story { margin-top: .8rem; padding: 1rem; }
+  function highlightAuthorName() {
+    document.querySelectorAll('.pub-list .bibliography li .author').forEach((el) => {
+      let html = el.innerHTML;
+      html = html.replace(/<span class="me-highlight">(.*?)<\/span>/g, '$1');
+      html = html.replace(/Dibya Kirti Mishra/g, '<span class="me-highlight">Dibya Kirti Mishra</span>');
+      el.innerHTML = html;
+    });
+  }
 
-.profile-card img { width: 100%; border-radius: 14px 14px 0 0; display: block; }
-.profile-body { padding: .85rem; }
-.profile-body p { color: #b8c6ef; }
+  function makeTitlesClickable() {
+    document.querySelectorAll('.pub-list .bibliography li').forEach((li) => {
+      const titleEl = li.querySelector('.title');
+      if (!titleEl || titleEl.querySelector('a')) return;
 
-.chips { display: flex; gap: .5rem; flex-wrap: wrap; }
-.chips a {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 999px;
-  padding: .35rem .75rem;
-  text-decoration: none;
-  color: #dbe4ff;
-}
+      const links = Array.from(li.querySelectorAll('.links a'));
+      if (!links.length) return;
 
-.highlights { margin-top: 1rem; padding: .9rem; }
-.highlight-item {
-  border: 1px solid rgba(255, 255, 255, 0.13);
-  border-radius: 12px;
-  background: rgba(12, 19, 36, 0.5);
-  padding: .7rem;
-  margin-top: .6rem;
-}
-.highlight-item small, .highlight-item span { color: #aebde9; display: block; }
-.highlight-item strong { color: #fff; display: block; margin: .25rem 0; }
+      const pick =
+        links.find((a) => /doi/i.test(a.textContent)) ||
+        links.find((a) => /ads/i.test(a.textContent)) ||
+        links.find((a) => /arxiv/i.test(a.textContent)) ||
+        links[0];
 
-@media (max-width: 980px) {
-  .neo-grid { grid-template-columns: 1fr; }
-  .neo-stats { grid-template-columns: 1fr; }
-}
-/* ---------- Desired dark homepage style ---------- */
-.neo-home {
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 18px;
-  padding: 1.3rem;
-  background:
-    radial-gradient(1100px 520px at -10% -15%, rgba(117, 84, 255, 0.35), transparent 55%),
-    radial-gradient(900px 420px at 110% 0%, rgba(0, 173, 139, 0.22), transparent 45%),
-    #060b1a;
-  color: #dbe4ff;
-}
-.glass {
-  border: 1px solid rgba(255, 255, 255, 0.13);
-  border-radius: 16px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03));
-}
-.neo-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.45rem 0.9rem;
-  margin-bottom: 1rem;
-  background: rgba(255, 255, 255, 0.05);
-}
-.neo-pill .dot { width: 10px; height: 10px; border-radius: 999px; background: #00d084; }
+      const href = pick?.getAttribute('href');
+      if (!href) return;
 
-.neo-grid { display: grid; grid-template-columns: 1.7fr 1fr; gap: 1rem; }
-.neo-left { padding: 1rem; }
-.neo-left h1 { color: #f8fbff; font-size: 2.1rem; margin-top: 0; }
-.neo-left h1 span { color: #58a8ff; }
+      const txt = titleEl.textContent.trim();
+      titleEl.innerHTML = `<a class="pub-title-link" href="${href}" target="_blank" rel="noopener">${txt}</a>`;
+    });
+  }
 
-.neo-actions { display: flex; gap: 0.6rem; flex-wrap: wrap; margin: 1rem 0; }
-.neo-actions .btn {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 12px;
-  padding: 0.55rem 1rem;
-  text-decoration: none;
-  color: #dbe4ff;
-  background: rgba(11, 18, 38, 0.7);
-}
-.neo-actions .btn-primary {
-  background: linear-gradient(90deg, #7f58ff, #2f8dff);
-  border-color: transparent;
-  color: #fff;
-}
+  function initScrollReveal() {
+    const cards = document.querySelectorAll('.pub-list[data-section="articles"] .bibliography li');
+    if (!cards.length) return;
 
-.neo-stats { display: grid; grid-template-columns: repeat(3, minmax(100px, 1fr)); gap: 0.7rem; }
-.neo-stats > div { padding: 0.75rem; }
-.neo-stats strong { display: block; color: #fff; font-size: 1.8rem; }
-.neo-stats span { color: #bcc9ef; }
+    if (revealObserver) revealObserver.disconnect();
 
-.neo-story { margin-top: 0.8rem; padding: 1rem; }
-.profile-card img { width: 100%; border-radius: 14px 14px 0 0; display: block; }
-.profile-body { padding: 0.85rem; }
-.profile-body p { color: #b8c6ef; }
+    cards.forEach((card) => {
+      card.classList.remove('is-visible');
+      card.classList.add('reveal-card');
+      card.style.transitionDelay = '0ms';
+    });
 
-.chips { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-.chips a {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 999px;
-  padding: 0.35rem 0.75rem;
-  text-decoration: none;
-  color: #dbe4ff;
-}
+    revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const siblings = Array.from(el.parentNode.children).filter((n) => n.matches('li'));
+        const idx = siblings.indexOf(el);
+        el.style.transitionDelay = `${Math.min(idx * 85, 420)}ms`;
+        el.classList.add('is-visible');
+        revealObserver.unobserve(el);
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
 
-.highlights { margin-top: 1rem; padding: 0.9rem; }
-.highlight-item {
-  border: 1px solid rgba(255, 255, 255, 0.13);
-  border-radius: 12px;
-  background: rgba(12, 19, 36, 0.5);
-  padding: 0.7rem;
-  margin-top: 0.6rem;
-}
-.highlight-item small, .highlight-item span { color: #aebde9; display: block; }
-.highlight-item strong { color: #fff; display: block; margin: 0.25rem 0; }
+    cards.forEach((card) => revealObserver.observe(card));
+  }
 
-/* Navbar style like target */
-.navbar {
-  background: rgba(8, 14, 30, 0.88) !important;
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(174, 190, 233, 0.2);
-}
-.navbar .nav-link {
-  color: #dbe4ff !important;
-  border-radius: 12px;
-  padding: 0.5rem 0.85rem !important;
-}
-.navbar .nav-link:hover,
-.navbar .nav-link.active {
-  background: rgba(255, 255, 255, 0.08);
-  color: #fff !important;
-}
+  function runArticleEnhancements() {
+    cleanBrokenAuthorText();
+    highlightAuthorName();
+    makeTitlesClickable();
+    initScrollReveal();
+  }
 
-@media (max-width: 980px) {
-  .neo-grid { grid-template-columns: 1fr; }
-  .neo-stats { grid-template-columns: 1fr; }
-}
-/* Hide default page title only on home page */
-body:has(main .post[role="main"]) .post-title {
-  display: none;
-}
-/* --- Scale + width tuning to match desired layout --- */
-.post {
-  max-width: 1320px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  function switchSection(target) {
+    sections.forEach((section) => {
+      section.hidden = section.dataset.section !== target;
+    });
 
-.neo-home {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 1.6rem;
-}
+    navButtons.forEach((btn) => {
+      btn.classList.toggle('active', btn.dataset.target === target);
+    });
 
-.neo-grid {
-  grid-template-columns: 1.9fr 1fr; /* wider left content area */
-  gap: 1.25rem;
-}
+    sectionTitle.textContent = sectionMeta[target].title;
+    sectionSubtitle.textContent = sectionMeta[target].subtitle;
 
-.neo-left h1 {
-  font-size: 3rem;       /* bigger hero title */
-  line-height: 1.1;
-}
+    if (sectionMeta[target].yearFilter) {
+      yearWrap.style.display = '';
+      fillYearOptions();
+      applyYearFilter();
+    } else {
+      yearWrap.style.display = 'none';
+    }
 
-.neo-left p {
-  font-size: 1.25rem;    /* bigger paragraph */
-  line-height: 1.6;
-}
+    if (target === 'articles') runArticleEnhancements();
+  }
 
-.neo-actions .btn {
-  font-size: 1.05rem;
-  padding: 0.7rem 1.2rem;
-}
+  navButtons.forEach((btn) => {
+    btn.addEventListener('click', () => switchSection(btn.dataset.target));
+  });
 
-.neo-stats strong {
-  font-size: 2.2rem;
-}
+  yearSelect.addEventListener('change', applyYearFilter);
 
-/* Make right panel image smaller */
-.profile-card img {
-  width: 100%;
-  max-height: 320px;     /* reduce image size */
-  object-fit: cover;     /* keeps crop clean */
-  object-position: center top;
-}
-
-/* make right card less dominant */
-.neo-right .profile-card {
-  max-width: 420px;
-  margin: 0 auto;
-}
-
-/* keep responsive behavior */
-@media (max-width: 1200px) {
-  .neo-left h1 { font-size: 2.3rem; }
-  .neo-left p { font-size: 1.1rem; }
-}
-
-@media (max-width: 980px) {
-  .neo-grid { grid-template-columns: 1fr; }
-  .profile-card img { max-height: 280px; }
-}
-/* Hide top-left site title/brand */
-.navbar .navbar-brand {
-  display: none !important;
-}
-.section-block { margin-top: 1rem; padding: 1rem; }
-.section-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
-.section-head h3 { margin: 0; }
-
-.themes-grid {
-  margin-top: 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(160px, 1fr));
-  gap: .8rem;
-}
-.theme-card { padding: .9rem; }
-.theme-card h4 { margin-top: 0; color: #fff; }
-
-@media (max-width: 980px) {
-  .themes-grid { grid-template-columns: 1fr; }
-}
-/* Astronomy outer background */
-html,
-body {
-  min-height: 100%;
-}
-
-body {
-  background-color: #05070f;
-  background-image: url("/assets/img/astronomy-bg.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-
-/* Dark overlay for readability */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(4, 8, 20, 0.62);
-  z-index: -1;
-}
-
-/* keep content above overlay */
-main,
-.navbar,
-footer {
-  position: relative;
-  z-index: 1;
-}
-/* ===== Global uniform look ===== */
-:root {
-  --neo-bg: #060b1a;
-  --neo-card: rgba(255, 255, 255, 0.05);
-  --neo-border: rgba(255, 255, 255, 0.14);
-  --neo-text: #dbe4ff;
-  --neo-sub: #b8c6ef;
-  --neo-accent: #6a5cff;
-}
-
-body {
-  background:
-    radial-gradient(1100px 500px at -10% -20%, rgba(117, 84, 255, .25), transparent 55%),
-    radial-gradient(900px 420px at 110% 0%, rgba(0, 173, 139, .2), transparent 45%),
-    var(--neo-bg);
-  color: var(--neo-text);
-}
-
-.page-container,
-.post,
-.post-content {
-  max-width: 1320px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.glass-card {
-  border: 1px solid var(--neo-border);
-  border-radius: 16px;
-  background: linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
-}
-/* ===== Publications page ===== */
-.pub-shell {
-  display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.pub-left {
-  border-right: 1px solid var(--neo-border);
-  padding-right: 1rem;
-}
-.pub-pill {
-  display: inline-block;
-  border: 1px solid var(--neo-border);
-  border-radius: 999px;
-  padding: .35rem .75rem;
-  margin-bottom: .7rem;
-  background: rgba(255,255,255,.04);
-}
-.pub-nav {
-  list-style: none;
-  padding: 0;
-  margin: .8rem 0 0 0;
-}
-.pub-nav li {
-  border: 1px solid var(--neo-border);
-  border-radius: 12px;
-  padding: .65rem .8rem;
-  margin-bottom: .55rem;
-  color: var(--neo-sub);
-}
-.pub-nav li.active {
-  border-color: rgba(122, 93, 255, .65);
-  background: rgba(122, 93, 255, .15);
-  color: #fff;
-}
-
-.pub-right h1 { margin: 0 0 .35rem 0; }
-.pub-sub { color: var(--neo-sub); margin-bottom: .8rem; }
-
-/* Style generated bibliography entries (al-folio output) */
-.pub-list .bibliography li {
-  border: 1px solid var(--neo-border);
-  border-radius: 14px;
-  padding: .9rem;
-  margin-bottom: .8rem;
-  background: linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
-}
-.pub-list .bibliography li .title {
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #fff;
-}
-.pub-list .bibliography li .author,
-.pub-list .bibliography li .periodical {
-  color: var(--neo-sub);
-}
-.pub-list .bibliography li .links a {
-  border: 1px solid var(--neo-border);
-  border-radius: 999px;
-  padding: .25rem .65rem;
-  margin-right: .35rem;
-  text-decoration: none;
-  color: var(--neo-text);
-  display: inline-block;
-}
-
-@media (max-width: 980px) {
-  .pub-shell { grid-template-columns: 1fr; }
-  .pub-left { border-right: none; padding-right: 0; }
-}
-html, body {
-  min-height: 100%;
-}
-
-body {
-  background: url("/assets/img/astronomy-bg.jpg") center center / cover no-repeat fixed !important;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background: rgba(5, 10, 25, 0.55);
-  z-index: -1;
-}
+  switchSection('articles');
+});
+</script>
