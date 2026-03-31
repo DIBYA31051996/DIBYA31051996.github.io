@@ -88,23 +88,23 @@ description: Refereed articles, proceedings, invited talks, software, and datase
         list.style.display = show ? '' : 'none';
       });
     }
-    function cleanBrokenAuthorText() {
-  document.querySelectorAll('.pub-list .bibliography li .author').forEach((el) => {
-    el.innerHTML = el.innerHTML
-      .replace(/var\s+cursorPosition[\s\S]*$/i, '')
-      .replace(/setInterval\([\s\S]*$/i, '')
-      .replace(/clearInterval\([\s\S]*$/i, '')
-      .replace(/'\);\s*>.*$/i, '')
-      .replace(/->\s*\d+\s*more\s*authors?/i, '')
-      .trim();
-  });
-}
-    function runArticleEnhancements() {
-  cleanBrokenAuthorText();
-  highlightAuthorName();
-  makeTitlesClickable();
-  initScrollReveal();
-}
+//     function cleanBrokenAuthorText() {
+//   document.querySelectorAll('.pub-list .bibliography li .author').forEach((el) => {
+//     el.innerHTML = el.innerHTML
+//       .replace(/var\s+cursorPosition[\s\S]*$/i, '')
+//       .replace(/setInterval\([\s\S]*$/i, '')
+//       .replace(/clearInterval\([\s\S]*$/i, '')
+//       .replace(/'\);\s*>.*$/i, '')
+//       .replace(/->\s*\d+\s*more\s*authors?/i, '')
+//       .trim();
+//   });
+// }
+//     function runArticleEnhancements() {
+//   cleanBrokenAuthorText();
+//   highlightAuthorName();
+//   makeTitlesClickable();
+//   initScrollReveal();
+// }
 
     function switchSection(target) {
       sections.forEach((section) => { section.hidden = section.dataset.section !== target; });
