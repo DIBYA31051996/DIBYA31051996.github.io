@@ -130,6 +130,10 @@
         </span>
       {% endif %}
     </div>
+   {% assign author_note = entry.authornote | default: entry.author_info %}
+      {% if author_note %}
+      <div class="author-info">{{ author_note | strip }}</div>
+   {% endif %}
 
     <!-- Journal/Book title and date -->
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
