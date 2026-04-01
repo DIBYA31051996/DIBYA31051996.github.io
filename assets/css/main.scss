@@ -722,6 +722,13 @@ footer {
   filter: none;
 }
 
+.js-reveal .pub-list .bibliography li.reveal-pending {
+  opacity: 0;
+  transform: translateY(24px);
+  filter: blur(2px);
+}
+
+
 .js-reveal .pub-list .bibliography li {
   opacity: 0;
   transform: translateY(22px) scale(0.99);
@@ -730,7 +737,13 @@ footer {
 }
 
 .js-reveal .pub-list .bibliography li.reveal-in {
-  animation: pubIn 0.6s cubic-bezier(.22,.8,.2,1) forwards;
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+  transition:
+    opacity 0.55s ease,
+    transform 0.55s cubic-bezier(.22,.8,.2,1),
+    filter 0.55s ease;
 }
 
 @keyframes pubIn {
