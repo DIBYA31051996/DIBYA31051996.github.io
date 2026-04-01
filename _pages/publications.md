@@ -238,23 +238,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
   switchSection('articles');
 });
-  function initMoreAuthorsEffect() {
-    document.querySelectorAll('.more-authors-toggle').forEach((el) => {
-      const collapsed = el.dataset.collapsed || el.textContent.trim();
-      const expanded = el.dataset.expanded || '';
-      let expandedState = false;
+ function initPublicationScrollReveal() {
+    const cards = document.querySelectorAll('.pub-list .bibliography li');
+    if (!cards.length) return;
 
-      el.addEventListener('click', () => {
-        el.classList.add('is-animating');
-
-        setTimeout(() => {
-          expandedState = !expandedState;
-          el.textContent = expandedState ? expanded : collapsed;
-          el.classList.remove('is-animating');
-        }, 140);
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const delay = Number(el.dataset.revealDelay || 0);
+        setTimeout(() => el.classList.add('reveal-in'), delay);
+        observer.unobserve(el); // reveal only once
       });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -8% 0px'
+    });
+
+    cards.forEach((card, i) => {
+      card.dataset.revealDelay = String((i % 10) * 90); // stagger effect
+      observer.observe(card);
     });
   }
 
-  document.addEventListener('DOMContentLoaded', initMoreAuthorsEffect);
+  document.addEventListener('DOMContentLoaded', initPublicationScrollReveal);
 </script>
