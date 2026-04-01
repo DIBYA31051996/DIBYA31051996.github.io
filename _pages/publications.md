@@ -8,7 +8,6 @@ description: Refereed articles, proceedings, software, and datasets.
 ---
 
 <style>
-  /* hide default page heading on this page */
   .post-header .post-title,
   .post-header .post-description,
   .post-header .desc {
@@ -89,8 +88,9 @@ description: Refereed articles, proceedings, software, and datasets.
 </div>
 
 <script>
-document.documentElement.classList.add('js-reveal');
 document.addEventListener('DOMContentLoaded', function () {
+  document.documentElement.classList.add('js-reveal');
+
   const navButtons = Array.from(document.querySelectorAll('.pub-nav-btn'));
   const sections = Array.from(document.querySelectorAll('.pub-list[data-section]'));
   const yearSelect = document.getElementById('pub-year-select');
@@ -190,7 +190,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ONE reveal function only
   function revealVisibleCardsOneByOne() {
     const visibleSection = getVisibleSection();
     if (!visibleSection) return;
