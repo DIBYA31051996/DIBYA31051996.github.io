@@ -152,17 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  function cleanBrokenAuthorText() {
-    document.querySelectorAll('.pub-list .bibliography li .author').forEach((el) => {
-      el.innerHTML = el.innerHTML
-        .replace(/var\s+cursorPosition[\s\S]*$/i, '')
-        .replace(/setInterval\([\s\S]*$/i, '')
-        .replace(/clearInterval\([\s\S]*$/i, '')
-        .replace(/'\);\s*>.*$/i, '')
-        .replace(/->\s*\d+\s*more\s*authors?/i, '')
-        .trim();
-    });
-  }
+  
 
   function highlightAuthorName() {
     document.querySelectorAll('.pub-list .bibliography li .author').forEach((el) => {
@@ -215,7 +205,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   function runArticleEnhancements() {
-    cleanBrokenAuthorText();
     highlightAuthorName();
     makeTitlesClickable();
     showArticleCards();
@@ -250,24 +239,20 @@ document.addEventListener('DOMContentLoaded', function () {
   switchSection('articles');
 });
   function initMoreAuthorsToggle() {
-    document.querySelectorAll('.pub-list .bibliography li .more-authors').forEach((el) => {
-      const toggle = () => {
-        const collapsed = el.dataset.collapsed || '';
-        const expanded = el.dataset.expanded || '';
-        const isCollapsed = el.dataset.state !== 'expanded';
-        el.textContent = isCollapsed ? expanded : collapsed;
-        el.dataset.state = isCollapsed ? 'expanded' : 'collapsed';
-      };
+  document.querySelectorAll('.pub-list .bibliography li .more-authors').forEach((el) => {
+    const collapsed = el.dataset.collapsed || el.textContent.trim();
+    const expanded = el.dataset.expanded || '';
+    let isExpanded = false;
 
-      el.addEventListener('click', toggle);
-      el.addEventListener('keydown', (e) => {
-        if (e.key === 'Enter' || e.key === ' ') {
-          e.preventDefault();
-          toggle();
-        }
-      });
+    el.style.cursor = 'pointer';
+
+    el.addEventListener('click', () => {
+      isExpanded = !isExpanded;
+      el.textContent = isExpanded ? expanded : collapsed;
     });
-  }
-
-  document.addEventListener('DOMContentLoaded', initMoreAuthorsToggle);
+  });
+}
+  document.addEventListener('DOMContentLoaded', () => {
+  initMoreAuthorsToggle();
+});
 </script>
