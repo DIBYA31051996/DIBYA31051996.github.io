@@ -775,11 +775,9 @@ footer {
 /* venue + volume/pages + right date badge */
 .pub-list .bibliography li .periodical-row {
   display: flex;
+  align-items: center;          /* vertical center */
   justify-content: space-between;
-  align-items: center;
-  gap: .8rem;
-  margin-top: .2rem;
-  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .pub-list .bibliography li .periodical {
@@ -795,12 +793,25 @@ footer {
 }
 
 .pub-list .bibliography li .pub-date-badge {
-  margin-left: auto;
-  font-size: .82rem;
-  color: #b9c8ea;
-  padding: .22rem .65rem;
+  margin-left: auto;            /* push fully to right */
+  align-self: center;           /* keep centered in row */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.95rem;           /* bigger text */
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  line-height: 1;
+
+  padding: 0.45rem 0.9rem;      /* bigger pill */
+  min-width: 104px;             /* consistent size */
   border-radius: 999px;
-  border: 1px solid rgba(255,255,255,.16);
-  background: rgba(255,255,255,.04);
+
+  color: #dbe7ff;
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(170, 195, 255, 0.45);  /* single border only */
+  box-shadow: none !important;                   /* remove double border/shadow */
   white-space: nowrap;
 }
