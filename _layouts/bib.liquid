@@ -90,6 +90,11 @@
           {% endif %}
         {% endif %}
       {% endfor %}
+
+      {% if entry.author_info %}
+          <div class="author-info">{{ entry.author_info }}</div>
+      {% endif %}
+
       {% assign more_authors = author_array_size | minus: author_array_limit %}
 
       {% assign more_authors_hide = more_authors | append: ' more author' %}
