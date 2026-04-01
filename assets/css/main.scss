@@ -711,41 +711,25 @@ footer {
   color: #e5edff !important;
 }
 /* Publication cards reveal on scroll */
+/* default visible */
 .pub-list .bibliography li {
-  opacity: 0;
-  transform: translateY(26px) scale(0.985);
-  filter: blur(3px);
-  transition:
-    opacity 0.55s ease,
-    transform 0.55s cubic-bezier(.2, .75, .25, 1),
-    filter 0.55s ease;
-  will-change: opacity, transform, filter;
-}
-
-.pub-list .bibliography li.reveal-in {
   opacity: 1;
-  transform: translateY(0) scale(1);
-  filter: blur(0);
-}
-/* Scroll reveal (one-by-one) for publication cards */
-.pub-list .bibliography li {
-  opacity: 0 !important;
-  transform: translateY(24px) !important;
-  transition: none !important;
-  will-change: opacity, transform;
+  transform: none;
+  filter: none;
 }
 
-.pub-list .bibliography li.reveal-in {
-  animation: pubCardIn 0.6s cubic-bezier(.22, .8, .2, 1) forwards;
+/* only hide when JS is active */
+.js-reveal .pub-list .bibliography li {
+  opacity: 0;
+  transform: translateY(24px);
+  filter: blur(3px);
+}
+
+.js-reveal .pub-list .bibliography li.reveal-in {
+  animation: pubCardIn .6s cubic-bezier(.22,.8,.2,1) forwards;
 }
 
 @keyframes pubCardIn {
-  0% {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(24px); filter: blur(3px); }
+  to   { opacity: 1; transform: translateY(0);    filter: blur(0); }
 }
