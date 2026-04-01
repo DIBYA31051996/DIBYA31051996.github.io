@@ -238,28 +238,45 @@ document.addEventListener('DOMContentLoaded', function () {
 
   switchSection('articles');
 });
- function initPublicationScrollReveal() {
-    const cards = document.querySelectorAll('.pub-list .bibliography li');
+function initScrollRevealPublications() {
+    const cards = Array.from(document.querySelectorAll('.pub-list .bibliography li'));
     if (!cards.length) return;
+
+    // reset state (important if page/tab reloads dynamically)
+    cards.forEach(card => {
+      card.classList.remove('reveal-in');
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(24px)';
+    });
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
+
         const el = entry.target;
-        const delay = Number(el.dataset.revealDelay || 0);
-        setTimeout(() => el.classList.add('reveal-in'), delay);
-        observer.unobserve(el); // reveal only once
+        const index = Number(el.dataset.revealIndex || 0);
+
+        setTimeout(() => {
+          el.classList.add('reveal-in');
+          el.style.opacity = '';
+          el.style.transform = '';
+        }, index * 120); // one-by-one delay
+
+        observer.unobserve(el);
       });
     }, {
-      threshold: 0.12,
-      rootMargin: '0px 0px -8% 0px'
+      threshold: 0.15,
+      rootMargin: '0px 0px -10% 0px'
     });
 
     cards.forEach((card, i) => {
-      card.dataset.revealDelay = String((i % 10) * 90); // stagger effect
+      card.dataset.revealIndex = i;
       observer.observe(card);
     });
   }
 
-  document.addEventListener('DOMContentLoaded', initPublicationScrollReveal);
+  document.addEventListener('DOMContentLoaded', initScrollRevealPublications);
+
+  // If your page has section buttons/tabs, call again after switching:
+  // setTimeout(initScrollRevealPublications, 50);
 </script>
