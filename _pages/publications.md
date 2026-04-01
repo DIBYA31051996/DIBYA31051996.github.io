@@ -89,6 +89,7 @@ description: Refereed articles, proceedings, software, and datasets.
 </div>
 
 <script>
+document.documentElement.classList.add('js-reveal');
 document.addEventListener('DOMContentLoaded', function () {
   const navButtons = Array.from(document.querySelectorAll('.pub-nav-btn'));
   const sections = Array.from(document.querySelectorAll('.pub-list[data-section]'));
