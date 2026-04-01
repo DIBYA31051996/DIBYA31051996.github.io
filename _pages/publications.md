@@ -109,6 +109,39 @@ document.addEventListener('DOMContentLoaded', function () {
     return sections.find((s) => !s.hidden);
   }
 
+  function initScrollReveal(scope = document) {
+  const cards = Array.from(scope.querySelectorAll('.pub-list:not([hidden]) .bibliography li'));
+  if (!cards.length) return;
+
+  cards.forEach((card) => {
+    card.classList.remove('reveal-in');
+    card.classList.add('reveal-pending');
+  });
+
+  const io = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const delay = Number(el.dataset.revealDelay || 0);
+      setTimeout(() => {
+        el.classList.remove('reveal-pending');
+        el.classList.add('reveal-in');
+      }, delay);
+      obs.unobserve(el);
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: "0px 0px -8% 0px"
+  });
+
+  cards.forEach((card, i) => {
+    card.dataset.revealDelay = (i * 100).toString(); // one-by-one
+    io.observe(card);
+  });
+}
+
+
+  
   function collectYears(section) {
     let years = Array.from(section.querySelectorAll('h2.year, h2, h3'))
       .map((el) => (el.textContent.match(/\b(19|20)\d{2}\b/) || [])[0])
