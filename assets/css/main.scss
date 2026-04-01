@@ -336,6 +336,24 @@ footer {
   opacity: .95;
 }
 
+.more-authors-toggle {
+  cursor: pointer;
+  color: #9fc0ff;
+  border-bottom: 1px dashed rgba(159, 192, 255, 0.75);
+  transition: color .2s ease, border-color .2s ease, opacity .2s ease, transform .2s ease;
+  display: inline-block;
+}
+
+.more-authors-toggle:hover {
+  color: #cfe0ff;
+  border-color: rgba(207, 224, 255, 0.95);
+  transform: translateY(-1px);
+}
+
+.more-authors-toggle.is-animating {
+  opacity: .35;
+  transform: translateY(2px);
+}
 
 .pub-list .bibliography li .links a {
   display: inline-block;
