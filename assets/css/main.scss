@@ -772,3 +772,35 @@ footer {
   border-bottom-color: rgba(217, 231, 255, 0.95);
   outline: none;
 }
+/* venue + volume/pages + right date badge */
+.pub-list .bibliography li .periodical-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .8rem;
+  margin-top: .2rem;
+  flex-wrap: wrap;
+}
+
+.pub-list .bibliography li .periodical {
+  margin: 0;
+  color: #d6def8 !important;
+  font-weight: 500;
+}
+
+.pub-list .bibliography li .periodical em {
+  font-style: normal;
+  font-weight: 700;
+  color: #eaf1ff;
+}
+
+.pub-list .bibliography li .pub-date-badge {
+  margin-left: auto;
+  font-size: .82rem;
+  color: #b9c8ea;
+  padding: .22rem .65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.16);
+  background: rgba(255,255,255,.04);
+  white-space: nowrap;
+}
