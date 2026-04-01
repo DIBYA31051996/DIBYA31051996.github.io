@@ -238,21 +238,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
   switchSection('articles');
 });
-  function initMoreAuthorsToggle() {
-  document.querySelectorAll('.pub-list .bibliography li .more-authors').forEach((el) => {
-    const collapsed = el.dataset.collapsed || el.textContent.trim();
-    const expanded = el.dataset.expanded || '';
-    let isExpanded = false;
+  function initMoreAuthorsEffect() {
+    document.querySelectorAll('.more-authors-toggle').forEach((el) => {
+      const collapsed = el.dataset.collapsed || el.textContent.trim();
+      const expanded = el.dataset.expanded || '';
+      let expandedState = false;
 
-    el.style.cursor = 'pointer';
+      el.addEventListener('click', () => {
+        el.classList.add('is-animating');
 
-    el.addEventListener('click', () => {
-      isExpanded = !isExpanded;
-      el.textContent = isExpanded ? expanded : collapsed;
+        setTimeout(() => {
+          expandedState = !expandedState;
+          el.textContent = expandedState ? expanded : collapsed;
+          el.classList.remove('is-animating');
+        }, 140);
+      });
     });
-  });
-}
-  document.addEventListener('DOMContentLoaded', () => {
-  initMoreAuthorsToggle();
-});
+  }
+
+  document.addEventListener('DOMContentLoaded', initMoreAuthorsEffect);
 </script>
