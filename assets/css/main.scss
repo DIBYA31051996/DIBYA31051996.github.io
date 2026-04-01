@@ -712,34 +712,50 @@ footer {
 }
 /* Publication cards reveal on scroll */
 /* default visible */
+/* =========================
+   Publications: reveal + extra-authors toggle
+   ========================= */
+
 .pub-list .bibliography li {
   opacity: 1;
   transform: none;
   filter: none;
 }
 
-/* only hide when JS is active */
-/* reveal animation */
 .js-reveal .pub-list .bibliography li {
   opacity: 0;
-  transform: translateY(22px);
+  transform: translateY(22px) scale(0.99);
   filter: blur(2px);
-}
-.js-reveal .pub-list .bibliography li.reveal-in {
-  animation: pubIn .55s cubic-bezier(.22,.8,.2,1) forwards;
-}
-@keyframes pubIn {
-  from { opacity: 0; transform: translateY(22px); filter: blur(2px); }
-  to   { opacity: 1; transform: translateY(0);    filter: blur(0); }
+  will-change: opacity, transform, filter;
 }
 
-/* clickable additional authors */
+.js-reveal .pub-list .bibliography li.reveal-in {
+  animation: pubIn 0.6s cubic-bezier(.22,.8,.2,1) forwards;
+}
+
+@keyframes pubIn {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.99);
+    filter: blur(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
 .pub-list .bibliography li .more-authors {
   cursor: pointer;
-  border-bottom: 1px dashed rgba(160,190,255,.7);
   color: #9fbfff;
+  border-bottom: 1px dashed rgba(160, 190, 255, 0.7);
+  transition: color .2s ease, border-color .2s ease;
 }
-.pub-list .bibliography li .more-authors:hover {
+
+.pub-list .bibliography li .more-authors:hover,
+.pub-list .bibliography li .more-authors:focus {
   color: #d9e7ff;
-  border-bottom-color: rgba(217,231,255,.9);
+  border-bottom-color: rgba(217, 231, 255, 0.95);
+  outline: none;
 }
