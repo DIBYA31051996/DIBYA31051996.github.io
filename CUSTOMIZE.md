@@ -121,6 +121,7 @@ If the entry matches one of the combinations of the last names and the first nam
 
 There are several custom bibtex keywords that you can use to affect how the entries are displayed on the webpage:
 
+- `authornote` (recommended) / `author_info`: Adds an optional author note line below the author list (for equal contribution, corresponding author, consortium notes, etc.)
 - `abbr`: Adds an abbreviation to the left of the entry. You can add links to these by creating a venue.yaml-file in the \_data folder and adding entries that match.
 - `abstract`: Adds an "Abs" button that expands a hidden text field when clicked to show the abstract text
 - `altmetric`: Adds an [Altmetric](https://www.altmetric.com/) badge (Note: if DOI is provided just use `true`, otherwise only add the altmetric identifier here - the link is generated automatically)
