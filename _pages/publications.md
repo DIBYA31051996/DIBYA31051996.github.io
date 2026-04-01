@@ -152,8 +152,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  
-
   function highlightAuthorName() {
     document.querySelectorAll('.pub-list .bibliography li .author').forEach((el) => {
       let html = el.innerHTML;
@@ -191,23 +189,31 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  function showArticleCards() {
-    const cards = document.querySelectorAll('.pub-list[data-section="articles"] .bibliography li');
+  // ONE reveal function only
+  function revealVisibleCardsOneByOne() {
+    const visibleSection = getVisibleSection();
+    if (!visibleSection) return;
+
+    const cards = Array.from(visibleSection.querySelectorAll('.bibliography li'));
     cards.forEach((card, i) => {
       card.classList.remove('reveal-in');
-      card.style.animationDelay = `${i * 90}ms`;
-      void card.offsetWidth;
-      card.classList.add('reveal-in');
-      card.style.opacity = '1';
-      card.style.filter = 'blur(0)';
-      card.style.transform = 'none';
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(24px)';
+      card.style.filter = 'blur(3px)';
+
+      setTimeout(() => {
+        card.classList.add('reveal-in');
+        card.style.opacity = '';
+        card.style.transform = '';
+        card.style.filter = '';
+      }, i * 120);
     });
   }
 
-  function runArticleEnhancements() {
+  function runEnhancements() {
     highlightAuthorName();
     makeTitlesClickable();
-    showArticleCards();
+    revealVisibleCardsOneByOne();
   }
 
   function switchSection(target) {
@@ -230,53 +236,15 @@ document.addEventListener('DOMContentLoaded', function () {
       yearWrap.style.display = 'none';
     }
 
-    if (target === 'articles') runArticleEnhancements();
+    runEnhancements();
   }
 
   navButtons.forEach((btn) => btn.addEventListener('click', () => switchSection(btn.dataset.target)));
-  yearSelect.addEventListener('change', applyYearFilter);
+  yearSelect.addEventListener('change', () => {
+    applyYearFilter();
+    revealVisibleCardsOneByOne();
+  });
 
   switchSection('articles');
 });
-function initScrollRevealPublications() {
-    const cards = Array.from(document.querySelectorAll('.pub-list .bibliography li'));
-    if (!cards.length) return;
-
-    // reset state (important if page/tab reloads dynamically)
-    cards.forEach(card => {
-      card.classList.remove('reveal-in');
-      card.style.opacity = '0';
-      card.style.transform = 'translateY(24px)';
-    });
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-
-        const el = entry.target;
-        const index = Number(el.dataset.revealIndex || 0);
-
-        setTimeout(() => {
-          el.classList.add('reveal-in');
-          el.style.opacity = '';
-          el.style.transform = '';
-        }, index * 120); // one-by-one delay
-
-        observer.unobserve(el);
-      });
-    }, {
-      threshold: 0.15,
-      rootMargin: '0px 0px -10% 0px'
-    });
-
-    cards.forEach((card, i) => {
-      card.dataset.revealIndex = i;
-      observer.observe(card);
-    });
-  }
-
-  document.addEventListener('DOMContentLoaded', initScrollRevealPublications);
-
-  // If your page has section buttons/tabs, call again after switching:
-  // setTimeout(initScrollRevealPublications, 50);
 </script>
