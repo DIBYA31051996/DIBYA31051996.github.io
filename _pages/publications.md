@@ -269,7 +269,6 @@ document.addEventListener('DOMContentLoaded', function () {
     highlightAuthorName();
     makeTitlesClickable();
     initMoreAuthorsToggle(getVisibleSection());
-    revealVisibleCardsOneByOne();
     initScrollReveal(getVisibleSection());
   }
 
