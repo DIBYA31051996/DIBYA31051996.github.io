@@ -270,6 +270,7 @@ document.addEventListener('DOMContentLoaded', function () {
     makeTitlesClickable();
     initMoreAuthorsToggle(getVisibleSection());
     revealVisibleCardsOneByOne();
+    initScrollReveal(getVisibleSection());
   }
 
   function switchSection(target) {
