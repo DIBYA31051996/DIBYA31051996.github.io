@@ -249,4 +249,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
   switchSection('articles');
 });
+  function initMoreAuthorsToggle() {
+    document.querySelectorAll('.pub-list .bibliography li .more-authors').forEach((el) => {
+      const toggle = () => {
+        const collapsed = el.dataset.collapsed || '';
+        const expanded = el.dataset.expanded || '';
+        const isCollapsed = el.dataset.state !== 'expanded';
+        el.textContent = isCollapsed ? expanded : collapsed;
+        el.dataset.state = isCollapsed ? 'expanded' : 'collapsed';
+      };
+
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggle();
+        }
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', initMoreAuthorsToggle);
 </script>
