@@ -190,6 +190,29 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  function initMoreAuthorsToggle(scope = document) {
+    scope.querySelectorAll('.more-authors').forEach((el) => {
+      if (el.dataset.bound === '1') return;
+      el.dataset.bound = '1';
+
+      const toggle = () => {
+        const collapsed = el.dataset.collapsed || '';
+        const expanded = el.dataset.expanded || '';
+        const isCollapsed = (el.dataset.state || 'collapsed') === 'collapsed';
+        el.textContent = isCollapsed ? expanded : collapsed;
+        el.dataset.state = isCollapsed ? 'expanded' : 'collapsed';
+      };
+
+      el.addEventListener('click', toggle);
+      el.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          toggle();
+        }
+      });
+    });
+  }
+
   function revealVisibleCardsOneByOne() {
     const visibleSection = getVisibleSection();
     if (!visibleSection) return;
@@ -198,9 +221,8 @@ document.addEventListener('DOMContentLoaded', function () {
     cards.forEach((card, i) => {
       card.classList.remove('reveal-in');
       card.style.opacity = '0';
-      card.style.transform = 'translateY(24px)';
-      card.style.filter = 'blur(3px)';
-
+      card.style.transform = 'translateY(22px)';
+      card.style.filter = 'blur(2px)';
       setTimeout(() => {
         card.classList.add('reveal-in');
         card.style.opacity = '';
@@ -213,6 +235,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function runEnhancements() {
     highlightAuthorName();
     makeTitlesClickable();
+    initMoreAuthorsToggle(getVisibleSection());
     revealVisibleCardsOneByOne();
   }
 
