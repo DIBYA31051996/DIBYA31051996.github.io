@@ -816,3 +816,16 @@ footer {
   border: 1px solid rgba(170,195,255,.45);
   box-shadow: none;
 }
+.pub-list .bibliography li .periodical .journal-link {
+  font-size: 1.04rem;   /* little bigger */
+  font-weight: 800;     /* bold */
+  color: #eef3ff;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(170, 200, 255, 0.65);
+  transition: color .2s ease, border-color .2s ease;
+}
+
+.pub-list .bibliography li .periodical a.journal-link:hover {
+  color: #ffffff;
+  border-bottom-color: rgba(220, 235, 255, 0.95);
+}
