@@ -140,12 +140,19 @@
 {% assign venue_month = entry.month | default: '' %}
 {% assign venue_year = entry.year | default: '' %}
 
-<div class="periodical-row">
-  <div class="periodical">
-    {% if venue_name != '' %}<em>{{ venue_name }}</em>{% endif %}
-    {% if entry.volume %} · Vol. {{ entry.volume }}{% endif %}
-    {% if entry.pages %} · pp. {{ entry.pages }}{% endif %}
-  </div>
+{% assign venue_link = entry.journal_url | default: entry.venue_url | default: entry.website %}
+
+<div class="periodical">
+  {% if venue_name != '' %}
+    {% if venue_link %}
+      <a href="{{ venue_link }}" target="_blank" rel="noopener" class="journal-link">{{ venue_name }}</a>
+    {% else %}
+      <span class="journal-link">{{ venue_name }}</span>
+    {% endif %}
+  {% endif %}
+  {% if entry.volume %} · Vol. {{ entry.volume }}{% endif %}
+  {% if entry.pages %} · pp. {{ entry.pages }}{% endif %}
+</div>
 
   {% if venue_year != '' or venue_month != '' %}
     <div class="pub-date-badge">
