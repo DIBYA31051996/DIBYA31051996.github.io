@@ -140,7 +140,7 @@
 {% assign venue_month = entry.month | default: '' %}
 {% assign venue_year = entry.year | default: '' %}
 
-{% assign venue_link = entry.journal_url | default: entry.venue_url | default: entry.website %}
+{% assign venue_link = entry.journalurl | default: entry.journal_url | default: entry.website %}
 
 <div class="periodical-row">
   <div class="periodical">
