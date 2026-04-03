@@ -817,15 +817,14 @@ footer {
   box-shadow: none;
 }
 .pub-list .bibliography li .periodical .journal-link {
-  font-size: 1.04rem;   /* little bigger */
-  font-weight: 800;     /* bold */
-  color: #eef3ff;
-  text-decoration: none;
-  border-bottom: 1px dashed rgba(170, 200, 255, 0.65);
-  transition: color .2s ease, border-color .2s ease;
+  font-size: 1.08rem !important;
+  font-weight: 800 !important;
+  color: #eef3ff !important;
+  text-decoration: none !important;
+  border-bottom: 1px dashed rgba(170, 200, 255, 0.7);
 }
 
 .pub-list .bibliography li .periodical a.journal-link:hover {
-  color: #ffffff;
-  border-bottom-color: rgba(220, 235, 255, 0.95);
+  color: #ffffff !important;
+  border-bottom-color: rgba(220, 235, 255, 0.95) !important;
 }
