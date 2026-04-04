@@ -367,10 +367,17 @@ footer {
   transform: translateY(2px);
 }
 
+.pub-list .bibliography li .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-top: .45rem;
+}
+
 .pub-list .bibliography li .links a {
-  display: inline-block;
-  margin-right: .4rem;
-  margin-top: .35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid rgba(255,255,255,.25);
   border-radius: 999px;
   padding: .22rem .68rem;

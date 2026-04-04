@@ -173,11 +173,25 @@
 </div>
     <!-- Links/Buttons -->
     <div class="links">
+      {% assign archive_prefix = entry.archivePrefix | default: entry.archiveprefix | downcase %}
+      {% assign arxiv_id = entry.arxiv %}
+      {% if arxiv_id == blank and entry.eprint and archive_prefix == 'arxiv' %}
+        {% assign arxiv_id = entry.eprint %}
+      {% endif %}
+      {% if entry.adsurl %}
+        <a href="{{ entry.adsurl }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener">ADS</a>
+      {% endif %}
+      {% if entry.doi %}
+        <a href="{{ entry.doi | prepend: 'https://doi.org/' }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener">DOI</a>
+      {% endif %}
+      {% if arxiv_id %}
+        <a href="{{ arxiv_id | prepend: 'https://arxiv.org/abs/' }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener">arXiv</a>
+      {% endif %}
+      {% if title_link %}
+        <a href="{{ title_link }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener">Link</a>
+      {% endif %}
       {% if entry.abstract %}
         <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
-      {% endif %}
-      {% if entry.arxiv %}
-        <a href="http://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0" role="button">arXiv</a>
       {% endif %}
       {% if entry.bibtex_show %}
         <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
