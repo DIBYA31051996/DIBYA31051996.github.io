@@ -13,3 +13,21 @@ plugins:
   - jemoji
 
 external_sources: []
+
+exclude:
+  - bin
+  - CONTRIBUTING.md
+  - CUSTOMIZE.md
+  - docker-compose.yml
+  - Dockerfile
+  - FAQ.md
+  - Gemfile
+  - Gemfile.lock
+  - INSTALL.md
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - purgecss.config.js
+  - README.md
+  - vendor
+  - _posts/2020-09-28-twitter.md
