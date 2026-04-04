@@ -823,6 +823,21 @@ footer {
   min-width: 0;
 }
 
+.pub-list .bibliography li .periodical .main-result {
+  display: inline-flex;
+  align-items: center;
+  margin-right: .55rem;
+  margin-bottom: .2rem;
+  padding: .16rem .55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.06);
+  color: #f2f6ff;
+  font-size: .82rem;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
 .pub-list .bibliography li .periodical em {
   font-style: normal;
   font-weight: 700;

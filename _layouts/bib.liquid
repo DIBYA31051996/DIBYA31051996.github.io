@@ -154,6 +154,9 @@
 
 <div class="periodical-row">
   <div class="periodical">
+    {% if entry.main_result %}
+      <span class="main-result">{{ entry.main_result }}</span>
+    {% endif %}
     {% if venue_name != '' %}
       {% if venue_link %}
         <a href="{{ venue_link }}" target="_blank" rel="noopener" class="journal-link">{{ venue_name }}</a>
