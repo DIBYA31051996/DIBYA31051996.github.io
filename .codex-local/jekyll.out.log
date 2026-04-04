@@ -1,0 +1,48 @@
+Configuration file: C:/Users/Asus/DIBYA31051996.github.io/_config.yml
+Configuration file: C:/Users/Asus/DIBYA31051996.github.io/_config.local.yml
+            Source: C:/Users/Asus/DIBYA31051996.github.io
+       Destination: C:/Users/Asus/DIBYA31051996.github.io/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed pagination page(s)
+       Imagemagick: Disabled in site.config
+                    done in 13.112 seconds.
+ Auto-regeneration: enabled for 'C:/Users/Asus/DIBYA31051996.github.io'
+LiveReload address: http://127.0.0.1:35729
+    Server address: http://127.0.0.1:4000
+  Server running... press ctrl-c to stop.
+      Regenerating: 1 file(s) changed at 2026-04-04 19:07:01
+                    .codex-local/jekyll.out.log
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 11.1397134 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-04-04 19:07:12
+                    .codex-local/jekyll.err.log
+                    .codex-local/jekyll.out.log
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 10.3360191 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-04-04 19:07:23
+                    .codex-local/jekyll.out.log
+                    .codex-local/jekyll.err.log
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed pagination page(s)
+       Imagemagick: Disabled in site.config
+                    ...done in 9.449129 seconds.
+                    
+      Regenerating: 2 file(s) changed at 2026-04-04 19:07:32
+                    .codex-local/jekyll.out.log
+                    .codex-local/jekyll.err.log
+       Jekyll Feed: Generating feed for posts
+         AutoPages: Disabled/Not configured in site.config.
+        Pagination: Complete, processed pagination page(s)
+       Imagemagick: Disabled in site.config
