@@ -379,13 +379,14 @@ footer {
   align-items: center;
   justify-content: center;
   gap: .45rem;
-  border: 1px solid rgba(255,255,255,.9);
+  border: 1px solid #fff !important;
+  border-color: #fff !important;
   border-radius: 999px;
   padding: .28rem .78rem;
   text-decoration: none;
   color: #ecf1ff;
   font-size: .88rem;
-  background: rgba(255,255,255,.03);
+  background: rgba(15, 20, 35, 0.28);
   box-shadow: none !important;
   outline: none;
 }
@@ -395,7 +396,7 @@ footer {
 }
 
 .pub-list .bibliography li .links a.btn {
-  border-width: 1px !important;
+  border: 1px solid #fff !important;
   box-shadow: none !important;
 }
 
