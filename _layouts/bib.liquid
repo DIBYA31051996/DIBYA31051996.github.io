@@ -179,65 +179,65 @@
         {% assign arxiv_id = entry.eprint %}
       {% endif %}
       {% if entry.adsurl %}
-        <a href="{{ entry.adsurl }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener">ADS</a>
+        <a href="{{ entry.adsurl }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener"><i class="fa-solid fa-magnifying-glass"></i><span>ADS</span></a>
       {% endif %}
       {% if entry.doi %}
-        <a href="{{ entry.doi | prepend: 'https://doi.org/' }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener">DOI</a>
+        <a href="{{ entry.doi | prepend: 'https://doi.org/' }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener"><i class="fa-solid fa-link"></i><span>DOI</span></a>
       {% endif %}
       {% if arxiv_id %}
-        <a href="{{ arxiv_id | prepend: 'https://arxiv.org/abs/' }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener">arXiv</a>
+        <a href="{{ arxiv_id | prepend: 'https://arxiv.org/abs/' }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i><span>arXiv</span></a>
       {% endif %}
       {% if title_link %}
-        <a href="{{ title_link }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener">Link</a>
+        <a href="{{ title_link }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i><span>Link</span></a>
       {% endif %}
       {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+        <a class="abstract btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-align-left"></i><span>Abs</span></a>
       {% endif %}
       {% if entry.bibtex_show %}
-        <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+        <a class="bibtex btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-quote-right"></i><span>Bib</span></a>
       {% endif %}
       {% if entry.html %}
-        <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button">HTML</a>
+        <a href="{{ entry.html }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-code"></i><span>HTML</span></a>
       {% endif %}
       {% if entry.pdf %}
         {% if entry.pdf contains '://' %}
-          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-file-pdf"></i><span>PDF</span></a>
         {% else %}
-          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">PDF</a>
+          <a href="{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-file-pdf"></i><span>PDF</span></a>
         {% endif %}
       {% endif %}
       {% if entry.supp %}
         {% if entry.supp contains '://' %}
-          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <a href="{{ entry.supp }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-paperclip"></i><span>Supp</span></a>
         {% else %}
-          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Supp</a>
+          <a href="{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-paperclip"></i><span>Supp</span></a>
         {% endif %}
       {% endif %}
       {% if entry.video %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Video</a>
+        <a class="abstract btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-play"></i><span>Video</span></a>
       {% endif %}
       {% if entry.blog %}
-        <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button">Blog</a>
+        <a href="{{ entry.blog }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-pen-nib"></i><span>Blog</span></a>
       {% endif %}
       {% if entry.code %}
-        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+        <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-code"></i><span>Code</span></a>
       {% endif %}
       {% if entry.poster %}
         {% if entry.poster contains '://' %}
-          <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          <a href="{{ entry.poster }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-image"></i><span>Poster</span></a>
         {% else %}
-          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Poster</a>
+          <a href="{{ entry.poster | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-image"></i><span>Poster</span></a>
         {% endif %}
       {% endif %}
       {% if entry.slides %}
         {% if entry.slides contains '://' %}
-          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          <a href="{{ entry.slides }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-display"></i><span>Slides</span></a>
         {% else %}
-          <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+          <a href="{{ entry.slides | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-display"></i><span>Slides</span></a>
         {% endif %}
       {% endif %}
       {% if entry.website %}
-        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
+        <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button"><i class="fa-solid fa-globe"></i><span>Website</span></a>
       {% endif %}
     </div>
     {% if site.enable_publication_badges %}

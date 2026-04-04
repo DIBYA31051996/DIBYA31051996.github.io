@@ -378,16 +378,31 @@ footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: .45rem;
   border: 1px solid rgba(255,255,255,.25);
   border-radius: 999px;
-  padding: .22rem .68rem;
+  padding: .28rem .78rem;
   text-decoration: none;
   color: #ecf1ff;
   font-size: .88rem;
+  background: rgba(255,255,255,.03);
+  box-shadow: none !important;
+  outline: none;
 }
 .pub-list .bibliography li .links a:hover {
   border-color: rgba(122,93,255,.9);
   background: rgba(122,93,255,.14);
+}
+
+.pub-list .bibliography li .links a.btn {
+  border-width: 1px !important;
+  box-shadow: none !important;
+}
+
+.pub-list .bibliography li .links a i {
+  font-size: .8rem;
+  line-height: 1;
+  opacity: .92;
 }
 
 /* Proceedings should not be black */
