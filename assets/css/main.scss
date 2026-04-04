@@ -320,10 +320,11 @@ footer {
 }
 
 .pub-list .bibliography li .title {
-  font-size: 1.08rem;
-  font-weight: 700;
+  font-size: 1.28rem;
+  font-weight: 800;
   color: #fff;
-  margin-bottom: .3rem;
+  line-height: 1.35;
+  margin-bottom: .35rem;
 }
 .pub-list .bibliography li .author,
 .pub-list .bibliography li .periodical {
@@ -700,15 +701,15 @@ footer {
   box-shadow: none !important;            /* remove second border/shadow */
   outline: none !important;
 }
-/* 4) Make journal title / venue line bold */
+/* 4) Keep the journal / venue line secondary */
 .pub-list .bibliography li .periodical {
-  font-weight: 700 !important;
+  font-weight: 500 !important;
   color: #d6def8 !important;
 }
 .pub-list .bibliography li .periodical em {
   font-style: normal !important;
-  font-weight: 700 !important;
-  color: #e5edff !important;
+  font-weight: 500 !important;
+  color: #d6def8 !important;
 }
 /* Publication cards reveal on scroll */
 /* default visible */
@@ -817,9 +818,9 @@ footer {
   box-shadow: none;
 }
 .pub-list .bibliography li .periodical .journal-link {
-  font-size: 1.22rem !important;
-  font-weight: 800 !important;
-  color: #eef3ff !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  color: #d6def8 !important;
   text-decoration: none !important;
   border-bottom: 1px dashed rgba(170, 200, 255, 0.7);
   line-height: 1.35;
