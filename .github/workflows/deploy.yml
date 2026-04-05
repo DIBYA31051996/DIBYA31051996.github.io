@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
 
       - name: Setup Pages
         id: pages
@@ -35,7 +37,10 @@ jobs:
         env:
           JEKYLL_ENV: production
         run: |
+          echo "Building commit: $GITHUB_SHA"
+          sed -n '1,20p' _pages/about.md
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+          grep -q "neo-home" _site/index.html
           touch _site/.nojekyll
 
       - name: Upload artifact
@@ -59,6 +64,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
