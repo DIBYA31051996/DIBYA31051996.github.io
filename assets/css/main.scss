@@ -819,23 +819,33 @@ footer {
 
 /* left part */
 .pub-list .bibliography li .periodical {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
   margin: 0;
   min-width: 0;
 }
 
-.pub-list .bibliography li .periodical .main-result {
-  display: inline-flex;
-  align-items: center;
-  margin-right: .55rem;
-  margin-bottom: .2rem;
-  padding: .16rem .55rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.38);
-  background: rgba(255, 255, 255, 0.06);
-  color: #f2f6ff;
-  font-size: .82rem;
-  font-weight: 700;
-  vertical-align: middle;
+.pub-list .bibliography li .periodical .periodical-copy {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.pub-list .bibliography li .periodical .result-plot {
+  flex: 0 0 118px;
+  width: 118px;
+  height: 68px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.pub-list .bibliography li .periodical .result-plot img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .pub-list .bibliography li .periodical em {
