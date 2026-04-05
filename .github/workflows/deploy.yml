@@ -36,6 +36,8 @@ jobs:
           JEKYLL_ENV: production
         run: |
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+          echo "sha=${GITHUB_SHA}" > _site/deploy-marker.txt
+          echo "workflow=${GITHUB_WORKFLOW}" >> _site/deploy-marker.txt
           touch _site/.nojekyll
 
       - name: Upload artifact
@@ -72,6 +74,8 @@ jobs:
           JEKYLL_ENV: production
         run: |
           bundle exec jekyll build
+          echo "sha=${GITHUB_SHA}" > _site/deploy-marker.txt
+          echo "workflow=${GITHUB_WORKFLOW}" >> _site/deploy-marker.txt
           touch _site/.nojekyll
 
       - name: Publish to gh-pages branch
