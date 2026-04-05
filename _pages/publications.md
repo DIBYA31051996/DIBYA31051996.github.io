@@ -39,12 +39,15 @@ description: Refereed articles, proceedings, software, and datasets.
         <p class="pub-sub" id="pub-section-subtitle">Journal articles and preprints</p>
       </div>
 
-      <label class="pub-year-filter" for="pub-year-select" id="pub-year-wrap">
-        <span>Year</span>
-        <select id="pub-year-select">
-          <option value="all">All Years</option>
-        </select>
-      </label>
+      <div class="pub-tools">
+        <label class="pub-year-filter" for="pub-year-select" id="pub-year-wrap">
+          <span>Year</span>
+          <select id="pub-year-select">
+            <option value="all">All Years</option>
+          </select>
+        </label>
+        <div class="pub-items-count" id="pub-items-count">0 Items</div>
+      </div>
     </div>
 
     <div class="pub-list" data-section="articles">
@@ -57,12 +60,18 @@ description: Refereed articles, proceedings, software, and datasets.
 
     <div class="pub-list" data-section="software" hidden>
       <ul class="bibliography">
-        <li>
-          <div class="title">scoobi</div>
+        <li data-year="2025">
+          <div class="title">SCOOBI</div>
           <div class="author">Dibya Kirti Mishra</div>
-          <div class="periodical"><em>Zenodo software record • Research software</em></div>
+          <p class="pub-desc">Solar feature tracking and analysis software for bipolar magnetic regions.</p>
+          <div class="periodical-row">
+            <div class="periodical"><span class="periodical-copy">Zenodo software record • Python • Solar magnetic regions • Tracking</span></div>
+            <div class="pub-date-badge">2025 Jun</div>
+          </div>
           <div class="links">
-            <a href="https://zenodo.org/search?q=scoobi" target="_blank" rel="noopener">Open</a>
+            <a href="https://github.com/DIBYA31051996/scoobi" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repo</a>
+            <a href="https://github.com/DIBYA31051996/scoobi#readme" target="_blank" rel="noopener"><i class="fa-solid fa-book"></i> Docs</a>
+            <a href="https://github.com/DIBYA31051996/scoobi/releases" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>
           </div>
         </li>
       </ul>
@@ -70,12 +79,16 @@ description: Refereed articles, proceedings, software, and datasets.
 
     <div class="pub-list" data-section="data" hidden>
       <ul class="bibliography">
-        <li>
+        <li data-year="2025">
           <div class="title">PNI Data</div>
           <div class="author">Dibya Kirti Mishra</div>
-          <div class="periodical"><em>Zenodo dataset record • PNI • Data</em></div>
+          <p class="pub-desc">Polar Network Index (PNI) dataset archived on Zenodo for long-baseline solar activity studies.</p>
+          <div class="periodical-row">
+            <div class="periodical"><span class="periodical-copy">Zenodo dataset record • PNI • Polar fields • Data</span></div>
+            <div class="pub-date-badge">2025 Sep</div>
+          </div>
           <div class="links">
-            <a href="https://zenodo.org/search?q=PNI" target="_blank" rel="noopener">Open</a>
+            <a href="https://zenodo.org/search?q=PNI" target="_blank" rel="noopener"><i class="fa-solid fa-database"></i> Link</a>
           </div>
         </li>
       </ul>
@@ -91,14 +104,15 @@ document.addEventListener('DOMContentLoaded', function () {
   const sections = Array.from(document.querySelectorAll('.pub-list[data-section]'));
   const yearSelect = document.getElementById('pub-year-select');
   const yearWrap = document.getElementById('pub-year-wrap');
+  const itemsCount = document.getElementById('pub-items-count');
   const sectionTitle = document.getElementById('pub-section-title');
   const sectionSubtitle = document.getElementById('pub-section-subtitle');
 
   const sectionMeta = {
     articles: { title: 'Refereed Articles', subtitle: 'Journal articles and preprints', yearFilter: true },
     proceedings: { title: 'Proceedings', subtitle: 'Conference and symposium papers', yearFilter: true },
-    software: { title: 'Published Software', subtitle: 'Open-source tools and research software', yearFilter: false },
-    data: { title: 'Published Data', subtitle: 'Datasets, catalogs, and archives', yearFilter: false }
+    software: { title: 'Published Software', subtitle: 'Reusable software and code releases', yearFilter: true },
+    data: { title: 'Published Data', subtitle: 'Datasets, catalogs, and archives', yearFilter: true }
   };
 
   function getVisibleSection() {
@@ -139,6 +153,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
   
   function collectYears(section) {
+    const cardYears = Array.from(section.querySelectorAll('.bibliography li')).map((li) => {
+      const attrYear = li.dataset.year;
+      if (attrYear) return attrYear;
+      const badge = li.querySelector('.pub-date-badge');
+      const text = badge ? badge.textContent : li.textContent;
+      return (text.match(/\b(19|20)\d{2}\b/) || [])[0];
+    }).filter(Boolean);
+
+    if (cardYears.length) {
+      return [...new Set(cardYears)].sort((a, b) => Number(b) - Number(a));
+    }
+
     let years = Array.from(section.querySelectorAll('h2.year, h2, h3'))
       .map((el) => (el.textContent.match(/\b(19|20)\d{2}\b/) || [])[0])
       .filter(Boolean);
@@ -169,6 +195,21 @@ document.addEventListener('DOMContentLoaded', function () {
   function applyYearFilter() {
     const section = getVisibleSection();
     const selected = yearSelect.value;
+    const cards = Array.from(section.querySelectorAll('.bibliography li'));
+
+    if (cards.length) {
+      cards.forEach((li) => {
+        const attrYear = li.dataset.year;
+        const badge = li.querySelector('.pub-date-badge');
+        const text = badge ? badge.textContent : li.textContent;
+        const y = attrYear || (text.match(/\b(19|20)\d{2}\b/) || [])[0];
+        const show = selected === 'all' || selected === y;
+        li.style.display = show ? '' : 'none';
+      });
+      updateItemsCount();
+      return;
+    }
+
     const yearHeaders = Array.from(section.querySelectorAll('h2.year, h2, h3'));
 
     yearHeaders.forEach((header) => {
@@ -180,6 +221,15 @@ document.addEventListener('DOMContentLoaded', function () {
       header.style.display = show ? '' : 'none';
       list.style.display = show ? '' : 'none';
     });
+
+    updateItemsCount();
+  }
+
+  function updateItemsCount() {
+    const section = getVisibleSection();
+    const visibleCards = Array.from(section.querySelectorAll('.bibliography li')).filter((li) => li.offsetParent !== null);
+    const n = visibleCards.length;
+    itemsCount.textContent = `${n} ${n === 1 ? 'Item' : 'Items'}`;
   }
 
   function highlightAuthorName() {
@@ -286,6 +336,7 @@ document.addEventListener('DOMContentLoaded', function () {
       applyYearFilter();
     } else {
       yearWrap.style.display = 'none';
+      updateItemsCount();
     }
 
     runEnhancements();

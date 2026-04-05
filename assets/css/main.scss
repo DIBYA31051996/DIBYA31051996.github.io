@@ -921,8 +921,34 @@ footer {
   background: rgba(35, 50, 92, 0.5);
 }
 
+.navbar .navbar-nav .nav-item.active > .nav-link {
+  border-color: rgba(151, 125, 255, 0.95) !important;
+  box-shadow:
+    0 0 0 1px rgba(151, 125, 255, 0.35) inset,
+    0 8px 20px rgba(78, 69, 170, 0.28);
+  color: #ffffff !important;
+}
+
 @media (max-width: 980px) {
   .navbar .navbar-nav .nav-item {
     margin: 0.22rem 0;
   }
+}
+
+.pub-tools {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pub-items-count {
+  color: #dce7ff;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.pub-list .bibliography li .pub-desc {
+  margin: 0.2rem 0 0.55rem;
+  color: #d6def8;
+  line-height: 1.45;
 }
