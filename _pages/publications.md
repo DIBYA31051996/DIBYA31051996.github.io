@@ -79,8 +79,8 @@ description: Refereed articles, proceedings, software, and datasets.
     <div class="pub-list" data-section="data" hidden>
       <ul class="bibliography">
         <li data-year="2025">
-          <div class="title">A Unified Sunspot Group Dataset (RGO/SOON/NOAA) from 1874 to Present</div>
-          <p class="pub-desc">Unified sunspot group dataset combining RGO, SOON, and NOAA records from 1874 onward.</p>
+          <div class="title">PNI Data</div>
+          <p class="pub-desc">Polar Network Index (PNI) dataset archived on Zenodo for long-baseline solar activity studies.</p>
           <div class="periodical-row">
             <div class="periodical"><span class="periodical-copy">Zenodo dataset record • 1904 to 2022 years • Data</span></div>
             <div class="pub-date-badge">2025 Sep</div>
@@ -88,7 +88,7 @@ description: Refereed articles, proceedings, software, and datasets.
           <div class="links">
             <a href="https://github.com/DIBYA31051996/kosopni" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repo</a>
             <a href="https://github.com/DIBYA31051996/kosopni#readme" target="_blank" rel="noopener"><i class="fa-solid fa-book"></i> Docs</a>
-            <a href="https://zenodo.org/search?q=kosopni" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>
+            <a href="https://doi.org/10.5281/zenodo.14681001" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>
           </div>
         </li>
         <li data-year="2024">
@@ -101,7 +101,7 @@ description: Refereed articles, proceedings, software, and datasets.
           <div class="links">
             <a href="https://github.com/DIBYA31051996/kosopni" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repo</a>
             <a href="https://github.com/DIBYA31051996/kosopni#readme" target="_blank" rel="noopener"><i class="fa-solid fa-book"></i> Docs</a>
-            <a href="https://zenodo.org/search?q=kodaikanal+sunspot+mask" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>
+            <a href="https://doi.org/10.5281/zenodo.14681001" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>
           </div>
         </li>
       </ul>
