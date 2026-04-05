@@ -1,4 +1,4 @@
----
+﻿---
 layout: page
 title: Home
 permalink: /
@@ -7,7 +7,7 @@ nav_order: 1
 ---
 
 <div class="neo-home">
-  <div class="neo-pill"><span class="dot"></span> Solar physicist • Data-driven heliophysics</div>
+  <div class="neo-pill"><span class="dot"></span> Solar physicist â€¢ Data-driven heliophysics</div>
 
   <div class="neo-grid">
     <section class="neo-left glass">
@@ -44,7 +44,7 @@ nav_order: 1
         <img src="/assets/img/prof_pic.jpg" alt="Dibya Kirti Mishra" />
         <div class="profile-body">
           <h3>Dibya Kirti Mishra</h3>
-          <p>Senior Project Associate (SPA) � <a href="https://www.aries.res.in/" target="_blank" rel="noopener">ARIES</a> � Nainital, India</p>
+          <p>Senior Project Associate (SPA) • <a href="https://www.aries.res.in/" target="_blank" rel="noopener">ARIES</a> • Nainital, India</p>
           <div class="chips">
             <a href="mailto:dibyakirtimishra@gmail.com">Connect</a>
             <a href="/projects/">Research</a>
@@ -110,5 +110,6 @@ nav_order: 1
     <p>Future pages for field notes and visualization snapshots.</p>
   </div>
 </div>
+
 
 
