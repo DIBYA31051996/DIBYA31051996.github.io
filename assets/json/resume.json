@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Dibya Kirti Mishra",
-    "label": "Senior Research Fellow",
+    "label": "Senior Project Associate (SPA)",
     "image": "",
     "email": "dibyakirtimishra@aries.res.in,dibyakirtimishra@gmail.com",
     "phone": "",
@@ -25,10 +25,10 @@
   "work": [
     {
       "name": "Aryabhatta Research Institute of Observational Sciences (ARIES)",
-      "position": "Senior Research Fellow (SRF)",
+      "position": "Senior Project Associate (SPA)",
       "url": "",
       "startDate": "2020",
-      "endDate": "-",
+      "endDate": "2025",
       "summary": "Working on long-term study of the Sun",
       "highlights": ["Solar Physics"]
     }
