@@ -844,7 +844,7 @@ footer {
   height: 100%;
   overflow: hidden;
   border-radius: 12px;
-  opacity: .56;
+  opacity: .44;
   pointer-events: none;
 }
 
@@ -858,13 +858,11 @@ footer {
 .pub-list .bibliography li .periodical .result-plot img {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 0;
   display: block;
-  width: 135%;
-  height: 135%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
-  object-position: center;
+  width: 100%;
+  height: auto;
+  transform: translateY(-50%);
   filter: saturate(.95) contrast(1.05);
 }
 
