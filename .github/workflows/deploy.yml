@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -20,8 +20,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          ref: ${{ github.sha }}
 
       - name: Setup Pages
         id: pages
@@ -37,10 +35,7 @@ jobs:
         env:
           JEKYLL_ENV: production
         run: |
-          echo "Building commit: $GITHUB_SHA"
-          sed -n '1,20p' _pages/about.md
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
-          grep -q "neo-home" _site/index.html
           touch _site/.nojekyll
 
       - name: Upload artifact
@@ -58,32 +53,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-  publish_gh_pages_branch:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          ref: ${{ github.sha }}
-
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: "3.2.2"
-          bundler-cache: true
-
-      - name: Build site
-        env:
-          JEKYLL_ENV: production
-        run: |
-          bundle exec jekyll build
-          touch _site/.nojekyll
-
-      - name: Publish to gh-pages branch
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./_site
-          publish_branch: gh-pages
-          force_orphan: true
