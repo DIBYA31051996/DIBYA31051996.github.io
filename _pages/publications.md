@@ -79,15 +79,29 @@ description: Refereed articles, proceedings, software, and datasets.
     <div class="pub-list" data-section="data" hidden>
       <ul class="bibliography">
         <li data-year="2025">
-          <div class="title">PNI Data</div>
-          <div class="author">Dibya Kirti Mishra</div>
-          <p class="pub-desc">Polar Network Index (PNI) dataset archived on Zenodo for long-baseline solar activity studies.</p>
+          <div class="title">A Unified Sunspot Group Dataset (RGO/SOON/NOAA) from 1874 to Present</div>
+          <p class="pub-desc">Unified sunspot group dataset combining RGO, SOON, and NOAA records from 1874 onward.</p>
           <div class="periodical-row">
-            <div class="periodical"><span class="periodical-copy">Zenodo dataset record • PNI • Polar fields • Data</span></div>
+            <div class="periodical"><span class="periodical-copy">Zenodo dataset record • 1904 to 2022 years • Data</span></div>
             <div class="pub-date-badge">2025 Sep</div>
           </div>
           <div class="links">
-            <a href="https://zenodo.org/search?q=PNI" target="_blank" rel="noopener"><i class="fa-solid fa-database"></i> Link</a>
+            <a href="https://github.com/DIBYA31051996/kosopni" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repo</a>
+            <a href="https://github.com/DIBYA31051996/kosopni#readme" target="_blank" rel="noopener"><i class="fa-solid fa-book"></i> Docs</a>
+            <a href="https://zenodo.org/search?q=kosopni" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>
+          </div>
+        </li>
+        <li data-year="2024">
+          <div class="title">Kodaikanal Solar Observatory (KoSO) White-Light Sunspot Regions Masks (1904-2022)</div>
+          <p class="pub-desc">White-light sunspot region masks from Kodaikanal Solar Observatory spanning 1904 to 2022.</p>
+          <div class="periodical-row">
+            <div class="periodical"><span class="periodical-copy">Zenodo dataset record • 1904 to 2022 years • Data</span></div>
+            <div class="pub-date-badge">2024 Jun</div>
+          </div>
+          <div class="links">
+            <a href="https://github.com/DIBYA31051996/kosopni" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repo</a>
+            <a href="https://github.com/DIBYA31051996/kosopni#readme" target="_blank" rel="noopener"><i class="fa-solid fa-book"></i> Docs</a>
+            <a href="https://zenodo.org/search?q=kodaikanal+sunspot+mask" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>
           </div>
         </li>
       </ul>
@@ -235,10 +249,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.pub-list .bibliography li .author').forEach((el) => {
       let html = el.innerHTML;
       html = html.replace(/<span class="me-highlight">(.*?)<\/span>/g, '$1');
-      html = html.replace(
-        /Dibya Kirti Mishra/g,
-        '<span class="me-highlight">Dibya <span class="name-rest">Kirti Mishra</span></span>'
-      );
+      html = html.replace(/Dibya Kirti Mishra/g, '<span class="me-highlight">Dibya Kirti Mishra</span>');
       el.innerHTML = html;
     });
   }

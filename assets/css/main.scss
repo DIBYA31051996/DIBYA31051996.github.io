@@ -957,7 +957,7 @@ footer {
    Final user requested tweaks
    ========================= */
 .navbar .navbar-nav .nav-item .nav-link {
-  font-size: 1.14rem !important;
+  font-size: 1.18rem !important;
   border: 1px solid transparent !important; /* no visible border when not active page */
 }
 
@@ -982,11 +982,11 @@ footer {
 }
 
 .pub-nav-btn {
-  font-size: 1.06rem;
+  font-size: 1.1rem;
 }
 
 .pub-pill {
-  font-size: 1.08rem;
+  font-size: 1.12rem;
 }
 
 .pub-list .bibliography li .author .me-highlight {
@@ -994,5 +994,5 @@ footer {
 }
 
 .pub-list .bibliography li .author .me-highlight .name-rest {
-  color: #79d1ff !important;
+  color: inherit !important;
 }
