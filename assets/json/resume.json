@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Dibya Kirti Mishra",
-    "label": "Senior Project Associate (SPA)",
+    "label": "Senior Project Associate (SPA), RDO (2026-Present)",
     "image": "",
     "email": "dibyakirtimishra@aries.res.in,dibyakirtimishra@gmail.com",
     "phone": "",
@@ -25,10 +25,10 @@
   "work": [
     {
       "name": "Aryabhatta Research Institute of Observational Sciences (ARIES)",
-      "position": "Senior Project Associate (SPA)",
+      "position": "Senior Project Associate (SPA), RDO",
       "url": "https://www.aries.res.in/",
-      "startDate": "2020",
-      "endDate": "2025",
+      "startDate": "2026",
+      "endDate": "Present",
       "summary": "Working on long-term study of the Sun",
       "highlights": ["Solar Physics"]
     }
@@ -41,7 +41,7 @@
       "area": "Solar Physics",
       "studyType": "PhD",
       "startDate": "2020",
-      "endDate": "-",
+      "endDate": "2025",
       "score": "",
       "courses": ""
     },
