@@ -62,10 +62,9 @@ description: Refereed articles, proceedings, software, and datasets.
       <ul class="bibliography">
         <li data-year="2025">
           <div class="title">SCOOBI</div>
-          <div class="author">Dibya Kirti Mishra</div>
-          <p class="pub-desc">Solar feature tracking and analysis software for bipolar magnetic regions.</p>
+          <p class="pub-desc">Solar Conventionality-based Organizing Observation data</p>
           <div class="periodical-row">
-            <div class="periodical"><span class="periodical-copy">Zenodo software record • Python • Solar magnetic regions • Tracking</span></div>
+            <div class="periodical"><span class="periodical-copy">Python only</span></div>
             <div class="pub-date-badge">2025 Jun</div>
           </div>
           <div class="links">
@@ -236,7 +235,10 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('.pub-list .bibliography li .author').forEach((el) => {
       let html = el.innerHTML;
       html = html.replace(/<span class="me-highlight">(.*?)<\/span>/g, '$1');
-      html = html.replace(/Dibya Kirti Mishra/g, '<span class="me-highlight">Dibya Kirti Mishra</span>');
+      html = html.replace(
+        /Dibya Kirti Mishra/g,
+        '<span class="me-highlight">Dibya <span class="name-rest">Kirti Mishra</span></span>'
+      );
       el.innerHTML = html;
     });
   }

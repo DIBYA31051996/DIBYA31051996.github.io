@@ -12,11 +12,13 @@
               >
             {% endif %}
             {% if site.middle_name %}
-              {{- site.middle_name -}}
-              &nbsp;
+              <span class="brand-rest">
+                {{- site.middle_name -}}
+                &nbsp;
+              </span>
             {% endif %}
             {% if site.last_name %}
-              {{- site.last_name -}}
+              <span class="brand-rest">{{- site.last_name -}}</span>
             {% endif %}
           {% else %}
             {{- site.title -}}

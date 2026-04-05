@@ -952,3 +952,47 @@ footer {
   color: #d6def8;
   line-height: 1.45;
 }
+
+/* =========================
+   Final user requested tweaks
+   ========================= */
+.navbar .navbar-nav .nav-item .nav-link {
+  font-size: 1.14rem !important;
+  border: 1px solid transparent !important; /* no visible border when not active page */
+}
+
+.navbar .navbar-nav .nav-item.active > .nav-link {
+  border: 1px solid rgba(151, 125, 255, 0.95) !important;
+}
+
+.navbar .navbar-brand {
+  font-size: 1.34rem;
+}
+
+.navbar .navbar-brand .brand-rest {
+  color: #9ad4ff;
+}
+
+.navbar .navbar-brand::before {
+  background: linear-gradient(90deg, #7b5cff 0 50%, #2fb6ff 50% 100%) !important;
+}
+
+.pub-left h3 {
+  font-size: 1.36rem;
+}
+
+.pub-nav-btn {
+  font-size: 1.06rem;
+}
+
+.pub-pill {
+  font-size: 1.08rem;
+}
+
+.pub-list .bibliography li .author .me-highlight {
+  color: #ffffff !important;
+}
+
+.pub-list .bibliography li .author .me-highlight .name-rest {
+  color: #79d1ff !important;
+}
