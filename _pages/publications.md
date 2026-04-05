@@ -91,19 +91,7 @@ description: Refereed articles, proceedings, software, and datasets.
             <a href="https://doi.org/10.5281/zenodo.14681001" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>
           </div>
         </li>
-        <li data-year="2024">
-          <div class="title">Kodaikanal Solar Observatory (KoSO) White-Light Sunspot Regions Masks (1904-2022)</div>
-          <p class="pub-desc">White-light sunspot region masks from Kodaikanal Solar Observatory spanning 1904 to 2022.</p>
-          <div class="periodical-row">
-            <div class="periodical"><span class="periodical-copy">Zenodo dataset record • 1904 to 2022 years • Data</span></div>
-            <div class="pub-date-badge">2024 Jun</div>
-          </div>
-          <div class="links">
-            <a href="https://github.com/DIBYA31051996/kosopni" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Repo</a>
-            <a href="https://github.com/DIBYA31051996/kosopni#readme" target="_blank" rel="noopener"><i class="fa-solid fa-book"></i> Docs</a>
-            <a href="https://doi.org/10.5281/zenodo.14681001" target="_blank" rel="noopener"><i class="fa-solid fa-arrow-up-right-from-square"></i> Link</a>
-          </div>
-        </li>
+        
       </ul>
     </div>
   </section>
@@ -364,3 +352,4 @@ document.addEventListener('DOMContentLoaded', function () {
   switchSection('articles');
 });
 </script>
+
