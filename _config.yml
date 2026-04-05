@@ -219,6 +219,10 @@ exclude:
   - package-lock.json
   - purgecss.config.js
   - README.md
+  - assets/jupyter
+  - assets/jupyter/**
+  - assets/jupyter/blog.ipynb
+  - assets/jupyter/*.ipynb
   - vendor
 keep_files:
   - CNAME
