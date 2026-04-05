@@ -213,3 +213,58 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+/*****************************
+ * CV VISUAL REFRESH
+ *****************************/
+
+.cv {
+  .card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(164, 190, 255, 0.25);
+    border-radius: 16px;
+    background: rgba(8, 14, 30, 0.72) !important;
+    box-shadow: 0 14px 34px rgba(0, 0, 0, 0.28);
+    backdrop-filter: blur(8px);
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(135deg, rgba(4, 9, 22, 0.82), rgba(6, 13, 34, 0.62)),
+      url("https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_0171.jpg") center/cover no-repeat;
+    opacity: 0.48;
+    pointer-events: none;
+  }
+
+  .card:nth-of-type(3n + 2)::before {
+    background:
+      linear-gradient(135deg, rgba(6, 10, 24, 0.84), rgba(8, 17, 36, 0.62)),
+      url("https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_0304.jpg") center/cover no-repeat;
+    opacity: 0.44;
+  }
+
+  .card:nth-of-type(3n)::before {
+    background:
+      linear-gradient(135deg, rgba(6, 12, 28, 0.86), rgba(10, 18, 38, 0.64)),
+      url("https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_0131.jpg") center/cover no-repeat;
+    opacity: 0.42;
+  }
+
+  .card > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .card-title {
+    font-size: 1.35rem;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.8rem;
+    color: #f2f7ff;
+    text-shadow: 0 0 12px rgba(91, 162, 255, 0.22);
+  }
+}
