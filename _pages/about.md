@@ -38,7 +38,7 @@ nav_order: 1
       <div class="glass neo-story">
         <h3>My Journey: From Odisha to Solar Physics</h3>
         <p>
-          I am currently a Senior Project Associate (SPA), RDO (2026-Present) at <a href="https://www.aries.res.in/" target="_blank" rel="noopener">ARIES</a>, Nainital. My work focuses on
+          I am currently a Senior Project Associate (SPA) (2026-Present) at <a href="https://www.aries.res.in/" target="_blank" rel="noopener">ARIES</a>, Nainital. My work focuses on
           long-term solar activity, chromospheric/sunspot analysis, and machine-learning-based
           data pipelines for heliophysics.
         </p>
@@ -50,7 +50,7 @@ nav_order: 1
         <img src="/assets/img/prof_pic.jpg" alt="Dibya Kirti Mishra" />
         <div class="profile-body">
           <h3>Dibya Kirti Mishra</h3>
-          <p>Senior Project Associate (SPA), RDO (2026-Present) • <a href="https://www.aries.res.in/" target="_blank" rel="noopener">ARIES</a> • Nainital, India</p>
+          <p>Senior Project Associate (SPA) (2026-Present) • <a href="https://www.aries.res.in/" target="_blank" rel="noopener">ARIES</a> • Nainital, India</p>
           <div class="chips">
             <a href="mailto:dibyakirtimishra@gmail.com">Connect</a>
             <a href="/projects/">Research</a>

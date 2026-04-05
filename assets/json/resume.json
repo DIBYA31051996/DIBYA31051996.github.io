@@ -1,7 +1,7 @@
 {
   "basics": {
     "name": "Dibya Kirti Mishra",
-    "label": "Senior Project Associate (SPA), RDO (2026-Present)",
+    "label": "Senior Project Associate (SPA) (2026-Present)",
     "image": "",
     "email": "dibyakirtimishra@aries.res.in,dibyakirtimishra@gmail.com",
     "phone": "",
@@ -25,7 +25,7 @@
   "work": [
     {
       "name": "Aryabhatta Research Institute of Observational Sciences (ARIES)",
-      "position": "Senior Project Associate (SPA), RDO",
+      "position": "Senior Project Associate (SPA)",
       "url": "https://www.aries.res.in/",
       "startDate": "2026",
       "endDate": "Present",
@@ -48,7 +48,7 @@
      {
       "institution": "Central University of Kerala",
       "location": "Kerala",
-      "url": "",
+      "url": "https://www.cukerala.ac.in/",
       "area": "Physics",
       "studyType": "Master of Science",
       "startDate": "2017",
@@ -59,7 +59,7 @@
      {
       "institution": "University of Delhi",
       "location": "Delhi",
-      "url": "",
+      "url": "https://www.du.ac.in/",
       "area": "Physics",
       "studyType": "Bachelor of Science",
       "startDate": "2016",
@@ -75,20 +75,41 @@
       "releaseDate": "2024-01-12",
       "url": "https://iopscience.iop.org/article/10.3847/1538-4357/ad1188",
       "summary": "It studied the chromospheric differential rotation using Kodaikanal Solar Observatory Ca K data (1907-2007)"
+    },
+    {
+      "name": "Ca II K Polar Network Index of the Sun: A Proxy for Historical Polar Magnetic Field",
+      "publisher": "The Astrophysical Journal",
+      "releaseDate": "2025-04-01",
+      "url": "https://iopscience.iop.org/article/10.3847/1538-4357/adb3a8",
+      "summary": "Introduces Ca II K polar network index as a historical proxy for solar polar magnetic field."
+    },
+    {
+      "name": "Machine Learning-based Identification of the Solar Disk and Plages in Kodaikanal Solar Observatory Historical Suncharts",
+      "publisher": "The Astrophysical Journal Supplement Series",
+      "releaseDate": "2026-03-01",
+      "url": "https://iopscience.iop.org/article/10.3847/1538-4365/ae381e",
+      "summary": "ML pipeline for solar disk and plage detection using long-baseline KSO historical suncharts."
+    },
+    {
+      "name": "Differential Rotation of the Solar Chromosphere using multidecadal Ca II K Spectroheliograms",
+      "publisher": "Proceedings of the International Astronomical Union",
+      "releaseDate": "2023-07-01",
+      "url": "https://doi.org/10.1017/S1743921323005197",
+      "summary": "Conference paper on multi-decadal chromospheric differential rotation from Ca II K observations."
     }
   ],
   "skills": [
     {
       "name": "Image Processing",
       "level": "",
-      "icon": ""
-      
+      "icon": "",
+      "keywords": ["Feature identification", "Tracking"]
     },
      {
       "name": "AI/ML",
       "level": "",
-      "icon": ""
-      
+      "icon": "",
+      "keywords": ["CNN", "DBSCAN", "GEN-AI", "Kmeans clustering"]
     }
   ],
   "languages": [
