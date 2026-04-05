@@ -6,8 +6,14 @@ nav: true
 nav_order: 1
 ---
 
+<style>
+  .post-title {
+    display: none;
+  }
+</style>
+
 <div class="neo-home">
-  <div class="neo-pill"><span class="dot"></span> Solar physicist â€¢ Data-driven heliophysics</div>
+  <div class="neo-pill"><span class="dot"></span> Solar physicist • Data-driven heliophysics</div>
 
   <div class="neo-grid">
     <section class="neo-left glass">
@@ -19,7 +25,7 @@ nav_order: 1
 
       <div class="neo-actions">
         <a class="btn btn-primary" href="/projects/">Explore Research</a>
-        <a class="btn" href="/">About Me</a>
+        <a class="btn" href="/about-me/">About Me</a>
         <a class="btn" href="/publications/">Browse Publications</a>
       </div>
 
@@ -65,19 +71,14 @@ nav_order: 1
     </aside>
   </div>
 </div>
-.post-title {
-  display: none;
-}
+
 <div class="glass section-block">
   <div class="section-head">
-    <h3>Latest publications</h3>
-    <a href="/publications/">All publications</a>
+    <h3>All Publications</h3>
+    <a href="/publications/">Open archive</a>
   </div>
-  <p><strong>Statistical Active Region Growth and the Advective Flux Transport Model</strong></p>
-  <div class="chips">
-    <a href="/publications/">ADS</a>
-    <a href="/publications/">DOI</a>
-    <a href="/publications/">arXiv</a>
+  <div class="publications home-publications">
+    {% bibliography --query @* %}
   </div>
 </div>
 
@@ -110,7 +111,3 @@ nav_order: 1
     <p>Future pages for field notes and visualization snapshots.</p>
   </div>
 </div>
-
-
-
-
