@@ -1,7 +1,9 @@
 ---
 ---
 <div class="row">
-  {% if site.enable_publication_thumbnails %}
+  {% assign has_pub_media = false %}
+  {% if site.enable_publication_thumbnails and (entry.preview or entry.abbr) %}
+    {% assign has_pub_media = true %}
     <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
@@ -38,7 +40,7 @@
   {% endif %}
 
   <!-- Entry bib key -->
-  <div id="{{entry.key}}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+  <div id="{{entry.key}}" class="{% if has_pub_media %}col-sm-8{% else %}col-sm-12{% endif %}">
     <!-- Title -->
     {% assign title_link = entry.url | default: entry.website | default: entry.html | default: entry.pdf | default: entry.adsurl %}
     {% if title_link == blank and entry.doi %}
