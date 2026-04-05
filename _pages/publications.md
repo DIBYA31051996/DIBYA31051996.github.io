@@ -58,13 +58,11 @@ description: Refereed articles, proceedings, software, and datasets.
     <div class="pub-list" data-section="software" hidden>
       <ul class="bibliography">
         <li>
-          <div class="title">Add your software title here</div>
-          <div class="author">Your Name, Coauthors</div>
-          <div class="periodical"><em>Year</em></div>
+          <div class="title">scoobi</div>
+          <div class="author">Dibya Kirti Mishra</div>
+          <div class="periodical"><em>Zenodo software record • Research software</em></div>
           <div class="links">
-            <a href="#" target="_blank" rel="noopener">Code</a>
-            <a href="#" target="_blank" rel="noopener">Docs</a>
-            <a href="#" target="_blank" rel="noopener">DOI</a>
+            <a href="https://zenodo.org/search?q=scoobi" target="_blank" rel="noopener">Open</a>
           </div>
         </li>
       </ul>
@@ -73,13 +71,11 @@ description: Refereed articles, proceedings, software, and datasets.
     <div class="pub-list" data-section="data" hidden>
       <ul class="bibliography">
         <li>
-          <div class="title">Add your dataset title here</div>
-          <div class="author">Your Name, Coauthors</div>
-          <div class="periodical"><em>Year</em></div>
+          <div class="title">PNI Data</div>
+          <div class="author">Dibya Kirti Mishra</div>
+          <div class="periodical"><em>Zenodo dataset record • PNI • Data</em></div>
           <div class="links">
-            <a href="#" target="_blank" rel="noopener">Repository</a>
-            <a href="#" target="_blank" rel="noopener">DOI</a>
-            <a href="#" target="_blank" rel="noopener">Metadata</a>
+            <a href="https://zenodo.org/search?q=PNI" target="_blank" rel="noopener">Open</a>
           </div>
         </li>
       </ul>
