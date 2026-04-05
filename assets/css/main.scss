@@ -821,9 +821,10 @@ footer {
 .pub-list .bibliography li .periodical {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   margin: 0;
   min-width: 0;
+  min-height: 130px;
   overflow: hidden;
   border-radius: 12px;
   padding: .7rem .9rem;
@@ -833,6 +834,8 @@ footer {
 .pub-list .bibliography li .periodical .periodical-copy {
   position: relative;
   z-index: 1;
+  display: flex;
+  align-items: center;
   min-width: 0;
   flex: 1 1 auto;
 }
@@ -857,12 +860,13 @@ footer {
 
 .pub-list .bibliography li .periodical .result-plot img {
   position: absolute;
-  top: 50%;
-  left: 0;
+  inset: 0;
   display: block;
   width: 100%;
-  height: auto;
-  transform: translateY(-50%);
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transform: none;
   filter: saturate(.95) contrast(1.05);
 }
 
