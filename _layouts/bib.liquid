@@ -151,19 +151,9 @@
 {% assign venue_year = entry.year | default: '' %}
 
 {% assign venue_link = entry.journalurl | default: entry.journal_url | default: entry.website %}
-{% assign result_plot = entry.result_plot | default: entry.result_image %}
 
 <div class="periodical-row">
   <div class="periodical">
-    {% if result_plot %}
-      <div class="result-plot">
-        {% if result_plot contains '://' %}
-          <img src="{{ result_plot }}" alt="{{ entry.title }} result plot">
-        {% else %}
-          <img src="{{ result_plot | prepend: '/assets/img/publication_preview/' | relative_url }}" alt="{{ entry.title }} result plot">
-        {% endif %}
-      </div>
-    {% endif %}
     <div class="periodical-copy">
     {% if venue_name != '' %}
       {% if venue_link %}
