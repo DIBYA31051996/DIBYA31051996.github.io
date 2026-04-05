@@ -1,8 +1,9 @@
 ﻿---
 layout: page
-title: Home Backup
-permalink: /home-backup/
-nav: false
+title: Home
+permalink: /
+nav: true
+nav_order: 1
 ---
 
 <style>
