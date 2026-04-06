@@ -19,13 +19,13 @@ nav_order: 1
       <div class="home-pill"><span class="dot"></span> Solar Physicist</div>
 
       <h1 class="home-title">
-        <span class="home-title-prefix">Hi. I am Dibya Kirti Mishra</span>
+        <span class="home-title-prefix">Hi. I am <span class="typed-name">Dibya</span></span>
         <span class="home-title-strong">Dibya</span> <span class="home-title-gradient">Kirti Mishra</span>
       </h1>
 
       <p class="home-lead">
         I study solar magnetic fields, solar cycle variability, and data-rich heliophysics workflows that improve
-        long-baseline analysis and space-weather understanding.
+        long-baseline analysis and solar dynamo model understanding.
       </p>
 
       <div class="home-actions">
@@ -84,8 +84,9 @@ nav_order: 1
       <div class="profile-panel home-card">
         <img src="{{ '/assets/img/RIP07945.png' | relative_url }}" alt="Portrait of Dibya Kirti Mishra" />
         <div class="profile-panel-body">
+          <p class="profile-label">Dibya Kirti Mishra</p>
           <h2>Solar Researcher</h2>
-          <p class="profile-meta">India</p>
+          <p class="profile-meta">Aryabhatta Research Institute of Observational Sciences (ARIES), Nainital, India</p>
           <div class="profile-tags">
             <span>Research</span>
             <span>Forecasting</span>

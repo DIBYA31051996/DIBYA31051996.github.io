@@ -1076,7 +1076,7 @@ footer {
   display: block;
   width: 100%;
   color: #dce8ff;
-  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  font-size: clamp(1.02rem, 2.3vw, 1.24rem);
   font-weight: 700;
   letter-spacing: 0.03em;
   margin-bottom: 0.15rem;
@@ -1086,8 +1086,14 @@ footer {
   border-right: 2px solid rgba(151, 197, 255, 0.9);
   text-shadow: 0 0 16px rgba(120, 170, 255, 0.22);
   animation:
-    homeTyping 3.2s steps(27, end) 0.25s both,
+    homeTyping 2.2s steps(13, end) 0.25s both,
     homeCaret 0.9s step-end infinite;
+}
+
+.home-title-prefix .typed-name {
+  font-size: 1.28em;
+  font-weight: 800;
+  color: #f2f6ff;
 }
 
 .home-title-strong {
@@ -1285,7 +1291,15 @@ footer {
 }
 
 .profile-panel-body {
-  padding: 1.35rem 1rem 1rem;
+  padding: 1.75rem 1rem 1rem;
+}
+
+.profile-label {
+  margin: 0 0 0.8rem;
+  color: #f2f6ff;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  font-weight: 800;
 }
 
 .profile-panel h2 {
@@ -1393,7 +1407,7 @@ footer {
     width: 0;
   }
   to {
-    width: 27ch;
+    width: 13ch;
   }
 }
 
