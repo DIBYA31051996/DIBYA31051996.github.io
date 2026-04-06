@@ -1045,7 +1045,8 @@ footer {
   background: rgba(59, 78, 131, 0.22);
   font-size: 0.96rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.02em;
+  text-transform: none;
 }
 
 .home-pill .dot {
@@ -1257,9 +1258,21 @@ footer {
 .profile-label {
   margin: 0 0 0.35rem;
   color: #8fa6dc;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
+  font-size: 0.96rem;
+  letter-spacing: 0.02em;
+}
+
+.profile-label .name-strong {
+  font-weight: 800;
+  color: #f2f6ff;
+}
+
+.profile-label .name-gradient {
+  font-weight: 800;
+  background: linear-gradient(90deg, #8fd8ff 0%, #7fa6ff 45%, #9d74ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .profile-panel h2 {
