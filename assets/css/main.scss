@@ -1067,8 +1067,17 @@ footer {
   color: #f7f9ff;
 }
 
-.home-title span {
-  color: #86b7ff;
+.home-title-strong {
+  font-weight: 800;
+  color: #f7f9ff;
+}
+
+.home-title-gradient {
+  font-weight: 800;
+  background: linear-gradient(90deg, #8fd8ff 0%, #79a6ff 44%, #9f72ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .home-lead {
@@ -1245,9 +1254,10 @@ footer {
 .profile-panel img {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 1 / 1.28;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 24%;
+  transform: scale(1.08);
   border-bottom: 1px solid rgba(175, 194, 235, 0.14);
 }
 
@@ -1260,19 +1270,7 @@ footer {
   color: #8fa6dc;
   font-size: 0.96rem;
   letter-spacing: 0.02em;
-}
-
-.profile-label .name-strong {
-  font-weight: 800;
-  color: #f2f6ff;
-}
-
-.profile-label .name-gradient {
-  font-weight: 800;
-  background: linear-gradient(90deg, #8fd8ff 0%, #7fa6ff 45%, #9d74ff 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  font-weight: 700;
 }
 
 .profile-panel h2 {

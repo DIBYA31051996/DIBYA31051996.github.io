@@ -19,7 +19,7 @@ nav_order: 1
       <div class="home-pill"><span class="dot"></span> Solar Physicist</div>
 
       <h1 class="home-title">
-        Dibya <span>Kirti Mishra</span>
+        <span class="home-title-strong">Dibya</span> <span class="home-title-gradient">Kirti Mishra</span>
       </h1>
 
       <p class="home-lead">
@@ -83,7 +83,7 @@ nav_order: 1
       <div class="profile-panel home-card">
         <img src="{{ '/assets/img/20250126_163316.png' | relative_url }}" alt="Portrait of Dibya Kirti Mishra" />
         <div class="profile-panel-body">
-          <p class="profile-label"><span class="name-strong">Dibya</span> <span class="name-gradient">Kirti Mishra</span></p>
+          <p class="profile-label">Dibya Kirti Mishra</p>
           <h2>Solar Researcher</h2>
           <p class="profile-meta">India</p>
           <div class="profile-tags">
