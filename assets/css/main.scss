@@ -1061,26 +1061,32 @@ footer {
 }
 
 .home-title {
-  margin: 1rem 0 0.75rem;
+  margin: 1rem 0 0.9rem;
   font-size: clamp(2.4rem, 5vw, 3.7rem);
   line-height: 0.98;
   color: #f7f9ff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 0.7rem;
+  animation: heroNameIn 1s cubic-bezier(.22,.8,.2,1) 0.15s both;
 }
 
-.home-intro {
-  width: max-content;
-  max-width: 100%;
-  margin: 1rem 0 0.5rem;
+.home-title-prefix {
+  display: block;
+  width: 100%;
   color: #dce8ff;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  font-weight: 700;
   letter-spacing: 0.03em;
+  margin-bottom: 0.15rem;
+  width: fit-content;
   white-space: nowrap;
   overflow: hidden;
   border-right: 2px solid rgba(151, 197, 255, 0.9);
   text-shadow: 0 0 16px rgba(120, 170, 255, 0.22);
   animation:
-    homeTyping 3.6s steps(28, end) 0.2s both,
+    homeTyping 2s steps(9, end) 0.25s both,
     homeCaret 0.9s step-end infinite;
 }
 
@@ -1273,21 +1279,13 @@ footer {
   width: 100%;
   aspect-ratio: 1 / 1.28;
   object-fit: cover;
-  object-position: center 22%;
-  transform: scale(1.14);
+  object-position: center 18%;
+  transform: scale(1.12);
   border-bottom: 1px solid rgba(175, 194, 235, 0.14);
 }
 
 .profile-panel-body {
   padding: 1.35rem 1rem 1rem;
-}
-
-.profile-label {
-  margin: 0 0 0.35rem;
-  color: #8fa6dc;
-  font-size: 0.96rem;
-  letter-spacing: 0.02em;
-  font-weight: 700;
 }
 
 .profile-panel h2 {
@@ -1395,7 +1393,7 @@ footer {
     width: 0;
   }
   to {
-    width: 27ch;
+    width: 9ch;
   }
 }
 
@@ -1405,6 +1403,19 @@ footer {
   }
   50%, 100% {
     border-color: transparent;
+  }
+}
+
+@keyframes heroNameIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+    filter: blur(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
   }
 }
 
@@ -1445,11 +1456,6 @@ footer {
 
   .home-title {
     font-size: 2.2rem;
-  }
-
-  .home-intro {
-    font-size: 0.92rem;
-    max-width: 100%;
   }
 
   .home-actions .btn,

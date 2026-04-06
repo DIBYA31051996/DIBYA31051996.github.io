@@ -18,9 +18,8 @@ nav_order: 1
     <div class="home-main home-card">
       <div class="home-pill"><span class="dot"></span> Solar Physicist</div>
 
-      <p class="home-intro">Hi. I am Dibya Kirti Mishra</p>
-
       <h1 class="home-title">
+        <span class="home-title-prefix">Hi. I am</span>
         <span class="home-title-strong">Dibya</span> <span class="home-title-gradient">Kirti Mishra</span>
       </h1>
 
@@ -83,9 +82,8 @@ nav_order: 1
 
     <aside class="home-sidebar">
       <div class="profile-panel home-card">
-        <img src="{{ '/assets/img/20250126_163316.png' | relative_url }}" alt="Portrait of Dibya Kirti Mishra" />
+        <img src="{{ '/assets/img/RIP07945.png' | relative_url }}" alt="Portrait of Dibya Kirti Mishra" />
         <div class="profile-panel-body">
-          <p class="profile-label">Dibya Kirti Mishra</p>
           <h2>Solar Researcher</h2>
           <p class="profile-meta">India</p>
           <div class="profile-tags">
