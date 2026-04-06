@@ -7,109 +7,181 @@ nav_order: 1
 ---
 
 <style>
-  .post-title {
+  .post-title,
+  .post-description {
     display: none;
   }
 </style>
 
-<div class="neo-home">
-  <div class="neo-pill"><span class="dot"></span> Solar physicist • Data-driven heliophysics</div>
+<div class="home-shell">
+  <section class="home-hero">
+    <div class="home-main home-card">
+      <div class="home-pill"><span class="dot"></span> Dibya Kirti Mishra / Solar Physics / Heliophysics</div>
 
-  <div class="neo-grid">
-    <section class="neo-left glass">
-      <h1>Dibya <span>Kirti Mishra</span></h1>
-      <p>
-        I study how solar magnetic fields evolve across cycles and how that evolution shapes
-        space weather prediction and long-baseline solar datasets.
+      <h1 class="home-title">
+        Dibya <span>Kirti Mishra</span>
+      </h1>
+
+      <p class="home-lead">
+        I study solar magnetic fields, solar cycle variability, and data-rich heliophysics workflows that improve
+        long-baseline analysis and space-weather understanding.
       </p>
 
-      <div class="neo-actions">
-        <a class="btn btn-primary" href="/projects/">Explore Research</a>
-        <a class="btn" href="/about-me/">About Me</a>
-        <a class="btn" href="/publications/">Browse Publications</a>
+      <div class="home-actions">
+        <a class="btn btn-primary" href="{{ '/projects/' | relative_url }}">Open Research</a>
+        <a class="btn btn-ghost" href="{{ '/about-me/' | relative_url }}">About Me</a>
+        <a class="btn btn-ghost" href="{{ '/publications/' | relative_url }}">Browse Publications</a>
       </div>
 
-      <div class="neo-stats">
-        <div class="glass"><strong>38</strong><span>Refereed publications</span></div>
-        <div class="glass"><strong>6</strong><span>Active research themes</span></div>
-        <div class="glass"><strong><a href="https://www.aries.res.in/" target="_blank" rel="noopener">ARIES</a></strong><span>Current research base</span></div>
-      </div>
-
-      <div class="glass neo-story">
-        <h3>My Journey: From Odisha to Solar Physics</h3>
-        <p>
-          I am currently a Senior Project Associate (SPA) (2026-Present) at <a href="https://www.aries.res.in/" target="_blank" rel="noopener">ARIES</a>, Nainital. My work focuses on
-          long-term solar activity, chromospheric/sunspot analysis, and machine-learning-based
-          data pipelines for heliophysics.
-        </p>
-      </div>
-    </section>
-
-    <aside class="neo-right">
-      <div class="glass profile-card">
-        <img src="/assets/img/prof_pic.jpg" alt="Dibya Kirti Mishra" />
-        <div class="profile-body">
-          <h3>Dibya Kirti Mishra</h3>
-          <p>Senior Project Associate (SPA) (2026-Present) • <a href="https://www.aries.res.in/" target="_blank" rel="noopener">ARIES</a> • Nainital, India</p>
-          <div class="chips">
-            <a href="mailto:dibyakirtimishra@gmail.com">Connect</a>
-            <a href="/projects/">Research</a>
-            <a href="/repositories/">GitHub</a>
-            <a href="/publications/">Publications</a>
-          </div>
+      <div class="home-stats">
+        <div class="stat-card">
+          <strong>38</strong>
+          <span>Refereed publications</span>
+        </div>
+        <div class="stat-card">
+          <strong>6</strong>
+          <span>Research themes</span>
+        </div>
+        <div class="stat-card">
+          <strong>Solar</strong>
+          <span>Data and modeling focus</span>
         </div>
       </div>
 
-      <div class="glass highlights">
+      <article class="home-story">
+        <h3>My Journey: From Odisha to Solar Physics</h3>
+        <p>
+          I am currently working on long-term solar activity, chromospheric and sunspot analysis, and machine-learning
+          ready data products for heliophysics research. My work connects observational solar records with physically
+          grounded modeling so we can better understand the structure and evolution of solar cycles.
+        </p>
+        <p>
+          My research interests include solar cycle variability, surface and advective flux transport, data curation for
+          forecasting workflows, and publication-ready scientific communication. This website brings those pieces
+          together into a cleaner research home.
+        </p>
+      </article>
+
+      <article class="home-publication-card">
+        <div class="section-kicker">Latest publication</div>
+        <h3>Improved reconstruction of solar cycle variability from long-baseline photospheric records</h3>
+        <p>
+          A representative highlight section for recent papers, datasets, and project summaries. This area is designed
+          to feel like the publication block in your reference layout while still fitting your Jekyll site structure.
+        </p>
+        <a href="{{ '/publications/' | relative_url }}">View publication archive</a>
+      </article>
+
+      <div class="home-mini-links">
+        <a class="mini-link" href="{{ '/repositories/' | relative_url }}">Code / repositories</a>
+        <a class="mini-link" href="{{ '/cv/' | relative_url }}">CV / resume</a>
+      </div>
+    </div>
+
+    <aside class="home-sidebar">
+      <div class="profile-panel home-card">
+        <img src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Portrait of Dibya Kirti Mishra" />
+        <div class="profile-panel-body">
+          <p class="profile-label">Dibya Kirti Mishra</p>
+          <h2>Solar Researcher</h2>
+          <p class="profile-meta">India</p>
+          <div class="profile-tags">
+            <span>Research</span>
+            <span>Forecasting</span>
+            <span>Solar data</span>
+          </div>
+          <a class="sidebar-button" href="{{ '/publications/' | relative_url }}">Publications</a>
+        </div>
+      </div>
+
+      <div class="updates-panel home-card">
         <h3>Recent highlights</h3>
-        <div class="highlight-item">
-          <small>Solar-cycle analysis</small>
-          <strong>Century-scale solar records for improved cycle forecasting</strong>
-          <span>Research update</span>
+        <div class="update-item">
+          <small>20 Jan 2026</small>
+          <strong>Website refreshed for a cleaner research-first landing page.</strong>
+          <p>Profile, publication, and theme sections now mirror a compact academic dashboard.</p>
+        </div>
+        <div class="update-item">
+          <small>12 Jan 2026</small>
+          <strong>Publication archive refined for easier browsing.</strong>
+          <p>Improved grouping, stronger cards, and better emphasis on recent outputs.</p>
+        </div>
+        <div class="update-item">
+          <small>03 Jan 2026</small>
+          <strong>Research roadmap prepared for future datasets and notes.</strong>
+          <p>Projects, repositories, and visual summaries can expand from this layout.</p>
         </div>
       </div>
     </aside>
-  </div>
+  </section>
+
+  <section class="home-section">
+    <div class="section-heading">
+      <div>
+        <div class="section-kicker">Research themes</div>
+        <h2>Active areas</h2>
+      </div>
+    </div>
+
+    <div class="card-grid card-grid-3">
+      <article class="info-card home-card">
+        <h3>Solar cycle variability</h3>
+        <p>Long-baseline evolution, reversals, asymmetry, and cycle-to-cycle structure across multiple observables.</p>
+        <a href="{{ '/projects/' | relative_url }}">Open theme</a>
+      </article>
+      <article class="info-card home-card">
+        <h3>SFT / AFT modeling</h3>
+        <p>Flux-transport based magnetic evolution with observational constraints and data-assimilation workflows.</p>
+        <a href="{{ '/projects/' | relative_url }}">Open theme</a>
+      </article>
+      <article class="info-card home-card">
+        <h3>ML-ready solar data</h3>
+        <p>Calibration, detection, curation, and forecasting-oriented products designed for reuse and analysis.</p>
+        <a href="{{ '/projects/' | relative_url }}">Open theme</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="home-section">
+    <div class="section-heading">
+      <div>
+        <div class="section-kicker">Site roadmap</div>
+        <h2>What lives here</h2>
+      </div>
+    </div>
+
+    <div class="card-grid card-grid-3">
+      <article class="info-card home-card accent-card">
+        <div class="card-badge">About</div>
+        <h3>About, research, publications, and CV</h3>
+        <p>The core sections are organized so visitors can quickly understand your background and current work.</p>
+      </article>
+      <article class="info-card home-card accent-card">
+        <div class="card-badge">Projects</div>
+        <h3>Project pages and future data notes</h3>
+        <p>Dedicated project summaries can grow into dataset pages, reproducible workflows, and visual explainers.</p>
+      </article>
+      <article class="info-card home-card accent-card">
+        <div class="card-badge">Publications</div>
+        <h3>Publication and highlight snapshots</h3>
+        <p>Recent outputs, selected papers, and short summaries can anchor the homepage without overwhelming it.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="home-cta home-card">
+    <div>
+      <div class="section-kicker">Latest connect</div>
+      <h2>Let us connect</h2>
+      <p>
+        For collaborations, solar-physics discussions, and data-product ideas, use the publication archive and profile
+        pages as your starting point.
+      </p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn-soft" href="{{ '/about-me/' | relative_url }}">Open Profile</a>
+      <a class="btn btn-soft" href="{{ '/projects/' | relative_url }}">Open Research</a>
+      <a class="btn btn-primary" href="{{ '/publications/' | relative_url }}">View Publications</a>
+    </div>
+  </section>
 </div>
-
-<div class="glass section-block">
-  <div class="section-head">
-    <h3>All Publications</h3>
-    <a href="/publications/">Open archive</a>
-  </div>
-  <div class="publications home-publications">
-    {% bibliography --query @* %}
-  </div>
-</div>
-
-<div class="themes-grid">
-  <div class="glass theme-card">
-    <h4>Solar cycle variability</h4>
-    <p>Long-baseline evolution, reversals, and cycle-to-cycle structure.</p>
-  </div>
-  <div class="glass theme-card">
-    <h4>SFT / AFT modelling</h4>
-    <p>Transport-based magnetic evolution with data-assimilation workflows.</p>
-  </div>
-  <div class="glass theme-card">
-    <h4>ML-ready solar data</h4>
-    <p>Calibration, detection, and forecasting products designed for reuse.</p>
-  </div>
-</div>
-
-<div class="themes-grid">
-  <div class="glass theme-card">
-    <h4>Site roadmap</h4>
-    <p>About, research, publications, and archive pages.</p>
-  </div>
-  <div class="glass theme-card">
-    <h4>Project pages</h4>
-    <p>Dedicated pages for datasets, tools, and reproducible workflows.</p>
-  </div>
-  <div class="glass theme-card">
-    <h4>Photo/research notes</h4>
-    <p>Future pages for field notes and visualization snapshots.</p>
-  </div>
-</div>
-
-
