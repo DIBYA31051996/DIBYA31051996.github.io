@@ -1069,7 +1069,6 @@ footer {
   flex-wrap: wrap;
   align-items: baseline;
   gap: 0.35rem 0.7rem;
-  animation: heroNameIn 1s cubic-bezier(.22,.8,.2,1) 0.15s both;
 }
 
 .home-title-prefix {
@@ -1086,19 +1085,18 @@ footer {
   border-right: 2px solid rgba(151, 197, 255, 0.9);
   text-shadow: 0 0 16px rgba(120, 170, 255, 0.22);
   animation:
-    homeTyping 3.3s steps(27, end) 0.25s both,
+    homeTyping 1.5s steps(9, end) 0.2s both,
     homeCaret 0.9s step-end infinite;
-}
-
-.home-title-prefix .typed-name {
-  font-size: 1.6em;
-  font-weight: 800;
-  color: #f2f6ff;
 }
 
 .home-title-strong {
   font-weight: 800;
   color: #f7f9ff;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: heroWordReveal 0.85s steps(5, end) 1.65s forwards;
 }
 
 .home-title-gradient {
@@ -1107,6 +1105,11 @@ footer {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: heroWordReveal 1.35s steps(13, end) 2.45s forwards;
 }
 
 .home-lead {
@@ -1145,9 +1148,11 @@ footer {
 .sidebar-button,
 .mini-link {
   border-radius: 12px;
-  padding: 0.65rem 1rem;
+  padding: 0.8rem 1.25rem;
   text-decoration: none;
   text-transform: none;
+  font-size: 1rem;
+  font-weight: 600;
   letter-spacing: 0;
   transition:
     transform 0.2s ease,
@@ -1409,7 +1414,7 @@ footer {
     width: 0;
   }
   to {
-    width: 27ch;
+    width: 9ch;
   }
 }
 
@@ -1432,6 +1437,17 @@ footer {
     opacity: 1;
     transform: translateY(0);
     filter: blur(0);
+  }
+}
+
+@keyframes heroWordReveal {
+  from {
+    width: 0;
+    opacity: 0.35;
+  }
+  to {
+    width: 100%;
+    opacity: 1;
   }
 }
 
