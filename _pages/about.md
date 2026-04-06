@@ -18,6 +18,8 @@ nav_order: 1
     <div class="home-main home-card">
       <div class="home-pill"><span class="dot"></span> Solar Physicist</div>
 
+      <p class="home-intro">Hi. I am Dibya Kirti Mishra</p>
+
       <h1 class="home-title">
         <span class="home-title-strong">Dibya</span> <span class="home-title-gradient">Kirti Mishra</span>
       </h1>
