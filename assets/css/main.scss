@@ -1086,7 +1086,7 @@ footer {
   border-right: 2px solid rgba(151, 197, 255, 0.9);
   text-shadow: 0 0 16px rgba(120, 170, 255, 0.22);
   animation:
-    homeTyping 2s steps(9, end) 0.25s both,
+    homeTyping 3.2s steps(27, end) 0.25s both,
     homeCaret 0.9s step-end infinite;
 }
 
@@ -1277,10 +1277,10 @@ footer {
 .profile-panel img {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1.28;
+  aspect-ratio: 1 / 1.05;
   object-fit: cover;
-  object-position: center 18%;
-  transform: scale(1.12);
+  object-position: center 16%;
+  transform: scale(1.08);
   border-bottom: 1px solid rgba(175, 194, 235, 0.14);
 }
 
@@ -1393,7 +1393,7 @@ footer {
     width: 0;
   }
   to {
-    width: 9ch;
+    width: 27ch;
   }
 }
 
