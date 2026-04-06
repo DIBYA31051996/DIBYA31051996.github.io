@@ -19,7 +19,7 @@ nav_order: 1
       <div class="home-pill"><span class="dot"></span> Solar Physicist</div>
 
       <h1 class="home-title">
-        <span class="home-title-prefix">Hi. I am <span class="typed-name">Dibya</span></span>
+        <span class="home-title-prefix">Hi. I am <span class="typed-name">Dibya Kirti Mishra</span></span>
         <span class="home-title-strong">Dibya</span> <span class="home-title-gradient">Kirti Mishra</span>
       </h1>
 
@@ -29,7 +29,7 @@ nav_order: 1
       </p>
 
       <div class="home-actions">
-        <a class="btn btn-primary" href="{{ '/projects/' | relative_url }}">Open Research</a>
+        <a class="btn btn-primary" href="{{ '/projects/' | relative_url }}">Explore Research</a>
         <a class="btn btn-ghost" href="{{ '/about-me/' | relative_url }}">About Me</a>
         <a class="btn btn-ghost" href="{{ '/publications/' | relative_url }}">Browse Publications</a>
       </div>
