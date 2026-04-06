@@ -86,7 +86,9 @@ nav_order: 1
 
     <aside class="home-sidebar">
       <div class="profile-panel home-card">
-        <img src="{{ '/assets/img/RIP07945.png' | relative_url }}" alt="Portrait of Dibya Kirti Mishra" />
+        <div class="profile-image-frame">
+          <img src="{{ '/assets/img/RIP07945.png' | relative_url }}" alt="Portrait of Dibya Kirti Mishra" />
+        </div>
         <div class="profile-panel-body">
           <p class="profile-label">Dibya Kirti Mishra</p>
           <h2>Solar Researcher</h2>
