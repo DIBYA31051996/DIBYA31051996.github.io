@@ -18,10 +18,14 @@ nav_order: 1
     <div class="home-main home-card">
       <div class="home-pill"><span class="dot"></span> Solar Physicist</div>
 
-      <h1 class="home-title">
-        <span class="home-title-prefix">Hi. I am</span>
-        <span class="home-title-strong">Dibya</span> <span class="home-title-gradient">Kirti Mishra</span>
-      </h1>
+      <div class="home-title-wrap">
+        <video class="home-title-video" autoplay muted loop playsinline>
+          <source src="{{ '/assets/video/butterfly_ca_k_high_res.mp4' | relative_url }}" type="video/mp4" />
+        </video>
+        <h1 class="home-title">
+          <span class="home-title-typed">Hi, I am <span class="home-title-typed-gradient">Dibya Kirti Mishra</span></span>
+        </h1>
+      </div>
 
       <p class="home-lead">
         I study solar magnetic fields, solar cycle variability, and data-rich heliophysics workflows that improve
