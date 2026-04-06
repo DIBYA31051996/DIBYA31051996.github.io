@@ -19,9 +19,6 @@ nav_order: 1
       <div class="home-pill"><span class="dot"></span> Solar Physicist</div>
 
       <div class="home-title-wrap">
-        <video class="home-title-video" autoplay muted loop playsinline preload="auto">
-          <source src="{{ '/assets/video/butterfly_ca_k_high_res.mp4' | relative_url }}" type="video/mp4" />
-        </video>
         <h1 class="home-title">
           <span class="home-title-typed">Hi, I am <span class="home-title-typed-gradient">Dibya Kirti Mishra</span></span>
         </h1>
@@ -86,9 +83,7 @@ nav_order: 1
 
     <aside class="home-sidebar">
       <div class="profile-panel home-card">
-        <div class="profile-image-frame">
-          <img src="{{ '/assets/img/RIP07945.png' | relative_url }}" alt="Portrait of Dibya Kirti Mishra" />
-        </div>
+        <img src="{{ '/assets/img/RIP07945.png' | relative_url }}" alt="Portrait of Dibya Kirti Mishra" />
         <div class="profile-panel-body">
           <p class="profile-label">Dibya Kirti Mishra</p>
           <h2>Solar Researcher</h2>
