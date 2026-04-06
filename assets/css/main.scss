@@ -1017,7 +1017,7 @@ footer {
 
 .home-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1.75fr) 320px;
+  grid-template-columns: minmax(0, 1.6fr) 370px;
   gap: 1rem;
   align-items: start;
 }
@@ -1040,17 +1040,23 @@ footer {
 
 .home-pill {
   color: #dfe8ff;
-  padding: 0.42rem 0.8rem;
-  border: 1px solid rgba(153, 179, 255, 0.28);
-  background: rgba(59, 78, 131, 0.18);
+  padding: 0.55rem 1rem;
+  border: 1px solid rgba(153, 179, 255, 0.32);
+  background: rgba(59, 78, 131, 0.22);
+  font-size: 0.96rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
 }
 
 .home-pill .dot {
-  width: 9px;
-  height: 9px;
+  width: 14px;
+  height: 14px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #54c2ff, #7b5cff);
-  box-shadow: 0 0 12px rgba(84, 194, 255, 0.45);
+  background: linear-gradient(135deg, #57d2ff 0%, #6aa7ff 48%, #8a63ff 100%);
+  box-shadow:
+    0 0 0 2px rgba(87, 210, 255, 0.16),
+    0 0 0 4px rgba(138, 99, 255, 0.12),
+    0 0 18px rgba(104, 168, 255, 0.45);
 }
 
 .home-title {
@@ -1224,6 +1230,11 @@ footer {
 .home-sidebar {
   display: grid;
   gap: 1rem;
+}
+
+.profile-panel,
+.updates-panel {
+  width: 100%;
 }
 
 .profile-panel {

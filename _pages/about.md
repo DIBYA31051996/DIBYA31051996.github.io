@@ -16,7 +16,7 @@ nav_order: 1
 <div class="home-shell">
   <section class="home-hero">
     <div class="home-main home-card">
-      <div class="home-pill"><span class="dot"></span> Dibya Kirti Mishra / Solar Physics / Heliophysics</div>
+      <div class="home-pill"><span class="dot"></span> Solar Physicist</div>
 
       <h1 class="home-title">
         Dibya <span>Kirti Mishra</span>
@@ -64,10 +64,11 @@ nav_order: 1
 
       <article class="home-publication-card">
         <div class="section-kicker">Latest publication</div>
-        <h3>Improved reconstruction of solar cycle variability from long-baseline photospheric records</h3>
+        <h3>Machine Learning-based Identification of the Solar Disk and Plages in Kodaikanal Solar Observatory Historical Suncharts</h3>
         <p>
-          A representative highlight section for recent papers, datasets, and project summaries. This area is designed
-          to feel like the publication block in your reference layout while still fitting your Jekyll site structure.
+          Published in <em>The Astrophysical Journal Supplement Series</em> in March 2026, this work focuses on
+          machine-learning driven identification of solar-disk structure and plages from historical Kodaikanal
+          suncharts.
         </p>
         <a href="{{ '/publications/' | relative_url }}">View publication archive</a>
       </article>
@@ -97,19 +98,19 @@ nav_order: 1
       <div class="updates-panel home-card">
         <h3>Recent highlights</h3>
         <div class="update-item">
-          <small>20 Jan 2026</small>
-          <strong>Website refreshed for a cleaner research-first landing page.</strong>
-          <p>Profile, publication, and theme sections now mirror a compact academic dashboard.</p>
+          <small>Mar 2026</small>
+          <strong>ApJS publication on machine-learning based plage identification from historical solar suncharts.</strong>
+          <p>Historical Kodaikanal observations are turned into cleaner, analysis-ready solar activity products.</p>
         </div>
         <div class="update-item">
-          <small>12 Jan 2026</small>
-          <strong>Publication archive refined for easier browsing.</strong>
-          <p>Improved grouping, stronger cards, and better emphasis on recent outputs.</p>
+          <small>Apr 2025</small>
+          <strong>Polar Network Index study published as a proxy for the historical polar magnetic field.</strong>
+          <p>This work strengthens long-baseline magnetic-field reconstruction using Ca II K observations.</p>
         </div>
         <div class="update-item">
-          <small>03 Jan 2026</small>
-          <strong>Research roadmap prepared for future datasets and notes.</strong>
-          <p>Projects, repositories, and visual summaries can expand from this layout.</p>
+          <small>Jan 2024</small>
+          <strong>Century-long chromospheric differential rotation analysis from Kodaikanal Ca II K data.</strong>
+          <p>A long-timescale perspective on solar chromospheric rotation and its observational evolution.</p>
         </div>
       </div>
     </aside>
