@@ -1075,9 +1075,10 @@ footer {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(7, 13, 26, 0.78), rgba(7, 13, 26, 0.5)),
-    linear-gradient(180deg, rgba(7, 13, 26, 0.2), rgba(7, 13, 26, 0.6));
+    linear-gradient(90deg, rgba(7, 13, 26, 0.44), rgba(7, 13, 26, 0.18)),
+    linear-gradient(180deg, rgba(7, 13, 26, 0.08), rgba(7, 13, 26, 0.34));
   pointer-events: none;
+  z-index: 1;
 }
 
 .home-title-video {
@@ -1087,19 +1088,20 @@ footer {
   height: 100%;
   object-fit: cover;
   object-position: center center;
-  opacity: 0.36;
-  filter: saturate(1.15) brightness(0.82);
+  opacity: 0.72;
+  filter: saturate(1.2) brightness(0.92);
+  z-index: 0;
 }
 
 .home-title {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin: 0;
   min-height: 188px;
   display: flex;
   align-items: center;
   padding: 1.4rem 1.6rem;
-  font-size: clamp(2.55rem, 5vw, 4.2rem);
+  font-size: clamp(2.15rem, 4.4vw, 3.5rem);
   line-height: 1.02;
 }
 
@@ -1111,7 +1113,9 @@ footer {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid rgba(151, 197, 255, 0.95);
-  text-shadow: 0 0 22px rgba(120, 170, 255, 0.16);
+  text-shadow:
+    0 2px 14px rgba(4, 10, 24, 0.7),
+    0 0 20px rgba(120, 170, 255, 0.14);
   animation:
     homeTyping 4.4s steps(28, end) 0.2s both,
     homeCaret 0.9s step-end infinite;

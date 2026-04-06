@@ -40,7 +40,7 @@ nav_order: 1
 
       <div class="home-stats">
         <div class="stat-card">
-          <strong>38</strong>
+          <strong>5</strong>
           <span>Refereed publications</span>
         </div>
         <div class="stat-card">
@@ -48,7 +48,7 @@ nav_order: 1
           <span>Research themes</span>
         </div>
         <div class="stat-card">
-          <strong>Solar</strong>
+          <strong>ARIES</strong>
           <span>Data and modeling focus</span>
         </div>
       </div>
