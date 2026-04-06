@@ -19,7 +19,7 @@ nav_order: 1
       <div class="home-pill"><span class="dot"></span> Solar Physicist</div>
 
       <div class="home-title-wrap">
-        <video class="home-title-video" autoplay muted loop playsinline>
+        <video class="home-title-video" autoplay muted loop playsinline preload="auto">
           <source src="{{ '/assets/video/butterfly_ca_k_high_res.mp4' | relative_url }}" type="video/mp4" />
         </video>
         <h1 class="home-title">
@@ -49,7 +49,7 @@ nav_order: 1
         </div>
         <div class="stat-card">
           <strong>ARIES</strong>
-          <span>Data and modeling focus</span>
+          <span>Long term variability in the sun</span>
         </div>
       </div>
 
