@@ -1294,9 +1294,9 @@ footer {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(135deg, rgba(6, 11, 24, 0.8), rgba(8, 16, 32, 0.72)),
+    linear-gradient(135deg, rgba(6, 11, 24, 0.48), rgba(8, 16, 32, 0.34)),
     url("/assets/img/sunset-harmony-at-puri-beach.png") center center / cover no-repeat;
-  filter: blur(5px) brightness(0.72);
+  filter: blur(3px) brightness(0.92);
   transform: scale(1.05);
   z-index: 0;
 }
@@ -1391,6 +1391,17 @@ footer {
 .publication-kicker {
   font-weight: 800;
   text-transform: none;
+  font-size: 1.08rem;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-bottom: 0.95rem;
+  color: #f6f8ff;
+  letter-spacing: 0.01em;
+}
+
+.home-publication-card h3 {
+  margin-top: 0.7rem;
 }
 
 .profile-meta {
