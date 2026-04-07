@@ -109,26 +109,32 @@ nav_order: 1
         <div class="update-item">
           <small>19 Nov 2025</small>
           <strong><a href="https://dst.gov.in/century-long-data-kodaikanal-observatory-reveals-clues-suns-future" target="_blank" rel="noopener">Century-long data of Kodaikanal Observatory reveals clues to Sun's future</a></strong>
+          <p>DST coverage of the Kodaikanal solar-data study and its implications for future solar-cycle understanding.</p>
         </div>
         <div class="update-item">
           <small>19 Nov 2025</small>
           <strong><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2191662&reg=3&lang=2" target="_blank" rel="noopener">Century-long data of Kodaikanal Observatory reveals clues to Sun's future</a></strong>
+          <p>PIB release highlighting the role of century-long observatory records in understanding the Sun's future behavior.</p>
         </div>
         <div class="update-item">
           <small>19 Nov 2025</small>
           <strong><a href="https://ddnews.gov.in/en/century-old-kodaikanal-observatory-data-offers-new-insights-into-the-suns-magnetic-future/" target="_blank" rel="noopener">Century-old Kodaikanal Observatory data offers new insights into the Sun's magnetic future</a></strong>
+          <p>DD News coverage of how long-term Kodaikanal observations refine insight into the Sun's magnetic future.</p>
         </div>
         <div class="update-item">
           <small>20 Jan 2026</small>
           <strong><a href="https://www.swri.org/newsroom/press-releases/using-100-year-old-data-help-predict-future-solar-cycle-activity" target="_blank" rel="noopener">Using 100-year-old data to help predict future solar cycle activity</a></strong>
+          <p>Southwest Research Institute summary of how archival solar records improve forecasting of future cycles.</p>
         </div>
         <div class="update-item">
           <small>21 Jan 2026</small>
           <strong><a href="https://spacedaily.com/century-old-solar-records-refine-future-cycle-forecasts-999/" target="_blank" rel="noopener">Century-old solar records refine future cycle forecasts</a></strong>
+          <p>SpaceDaily report on how old Ca II K records sharpen solar-cycle forecast constraints.</p>
         </div>
         <div class="update-item">
           <small>06 Mar 2026</small>
           <strong><a href="https://www.universetoday.com/articles/making-new-solar-activity-connections-from-old-data" target="_blank" rel="noopener">Making New Solar Activity Connections From Old Data</a></strong>
+          <p>Universe Today feature connecting historical solar observations with new interpretations of solar activity.</p>
         </div>
       </div>
     </aside>
