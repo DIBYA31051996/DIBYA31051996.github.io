@@ -107,27 +107,27 @@ nav_order: 1
       <div class="updates-panel home-card">
         <h3>Recent highlights</h3>
         <div class="update-item">
-          <small>DST</small>
+          <small>19 Nov 2025</small>
           <strong><a href="https://dst.gov.in/century-long-data-kodaikanal-observatory-reveals-clues-suns-future" target="_blank" rel="noopener">Century-long data of Kodaikanal Observatory reveals clues to Sun's future</a></strong>
         </div>
         <div class="update-item">
-          <small>PIB</small>
+          <small>19 Nov 2025</small>
           <strong><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2191662&reg=3&lang=2" target="_blank" rel="noopener">Century-long data of Kodaikanal Observatory reveals clues to Sun's future</a></strong>
         </div>
         <div class="update-item">
-          <small>DD News</small>
+          <small>19 Nov 2025</small>
           <strong><a href="https://ddnews.gov.in/en/century-old-kodaikanal-observatory-data-offers-new-insights-into-the-suns-magnetic-future/" target="_blank" rel="noopener">Century-old Kodaikanal Observatory data offers new insights into the Sun's magnetic future</a></strong>
         </div>
         <div class="update-item">
-          <small>SwRI</small>
+          <small>20 Jan 2026</small>
           <strong><a href="https://www.swri.org/newsroom/press-releases/using-100-year-old-data-help-predict-future-solar-cycle-activity" target="_blank" rel="noopener">Using 100-year-old data to help predict future solar cycle activity</a></strong>
         </div>
         <div class="update-item">
-          <small>SpaceDaily</small>
+          <small>21 Jan 2026</small>
           <strong><a href="https://spacedaily.com/century-old-solar-records-refine-future-cycle-forecasts-999/" target="_blank" rel="noopener">Century-old solar records refine future cycle forecasts</a></strong>
         </div>
         <div class="update-item">
-          <small>Universe Today</small>
+          <small>06 Mar 2026</small>
           <strong><a href="https://www.universetoday.com/articles/making-new-solar-activity-connections-from-old-data" target="_blank" rel="noopener">Making New Solar Activity Connections From Old Data</a></strong>
         </div>
       </div>

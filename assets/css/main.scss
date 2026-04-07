@@ -1294,9 +1294,9 @@ footer {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(135deg, rgba(6, 11, 24, 0.34), rgba(8, 16, 32, 0.22)),
+    linear-gradient(135deg, rgba(6, 11, 24, 0.2), rgba(8, 16, 32, 0.12)),
     url("/assets/img/puri-beach-puri-odisha-1-attr-hero.jpg") center center / cover no-repeat;
-  filter: blur(2px) brightness(1.02);
+  filter: blur(1px) brightness(1.12) saturate(1.08);
   transform: scale(1.05);
   z-index: 0;
 }
@@ -1316,6 +1316,24 @@ footer {
 
 .home-publication-card {
   margin-bottom: 0.9rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-publication-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(7, 13, 26, 0.78), rgba(7, 13, 26, 0.58)),
+    url("/assets/img/butterfly.png") center center / cover no-repeat;
+  filter: brightness(0.92) saturate(1.05);
+  z-index: 0;
+}
+
+.home-publication-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .home-publication-card a,
@@ -1381,11 +1399,13 @@ footer {
 
 .home-story h3 {
   font-weight: 800;
+  text-shadow: 0 2px 18px rgba(4, 10, 24, 0.72);
 }
 
 .home-story p {
   color: #f4f7ff;
   text-align: justify;
+  text-shadow: 0 2px 12px rgba(4, 10, 24, 0.82);
 }
 
 .publication-kicker {
