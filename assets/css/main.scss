@@ -1067,9 +1067,18 @@ footer {
   border-radius: 20px;
   overflow: hidden;
   border: 1px solid rgba(151, 176, 240, 0.16);
+  background: rgba(7, 14, 29, 0.28);
+}
+
+.home-title-wrap::before {
+  content: "";
+  position: absolute;
+  inset: 0;
   background:
-    linear-gradient(90deg, rgba(7, 13, 26, 0.42), rgba(7, 13, 26, 0.16)),
+    linear-gradient(90deg, rgba(7, 13, 26, 0.26), rgba(7, 13, 26, 0.1)),
     url("/assets/img/sdo_aia_0304.jpg") center center / cover no-repeat;
+  animation: solarFrameSwap 10s infinite;
+  z-index: 0;
 }
 
 .home-title-wrap::after {
@@ -1077,8 +1086,8 @@ footer {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(7, 13, 26, 0.2), rgba(7, 13, 26, 0.04)),
-    linear-gradient(180deg, rgba(7, 13, 26, 0.02), rgba(7, 13, 26, 0.14));
+    linear-gradient(90deg, rgba(7, 13, 26, 0.28), rgba(7, 13, 26, 0.08)),
+    linear-gradient(180deg, rgba(7, 13, 26, 0.04), rgba(7, 13, 26, 0.18));
   pointer-events: none;
   z-index: 1;
 }
@@ -1331,12 +1340,31 @@ footer {
   margin-bottom: 0.8rem;
 }
 
-.profile-tags span,
+.profile-tags a,
 .card-badge {
-  padding: 0.36rem 0.68rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 102px;
+  min-height: 42px;
+  padding: 0.45rem 0.9rem;
   border: 1px solid rgba(181, 199, 245, 0.2);
   background: rgba(30, 43, 74, 0.72);
   color: #dde8ff;
+  border-radius: 999px;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease,
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.profile-tags a:hover {
+  transform: translateY(-1px);
+  border-color: rgba(150, 182, 255, 0.55);
+  background: rgba(53, 73, 124, 0.8);
+  color: #ffffff;
 }
 
 .sidebar-button {
@@ -1433,6 +1461,27 @@ footer {
   }
   50%, 100% {
     border-color: transparent;
+  }
+}
+
+@keyframes solarFrameSwap {
+  0%, 30% {
+    background:
+      linear-gradient(90deg, rgba(7, 13, 26, 0.26), rgba(7, 13, 26, 0.1)),
+      url("/assets/img/sdo_aia_0304.jpg") center center / cover no-repeat;
+    opacity: 1;
+  }
+  33%, 63% {
+    background:
+      linear-gradient(90deg, rgba(7, 13, 26, 0.26), rgba(7, 13, 26, 0.1)),
+      url("/assets/img/sdo_aia_0171.jpg") center center / cover no-repeat;
+    opacity: 1;
+  }
+  66%, 100% {
+    background:
+      linear-gradient(90deg, rgba(7, 13, 26, 0.26), rgba(7, 13, 26, 0.1)),
+      url("/assets/img/sdo_aia_0131.jpg") center center / cover no-repeat;
+    opacity: 1;
   }
 }
 

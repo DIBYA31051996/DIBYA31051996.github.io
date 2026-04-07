@@ -89,9 +89,9 @@ nav_order: 1
           <h2>Solar Researcher</h2>
           <p class="profile-meta">Aryabhatta Research Institute of Observational Sciences (ARIES), Nainital, India</p>
           <div class="profile-tags">
-            <span>Research</span>
-            <span>Forecasting</span>
-            <span>Solar data</span>
+            <a href="{{ '/about-me/' | relative_url }}">Connect</a>
+            <a href="{{ '/projects/' | relative_url }}">Research</a>
+            <a href="https://github.com/DIBYA31051996" target="_blank" rel="noopener">Github</a>
           </div>
           <a class="sidebar-button" href="{{ '/publications/' | relative_url }}">Publications</a>
         </div>
