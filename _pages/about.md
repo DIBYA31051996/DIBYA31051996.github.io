@@ -107,19 +107,28 @@ nav_order: 1
       <div class="updates-panel home-card">
         <h3>Recent highlights</h3>
         <div class="update-item">
-          <small>Mar 2026</small>
-          <strong>ApJS publication on machine-learning based plage identification from historical solar suncharts.</strong>
-          <p>Historical Kodaikanal observations are turned into cleaner, analysis-ready solar activity products.</p>
+          <small>DST</small>
+          <strong><a href="https://dst.gov.in/century-long-data-kodaikanal-observatory-reveals-clues-suns-future" target="_blank" rel="noopener">Century-long data of Kodaikanal Observatory reveals clues to Sun's future</a></strong>
         </div>
         <div class="update-item">
-          <small>Apr 2025</small>
-          <strong>Polar Network Index study published as a proxy for the historical polar magnetic field.</strong>
-          <p>This work strengthens long-baseline magnetic-field reconstruction using Ca II K observations.</p>
+          <small>PIB</small>
+          <strong><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2191662&reg=3&lang=2" target="_blank" rel="noopener">Century-long data of Kodaikanal Observatory reveals clues to Sun's future</a></strong>
         </div>
         <div class="update-item">
-          <small>Jan 2024</small>
-          <strong>Century-long chromospheric differential rotation analysis from Kodaikanal Ca II K data.</strong>
-          <p>A long-timescale perspective on solar chromospheric rotation and its observational evolution.</p>
+          <small>DD News</small>
+          <strong><a href="https://ddnews.gov.in/en/century-old-kodaikanal-observatory-data-offers-new-insights-into-the-suns-magnetic-future/" target="_blank" rel="noopener">Century-old Kodaikanal Observatory data offers new insights into the Sun's magnetic future</a></strong>
+        </div>
+        <div class="update-item">
+          <small>SwRI</small>
+          <strong><a href="https://www.swri.org/newsroom/press-releases/using-100-year-old-data-help-predict-future-solar-cycle-activity" target="_blank" rel="noopener">Using 100-year-old data to help predict future solar cycle activity</a></strong>
+        </div>
+        <div class="update-item">
+          <small>SpaceDaily</small>
+          <strong><a href="https://spacedaily.com/century-old-solar-records-refine-future-cycle-forecasts-999/" target="_blank" rel="noopener">Century-old solar records refine future cycle forecasts</a></strong>
+        </div>
+        <div class="update-item">
+          <small>Universe Today</small>
+          <strong><a href="https://www.universetoday.com/articles/making-new-solar-activity-connections-from-old-data" target="_blank" rel="noopener">Making New Solar Activity Connections From Old Data</a></strong>
         </div>
       </div>
     </aside>

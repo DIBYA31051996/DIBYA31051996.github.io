@@ -1294,9 +1294,9 @@ footer {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(135deg, rgba(6, 11, 24, 0.48), rgba(8, 16, 32, 0.34)),
+    linear-gradient(135deg, rgba(6, 11, 24, 0.34), rgba(8, 16, 32, 0.22)),
     url("/assets/img/puri-beach-puri-odisha-1-attr-hero.jpg") center center / cover no-repeat;
-  filter: blur(3px) brightness(0.92);
+  filter: blur(2px) brightness(1.02);
   transform: scale(1.05);
   z-index: 0;
 }
@@ -1459,6 +1459,20 @@ footer {
   color: #eef3ff;
   margin: 0.25rem 0 0.35rem;
   line-height: 1.45;
+}
+
+.updates-panel h3 {
+  font-weight: 800;
+}
+
+.update-item strong a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.update-item strong a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .home-section {
