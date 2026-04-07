@@ -1294,10 +1294,18 @@ footer {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(135deg, rgba(6, 11, 24, 0.2), rgba(8, 16, 32, 0.12)),
+    linear-gradient(135deg, rgba(6, 11, 24, 0.56), rgba(8, 16, 32, 0.42)),
     url("/assets/img/puri-beach-puri-odisha-1-attr-hero.jpg") center center / cover no-repeat;
-  filter: blur(1px) brightness(1.12) saturate(1.08);
+  filter: blur(1px) brightness(1.03) saturate(1.04);
   transform: scale(1.05);
+  z-index: 0;
+}
+
+.home-story::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(4, 10, 24, 0.12), rgba(4, 10, 24, 0.22));
   z-index: 0;
 }
 
@@ -1351,6 +1359,32 @@ footer {
   gap: 0.75rem;
 }
 
+.meta-strip {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.meta-card {
+  padding: 0.95rem 1rem;
+}
+
+.meta-kicker {
+  color: #aab7d8;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+}
+
+.meta-card p {
+  margin: 0;
+  color: #f4f7ff;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
 .mini-link {
   flex: 1 1 220px;
   text-align: center;
@@ -1401,16 +1435,16 @@ footer {
   font-weight: 800;
   color: #fffdf6;
   text-shadow:
-    0 2px 16px rgba(4, 10, 24, 0.88),
-    0 0 18px rgba(9, 18, 36, 0.48);
+    0 2px 18px rgba(4, 10, 24, 0.96),
+    0 0 22px rgba(9, 18, 36, 0.62);
 }
 
 .home-story p {
-  color: #fff9ee;
+  color: #ffffff;
   text-align: justify;
   text-shadow:
-    0 2px 10px rgba(4, 10, 24, 0.92),
-    0 0 10px rgba(7, 13, 26, 0.42);
+    0 2px 12px rgba(4, 10, 24, 0.98),
+    0 0 12px rgba(7, 13, 26, 0.55);
 }
 
 .publication-kicker {
@@ -1624,7 +1658,8 @@ footer {
 @media (max-width: 900px) {
   .home-stats,
   .card-grid-3,
-  .home-sidebar {
+  .home-sidebar,
+  .meta-strip {
     grid-template-columns: 1fr;
   }
 

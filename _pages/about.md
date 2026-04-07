@@ -54,20 +54,32 @@ nav_order: 1
         <h3>My Journey: From Odisha to Solar Physics</h3>
         <p>
           My research focuses on the long-term evolution of solar magnetic activity and its implications for solar
-          dynamo theory and cycle prediction. I work with century-long Ca II K and Hα datasets from the Kodaikanal
-          Solar Observatory, along with observations from Mount Wilson, PSPT Rome, and space-based missions like SDO.
-          My work involves developing automated (Python/IDL) and machine-learning-based methods to extract features
-          such as plages, sunspots, and polar magnetic fields, enabling the construction of long-term solar activity
-          records.
+          dynamo theory and solar cycle prediction. I work extensively with century-long Ca II K and Hα datasets from
+          the Kodaikanal Solar Observatory, complemented by observations from Mount Wilson Observatory, PSPT Rome, and
+          space-based missions such as the Solar Dynamics Observatory.
         </p>
         <p>
-          My expertise lies at the intersection of archival solar observations, data-driven analysis, and machine
-          learning, aimed at improving our understanding of solar variability.
+          I specialize in developing automated algorithms (Python/IDL) for feature detection and for constructing
+          long-term time series from both historical and modern solar data. My work includes long-term analysis of
+          chromospheric differential rotation using KoSO Ca II K data (1904-2007), automated identification of polar
+          network bright points to reconstruct historical polar magnetic fields back to 1904, and machine-learning
+          (CNN-based) detection of plages in century-long hand-drawn sun charts. I have also contributed to the
+          construction of long-term Carrington maps using Ca II K observations, multi-wavelength studies of
+          upper-atmospheric differential rotation using SDO/AIA data, and the development of ML-based pipelines for
+          automated detection of sunspot groups and tilt angles from KoSO white-light data. Additionally, I am involved
+          in efforts to reconstruct pre-1976 magnetograms using Ca II K and Hα data through generative AI approaches.
         </p>
         <p>
-          My journey began in Puri, Odisha. I completed my B.Sc. from the University of Delhi and my M.Sc. from the
-          Central University of Kerala, before joining ARIES, Nainital in 2020. From the shores of Puri to the study
-          of the Sun, this platform reflects both my scientific work and the path that shaped it.
+          Overall, my expertise lies at the intersection of archival solar observations, automated feature-extraction
+          techniques, and machine learning, aimed at improving our understanding of long-term solar variability and
+          advancing solar cycle prediction.
+        </p>
+        <p>
+          My journey into solar physics began in Puri, Odisha. I completed my B.Sc. from the University of Delhi and
+          my M.Sc. from the Central University of Kerala, where my interest in astrophysics steadily took shape. In
+          2020, I joined ARIES, Nainital, where my research evolved into a more quantitative and data-driven
+          exploration of the Sun. This platform reflects both my scientific work and the path that led me here, from
+          the shores of Puri to the study of solar activity.
         </p>
       </article>
 
@@ -141,6 +153,17 @@ nav_order: 1
   </section>
 
   <section class="home-section">
+    <div class="meta-strip">
+      <article class="meta-card home-card">
+        <div class="meta-kicker">Currently working on</div>
+        <p>Solar cycle • SFT • Synoptic maps</p>
+      </article>
+      <article class="meta-card home-card">
+        <div class="meta-kicker">Tooling</div>
+        <p>Python • HDF5 • Visualization</p>
+      </article>
+    </div>
+
     <div class="section-heading">
       <div>
         <div class="section-kicker">Research themes</div>
