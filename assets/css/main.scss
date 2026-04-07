@@ -1075,9 +1075,9 @@ footer {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(7, 13, 26, 0.26), rgba(7, 13, 26, 0.1)),
+    linear-gradient(90deg, rgba(7, 13, 26, 0.22), rgba(7, 13, 26, 0.08)),
     url("/assets/img/sdo_aia_0304.jpg") center center / cover no-repeat;
-  animation: solarFrameSwap 10s infinite;
+  animation: solarFrameSwapA 15s infinite;
   z-index: 0;
 }
 
@@ -1086,10 +1086,38 @@ footer {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(7, 13, 26, 0.28), rgba(7, 13, 26, 0.08)),
-    linear-gradient(180deg, rgba(7, 13, 26, 0.04), rgba(7, 13, 26, 0.18));
+    linear-gradient(90deg, rgba(7, 13, 26, 0.18), rgba(7, 13, 26, 0.04)),
+    linear-gradient(180deg, rgba(7, 13, 26, 0.02), rgba(7, 13, 26, 0.12));
   pointer-events: none;
   z-index: 1;
+}
+
+.home-title-wrap .home-title {
+  isolation: isolate;
+}
+
+.home-title-wrap .home-title::before,
+.home-title-wrap .home-title::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  z-index: -1;
+  opacity: 0;
+}
+
+.home-title-wrap .home-title::before {
+  background:
+    linear-gradient(90deg, rgba(7, 13, 26, 0.22), rgba(7, 13, 26, 0.08)),
+    url("/assets/img/sdo_aia_0171.jpg") center center / cover no-repeat;
+  animation: solarFrameSwapB 15s infinite;
+}
+
+.home-title-wrap .home-title::after {
+  background:
+    linear-gradient(90deg, rgba(7, 13, 26, 0.22), rgba(7, 13, 26, 0.08)),
+    url("/assets/img/sdo_aia_0131.jpg") center center / cover no-repeat;
+  animation: solarFrameSwapC 15s infinite;
 }
 
 .home-title {
@@ -1132,7 +1160,7 @@ footer {
 
 .home-lead {
   max-width: 760px;
-  color: #c5d2f2;
+  color: #f3f7ff;
   font-size: 1.05rem;
   line-height: 1.7;
   margin-bottom: 1rem;
@@ -1464,24 +1492,39 @@ footer {
   }
 }
 
-@keyframes solarFrameSwap {
-  0%, 30% {
-    background:
-      linear-gradient(90deg, rgba(7, 13, 26, 0.26), rgba(7, 13, 26, 0.1)),
-      url("/assets/img/sdo_aia_0304.jpg") center center / cover no-repeat;
+@keyframes solarFrameSwapA {
+  0%, 28% {
     opacity: 1;
   }
-  33%, 63% {
-    background:
-      linear-gradient(90deg, rgba(7, 13, 26, 0.26), rgba(7, 13, 26, 0.1)),
-      url("/assets/img/sdo_aia_0171.jpg") center center / cover no-repeat;
+  33%, 95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes solarFrameSwapB {
+  0%, 28% {
+    opacity: 0;
+  }
+  33%, 61% {
     opacity: 1;
   }
   66%, 100% {
-    background:
-      linear-gradient(90deg, rgba(7, 13, 26, 0.26), rgba(7, 13, 26, 0.1)),
-      url("/assets/img/sdo_aia_0131.jpg") center center / cover no-repeat;
+    opacity: 0;
+  }
+}
+
+@keyframes solarFrameSwapC {
+  0%, 61% {
+    opacity: 0;
+  }
+  66%, 95% {
     opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
