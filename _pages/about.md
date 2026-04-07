@@ -72,14 +72,14 @@ nav_order: 1
       </article>
 
       <article class="home-publication-card">
-        <div class="section-kicker">Latest publication</div>
-        <h3>Machine Learning-based Identification of the Solar Disk and Plages in Kodaikanal Solar Observatory Historical Suncharts</h3>
+        <div class="section-kicker publication-kicker">Latest Publication</div>
+        <h3><strong>Machine Learning-based Identification of the Solar Disk and Plages in Kodaikanal Solar Observatory Historical Suncharts</strong></h3>
         <p>
           Published in <em>The Astrophysical Journal Supplement Series</em> in March 2026, this work focuses on
           machine-learning driven identification of solar-disk structure and plages from historical Kodaikanal
           suncharts.
         </p>
-        <a href="{{ '/publications/' | relative_url }}">View publication archive</a>
+        <a href="{{ '/publications/' | relative_url }}"><strong>View publication archive</strong></a>
       </article>
 
       <div class="home-mini-links">
