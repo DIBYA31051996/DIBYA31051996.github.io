@@ -53,14 +53,21 @@ nav_order: 1
       <article class="home-story">
         <h3>My Journey: From Odisha to Solar Physics</h3>
         <p>
-          I am currently working on long-term solar activity, chromospheric and sunspot analysis, and machine-learning
-          ready data products for heliophysics research. My work connects observational solar records with physically
-          grounded modeling so we can better understand the structure and evolution of solar cycles.
+          My research focuses on the long-term evolution of solar magnetic activity and its implications for solar
+          dynamo theory and cycle prediction. I work with century-long Ca II K and Hα datasets from the Kodaikanal
+          Solar Observatory, along with observations from Mount Wilson, PSPT Rome, and space-based missions like SDO.
+          My work involves developing automated (Python/IDL) and machine-learning-based methods to extract features
+          such as plages, sunspots, and polar magnetic fields, enabling the construction of long-term solar activity
+          records.
         </p>
         <p>
-          My research interests include solar cycle variability, surface and advective flux transport, data curation for
-          forecasting workflows, and publication-ready scientific communication. This website brings those pieces
-          together into a cleaner research home.
+          My expertise lies at the intersection of archival solar observations, data-driven analysis, and machine
+          learning, aimed at improving our understanding of solar variability.
+        </p>
+        <p>
+          My journey began in Puri, Odisha. I completed my B.Sc. from the University of Delhi and my M.Sc. from the
+          Central University of Kerala, before joining ARIES, Nainital in 2020. From the shores of Puri to the study
+          of the Sun, this platform reflects both my scientific work and the path that shaped it.
         </p>
       </article>
 

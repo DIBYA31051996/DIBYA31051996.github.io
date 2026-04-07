@@ -1285,6 +1285,21 @@ footer {
 
 .home-story {
   margin-bottom: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-story::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(6, 11, 24, 0.86), rgba(8, 16, 32, 0.78));
+  z-index: 0;
+}
+
+.home-story > * {
+  position: relative;
+  z-index: 1;
 }
 
 .home-story p:last-child,
@@ -1358,6 +1373,15 @@ footer {
 .profile-panel h2 {
   margin: 0;
   font-size: 1.3rem;
+}
+
+.home-story h3 {
+  font-weight: 800;
+}
+
+.home-story p {
+  color: #f4f7ff;
+  text-align: justify;
 }
 
 .profile-meta {
