@@ -172,14 +172,14 @@ nav_order: 1
 
     <div class="card-grid card-grid-2">
       <article class="info-card home-card">
-        <h3><strong>Solar cycle variability</strong></h3>
+        <h3><strong><span class="theme-icon">◉</span> Solar cycle variability</strong></h3>
         <p>Long-baseline evolution, reversals, asymmetry, and cycle-to-cycle structure across multiple observables.</p>
-        <a href="{{ '/projects/' | relative_url }}">Open theme</a>
+        <a href="{{ '/projects/' | relative_url }}">Open theme <span aria-hidden="true">↗</span></a>
       </article>
       <article class="info-card home-card">
-        <h3><strong>ML-ready solar data</strong></h3>
+        <h3><strong><span class="theme-icon">✦</span> ML-ready solar data</strong></h3>
         <p>Calibration, detection, curation, and forecasting-oriented products designed for reuse and analysis.</p>
-        <a href="{{ '/projects/' | relative_url }}">Open theme</a>
+        <a href="{{ '/projects/' | relative_url }}">Open theme <span aria-hidden="true">↗</span></a>
       </article>
     </div>
   </section>
