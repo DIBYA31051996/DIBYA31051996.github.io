@@ -153,17 +153,6 @@ nav_order: 1
   </section>
 
   <section class="home-section">
-    <div class="meta-strip">
-      <article class="meta-card home-card">
-        <div class="meta-kicker">Currently working on</div>
-        <p>Solar cycle • SFT • Synoptic maps</p>
-      </article>
-      <article class="meta-card home-card">
-        <div class="meta-kicker">Tooling</div>
-        <p>Python • HDF5 • Visualization</p>
-      </article>
-    </div>
-
     <div class="section-heading">
       <div>
         <div class="section-kicker">Research themes</div>
@@ -230,6 +219,19 @@ nav_order: 1
       <a class="btn btn-soft" href="{{ '/about-me/' | relative_url }}">Open Profile</a>
       <a class="btn btn-soft" href="{{ '/projects/' | relative_url }}">Open Research</a>
       <a class="btn btn-primary" href="{{ '/publications/' | relative_url }}">View Publications</a>
+    </div>
+  </section>
+
+  <section class="home-section home-meta-section">
+    <div class="meta-strip">
+      <article class="meta-card home-card">
+        <div class="meta-kicker">Currently Working On</div>
+        <p>Solar cycle • Synoptic maps</p>
+      </article>
+      <article class="meta-card home-card">
+        <div class="meta-kicker">Tooling</div>
+        <p>Python • HDF5 • Visualization</p>
+      </article>
     </div>
   </section>
 </div>

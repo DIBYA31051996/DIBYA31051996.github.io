@@ -1361,9 +1361,9 @@ footer {
 
 .meta-strip {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 0.9rem;
-  margin-bottom: 1rem;
+  margin-top: 0.2rem;
 }
 
 .meta-card {
@@ -1383,6 +1383,10 @@ footer {
   color: #f4f7ff;
   font-weight: 700;
   font-size: 1.05rem;
+}
+
+.home-meta-section {
+  margin-top: 1rem;
 }
 
 .mini-link {
