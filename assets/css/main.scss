@@ -2163,6 +2163,7 @@ footer {
   appearance: none;
   -webkit-appearance: none;
   background-color: rgba(255, 255, 255, 0.04) !important;
+  background-image: none !important;
   font-family: inherit;
   line-height: 1.2;
   display: flex;
@@ -2190,6 +2191,23 @@ footer {
   color: #d9e5ff !important;
   -webkit-text-fill-color: #d9e5ff !important;
   border-color: rgba(175, 194, 235, 0.14) !important;
+}
+
+.research-nav-btn:focus,
+.research-nav-btn:focus-visible,
+.research-nav-btn:active {
+  outline: none !important;
+  background: rgba(80, 71, 138, 0.18) !important;
+  background-color: rgba(80, 71, 138, 0.18) !important;
+  background-image: none !important;
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  box-shadow: 0 0 0 1px rgba(145, 120, 255, 0.18) inset !important;
+}
+
+.research-sidebar .research-nav-btn,
+.research-sidebar .research-nav-btn:not(.active) {
+  background-color: rgba(255, 255, 255, 0.04) !important;
 }
 
 .research-nav-btn:hover {
