@@ -22,14 +22,14 @@ nav_order: 3
       <h2>Research Areas</h2>
 
       <div class="research-nav" role="tablist" aria-label="Research areas">
-        <button class="research-nav-btn active" type="button" data-target="solar-cycle" role="tab" aria-selected="true">
+        <a class="research-nav-btn active" href="#solar-cycle" data-target="solar-cycle" role="tab" aria-selected="true">
           <span class="research-nav-dot"></span>
           Solar Cycle
-        </button>
-        <button class="research-nav-btn" type="button" data-target="machine-learning" role="tab" aria-selected="false">
+        </a>
+        <a class="research-nav-btn" href="#machine-learning" data-target="machine-learning" role="tab" aria-selected="false">
           <span class="research-nav-dot"></span>
           Machine Learning
-        </button>
+        </a>
       </div>
     </aside>
 
@@ -136,7 +136,8 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   buttons.forEach((button) => {
-    button.addEventListener('click', function () {
+    button.addEventListener('click', function (event) {
+      event.preventDefault();
       showPanel(button.dataset.target);
     });
   });
