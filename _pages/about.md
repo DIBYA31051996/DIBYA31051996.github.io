@@ -199,13 +199,13 @@ nav_order: 1
       </article>
       <article class="info-card home-card accent-card">
         <div class="card-badge card-badge-planned">Planned Later</div>
-        <h3>Project pages and future data notes</h3>
-        <p>Dedicated project summaries can grow into dataset pages, reproducible workflows, and visual explainers.</p>
+        <h3><strong>Project pages and future data notes</strong></h3>
+        <p>Planned space for project writeups, evolving data notes, reproducible workflows, and visual explainers around ongoing ideas.</p>
       </article>
       <article class="info-card home-card accent-card">
         <div class="card-badge card-badge-planned">Planned Later</div>
-        <h3>Publication and highlight snapshots</h3>
-        <p>Recent outputs, selected papers, and short summaries can anchor the homepage without overwhelming it.</p>
+        <h3><strong>Literature, Movies, Sketch etc..</strong></h3>
+        <p>A future corner for books, films, sketches, and other personal interests that can make the site feel more complete and human.</p>
       </article>
     </div>
   </section>
