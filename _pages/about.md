@@ -194,7 +194,7 @@ nav_order: 1
     <div class="card-grid card-grid-3">
       <article class="info-card home-card accent-card">
         <div class="card-badge">Active Now</div>
-        <h3><strong>About</strong>, <strong>research</strong>, <strong>publications</strong>, and CV</h3>
+        <h3><strong>About</strong>, <strong>research</strong>, <strong>publications</strong>, <strong>and CV</strong></h3>
         <p>The core sections are organized so visitors can quickly understand your background and current work.</p>
       </article>
       <article class="info-card home-card accent-card">
