@@ -17,7 +17,7 @@ nav_order: 3
 <div class="research-shell">
   <section class="research-frame">
     <aside class="research-sidebar">
-      <div class="research-pill">Home • Research</div>
+      <div class="research-pill"><span class="research-pill-icon">◎</span> Home • Research</div>
       <h2>Research Areas</h2>
 
       <div class="research-nav" role="tablist" aria-label="Research areas">

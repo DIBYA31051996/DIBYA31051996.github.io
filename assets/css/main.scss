@@ -2135,6 +2135,18 @@ footer {
   font-weight: 700;
 }
 
+.research-pill-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  border-radius: 999px;
+  color: #7ee6ff;
+  font-size: 0.8rem;
+  text-shadow: 0 0 12px rgba(126, 230, 255, 0.45);
+}
+
 .research-sidebar h2 {
   margin: 1rem 0 1.1rem;
   color: #f8fbff;
@@ -2148,6 +2160,8 @@ footer {
 }
 
 .research-nav-btn {
+  appearance: none;
+  -webkit-appearance: none;
   display: flex;
   align-items: center;
   gap: 0.75rem;
@@ -2160,6 +2174,7 @@ footer {
   font-size: 1rem;
   font-weight: 700;
   text-align: left;
+  cursor: pointer;
   transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
@@ -2207,7 +2222,7 @@ footer {
 .research-heading h1 {
   margin: 0 0 0.45rem;
   color: #f8fbff;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: clamp(1.7rem, 3.4vw, 2.55rem);
   font-weight: 800;
   line-height: 1.05;
 }
