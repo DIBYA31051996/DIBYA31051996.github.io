@@ -2,64 +2,142 @@
 layout: page
 title: Research
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: Solar cycle and machine learning research directions.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="grid">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
+<style>
+  .post-header .post-description,
+  .post-header .desc {
+    display: none !important;
+  }
+</style>
 
-{% else %}
+<div class="research-shell">
+  <section class="research-frame">
+    <aside class="research-sidebar">
+      <div class="research-pill">Home • Research</div>
+      <h2>Research Areas</h2>
 
-<!-- Display projects without categories -->
+      <div class="research-nav" role="tablist" aria-label="Research areas">
+        <button class="research-nav-btn active" type="button" data-target="solar-cycle" role="tab" aria-selected="true">
+          <span class="research-nav-dot"></span>
+          Solar Cycle
+        </button>
+        <button class="research-nav-btn" type="button" data-target="machine-learning" role="tab" aria-selected="false">
+          <span class="research-nav-dot"></span>
+          Machine Learning
+        </button>
+      </div>
+    </aside>
 
-{% assign sorted_projects = site.projects | sort: "importance" %}
+    <section class="research-content">
+      <article class="research-panel active" data-panel="solar-cycle" role="tabpanel">
+        <div class="research-heading">
+          <h1>Solar Cycle</h1>
+          <p>Long-term variability of solar magnetism and global field evolution</p>
+        </div>
 
-  <!-- Generate cards for each project -->
+        <div class="research-copy">
+          <p>
+            I study the long-term evolution of solar magnetism across multiple cycles, focusing on cycle-to-cycle
+            variability, polar-field diagnostics, and historical reconstructions that connect observations and modeling
+            for space-weather relevant insights.
+          </p>
 
-{% if page.horizontal %}
+          <h3>Solar Cycle Periodicity</h3>
+          <p>
+            This includes historical reconstruction, polar-field diagnostics, and links between surface magnetism and
+            predictive space-weather indicators.
+          </p>
+        </div>
 
-  <div class="container">
-    <div class="row row-cols-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="grid">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
+        <div class="research-detail-grid">
+          <article class="research-detail-card">
+            <h4>Typical questions</h4>
+            <ul>
+              <li>How do cycles differ in amplitude and timing?</li>
+              <li>What do polar fields tell us about the next cycle?</li>
+              <li>How far back can reconstructions be trusted?</li>
+            </ul>
+          </article>
+
+          <article class="research-detail-card">
+            <h4>Related sections</h4>
+            <div class="research-actions">
+              <a class="research-action-primary" href="{{ '/publications/' | relative_url }}">See publications</a>
+              <a class="research-action-secondary" href="{{ '/blog/' | relative_url }}">Read article notes</a>
+            </div>
+          </article>
+        </div>
+      </article>
+
+      <article class="research-panel" data-panel="machine-learning" role="tabpanel" hidden>
+        <div class="research-heading">
+          <h1>Machine Learning</h1>
+          <p>Detection, classification, and reconstruction pipelines for archival solar observations</p>
+        </div>
+
+        <div class="research-copy">
+          <p>
+            My machine-learning work centers on building reliable pipelines for feature detection in century-long solar
+            datasets, especially where archival material requires careful preprocessing, labeling, and interpretation.
+          </p>
+
+          <h3>Archival Intelligence</h3>
+          <p>
+            I use ML-oriented workflows for plage detection, solar-disk identification, pre-digital data reconstruction,
+            and other tasks where automation can extend the scientific value of historical observations.
+          </p>
+        </div>
+
+        <div class="research-detail-grid">
+          <article class="research-detail-card">
+            <h4>Typical questions</h4>
+            <ul>
+              <li>How can noisy archival data be made ML-ready?</li>
+              <li>Which features are robust across decades of observations?</li>
+              <li>Can learning-based methods recover structure from incomplete data?</li>
+            </ul>
+          </article>
+
+          <article class="research-detail-card">
+            <h4>Related sections</h4>
+            <div class="research-actions">
+              <a class="research-action-primary" href="{{ '/publications/' | relative_url }}">See publications</a>
+              <a class="research-action-secondary" href="{{ '/repositories/' | relative_url }}">Open repositories</a>
+            </div>
+          </article>
+        </div>
+      </article>
+    </section>
+  </section>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const buttons = Array.from(document.querySelectorAll('.research-nav-btn'));
+  const panels = Array.from(document.querySelectorAll('.research-panel'));
+
+  function showPanel(target) {
+    buttons.forEach((button) => {
+      const active = button.dataset.target === target;
+      button.classList.toggle('active', active);
+      button.setAttribute('aria-selected', active ? 'true' : 'false');
+    });
+
+    panels.forEach((panel) => {
+      const active = panel.dataset.panel === target;
+      panel.classList.toggle('active', active);
+      panel.hidden = !active;
+    });
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', function () {
+      showPanel(button.dataset.target);
+    });
+  });
+});
+</script>
