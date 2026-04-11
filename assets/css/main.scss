@@ -1513,16 +1513,34 @@ footer {
 }
 
 .card-badge {
-  font-size: 0.92rem;
+  font-size: 0.82rem;
   font-weight: 900;
   letter-spacing: 0.03em;
   text-transform: none;
   color: #f5f8ff;
   border: 1px solid rgba(166, 192, 255, 0.38);
   background: linear-gradient(135deg, rgba(72, 98, 168, 0.5), rgba(117, 86, 220, 0.42));
+  min-width: 88px;
+  min-height: 34px;
+  padding: 0.3rem 0.72rem;
+  margin-bottom: 0.8rem;
   box-shadow:
     0 8px 20px rgba(40, 58, 116, 0.24),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.card-badge-active {
+  color: #f7fbff;
+  border-color: rgba(113, 215, 255, 0.46);
+  background: linear-gradient(135deg, rgba(40, 148, 194, 0.62), rgba(64, 103, 232, 0.48));
+  box-shadow:
+    0 8px 20px rgba(33, 101, 153, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.card-badge-planned {
+  border-color: rgba(166, 192, 255, 0.38);
+  background: linear-gradient(135deg, rgba(72, 98, 168, 0.5), rgba(117, 86, 220, 0.42));
 }
 
 .sidebar-button {
@@ -1574,18 +1592,6 @@ footer {
   color: #9cb5ee;
   border: 1px solid rgba(156, 181, 238, 0.2);
   background: rgba(43, 57, 97, 0.18);
-}
-
-.home-section .section-heading .section-kicker {
-  font-size: 1.15rem;
-  font-weight: 900;
-  text-transform: none;
-  color: #edf3ff;
-  border: none;
-  background: linear-gradient(135deg, rgba(79, 107, 182, 0.28), rgba(124, 92, 255, 0.22));
-  box-shadow:
-    0 10px 24px rgba(35, 52, 104, 0.22),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .section-heading h2,
