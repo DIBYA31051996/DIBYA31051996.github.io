@@ -958,6 +958,7 @@ footer {
    ========================= */
 .navbar .navbar-nav .nav-item .nav-link {
   font-size: 1.18rem !important;
+  font-weight: 800;
   border: 1px solid transparent !important; /* no visible border when not active page */
 }
 
@@ -1383,11 +1384,12 @@ footer {
 }
 
 .meta-kicker {
-  color: #aab7d8;
+  color: #ffffff;
   font-size: 0.78rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 0.35rem;
+  font-weight: 800;
 }
 
 .meta-card p {
@@ -1559,6 +1561,11 @@ footer {
   color: #9cb5ee;
   border: 1px solid rgba(156, 181, 238, 0.2);
   background: rgba(43, 57, 97, 0.18);
+}
+
+.home-section .section-heading .section-kicker {
+  font-size: 1rem;
+  font-weight: 800;
 }
 
 .section-heading h2,

@@ -188,23 +188,22 @@ nav_order: 1
     <div class="section-heading">
       <div>
         <div class="section-kicker">Site roadmap</div>
-        <h2>What lives here</h2>
       </div>
     </div>
 
     <div class="card-grid card-grid-3">
       <article class="info-card home-card accent-card">
-        <div class="card-badge">About</div>
-        <h3>About, research, publications, and CV</h3>
+        <div class="card-badge">Active Now</div>
+        <h3><strong>About</strong>, <strong>research</strong>, <strong>publications</strong>, and CV</h3>
         <p>The core sections are organized so visitors can quickly understand your background and current work.</p>
       </article>
       <article class="info-card home-card accent-card">
-        <div class="card-badge">Projects</div>
+        <div class="card-badge">Planned Later</div>
         <h3>Project pages and future data notes</h3>
         <p>Dedicated project summaries can grow into dataset pages, reproducible workflows, and visual explainers.</p>
       </article>
       <article class="info-card home-card accent-card">
-        <div class="card-badge">Publications</div>
+        <div class="card-badge">Planned Later</div>
         <h3>Publication and highlight snapshots</h3>
         <p>Recent outputs, selected papers, and short summaries can anchor the homepage without overwhelming it.</p>
       </article>
