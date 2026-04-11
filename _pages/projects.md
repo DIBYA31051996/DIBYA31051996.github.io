@@ -8,6 +8,7 @@ nav_order: 3
 ---
 
 <style>
+  .post-header .post-title,
   .post-header .post-description,
   .post-header .desc {
     display: none !important;
