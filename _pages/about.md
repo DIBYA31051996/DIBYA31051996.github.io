@@ -212,8 +212,7 @@ nav_order: 1
 
   <section class="home-cta home-card">
     <div>
-      <div class="section-kicker">Latest connect</div>
-      <h2>Let us connect</h2>
+      <h2><strong>Let us connect</strong></h2>
       <p>
         For collaborations, solar-physics discussions, and data-product ideas, use the publication archive and profile
         pages as your starting point.

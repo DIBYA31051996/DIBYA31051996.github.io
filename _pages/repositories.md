@@ -2,46 +2,79 @@
 layout: page
 permalink: /repositories/
 title: Repositories
-description: Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.
+description: Code, tools, and research repositories.
 nav: true
 nav_order: 4
 ---
 
-## GitHub users
+<style>
+  .post-header .post-description,
+  .post-header .desc {
+    display: none !important;
+  }
+</style>
 
-{% if site.data.repositories.github_users %}
+<div class="repo-shell">
+  <section class="repo-hero repo-panel">
+    <div class="repo-hero-copy">
+      <div class="repo-pill">Code Archive</div>
+      <h1>Repositories and tools</h1>
+      <p>
+        A small collection of research software, datasets, and website code that supports my work in solar physics,
+        long-baseline observations, and data-driven analysis.
+      </p>
+    </div>
+    <div class="repo-hero-meta">
+      <div class="repo-meta-card">
+        <strong>{{ site.data.repositories.github_repos.size }}</strong>
+        <span>Featured repositories</span>
+      </div>
+      <div class="repo-meta-card">
+        <strong>{{ site.data.repositories.github_users.size }}</strong>
+        <span>GitHub profile</span>
+      </div>
+    </div>
+  </section>
 
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for user in site.data.repositories.github_users %}
-    {% include repository/repo_user.liquid username=user %}
-  {% endfor %}
-</div>
-
----
-
-{% if site.repo_trophies.enabled %}
-{% for user in site.data.repositories.github_users %}
-{% if site.data.repositories.github_users.size > 1 %}
-
-  <h4>{{ user }}</h4>
+  {% if site.data.repositories.github_users %}
+    <section class="repo-panel">
+      <div class="repo-section-heading">
+        <h2>GitHub profile</h2>
+        <p>The main profile card gives a quick overview of activity, languages, and repository footprint.</p>
+      </div>
+      <div class="repo-grid repo-grid-profile">
+        {% for user in site.data.repositories.github_users %}
+          {% include repository/repo_user.liquid username=user %}
+        {% endfor %}
+      </div>
+    </section>
   {% endif %}
-  <div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% include repository/repo_trophies.liquid username=user %}
-  </div>
 
----
+  {% if site.data.repositories.github_repos %}
+    <section class="repo-panel">
+      <div class="repo-section-heading">
+        <h2>Featured repositories</h2>
+        <p>Selected codebases related to tools, data products, and the site itself.</p>
+      </div>
+      <div class="repo-grid repo-grid-projects">
+        {% for repo in site.data.repositories.github_repos %}
+          {% include repository/repo.liquid repository=repo %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
 
-{% endfor %}
-{% endif %}
-{% endif %}
-
-## GitHub Repositories
-
-{% if site.data.repositories.github_repos %}
-
-<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
-  {% for repo in site.data.repositories.github_repos %}
-    {% include repository/repo.liquid repository=repo %}
-  {% endfor %}
+  {% if site.repo_trophies.enabled and site.data.repositories.github_users %}
+    {% for user in site.data.repositories.github_users %}
+      <section class="repo-panel">
+        <div class="repo-section-heading">
+          <h2>Contribution highlights</h2>
+          <p>A quick visual snapshot of long-term GitHub activity and contribution patterns.</p>
+        </div>
+        <div class="repo-grid repo-grid-trophies">
+          {% include repository/repo_trophies.liquid username=user %}
+        </div>
+      </section>
+    {% endfor %}
+  {% endif %}
 </div>
-{% endif %}
