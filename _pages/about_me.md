@@ -26,12 +26,12 @@ nav_order: 2
       </article>
 
       <div class="about-nav">
-        <button class="about-nav-btn active" type="button">Overview</button>
-        <button class="about-nav-btn" type="button">Journey</button>
-        <button class="about-nav-btn" type="button">Research Style</button>
-        <button class="about-nav-btn" type="button">Experience</button>
-        <button class="about-nav-btn" type="button">Skills</button>
-        <button class="about-nav-btn" type="button">Connect</button>
+        <div class="about-nav-btn active"><span class="about-nav-icon">◈</span>Overview</div>
+        <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Journey</div>
+        <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Research Style</div>
+        <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Experience</div>
+        <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Skills</div>
+        <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Connect</div>
       </div>
 
       <article class="about-meta-card">
