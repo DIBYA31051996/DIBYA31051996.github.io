@@ -2485,10 +2485,22 @@ footer {
   align-items: center;
   gap: 0.7rem;
   text-align: left;
+  text-decoration: none;
   box-shadow:
     0 10px 20px rgba(0, 0, 0, 0.16),
     inset 0 1px 0 rgba(255, 255, 255, 0.04),
     inset 0 0 0 1px rgba(160, 190, 255, 0.05);
+}
+
+.about-nav a.about-nav-btn {
+  cursor: pointer;
+}
+
+.about-nav a.about-nav-btn:hover {
+  color: #ffffff;
+  text-decoration: none;
+  border-color: rgba(156, 116, 255, 0.42);
+  background: rgba(72, 55, 145, 0.16) !important;
 }
 
 .about-nav-btn.active {
@@ -2577,6 +2589,14 @@ footer {
 
 .about-copy {
   margin-bottom: 1rem;
+}
+
+.about-panel {
+  display: none;
+}
+
+.about-panel.active {
+  display: block;
 }
 
 .about-copy h3 {

@@ -26,8 +26,8 @@ nav_order: 2
       </article>
 
       <div class="about-nav">
-        <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Overview</div>
-        <div class="about-nav-btn active"><span class="about-nav-icon">◈</span>Journey</div>
+        <a class="about-nav-btn active" href="#overview" data-target="overview"><span class="about-nav-icon">◈</span>Overview</a>
+        <a class="about-nav-btn" href="#journey" data-target="journey"><span class="about-nav-icon">◈</span>Journey</a>
         <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Research Style</div>
         <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Experience</div>
         <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Skills</div>
@@ -56,73 +56,134 @@ nav_order: 2
         <p>This page is the narrative center of the site: who I am, how I got here, how I work, and how the rest of the site fits together.</p>
       </div>
 
-      <div class="about-copy">
-        <h3>Journey</h3>
-        <p>From Puri to solar-physics research</p>
-      </div>
+      <section class="about-panel active" data-panel="overview">
+        <div class="about-copy">
+          <h3>Overview</h3>
+          <p>A quick introduction to my scientific profile</p>
+        </div>
 
-      <article class="about-journey-card">
-        <div class="about-journey-item">
-          <div class="about-journey-dot"></div>
-          <div class="about-journey-body">
-            <h4>Early years in Puri</h4>
-            <small>Puri, Odisha</small>
+        <div class="about-card-grid">
+          <article class="about-detail-card">
+            <h4>What I work on</h4>
             <p>
-              My journey began in Puri, where curiosity about the natural world slowly grew into a deeper interest in
-              physics and the larger questions of astronomy.
+              I work on solar magnetic-field evolution across multiple cycles, combining observations, long-baseline
+              reconstructions, and data-centered methods to better understand long-term solar variability.
             </p>
-          </div>
-        </div>
+            <ul>
+              <li>Solar cycle variability</li>
+              <li>Polar fields and magnetic diagnostics</li>
+              <li>ML-ready archival datasets</li>
+            </ul>
+          </article>
 
-        <div class="about-journey-item">
-          <div class="about-journey-dot"></div>
-          <div class="about-journey-body">
-            <h4>Physics training in Delhi</h4>
-            <small>University of Delhi, 2013–2016</small>
+          <article class="about-detail-card">
+            <h4>What this site is for</h4>
             <p>
-              My undergraduate years gave me the formal grounding in physics that shaped my discipline, problem-solving
-              style, and interest in moving toward astrophysics and data-driven scientific work.
+              I want this site to serve as both a research profile and a growing archive: publications, repositories,
+              future articles, and eventually topic-specific pages.
             </p>
-          </div>
+            <p class="about-note">
+              The structure is intentionally modular so more pages can be added without redesigning everything.
+            </p>
+          </article>
         </div>
 
-        <div class="about-journey-item">
-          <div class="about-journey-dot"></div>
-          <div class="about-journey-body">
-            <h4>Master's pathway into astrophysics</h4>
-            <small>Central University of Kerala, 2017–2019</small>
-            <p>
-              During my master's studies, astrophysics became a clearer direction, and I became more certain that I
-              wanted to work on questions connected to the Sun, long-term observations, and physical interpretation.
-            </p>
+        <article class="about-cta-card">
+          <h4>Start from the strongest entry points</h4>
+          <p>
+            Research gives the map, publications provide the record, and repositories hold the tools and code behind the
+            work.
+          </p>
+          <div class="about-actions">
+            <a class="about-action-primary" href="{{ '/projects/' | relative_url }}">Open Research</a>
+            <a class="about-action-secondary" href="{{ '/publications/' | relative_url }}">Open Publications</a>
+            <a class="about-action-secondary" href="{{ '/repositories/' | relative_url }}">Open Repositories</a>
           </div>
+        </article>
+      </section>
+
+      <section class="about-panel" data-panel="journey" hidden>
+        <div class="about-copy">
+          <h3>Journey</h3>
+          <p>From Puri to solar-physics research</p>
         </div>
 
-        <div class="about-journey-item">
-          <div class="about-journey-dot"></div>
-          <div class="about-journey-body">
-            <h4>Research work at ARIES</h4>
-            <small>Nainital, from 2020 onward</small>
-            <p>
-              At ARIES, my work evolved into long-term studies of solar magnetic activity, polar fields, chromospheric
-              structures, and machine-learning pipelines built around archival solar data and century-long records.
-            </p>
+        <article class="about-journey-card">
+          <div class="about-journey-item">
+            <div class="about-journey-dot"></div>
+            <div class="about-journey-body">
+              <h4>Early years in Puri</h4>
+              <small>Puri, Odisha</small>
+              <p>
+                My journey began in Puri, where curiosity about the natural world slowly grew into a deeper interest in
+                physics and the larger questions of astronomy.
+              </p>
+            </div>
           </div>
-        </div>
-      </article>
 
-      <article class="about-cta-card">
-        <h4>Start from the strongest entry points</h4>
-        <p>
-          Research gives the map, publications provide the record, and repositories hold the tools and code behind the
-          work.
-        </p>
-        <div class="about-actions">
-          <a class="about-action-primary" href="{{ '/projects/' | relative_url }}">Open Research</a>
-          <a class="about-action-secondary" href="{{ '/publications/' | relative_url }}">Open Publications</a>
-          <a class="about-action-secondary" href="{{ '/repositories/' | relative_url }}">Open Repositories</a>
-        </div>
-      </article>
+          <div class="about-journey-item">
+            <div class="about-journey-dot"></div>
+            <div class="about-journey-body">
+              <h4>Physics training in Delhi</h4>
+              <small>University of Delhi, 2013-2016</small>
+              <p>
+                My undergraduate years gave me the formal grounding in physics that shaped my discipline, problem-solving
+                style, and interest in moving toward astrophysics and data-driven scientific work.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-journey-item">
+            <div class="about-journey-dot"></div>
+            <div class="about-journey-body">
+              <h4>Master's pathway into astrophysics</h4>
+              <small>Central University of Kerala, 2017-2019</small>
+              <p>
+                During my master's studies, astrophysics became a clearer direction, and I wanted to work on questions
+                connected to the Sun, long-term observations, and physical interpretation.
+              </p>
+            </div>
+          </div>
+
+          <div class="about-journey-item">
+            <div class="about-journey-dot"></div>
+            <div class="about-journey-body">
+              <h4>Research work at ARIES</h4>
+              <small>Nainital, from 2020 onward</small>
+              <p>
+                At ARIES, my work evolved into long-term studies of solar magnetic activity, polar fields, chromospheric
+                structures, and machine-learning pipelines built around archival solar data and century-long records.
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
     </section>
   </section>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const tabs = Array.from(document.querySelectorAll('.about-nav a.about-nav-btn[data-target]'));
+  const panels = Array.from(document.querySelectorAll('.about-panel'));
+
+  function showPanel(target) {
+    tabs.forEach((tab) => {
+      tab.classList.toggle('active', tab.dataset.target === target);
+    });
+
+    panels.forEach((panel) => {
+      const active = panel.dataset.panel === target;
+      panel.classList.toggle('active', active);
+      panel.hidden = !active;
+    });
+  }
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', function (event) {
+      event.preventDefault();
+      showPanel(tab.dataset.target);
+    });
+  });
+});
+</script>
