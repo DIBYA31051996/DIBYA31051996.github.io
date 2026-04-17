@@ -2615,6 +2615,10 @@ footer {
   margin-bottom: 1rem;
 }
 
+.about-skill-grid .about-detail-card p {
+  margin-bottom: 0;
+}
+
 .about-detail-card,
 .about-cta-card {
   padding: 1rem;
@@ -2682,6 +2686,33 @@ footer {
 .about-note {
   color: #b9c7e8 !important;
   font-size: 0.95rem;
+}
+
+.about-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 0.95rem 0 0.9rem;
+}
+
+.about-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(175, 194, 235, 0.18);
+  background: rgba(255, 255, 255, 0.05);
+  color: #edf4ff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.about-chip:hover {
+  color: #ffffff;
+  text-decoration: none;
+  border-color: rgba(156, 116, 255, 0.4);
+  background: rgba(72, 55, 145, 0.16);
 }
 
 .about-actions {

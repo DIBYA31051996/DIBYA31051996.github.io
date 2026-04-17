@@ -28,10 +28,10 @@ nav_order: 2
       <div class="about-nav">
         <a class="about-nav-btn active" href="#overview" data-target="overview"><span class="about-nav-icon">◈</span>Overview</a>
         <a class="about-nav-btn" href="#journey" data-target="journey"><span class="about-nav-icon">◈</span>Journey</a>
-        <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Research Style</div>
-        <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Experience</div>
-        <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Skills</div>
-        <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Connect</div>
+        <a class="about-nav-btn" href="#research-style" data-target="research-style"><span class="about-nav-icon">◈</span>Research Style</a>
+        <a class="about-nav-btn" href="#experience" data-target="experience"><span class="about-nav-icon">◈</span>Experience</a>
+        <a class="about-nav-btn" href="#skills" data-target="skills"><span class="about-nav-icon">◈</span>Skills</a>
+        <a class="about-nav-btn" href="#connect" data-target="connect"><span class="about-nav-icon">◈</span>Connect</a>
       </div>
 
       <article class="about-meta-card">
@@ -157,6 +157,131 @@ nav_order: 2
             </div>
           </div>
         </article>
+      </section>
+
+      <section class="about-panel" data-panel="research-style" hidden>
+        <div class="about-copy">
+          <h3>Research Style</h3>
+          <p>How I like to build scientific work</p>
+        </div>
+
+        <div class="about-card-grid">
+          <article class="about-detail-card">
+            <h4>Principles</h4>
+            <ul>
+              <li>Keep models tied closely to physical interpretation.</li>
+              <li>Build archives and pipelines that other people can reuse.</li>
+              <li>Prefer workflows that remain readable after the paper is published.</li>
+              <li>Use ML where it strengthens the science, not where it obscures it.</li>
+            </ul>
+          </article>
+
+          <article class="about-detail-card">
+            <h4>What that looks like in practice</h4>
+            <ul>
+              <li>Cross-checking model output against multiple data products.</li>
+              <li>Designing full-Sun maps that preserve provenance.</li>
+              <li>Turning one-off analysis into stable workflows.</li>
+              <li>Writing with future project pages in mind.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-panel" data-panel="experience" hidden>
+        <div class="about-copy">
+          <h3>Experience</h3>
+          <p>Key stages of research work so far</p>
+        </div>
+
+        <article class="about-journey-card">
+          <div class="about-journey-item">
+            <div class="about-journey-dot"></div>
+            <div class="about-journey-body">
+              <h4>Senior Project Associate — ARIES</h4>
+              <small>2026 - Present</small>
+              <p>Long-term solar-surface reconstruction, magnetic diagnostics, and archival data products.</p>
+            </div>
+          </div>
+
+          <div class="about-journey-item">
+            <div class="about-journey-dot"></div>
+            <div class="about-journey-body">
+              <h4>Project Associate / Research Work — ARIES</h4>
+              <small>2020 - 2026</small>
+              <p>Studies of solar variability, polar fields, plages, chromospheric features, and ML-based pipelines.</p>
+            </div>
+          </div>
+
+          <div class="about-journey-item">
+            <div class="about-journey-dot"></div>
+            <div class="about-journey-body">
+              <h4>Academic training and research development</h4>
+              <small>Delhi and Kerala</small>
+              <p>Built the academic foundation that led into solar-physics research and long-baseline observational work.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="about-panel" data-panel="skills" hidden>
+        <div class="about-copy">
+          <h3>Skills</h3>
+          <p>Tools and working fluencies</p>
+        </div>
+
+        <div class="about-card-grid about-skill-grid">
+          <article class="about-detail-card">
+            <h4>Programming</h4>
+            <p>Python, Fortran, Bash, IDL, basic C/C++</p>
+          </article>
+
+          <article class="about-detail-card">
+            <h4>Scientific stack</h4>
+            <p>NumPy, SciPy, Astropy, SunPy, h5py</p>
+          </article>
+
+          <article class="about-detail-card">
+            <h4>Data and visualization</h4>
+            <p>FITS, HDF5, Matplotlib, solar diagnostics, map generation</p>
+          </article>
+
+          <article class="about-detail-card">
+            <h4>Research workflow</h4>
+            <p>Reproducible pipelines, cross-calibration, feature detection, ML evaluation</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-panel" data-panel="connect" hidden>
+        <div class="about-copy">
+          <h3>Connect</h3>
+          <p>Where to continue from here</p>
+        </div>
+
+        <div class="about-card-grid">
+          <article class="about-detail-card">
+            <h4>Browse the research record</h4>
+            <p>
+              The publications page is the most complete archive today, while research and repositories provide the
+              broader map around the work.
+            </p>
+            <div class="about-actions">
+              <a class="about-action-primary" href="{{ '/publications/' | relative_url }}">Publications</a>
+              <a class="about-action-secondary" href="{{ '/projects/' | relative_url }}">Research themes</a>
+            </div>
+          </article>
+
+          <article class="about-detail-card">
+            <h4>Online presence</h4>
+            <div class="about-chip-row">
+              <a class="about-chip" href="https://github.com/DIBYA31051996" target="_blank" rel="noopener">GitHub</a>
+              <a class="about-chip" href="{{ '/repositories/' | relative_url }}">Repositories</a>
+              <a class="about-chip" href="{{ '/' | relative_url }}">Homepage</a>
+            </div>
+            <p class="about-note">More public profile links can grow here as the rest of the site expands.</p>
+          </article>
+        </div>
       </section>
     </section>
   </section>
