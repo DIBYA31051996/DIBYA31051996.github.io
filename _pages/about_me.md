@@ -207,18 +207,9 @@ nav_order: 2
           <div class="about-journey-item">
             <div class="about-journey-dot"></div>
             <div class="about-journey-body">
-              <h4>Project Associate / Research Work — ARIES</h4>
+              <h4>Research Scholar — ARIES</h4>
               <small>2020 - 2026</small>
               <p>Studies of solar variability, polar fields, plages, chromospheric features, and ML-based pipelines.</p>
-            </div>
-          </div>
-
-          <div class="about-journey-item">
-            <div class="about-journey-dot"></div>
-            <div class="about-journey-body">
-              <h4>Academic training and research development</h4>
-              <small>Delhi and Kerala</small>
-              <p>Built the academic foundation that led into solar-physics research and long-baseline observational work.</p>
             </div>
           </div>
         </article>
@@ -233,7 +224,7 @@ nav_order: 2
         <div class="about-card-grid about-skill-grid">
           <article class="about-detail-card">
             <h4>Programming</h4>
-            <p>Python, Fortran, Bash, IDL, basic C/C++</p>
+            <p>Python, Fortran, Bash, IDL</p>
           </article>
 
           <article class="about-detail-card">
