@@ -26,8 +26,8 @@ nav_order: 2
       </article>
 
       <div class="about-nav">
-        <div class="about-nav-btn active"><span class="about-nav-icon">◈</span>Overview</div>
-        <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Journey</div>
+        <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Overview</div>
+        <div class="about-nav-btn active"><span class="about-nav-icon">◈</span>Journey</div>
         <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Research Style</div>
         <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Experience</div>
         <div class="about-nav-btn"><span class="about-nav-icon">◈</span>Skills</div>
@@ -57,35 +57,59 @@ nav_order: 2
       </div>
 
       <div class="about-copy">
-        <h3>Overview</h3>
-        <p>A quick introduction to my scientific profile</p>
+        <h3>Journey</h3>
+        <p>From Puri to solar-physics research</p>
       </div>
 
-      <div class="about-card-grid">
-        <article class="about-detail-card">
-          <h4>What I work on</h4>
-          <p>
-            I work on solar magnetic-field evolution across multiple cycles, combining observations, long-baseline
-            reconstructions, and data-centered methods to better understand long-term solar variability.
-          </p>
-          <ul>
-            <li>Solar cycle variability</li>
-            <li>Polar fields and magnetic diagnostics</li>
-            <li>ML-ready archival datasets</li>
-          </ul>
-        </article>
+      <article class="about-journey-card">
+        <div class="about-journey-item">
+          <div class="about-journey-dot"></div>
+          <div class="about-journey-body">
+            <h4>Early years in Puri</h4>
+            <small>Puri, Odisha</small>
+            <p>
+              My journey began in Puri, where curiosity about the natural world slowly grew into a deeper interest in
+              physics and the larger questions of astronomy.
+            </p>
+          </div>
+        </div>
 
-        <article class="about-detail-card">
-          <h4>What this site is for</h4>
-          <p>
-            I want this site to serve as both a research profile and a growing archive: publications, repositories,
-            future articles, and eventually topic-specific pages.
-          </p>
-          <p class="about-note">
-            The structure is intentionally modular so more pages can be added without redesigning everything.
-          </p>
-        </article>
-      </div>
+        <div class="about-journey-item">
+          <div class="about-journey-dot"></div>
+          <div class="about-journey-body">
+            <h4>Physics training in Delhi</h4>
+            <small>University of Delhi, 2013–2016</small>
+            <p>
+              My undergraduate years gave me the formal grounding in physics that shaped my discipline, problem-solving
+              style, and interest in moving toward astrophysics and data-driven scientific work.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-journey-item">
+          <div class="about-journey-dot"></div>
+          <div class="about-journey-body">
+            <h4>Master's pathway into astrophysics</h4>
+            <small>Central University of Kerala, 2017–2019</small>
+            <p>
+              During my master's studies, astrophysics became a clearer direction, and I became more certain that I
+              wanted to work on questions connected to the Sun, long-term observations, and physical interpretation.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-journey-item">
+          <div class="about-journey-dot"></div>
+          <div class="about-journey-body">
+            <h4>Research work at ARIES</h4>
+            <small>Nainital, from 2020 onward</small>
+            <p>
+              At ARIES, my work evolved into long-term studies of solar magnetic activity, polar fields, chromospheric
+              structures, and machine-learning pipelines built around archival solar data and century-long records.
+            </p>
+          </div>
+        </div>
+      </article>
 
       <article class="about-cta-card">
         <h4>Start from the strongest entry points</h4>

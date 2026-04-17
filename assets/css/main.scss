@@ -2425,8 +2425,9 @@ footer {
 .about-profile-card,
 .about-meta-card,
 .about-detail-card,
-.about-cta-card {
-  border: 1px solid rgba(175, 194, 235, 0.14);
+.about-cta-card,
+.about-journey-card {
+  border: 1px solid rgba(175, 194, 235, 0.22);
   border-radius: 18px;
   background: rgba(255, 255, 255, 0.04);
   box-shadow:
@@ -2475,7 +2476,7 @@ footer {
   width: 100%;
   padding: 0.84rem 0.95rem;
   border-radius: 14px;
-  border: 1px solid rgba(175, 194, 235, 0.14);
+  border: 1px solid rgba(175, 194, 235, 0.24);
   background: rgba(255, 255, 255, 0.04) !important;
   color: #d9e5ff;
   font-size: 1rem;
@@ -2485,8 +2486,9 @@ footer {
   gap: 0.7rem;
   text-align: left;
   box-shadow:
-    0 8px 18px rgba(0, 0, 0, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+    0 10px 20px rgba(0, 0, 0, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04),
+    inset 0 0 0 1px rgba(160, 190, 255, 0.05);
 }
 
 .about-nav-btn.active {
@@ -2596,6 +2598,54 @@ footer {
 .about-detail-card,
 .about-cta-card {
   padding: 1rem;
+}
+
+.about-journey-card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-journey-item {
+  display: grid;
+  grid-template-columns: 18px minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+}
+
+.about-journey-item + .about-journey-item {
+  margin-top: 1.25rem;
+}
+
+.about-journey-dot {
+  width: 12px;
+  height: 12px;
+  margin-top: 0.42rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #875dff, #4ba9ff);
+  box-shadow:
+    0 0 0 4px rgba(135, 93, 255, 0.14),
+    0 0 14px rgba(75, 169, 255, 0.22);
+}
+
+.about-journey-body h4 {
+  margin: 0 0 0.18rem;
+  color: #f7fbff;
+  font-size: 1.18rem;
+  font-weight: 800;
+}
+
+.about-journey-body small {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #b8c7e9;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.about-journey-body p {
+  margin: 0;
+  color: #d6e0f7;
+  line-height: 1.65;
 }
 
 .about-detail-card h4,
