@@ -90,7 +90,8 @@ nav: false
   }
 
   .gb-thumb {
-    height: clamp(190px, 18vw, 230px);
+    flex: 0 0 clamp(220px, 18vw, 235px);
+    height: clamp(220px, 18vw, 235px);
     display: grid;
     place-items: center;
     background:
@@ -111,7 +112,8 @@ nav: false
   }
 
   .gb-body {
-    min-height: 165px;
+    flex: 1 1 auto;
+    min-height: 185px;
     display: flex;
     flex-direction: column;
     padding: 0.95rem 1rem 1.05rem;
@@ -123,7 +125,7 @@ nav: false
     font-size: 1.08rem;
     font-weight: 800;
     line-height: 1.3;
-    min-height: 2.8rem;
+    min-height: 3rem;
   }
 
   .gb-body p {
@@ -138,7 +140,7 @@ nav: false
   }
 
   .gb-body p:not(.gb-link):first-of-type {
-    min-height: 5rem;
+    min-height: 5.5rem;
   }
 
   .gb-body .gb-link {
@@ -224,7 +226,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Kodaikanal%20solar%20observatory.jpg" alt="Kodaikanal Solar Observatory"></div>
+          <div class="gb-thumb"><img src="https://kso.iiap.res.in/new/static/images/kso-auditorium.jpeg" alt="Kodaikanal Solar Observatory"></div>
           <div class="gb-body">
             <h3>KSO - Kodaikanal Solar Observatory</h3>
             <p>Historic solar observatory with long-baseline synoptic records central to cycle-scale studies and archival context.</p>
@@ -233,7 +235,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar%20telescope.jpg" alt="Solar telescope"></div>
+          <div class="gb-thumb"><img src="https://www.su.se/images/200.1f09f4df19a7bbe0dfd1c43/1763559921747/teleskop_gryning.jpg" alt="Swedish Solar Telescope"></div>
           <div class="gb-body">
             <h3>SST - Swedish Solar Telescope</h3>
             <p>High-resolution telescope widely used for small-scale photospheric and chromospheric structure studies.</p>
