@@ -71,11 +71,13 @@ nav: false
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1rem;
+    align-items: stretch;
   }
 
   .gb-card {
     display: flex;
     flex-direction: column;
+    height: 100%;
     border: 1px solid rgba(175, 194, 235, 0.16);
     border-radius: 20px;
     overflow: hidden;
@@ -121,6 +123,7 @@ nav: false
     font-size: 1.08rem;
     font-weight: 800;
     line-height: 1.3;
+    min-height: 2.8rem;
   }
 
   .gb-body p {
@@ -132,6 +135,10 @@ nav: false
 
   .gb-body p + p {
     margin-top: 0.55rem;
+  }
+
+  .gb-body p:not(.gb-link):first-of-type {
+    min-height: 5rem;
   }
 
   .gb-body .gb-link {
