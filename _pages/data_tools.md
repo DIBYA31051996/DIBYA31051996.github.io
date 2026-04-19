@@ -49,7 +49,7 @@ nav_order: 4
   }
 
   .dt-title.tools {
-    color: #f7f8fb;
+    color: #7f0b13;
   }
 
   .dt-rule {
@@ -121,7 +121,7 @@ nav_order: 4
   }
 
   .dt-tools .dt-card h3 {
-    color: #f5f7fb;
+    color: #9d1419;
   }
 
   .dt-card p {
