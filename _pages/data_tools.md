@@ -20,12 +20,15 @@ nav_order: 4
   }
 
   .dt-panel {
-    background: rgba(246, 244, 240, 0.96);
+    background:
+      radial-gradient(circle at top left, rgba(73, 143, 204, 0.2), transparent 26%),
+      radial-gradient(circle at top right, rgba(39, 148, 113, 0.18), transparent 24%),
+      linear-gradient(180deg, rgba(13, 20, 38, 0.96), rgba(8, 14, 28, 0.99));
     border-radius: 24px;
     padding: 2.1rem 2rem 2.3rem;
     box-shadow:
       0 18px 44px rgba(0, 0, 0, 0.18),
-      0 1px 0 rgba(255, 255, 255, 0.55) inset;
+      0 1px 0 rgba(255, 255, 255, 0.08) inset;
   }
 
   .dt-section + .dt-section {
@@ -46,7 +49,7 @@ nav_order: 4
   }
 
   .dt-title.tools {
-    color: #111111;
+    color: #f7f8fb;
   }
 
   .dt-rule {
@@ -54,7 +57,7 @@ nav_order: 4
     height: 3px;
     margin: 1.8rem 0 1.6rem;
     border-radius: 999px;
-    background: linear-gradient(90deg, rgba(72, 117, 138, 0.78), rgba(72, 117, 138, 0.48));
+    background: linear-gradient(90deg, rgba(111, 157, 180, 0.88), rgba(111, 157, 180, 0.3));
   }
 
   .dt-grid {
@@ -65,7 +68,7 @@ nav_order: 4
 
   .dt-card {
     text-align: center;
-    color: #161616;
+    color: #f4f6fb;
   }
 
   .dt-visual {
@@ -76,7 +79,7 @@ nav_order: 4
     margin-bottom: 1rem;
     overflow: hidden;
     background:
-      linear-gradient(180deg, rgba(255,255,255,0.85), rgba(236,232,224,0.88)),
+      linear-gradient(180deg, rgba(243, 246, 255, 0.94), rgba(227, 234, 244, 0.94)),
       radial-gradient(circle at top right, rgba(88, 166, 255, 0.14), transparent 42%);
     box-shadow:
       0 12px 30px rgba(0, 0, 0, 0.12),
@@ -99,24 +102,84 @@ nav_order: 4
   }
 
   .dt-tools .dt-card h3 {
-    color: #1a1a1a;
+    color: #f5f7fb;
   }
 
   .dt-card p {
     margin: 0;
     font-size: 1.02rem;
-    color: #323232;
+    color: #d9e2f3;
     line-height: 1.55;
   }
 
   .dt-card p strong {
-    color: #101010;
+    color: #ffffff;
     font-weight: 700;
+  }
+
+  .dt-feature {
+    margin-top: 1.7rem;
+    border: 1px solid rgba(169, 191, 227, 0.18);
+    border-radius: 24px;
+    padding: 1.35rem;
+    background:
+      linear-gradient(180deg, rgba(17, 25, 46, 0.88), rgba(11, 18, 35, 0.94)),
+      radial-gradient(circle at top right, rgba(77, 129, 218, 0.12), transparent 38%);
+    box-shadow:
+      0 18px 36px rgba(0, 0, 0, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .dt-feature h3 {
+    margin: 0 0 0.35rem;
+    color: #f7f9fd;
+    font-size: 1.65rem;
+    font-weight: 800;
+  }
+
+  .dt-feature-intro {
+    margin: 0 0 1rem;
+    color: #d4def0;
+    line-height: 1.65;
+  }
+
+  .dt-feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .dt-feature-block {
+    border: 1px solid rgba(175, 194, 235, 0.14);
+    border-radius: 18px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .dt-feature-block h4 {
+    margin: 0 0 0.55rem;
+    color: #f7f9fd;
+    font-size: 1.15rem;
+    font-weight: 800;
+  }
+
+  .dt-feature-block p {
+    margin: 0;
+    color: #d7e0f2;
+    line-height: 1.62;
+  }
+
+  .dt-feature-block p + p {
+    margin-top: 0.7rem;
   }
 
   @media (max-width: 980px) {
     .dt-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .dt-feature-grid {
+      grid-template-columns: 1fr;
     }
   }
 
@@ -162,6 +225,52 @@ nav_order: 4
           <p><strong>E.g.</strong> Bifrost, MURaM</p>
         </article>
       </div>
+
+      <article class="dt-feature">
+        <h3>Ground Based Instruments</h3>
+        <p class="dt-feature-intro">
+          Ground-based observations span high-resolution solar telescopes, radio observatories, and synoptic networks
+          that track solar structure, magnetism, and activity across multiple wavelengths and timescales.
+        </p>
+
+        <div class="dt-feature-grid">
+          <section class="dt-feature-block">
+            <h4>Solar Telescopes</h4>
+            <p>
+              Leading ground-based observations include the Dunn Solar Telescope, DKIST, the Swedish 1-m Solar Telescope
+              (SST), and the upcoming European Solar Telescope (EST).
+            </p>
+            <p>
+              These instruments use adaptive optics and high-resolution spectrographs to capture fine details of the
+              solar surface, magnetic fields, and evolving sunspot regions.
+            </p>
+          </section>
+
+          <section class="dt-feature-block">
+            <h4>Radio Observatories</h4>
+            <p>
+              Facilities such as EOVSA, the Nancay Radioheliograph, the Nobeyama Radioheliograph, and the Gauribidanur
+              Radioheliograph observe the Sun in radio wavelengths.
+            </p>
+            <p>
+              They help track radio emission associated with flares, coronal mass ejections, and solar energetic
+              particle events.
+            </p>
+          </section>
+
+          <section class="dt-feature-block">
+            <h4>Synoptic Solar Telescopes</h4>
+            <p>
+              Long-running synoptic instruments such as GONG support the study of solar oscillations, interior
+              structure, and large-scale dynamical evolution.
+            </p>
+            <p>
+              These datasets are especially useful for long-baseline solar-cycle analysis and context building across
+              multiple observing programs.
+            </p>
+          </section>
+        </div>
+      </article>
     </section>
 
     <section class="dt-section dt-tools">
