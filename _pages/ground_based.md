@@ -148,6 +148,28 @@ nav: false
     padding-top: 0.75rem;
   }
 
+  .gb-section-optical .gb-card {
+    display: grid;
+    grid-template-rows: clamp(220px, 18vw, 235px) minmax(220px, auto);
+  }
+
+  .gb-section-optical .gb-thumb {
+    flex: none;
+    height: 100%;
+  }
+
+  .gb-section-optical .gb-body {
+    min-height: 220px;
+  }
+
+  .gb-section-optical .gb-body h3 {
+    min-height: 3.2rem;
+  }
+
+  .gb-section-optical .gb-body p:not(.gb-link):first-of-type {
+    min-height: 6.4rem;
+  }
+
   .gb-body a {
     color: #9dd2ff;
     text-decoration: none;
@@ -185,7 +207,7 @@ nav: false
       </p>
     </div>
 
-    <section class="gb-section">
+    <section class="gb-section gb-section-optical">
       <h2 class="gb-section-title">Optical and Synoptic</h2>
       <div class="gb-rule"></div>
       <div class="gb-grid">
@@ -253,10 +275,11 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar%20telescope.jpg" alt="Hida Observatory solar telescope"></div>
+          <div class="gb-thumb"><img src="https://www.hida.kyoto-u.ac.jp/DST/img_dst2.JPG" alt="Hida Observatory"></div>
           <div class="gb-body">
             <h3>HIDA Observatory</h3>
             <p>Japanese solar observing facility associated with high-resolution spectroscopy and long-running solar studies.</p>
+            <p class="gb-link"><a href="https://www.hida.kyoto-u.ac.jp/SMART/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
@@ -265,7 +288,7 @@ nav: false
           <div class="gb-body">
             <h3>MAST - Multi-Application Solar Telescope</h3>
             <p>Off-axis solar telescope at Udaipur Solar Observatory built for high-resolution studies of solar magnetic activity.</p>
-            <p class="gb-link"><a href="https://www.prl.res.in/prl-eng/uso" target="_blank" rel="noopener">Official site</a></p>
+            <p class="gb-link"><a href="https://www.prl.res.in/~usodataarchive/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
