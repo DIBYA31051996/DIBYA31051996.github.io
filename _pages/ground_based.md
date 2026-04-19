@@ -86,7 +86,7 @@ nav: false
   }
 
   .gb-thumb {
-    aspect-ratio: 1.35 / 1;
+    height: clamp(190px, 18vw, 230px);
     display: grid;
     place-items: center;
     background:
@@ -102,6 +102,7 @@ nav: false
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center;
     display: block;
   }
 
@@ -174,7 +175,7 @@ nav: false
           <div class="gb-body">
             <h3>DKIST - Daniel K. Inouye Solar Telescope</h3>
             <p>High-resolution solar facility designed to study the photosphere, chromosphere, and corona with unprecedented detail.</p>
-            <p><a href="https://nso.edu/telescopes/dkist/" target="_blank" rel="noopener">Official site</a></p>
+            <p><a href="https://nso.edu/dkist/data-center/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
