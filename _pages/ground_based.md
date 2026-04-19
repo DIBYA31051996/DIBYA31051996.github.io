@@ -293,28 +293,11 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar%20telescope.jpg" alt="Huairou Solar Observing Station"></div>
-          <div class="gb-body">
-            <h3>Huairou Solar Observing Station</h3>
-            <p>Observations of magnetic fields, active regions, and full-disk context products for solar monitoring.</p>
-          </div>
-        </article>
-
-        <article class="gb-card">
           <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Udaipur%20observatory.jpg" alt="GONG related observatory"></div>
           <div class="gb-body">
             <h3>GONG - Global Oscillation Network Group</h3>
             <p>Synoptic network used for helioseismology, full-disk magnetic field products, and solar dynamical studies.</p>
             <p class="gb-link"><a href="https://gong.nso.edu/" target="_blank" rel="noopener">Official site</a></p>
-          </div>
-        </article>
-
-        <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar%20telescope.jpg" alt="New Vacuum Solar Telescope"></div>
-          <div class="gb-body">
-            <h3>NVST - New Vacuum Solar Telescope</h3>
-            <p>Ground-based solar imaging telescope used for high-resolution observations of fine solar structure.</p>
-            <p class="gb-link"><a href="http://fso.ynao.ac.cn/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
       </div>
