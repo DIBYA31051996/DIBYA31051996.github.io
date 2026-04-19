@@ -3,7 +3,7 @@ layout: page
 permalink: /publications/
 title: Publications
 nav: true
-nav_order: 4
+nav_order: 5
 description: Refereed articles, proceedings, software, and datasets.
 ---
 
