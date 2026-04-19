@@ -71,6 +71,24 @@ nav_order: 4
     color: #f4f6fb;
   }
 
+  .dt-card-link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .dt-card-link:hover {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .dt-card-link:hover .dt-visual {
+    transform: translateY(-3px);
+    box-shadow:
+      0 16px 34px rgba(0, 0, 0, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.72);
+  }
+
   .dt-visual {
     aspect-ratio: 1 / 1;
     border-radius: 24px;
@@ -84,6 +102,7 @@ nav_order: 4
     box-shadow:
       0 12px 30px rgba(0, 0, 0, 0.12),
       inset 0 1px 0 rgba(255, 255, 255, 0.68);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
 
   .dt-icon {
@@ -117,69 +136,9 @@ nav_order: 4
     font-weight: 700;
   }
 
-  .dt-feature {
-    margin-top: 1.7rem;
-    border: 1px solid rgba(169, 191, 227, 0.18);
-    border-radius: 24px;
-    padding: 1.35rem;
-    background:
-      linear-gradient(180deg, rgba(17, 25, 46, 0.88), rgba(11, 18, 35, 0.94)),
-      radial-gradient(circle at top right, rgba(77, 129, 218, 0.12), transparent 38%);
-    box-shadow:
-      0 18px 36px rgba(0, 0, 0, 0.18),
-      inset 0 1px 0 rgba(255, 255, 255, 0.05);
-  }
-
-  .dt-feature h3 {
-    margin: 0 0 0.35rem;
-    color: #f7f9fd;
-    font-size: 1.65rem;
-    font-weight: 800;
-  }
-
-  .dt-feature-intro {
-    margin: 0 0 1rem;
-    color: #d4def0;
-    line-height: 1.65;
-  }
-
-  .dt-feature-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1rem;
-  }
-
-  .dt-feature-block {
-    border: 1px solid rgba(175, 194, 235, 0.14);
-    border-radius: 18px;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.04);
-  }
-
-  .dt-feature-block h4 {
-    margin: 0 0 0.55rem;
-    color: #f7f9fd;
-    font-size: 1.15rem;
-    font-weight: 800;
-  }
-
-  .dt-feature-block p {
-    margin: 0;
-    color: #d7e0f2;
-    line-height: 1.62;
-  }
-
-  .dt-feature-block p + p {
-    margin-top: 0.7rem;
-  }
-
   @media (max-width: 980px) {
     .dt-grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .dt-feature-grid {
-      grid-template-columns: 1fr;
     }
   }
 
@@ -202,9 +161,11 @@ nav_order: 4
 
       <div class="dt-grid">
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">📡</div></div>
-          <h3>Ground Based</h3>
-          <p><strong>E.g.</strong> KoSO, SST, GONG</p>
+          <a class="dt-card-link" href="{{ '/ground-based/' | relative_url }}">
+            <div class="dt-visual"><div class="dt-icon">📡</div></div>
+            <h3>Ground Based</h3>
+            <p><strong>Open page:</strong> solar telescopes, microwave, radio</p>
+          </a>
         </article>
 
         <article class="dt-card">
@@ -225,52 +186,6 @@ nav_order: 4
           <p><strong>E.g.</strong> Bifrost, MURaM</p>
         </article>
       </div>
-
-      <article class="dt-feature">
-        <h3>Ground Based Instruments</h3>
-        <p class="dt-feature-intro">
-          Ground-based observations span high-resolution solar telescopes, radio observatories, and synoptic networks
-          that track solar structure, magnetism, and activity across multiple wavelengths and timescales.
-        </p>
-
-        <div class="dt-feature-grid">
-          <section class="dt-feature-block">
-            <h4>Solar Telescopes</h4>
-            <p>
-              Leading ground-based observations include the Dunn Solar Telescope, DKIST, the Swedish 1-m Solar Telescope
-              (SST), and the upcoming European Solar Telescope (EST).
-            </p>
-            <p>
-              These instruments use adaptive optics and high-resolution spectrographs to capture fine details of the
-              solar surface, magnetic fields, and evolving sunspot regions.
-            </p>
-          </section>
-
-          <section class="dt-feature-block">
-            <h4>Radio Observatories</h4>
-            <p>
-              Facilities such as EOVSA, the Nancay Radioheliograph, the Nobeyama Radioheliograph, and the Gauribidanur
-              Radioheliograph observe the Sun in radio wavelengths.
-            </p>
-            <p>
-              They help track radio emission associated with flares, coronal mass ejections, and solar energetic
-              particle events.
-            </p>
-          </section>
-
-          <section class="dt-feature-block">
-            <h4>Synoptic Solar Telescopes</h4>
-            <p>
-              Long-running synoptic instruments such as GONG support the study of solar oscillations, interior
-              structure, and large-scale dynamical evolution.
-            </p>
-            <p>
-              These datasets are especially useful for long-baseline solar-cycle analysis and context building across
-              multiple observing programs.
-            </p>
-          </section>
-        </div>
-      </article>
     </section>
 
     <section class="dt-section dt-tools">

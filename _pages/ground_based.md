@@ -1,0 +1,359 @@
+---
+layout: page
+title: Ground Based Instruments
+permalink: /ground-based/
+nav: false
+---
+
+<style>
+  .post-header .post-title,
+  .post-header .post-description,
+  .post-header .desc {
+    display: none !important;
+  }
+
+  .gb-shell {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0.3rem 0 1rem;
+  }
+
+  .gb-panel {
+    border-radius: 24px;
+    padding: 1.8rem 1.5rem 2rem;
+    background:
+      radial-gradient(circle at top left, rgba(80, 146, 210, 0.16), transparent 24%),
+      radial-gradient(circle at top right, rgba(41, 156, 112, 0.16), transparent 22%),
+      linear-gradient(180deg, rgba(13, 20, 38, 0.96), rgba(8, 14, 28, 0.99));
+    box-shadow:
+      0 20px 44px rgba(0, 0, 0, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+
+  .gb-heading {
+    text-align: center;
+    margin-bottom: 1.4rem;
+  }
+
+  .gb-heading h1 {
+    margin: 0 0 0.55rem;
+    color: #f6f8fd;
+    font-size: clamp(2.1rem, 4vw, 3.2rem);
+    font-weight: 800;
+  }
+
+  .gb-heading p {
+    margin: 0;
+    color: #d0dcef;
+    line-height: 1.6;
+  }
+
+  .gb-section + .gb-section {
+    margin-top: 2rem;
+  }
+
+  .gb-section-title {
+    margin: 0 0 1rem;
+    color: #f7f9fd;
+    font-size: 1.7rem;
+    font-weight: 800;
+  }
+
+  .gb-rule {
+    width: 100%;
+    height: 3px;
+    margin: 0.6rem 0 1.1rem;
+    border-radius: 999px;
+    background: linear-gradient(90deg, rgba(111, 157, 180, 0.88), rgba(111, 157, 180, 0.22));
+  }
+
+  .gb-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+  }
+
+  .gb-card {
+    border: 1px solid rgba(175, 194, 235, 0.16);
+    border-radius: 20px;
+    overflow: hidden;
+    background:
+      linear-gradient(180deg, rgba(16, 24, 43, 0.9), rgba(10, 17, 31, 0.96)),
+      radial-gradient(circle at top right, rgba(88, 166, 255, 0.12), transparent 40%);
+    box-shadow:
+      0 14px 32px rgba(0, 0, 0, 0.18),
+      inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  }
+
+  .gb-thumb {
+    aspect-ratio: 1.35 / 1;
+    display: grid;
+    place-items: center;
+    background:
+      linear-gradient(180deg, rgba(243, 246, 255, 0.94), rgba(227, 234, 244, 0.94)),
+      radial-gradient(circle at top right, rgba(88, 166, 255, 0.14), transparent 42%);
+    color: #18324a;
+    font-size: 3.4rem;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+  }
+
+  .gb-body {
+    padding: 0.95rem 1rem 1.05rem;
+  }
+
+  .gb-body h3 {
+    margin: 0 0 0.45rem;
+    color: #f7f9fd;
+    font-size: 1.08rem;
+    font-weight: 800;
+    line-height: 1.3;
+  }
+
+  .gb-body p {
+    margin: 0;
+    color: #d5def1;
+    line-height: 1.58;
+    font-size: 0.97rem;
+  }
+
+  .gb-body p + p {
+    margin-top: 0.55rem;
+  }
+
+  .gb-body a {
+    color: #9dd2ff;
+    text-decoration: none;
+  }
+
+  .gb-body a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+
+  @media (max-width: 980px) {
+    .gb-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 640px) {
+    .gb-panel {
+      padding: 1.3rem 0.9rem 1.5rem;
+    }
+
+    .gb-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="gb-shell">
+  <div class="gb-panel">
+    <div class="gb-heading">
+      <h1>Ground Based Instruments</h1>
+      <p>
+        A grouped view of major ground-based solar facilities from the categories shown in your reference:
+        optical and synoptic telescopes, microwave and millimeter instruments, and radio observatories.
+      </p>
+    </div>
+
+    <section class="gb-section">
+      <h2 class="gb-section-title">Optical and Synoptic</h2>
+      <div class="gb-rule"></div>
+      <div class="gb-grid">
+        <article class="gb-card">
+          <div class="gb-thumb">DKIST</div>
+          <div class="gb-body">
+            <h3>DKIST - Daniel K. Inouye Solar Telescope</h3>
+            <p>High-resolution solar facility designed to study the photosphere, chromosphere, and corona with unprecedented detail.</p>
+            <p><a href="https://nso.edu/telescopes/dkist/" target="_blank" rel="noopener">Official site</a></p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">GST</div>
+          <div class="gb-body">
+            <h3>GST - Goode Solar Telescope</h3>
+            <p>Big Bear Solar Observatory telescope used for high-resolution imaging and magnetic diagnostics of fine solar structure.</p>
+            <p><a href="https://www.bbso.njit.edu/" target="_blank" rel="noopener">Official site</a></p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">GREGOR</div>
+          <div class="gb-body">
+            <h3>GREGOR Solar Telescope</h3>
+            <p>European ground-based solar telescope focused on magnetic fields, fine-scale solar dynamics, and spectropolarimetry.</p>
+            <p><a href="https://www.aip.de/en/research/research-area-kiepenheuer-institute-for-solar-physics/observatories/gregor" target="_blank" rel="noopener">Official site</a></p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">DST</div>
+          <div class="gb-body">
+            <h3>DST - Dunn Solar Telescope</h3>
+            <p>Long-running U.S. solar telescope known for adaptive-optics observations and detailed measurements of active regions.</p>
+            <p><a href="https://nso.edu/telescopes/dunn-solar-telescope/" target="_blank" rel="noopener">Official site</a></p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">KSO</div>
+          <div class="gb-body">
+            <h3>Kislovodsk Solar Observatory</h3>
+            <p>Synoptic observations and long-baseline records useful for cycle-scale studies and broader solar activity context.</p>
+            <p><a href="http://en.sao.ru/hq/kso/" target="_blank" rel="noopener">Official site</a></p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">SST</div>
+          <div class="gb-body">
+            <h3>SST - Swedish Solar Telescope</h3>
+            <p>High-resolution telescope widely used for small-scale photospheric and chromospheric structure studies.</p>
+            <p><a href="https://www.isf.astro.su.se/" target="_blank" rel="noopener">Official site</a></p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">HLO</div>
+          <div class="gb-body">
+            <h3>Huairou Solar Observing Station</h3>
+            <p>Observations of magnetic fields, active regions, and full-disk context products for solar monitoring.</p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">GONG</div>
+          <div class="gb-body">
+            <h3>GONG - Global Oscillation Network Group</h3>
+            <p>Synoptic network used for helioseismology, full-disk magnetic field products, and solar dynamical studies.</p>
+            <p><a href="https://gong.nso.edu/" target="_blank" rel="noopener">Official site</a></p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">NVST</div>
+          <div class="gb-body">
+            <h3>NVST - New Vacuum Solar Telescope</h3>
+            <p>Ground-based solar imaging telescope used for high-resolution observations of fine solar structure.</p>
+            <p><a href="http://fso.ynao.ac.cn/" target="_blank" rel="noopener">Official site</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gb-section">
+      <h2 class="gb-section-title">Microwave and Millimeter</h2>
+      <div class="gb-rule"></div>
+      <div class="gb-grid">
+        <article class="gb-card">
+          <div class="gb-thumb">ALMA</div>
+          <div class="gb-body">
+            <h3>ALMA</h3>
+            <p>Millimeter and sub-millimeter observations of the solar atmosphere, especially useful for chromospheric diagnostics.</p>
+            <p><a href="https://www.almaobservatory.org/" target="_blank" rel="noopener">Official site</a></p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">NoRH</div>
+          <div class="gb-body">
+            <h3>NoRH - Nobeyama Radioheliograph</h3>
+            <p>Long-running microwave facility that tracks the Sun at 17 and 34 GHz, including flare and active-region evolution.</p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">MUSER</div>
+          <div class="gb-body">
+            <h3>MUSER</h3>
+            <p>Microwave imaging array designed for broadband solar radio observations and dynamic event studies.</p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">RATAN</div>
+          <div class="gb-body">
+            <h3>RATAN-600</h3>
+            <p>Large radio telescope with solar observing capability used for spectral and magnetic diagnostics.</p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">EOVSA</div>
+          <div class="gb-body">
+            <h3>EOVSA</h3>
+            <p>Microwave interferometer used to probe flare energy release and coronal magnetic structure.</p>
+            <p><a href="https://www.ovsa.njit.edu/" target="_blank" rel="noopener">Official site</a></p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">SRH</div>
+          <div class="gb-body">
+            <h3>SRH / SSRT</h3>
+            <p>Solar radio imaging instruments used for dynamic event monitoring and full-disk radio context.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="gb-section">
+      <h2 class="gb-section-title">Radio</h2>
+      <div class="gb-rule"></div>
+      <div class="gb-grid">
+        <article class="gb-card">
+          <div class="gb-thumb">FASR</div>
+          <div class="gb-body">
+            <h3>FASR</h3>
+            <p>Frequency-agile solar radio concepts and associated instrumentation aimed at broadband solar diagnostics.</p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">LOFAR</div>
+          <div class="gb-body">
+            <h3>LOFAR</h3>
+            <p>Low-frequency radio observations of the Sun used to study the corona, bursts, and propagation effects.</p>
+            <p><a href="https://www.lofar.org/" target="_blank" rel="noopener">Official site</a></p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">NENU</div>
+          <div class="gb-body">
+            <h3>NenuFAR</h3>
+            <p>Low-frequency radio array suitable for coronal and heliospheric radio studies.</p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">ORFEES</div>
+          <div class="gb-body">
+            <h3>ORFEES / Dynamic Spectra</h3>
+            <p>Ground-based radio dynamic spectra used to track bursts and time-varying radio emission signatures.</p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">NRH</div>
+          <div class="gb-body">
+            <h3>Nancay Radioheliograph</h3>
+            <p>Well-known radioheliograph for imaging solar radio activity and large-scale coronal signatures.</p>
+          </div>
+        </article>
+
+        <article class="gb-card">
+          <div class="gb-thumb">CALLISTO</div>
+          <div class="gb-body">
+            <h3>e-CALLISTO</h3>
+            <p>Global network of low-cost radio spectrometers used to monitor solar radio bursts around the world.</p>
+            <p><a href="https://www.e-callisto.org/" target="_blank" rel="noopener">Official site</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+</div>
