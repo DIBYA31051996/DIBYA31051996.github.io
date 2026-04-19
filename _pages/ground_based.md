@@ -150,24 +150,36 @@ nav: false
 
   .gb-section-optical .gb-card {
     display: grid;
-    grid-template-rows: clamp(220px, 18vw, 235px) minmax(220px, auto);
+    grid-template-rows: 235px 195px;
+    min-height: 430px;
   }
 
   .gb-section-optical .gb-thumb {
     flex: none;
     height: 100%;
+    overflow: hidden;
   }
 
   .gb-section-optical .gb-body {
-    min-height: 220px;
+    min-height: 195px;
+    padding: 1rem 1rem 1rem;
+    background: linear-gradient(180deg, rgba(10, 17, 31, 0.98), rgba(8, 14, 28, 0.98));
   }
 
   .gb-section-optical .gb-body h3 {
-    min-height: 3.2rem;
+    min-height: 3.1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .gb-section-optical .gb-body p:not(.gb-link):first-of-type {
-    min-height: 6.4rem;
+    min-height: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 
   .gb-body a {
