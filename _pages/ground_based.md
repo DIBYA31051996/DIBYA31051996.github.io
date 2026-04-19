@@ -74,6 +74,8 @@ nav: false
   }
 
   .gb-card {
+    display: flex;
+    flex-direction: column;
     border: 1px solid rgba(175, 194, 235, 0.16);
     border-radius: 20px;
     overflow: hidden;
@@ -107,6 +109,9 @@ nav: false
   }
 
   .gb-body {
+    min-height: 165px;
+    display: flex;
+    flex-direction: column;
     padding: 0.95rem 1rem 1.05rem;
   }
 
@@ -127,6 +132,11 @@ nav: false
 
   .gb-body p + p {
     margin-top: 0.55rem;
+  }
+
+  .gb-body .gb-link {
+    margin-top: auto;
+    padding-top: 0.75rem;
   }
 
   .gb-body a {
@@ -175,7 +185,7 @@ nav: false
           <div class="gb-body">
             <h3>DKIST - Daniel K. Inouye Solar Telescope</h3>
             <p>High-resolution solar facility designed to study the photosphere, chromosphere, and corona with unprecedented detail.</p>
-            <p><a href="https://nso.edu/dkist/data-center/" target="_blank" rel="noopener">Official site</a></p>
+            <p class="gb-link"><a href="https://nso.edu/dkist/data-center/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
@@ -184,7 +194,7 @@ nav: false
           <div class="gb-body">
             <h3>GST - Goode Solar Telescope</h3>
             <p>Big Bear Solar Observatory telescope used for high-resolution imaging and magnetic diagnostics of fine solar structure.</p>
-            <p><a href="https://www.bbso.njit.edu/" target="_blank" rel="noopener">Official site</a></p>
+            <p class="gb-link"><a href="https://www.bbso.njit.edu/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
@@ -193,7 +203,7 @@ nav: false
           <div class="gb-body">
             <h3>GREGOR Solar Telescope</h3>
             <p>European ground-based solar telescope focused on magnetic fields, fine-scale solar dynamics, and spectropolarimetry.</p>
-            <p><a href="https://www.aip.de/en/research/research-area-kiepenheuer-institute-for-solar-physics/observatories/gregor" target="_blank" rel="noopener">Official site</a></p>
+            <p class="gb-link"><a href="https://www.leibniz-kis.de/en/observatories/gregor/access-to-gregor-data/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
@@ -202,7 +212,7 @@ nav: false
           <div class="gb-body">
             <h3>DST - Dunn Solar Telescope</h3>
             <p>Long-running U.S. solar telescope known for adaptive-optics observations and detailed measurements of active regions.</p>
-            <p><a href="https://nso.edu/telescopes/dunn-solar-telescope/" target="_blank" rel="noopener">Official site</a></p>
+            <p class="gb-link"><a href="https://nso.edu/telescopes/dunn-solar-telescope/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
@@ -211,7 +221,7 @@ nav: false
           <div class="gb-body">
             <h3>KSO - Kodaikanal Solar Observatory</h3>
             <p>Historic solar observatory with long-baseline synoptic records central to cycle-scale studies and archival context.</p>
-            <p><a href="https://www.iiap.res.in/?q=facilities/observatories/kso" target="_blank" rel="noopener">Official site</a></p>
+            <p class="gb-link"><a href="https://kso.iiap.res.in/new" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
@@ -220,7 +230,7 @@ nav: false
           <div class="gb-body">
             <h3>SST - Swedish Solar Telescope</h3>
             <p>High-resolution telescope widely used for small-scale photospheric and chromospheric structure studies.</p>
-            <p><a href="https://www.isf.astro.su.se/" target="_blank" rel="noopener">Official site</a></p>
+            <p class="gb-link"><a href="https://www.isf.astro.su.se/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
@@ -229,7 +239,7 @@ nav: false
           <div class="gb-body">
             <h3>DOT - Dutch Open Telescope</h3>
             <p>Open-design solar telescope at La Palma, known for high-resolution imaging and multi-wavelength solar studies.</p>
-            <p><a href="https://www.staff.science.uu.nl/~rutte101/DOT/" target="_blank" rel="noopener">Project site</a></p>
+            <p class="gb-link"><a href="https://www.staff.science.uu.nl/~rutte101/DOT/" target="_blank" rel="noopener">Project site</a></p>
           </div>
         </article>
 
@@ -246,7 +256,7 @@ nav: false
           <div class="gb-body">
             <h3>MAST - Multi-Application Solar Telescope</h3>
             <p>Off-axis solar telescope at Udaipur Solar Observatory built for high-resolution studies of solar magnetic activity.</p>
-            <p><a href="https://www.prl.res.in/prl-eng/uso" target="_blank" rel="noopener">Official site</a></p>
+            <p class="gb-link"><a href="https://www.prl.res.in/prl-eng/uso" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
@@ -263,7 +273,7 @@ nav: false
           <div class="gb-body">
             <h3>GONG - Global Oscillation Network Group</h3>
             <p>Synoptic network used for helioseismology, full-disk magnetic field products, and solar dynamical studies.</p>
-            <p><a href="https://gong.nso.edu/" target="_blank" rel="noopener">Official site</a></p>
+            <p class="gb-link"><a href="https://gong.nso.edu/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
@@ -272,7 +282,7 @@ nav: false
           <div class="gb-body">
             <h3>NVST - New Vacuum Solar Telescope</h3>
             <p>Ground-based solar imaging telescope used for high-resolution observations of fine solar structure.</p>
-            <p><a href="http://fso.ynao.ac.cn/" target="_blank" rel="noopener">Official site</a></p>
+            <p class="gb-link"><a href="http://fso.ynao.ac.cn/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
       </div>
@@ -287,7 +297,7 @@ nav: false
           <div class="gb-body">
             <h3>ALMA</h3>
             <p>Millimeter and sub-millimeter observations of the solar atmosphere, especially useful for chromospheric diagnostics.</p>
-            <p><a href="https://www.almaobservatory.org/" target="_blank" rel="noopener">Official site</a></p>
+            <p class="gb-link"><a href="https://www.almaobservatory.org/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
@@ -320,7 +330,7 @@ nav: false
           <div class="gb-body">
             <h3>EOVSA</h3>
             <p>Microwave interferometer used to probe flare energy release and coronal magnetic structure.</p>
-            <p><a href="https://www.ovsa.njit.edu/" target="_blank" rel="noopener">Official site</a></p>
+            <p class="gb-link"><a href="https://www.ovsa.njit.edu/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
@@ -367,7 +377,7 @@ nav: false
           <div class="gb-body">
             <h3>LOFAR</h3>
             <p>Low-frequency radio observations of the Sun used to study the corona, bursts, and propagation effects.</p>
-            <p><a href="https://www.lofar.org/" target="_blank" rel="noopener">Official site</a></p>
+            <p class="gb-link"><a href="https://www.lofar.org/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
@@ -400,7 +410,7 @@ nav: false
           <div class="gb-body">
             <h3>e-CALLISTO</h3>
             <p>Global network of low-cost radio spectrometers used to monitor solar radio bursts around the world.</p>
-            <p><a href="https://www.e-callisto.org/" target="_blank" rel="noopener">Official site</a></p>
+            <p class="gb-link"><a href="https://www.e-callisto.org/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
       </div>
