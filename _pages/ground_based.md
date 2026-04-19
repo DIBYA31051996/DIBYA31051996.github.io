@@ -320,7 +320,7 @@ nav: false
       <div class="gb-rule"></div>
       <div class="gb-grid">
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Udaipur%20Solar%20Observatory%2001.jpg" alt="ALMA observatory"></div>
+          <div class="gb-thumb"><img src="https://www.almaobservatory.org/wp-content/uploads/2024/09/02-Atacama2024_0424_211645-9793_AGP-Edit-1200x800.jpg" alt="ALMA observatory"></div>
           <div class="gb-body">
             <h3>ALMA</h3>
             <p>Millimeter and sub-millimeter observations of the solar atmosphere, especially useful for chromospheric diagnostics.</p>
@@ -329,31 +329,25 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Multi%20Frequency%20Radio%20Sun.png" alt="Nobeyama Radioheliograph"></div>
+          <div class="gb-thumb"><img src="https://solar.nro.nao.ac.jp/norp/html/gallery/norp_icon.jpg" alt="Nobeyama Radioheliograph"></div>
           <div class="gb-body">
             <h3>NoRH - Nobeyama Radioheliograph</h3>
             <p>Long-running microwave facility that tracks the Sun at 17 and 34 GHz, including flare and active-region evolution.</p>
+            <p class="gb-link"><a href="https://solar.nro.nao.ac.jp/norh/html/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Siberian%20Solar%20Radio%20Telescope%202019%2001.jpg" alt="MUSER or radio observatory"></div>
-          <div class="gb-body">
-            <h3>MUSER</h3>
-            <p>Microwave imaging array designed for broadband solar radio observations and dynamic event studies.</p>
-          </div>
-        </article>
-
-        <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Siberian%20Solar%20Radio%20Telescope.jpg" alt="RATAN-600"></div>
+          <div class="gb-thumb"><img src="https://www.sao.ru/hq/sun/data/today/last_i.gif" alt="RATAN-600"></div>
           <div class="gb-body">
             <h3>RATAN-600</h3>
             <p>Large radio telescope with solar observing capability used for spectral and magnetic diagnostics.</p>
+            <p class="gb-link"><a href="https://www.sao.ru/hq/sun/latest.htm" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Multi%20Frequency%20Radio%20Sun.png" alt="EOVSA"></div>
+          <div class="gb-thumb"><img src="https://www.ovsa.njit.edu/img/landingPage/ovsa.jpg" alt="EOVSA"></div>
           <div class="gb-body">
             <h3>EOVSA</h3>
             <p>Microwave interferometer used to probe flare energy release and coronal magnetic structure.</p>
@@ -362,26 +356,29 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Siberian%20Solar%20Radio%20Telescope%202019%2001.jpg" alt="SRH or SSRT"></div>
+          <div class="gb-thumb"><img src="https://badary.iszf.irk.ru/corrPlots/2026/srh_20260419_0755.png" alt="SRH or SSRT"></div>
           <div class="gb-body">
             <h3>SRH / SSRT</h3>
             <p>Solar radio imaging instruments used for dynamic event monitoring and full-disk radio context.</p>
+            <p class="gb-link"><a href="https://badary.iszf.irk.ru/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Siberian%20Solar%20Radio%20Telescope.jpg" alt="MRO radio observatory"></div>
+          <div class="gb-thumb"><img src="https://www.metsahovi.fi/sun/maps/orig/2026/04/sun20260412_1151.png" alt="MRO radio observatory"></div>
           <div class="gb-body">
             <h3>MRO (11.2 GHz, 37 GHz)</h3>
             <p>Microwave radio observations in dedicated bands used for activity monitoring and flare-related diagnostics.</p>
+            <p class="gb-link"><a href="https://www.metsahovi.fi/sun/data/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Siberian%20Solar%20Radio%20Telescope%202019%2001.jpg" alt="Sundish radio telescope"></div>
+          <div class="gb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUC0d0Ejen8rZfeR1sh8eBZXNRXKCMri8s67v6Gbqibzj3AjmQbeMHU35E7uPPvCKY3729vWWc8TCeJ_SlkFrvxNufkn5cc9Luy3YyiKNL2xbooNFpIIHTq6qxW_ZWCzZaDpxJj4s2i4Edm95Dn87VjnxHK3tbpVBj7yw1cDMOj6atvi5d8nklUtbSrWpteaUxoTWcRs6zZ-=w1280" alt="Sundish radio telescope"></div>
           <div class="gb-body">
             <h3>Sundish (18 - 26 GHz)</h3>
             <p>Microwave Sun-as-a-star style radio measurements useful for tracking variability in the centimeter band.</p>
+            <p class="gb-link"><a href="https://sites.google.com/inaf.it/sundish/sundish-images-archive/sundish-solar-archive?authuser=0" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
       </div>
