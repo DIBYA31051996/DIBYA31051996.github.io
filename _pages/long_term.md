@@ -65,7 +65,7 @@ nav: false
 
   .lt-card {
     display: grid;
-    grid-template-columns: 340px minmax(0, 1fr);
+    grid-template-columns: 370px minmax(0, 1fr);
     gap: 1rem;
     align-items: stretch;
     border: 1px solid rgba(175, 194, 235, 0.16);
@@ -86,7 +86,7 @@ nav: false
   .lt-card img {
     width: 100%;
     height: 100%;
-    min-height: 215px;
+    min-height: 235px;
     object-fit: cover;
     display: block;
     transition: transform 0.32s ease;
@@ -180,7 +180,7 @@ nav: false
 
   .lt-mini-card img {
     width: 100%;
-    height: 150px;
+    height: 170px;
     object-fit: cover;
     display: block;
     transition: transform 0.32s ease;
@@ -355,23 +355,7 @@ nav: false
     <h2 class="lt-subtitle">Other Resources</h2>
     <div class="lt-mini-grid">
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar Demon">
-        <div class="lt-mini-body">
-          <h4><a href="https://www.solardemon.com/" target="_blank" rel="noopener">Solar Demon Database</a></h4>
-          <p>A catalog of features and events identified using automated and semi-automated methods.</p>
-        </div>
-      </article>
-
-      <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/resource-dashboard.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar radio monitoring">
-        <div class="lt-mini-body">
-          <h4><a href="https://www.sidc.be/ausso/" target="_blank" rel="noopener">Solar Radio Monitoring</a></h4>
-          <p>Daily radio context and complementary long-term solar activity monitoring resources.</p>
-        </div>
-      </article>
-
-      <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="GONG Data Archive">
+        <img src="{{ '/assets/img/long-term/gong-logo.jpg' | relative_url }}" loading="lazy" decoding="async" alt="GONG Data Archive">
         <div class="lt-mini-body">
           <h4><a href="https://gong.nso.edu/data/" target="_blank" rel="noopener">GONG Data Archive</a></h4>
           <p>Synoptic full-disk observations and long-running helioseismic products from the GONG network.</p>
@@ -379,23 +363,23 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/resource-dashboard.svg' | relative_url }}" loading="lazy" decoding="async" alt="Live Space Weather Status">
+        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDUe1QkDJrGnrgkNxHNsGbWVZx66eE7oXDFvEqH9qdLUJoN_SqAQbioHsoX0HHn63YdeN3hJx0nl5OuFWo-i2C328aosIEZ7mduyH-JCcagFMHgy1lB4sWRTjtEv8qzyJJ5k2wanM4nanIAedNaJeKtS0Hb8vInhTYHpgobWPLog9pMOoUsEwZMe4l3fhl2A7YZlaGy4f-HNM2n2mIjrqSeKgdrMQSIpI_Kbgw=w1280" loading="lazy" decoding="async" alt="Live Space Weather Status">
         <div class="lt-mini-body">
-          <h4><a href="https://iswa.gsfc.nasa.gov/" target="_blank" rel="noopener">Live Space Weather Status</a></h4>
+          <h4><a href="https://sites.google.com/view/indus-solphys/resources/data-tools/long-term-monitoring-forecast?authuser=0#h.plk9in92xt88" target="_blank" rel="noopener">Live Space Weather Status</a></h4>
           <p>A broad operational dashboard for solar, heliospheric, and geospace context.</p>
         </div>
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar Dynamo Dataverse">
+        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUBw4ZwYedVMATxfVZcgxYoryeT9EGv53qe26ADxJeH00ylhyuniFAK41lGTDRFtAB4TpIWMLpYf9fyDSOjttTq0VEALbsz__NJIJW1VmBXz1R3Uc1JZkFn3rl4AZYbJ6Qsc0w8wZkz-YiTGyI7e-eNdwAdCvQN-8LZ7QYfssFL6TA7yWCB7BVqwhRcrMzstt57BOLlwtXEr67fMcQHwk8Y8ofK3Oqe_tX1H=w1280" loading="lazy" decoding="async" alt="Solar Dynamo Dataverse">
         <div class="lt-mini-body">
-          <h4><a href="https://solardynamo.org/" target="_blank" rel="noopener">Solar Dynamo Dataverse</a></h4>
+          <h4><a href="https://dataverse.harvard.edu/dataverse/solardynamo" target="_blank" rel="noopener">Solar Dynamo Dataverse</a></h4>
           <p>A collective of databases and products tailored to understanding and predicting the solar cycle.</p>
         </div>
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/resource-forecast.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar activity reconstruction">
+        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUAtNuoek6vVRrI-Gq43veWkcnVRUTOEBlrrLIK0j4tbY8be7ZhykMHTYPXWtqAxJWHGINkF8xJrwswR-8lf66VneO8n7aC8x29GeKK9xqZxsTkMO9meNDQbsd6mHBLyxNyvRrpFCCrghVC1B1XbXzZmaFYNrU2jc6bJpfolEyDs-bnPvudQnuQ3JuaJbZJ2I7wCgyZ2EiCNdeSnoXOHsipttlwXhXkM2Q=w1280" loading="lazy" decoding="async" alt="Solar activity reconstruction">
         <div class="lt-mini-body">
           <h4><a href="https://www2.mps.mpg.de/projects/sun-climate/data.html" target="_blank" rel="noopener">Solar Activity Reconstruction</a></h4>
           <p>Solar cyclic activity over the last millennium reconstructed from annual proxy records.</p>
@@ -403,23 +387,23 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" loading="lazy" decoding="async" alt="SMARPs and SHARPs">
+        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUBMiBE6ShJjUmMuYcXEkUoULKItozb7aWCt9Na5k5bQonCyGIbCH7uBUKLb_iMjbNm90Am3Ht_tOfQ4rvOWOuq-0_5X8CzdTk2fKwwRqtEzyNETV7nLKetpZSYBLcE0CNDfXbbijDkvMQo87REx5H32Kp6qp2m-YksCwatMHZDKA8JSXbKZw2w3BDBnVk0KXrSZNx8UwzHcG5YtiI4d8ig-5gLIYhOjKeZ_caw=w1280" loading="lazy" decoding="async" alt="SMARPs and SHARPs">
         <div class="lt-mini-body">
-          <h4><a href="https://catalog.data.gov/dataset/smarp-and-sharp-data" target="_blank" rel="noopener">SMARPs and SHARPs</a></h4>
+          <h4><a href="https://arxiv.org/abs/2108.07918?s=08" target="_blank" rel="noopener">SMARPs and SHARPs</a></h4>
           <p>Active-region data products supporting machine-learning studies and solar cycle 23-24 investigations.</p>
         </div>
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="VizieR Online Data Catalog">
+        <img src="{{ '/assets/img/long-term/vizier.gif' | relative_url }}" loading="lazy" decoding="async" alt="VizieR Online Data Catalog">
         <div class="lt-mini-body">
-          <h4><a href="https://vizier.cds.unistra.fr/" target="_blank" rel="noopener">VizieR Online Data Catalog</a></h4>
+          <h4><a href="https://cdsarc.cds.unistra.fr/" target="_blank" rel="noopener">VizieR Online Data Catalog</a></h4>
           <p>Historic solar and astrophysical catalogs, including sunspot, faculae, and prominence datasets.</p>
         </div>
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="Sunspot Observations in 1719-1720">
+        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCFwI0LL2w4BP5LBwTzdFaFeFfE80Vm0Mq5mTVA6_LZwiuBSRchNsvhw1IW0j3U-kMDmKrfTA4b12QWZFeLqnQE6wxOfRrpCClcnpDpNRoroTcuLLacJ1-nnojgAva7tqxna42QJbc49cskJ9fq1TWScDgTwH2vnJ126cGuXbHiskhbtLIxa0ml8Havlou9ocSH39DUI7-jmrKIjanXbR6a5uzdiWZdi-v8=w1280" loading="lazy" decoding="async" alt="Sunspot Observations in 1719-1720">
         <div class="lt-mini-body">
           <h4><a href="https://link.springer.com/article/10.1007/s11207-020-01706-z" target="_blank" rel="noopener">Sunspot Observations in 1719-1720</a></h4>
           <p>Early telescopic observations that help extend the long-baseline record of solar activity.</p>
@@ -427,9 +411,9 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="SOLIS Data Product">
+        <img src="{{ '/assets/img/long-term/solis.jpg' | relative_url }}" loading="lazy" decoding="async" alt="SOLIS Data Product">
         <div class="lt-mini-body">
-          <h4><a href="https://nispdata.nso.edu/ftp/" target="_blank" rel="noopener">SOLIS Data Product</a></h4>
+          <h4><a href="https://solis.nso.edu/0/solis_data.html" target="_blank" rel="noopener">SOLIS Data Product</a></h4>
           <p>Integrated synoptic magnetogram and dopplergram products from the SOLIS program.</p>
         </div>
       </article>
