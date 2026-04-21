@@ -37,7 +37,7 @@ nav: false
 
   .lt-heading h1 {
     margin: 0;
-    color: #f3f6fb;
+    color: #7f0b13;
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
     letter-spacing: 0.04em;
