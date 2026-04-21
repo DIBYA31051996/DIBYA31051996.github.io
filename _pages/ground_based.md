@@ -423,15 +423,7 @@ nav: false
       <div class="gb-rule"></div>
       <div class="gb-grid">
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Low-Frequency%20Solar%20Radio%20Telescopes.jpg" alt="Low-frequency solar radio telescopes"></div>
-          <div class="gb-body">
-            <h3>FASR</h3>
-            <p>Frequency-agile solar radio concepts and associated instrumentation aimed at broadband solar diagnostics.</p>
-          </div>
-        </article>
-
-        <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Low-Frequency%20Solar%20Radio%20Telescopes.jpg" alt="LOFAR solar observations"></div>
+          <div class="gb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCtZD8AY8Qr2LdhGFAe6UjMZnLk-qOW6_ItqxBRm5cpqX2YCnoRaDhCGlUCZenSX0OgIEkdT_W-DSs9IgfJMyJegUksWqs3jNzYK-z8eORhRBecHjxhwV5t9aotQQ4fdNaAxSJjDy8ZtJIo4TAEJhH6tfB23idfL_eBF2ykX7NSQSBhyPUU01yxYbpfP8vyw-IQ3Ap7hS7A1Co_D9nfU5wU8Y8OJ7EiTs0SGWc=w1280" alt="LOFAR solar observations"></div>
           <div class="gb-body">
             <h3>LOFAR</h3>
             <p>Low-frequency radio observations of the Sun used to study the corona, bursts, and propagation effects.</p>
@@ -440,31 +432,16 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Low-Frequency%20Solar%20Radio%20Telescopes.jpg" alt="NenuFAR"></div>
-          <div class="gb-body">
-            <h3>NenuFAR</h3>
-            <p>Low-frequency radio array suitable for coronal and heliospheric radio studies.</p>
-          </div>
-        </article>
-
-        <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Low-Frequency%20Solar%20Radio%20Telescopes.jpg" alt="ORFEES dynamic spectra"></div>
-          <div class="gb-body">
-            <h3>ORFEES / Dynamic Spectra</h3>
-            <p>Ground-based radio dynamic spectra used to track bursts and time-varying radio emission signatures.</p>
-          </div>
-        </article>
-
-        <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Low-Frequency%20Solar%20Radio%20Telescopes.jpg" alt="Nancay Radioheliograph"></div>
+          <div class="gb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUA003wEvqcvJT-EmJLepxPForQ_J8uK3ggXAM4CCZRW_XDqnijKB5iTmHzZIihP_W536Q3ze6rFKyoZGlmuCpN2RzW69QhFLBL7lke64t8pky8MgZyJhOHo4F6WNXzXpW3LPgruRKlk9oDMbQ0uU6Z8U-ssC3RlEeDydqVUaWoVLfecgcDLEXHZb5NBu6GLBVYYDeJhkLB8a1lt9kXvDvwS0XozSDaJ3SOm1O4=w1280" alt="Nancay Radioheliograph"></div>
           <div class="gb-body">
             <h3>Nancay Radioheliograph</h3>
             <p>Well-known radioheliograph for imaging solar radio activity and large-scale coronal signatures.</p>
+            <p class="gb-link"><a href="https://solar.nro.nao.ac.jp/norh/html/" target="_blank" rel="noopener">Official site</a></p>
           </div>
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Low-Frequency%20Solar%20Radio%20Telescopes.jpg" alt="e-CALLISTO"></div>
+          <div class="gb-thumb"><img src="https://www.e-callisto.org/Callisto_logo_black.png" alt="e-CALLISTO"></div>
           <div class="gb-body">
             <h3>e-CALLISTO</h3>
             <p>Global network of low-cost radio spectrometers used to monitor solar radio bursts around the world.</p>
