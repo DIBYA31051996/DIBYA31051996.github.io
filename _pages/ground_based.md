@@ -182,6 +182,40 @@ nav: false
     overflow: hidden;
   }
 
+  .gb-section-microwave .gb-card {
+    display: grid;
+    grid-template-rows: 235px 195px;
+    min-height: 430px;
+  }
+
+  .gb-section-microwave .gb-thumb {
+    flex: none;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .gb-section-microwave .gb-body {
+    min-height: 195px;
+    padding: 1rem 1rem 1rem;
+    background: linear-gradient(180deg, rgba(10, 17, 31, 0.98), rgba(8, 14, 28, 0.98));
+  }
+
+  .gb-section-microwave .gb-body h3 {
+    min-height: 3.1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .gb-section-microwave .gb-body p:not(.gb-link):first-of-type {
+    min-height: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
   .gb-body a {
     color: #9dd2ff;
     text-decoration: none;
@@ -315,7 +349,7 @@ nav: false
       </div>
     </section>
 
-    <section class="gb-section">
+    <section class="gb-section gb-section-microwave">
       <h2 class="gb-section-title">Microwave and Millimeter</h2>
       <div class="gb-rule"></div>
       <div class="gb-grid">
@@ -374,7 +408,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUC0d0Ejen8rZfeR1sh8eBZXNRXKCMri8s67v6Gbqibzj3AjmQbeMHU35E7uPPvCKY3729vWWc8TCeJ_SlkFrvxNufkn5cc9Luy3YyiKNL2xbooNFpIIHTq6qxW_ZWCzZaDpxJj4s2i4Edm95Dn87VjnxHK3tbpVBj7yw1cDMOj6atvi5d8nklUtbSrWpteaUxoTWcRs6zZ-=w1280" alt="Sundish radio telescope"></div>
+          <div class="gb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDvaLANt5FTFKGtUQ2jEWtHKK_QFBjaHaegrGEaUFsfed5ofke2yscR-0KP2iGXhyBZJ5gqkLkRvUbNIovZeiVk7i2Orr5dHWNNVSgzPc1QVm9byFDpfoEXDLTBdX4AwYVgiU0W7qo8wuwzT7WK-XI6CIXAS6aR_wv9kstRbBsOK50rvOXiUrjwHxoMwWwPhJgAJ9TUC_N4i5RmQaEVejRVEGcWVHz2Y7Gl=w1280" alt="Sundish radio telescope"></div>
           <div class="gb-body">
             <h3>Sundish (18 - 26 GHz)</h3>
             <p>Microwave Sun-as-a-star style radio measurements useful for tracking variability in the centimeter band.</p>
