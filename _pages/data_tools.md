@@ -177,9 +177,11 @@ nav_order: 4
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">🚀</div></div>
-          <h3>Space Based</h3>
-          <p><strong>E.g.</strong> SoHO, SDO, Solar Orbiter</p>
+          <a class="dt-card-link" href="{{ '/space-based/' | relative_url }}">
+            <div class="dt-visual"><div class="dt-icon">🚀</div></div>
+            <h3>Space Based</h3>
+            <p><strong>Open page:</strong> probe, orbiter, observatories</p>
+          </a>
         </article>
 
         <article class="dt-card">
