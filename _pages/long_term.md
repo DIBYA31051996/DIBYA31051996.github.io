@@ -231,7 +231,7 @@ nav: false
 
     <div class="lt-list">
       <article class="lt-card">
-        <img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" loading="lazy" decoding="async" alt="SolarMonitor">
+        <img src="https://lh3.googleusercontent.com/sitesv/AA5AbUAnhaEfe3CWnX5gjbQHBUgO7sLibnGOh7GIEcQm7TQqUljHPppaujpi-PIi1Kqzfio3VTxfWEsTd5Kkv3omOo7Jhno1CkRrF-VFB_dmxXNDzHIYA_OSaYBm2JzSm1ta8XoItWWpbFWYFTyI-a4htXB9peAWRoDxWj7gRBRZYWQ_ZfSUUrow8YGybDgdZfRTmYt1e_n8yN6fMjGlg9IL9ZbOb6xm603c2oyU=w1280" loading="lazy" decoding="async" alt="SolarMonitor">
         <div class="lt-body">
           <h3><a href="https://www.solarmonitor.org/" target="_blank" rel="noopener">SolarMonitor</a></h3>
           <p>This resource combines near-real-time and archive views of active regions, events, images, and solar-weather context products in one place.</p>

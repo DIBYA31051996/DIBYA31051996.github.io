@@ -292,7 +292,7 @@ nav: false
       <div class="gb-rule"></div>
       <div class="gb-grid">
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20K.%20Inouye%20Solar%20Telescope.jpg" alt="Daniel K. Inouye Solar Telescope"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/optical-observatory.svg' | relative_url }}" loading="lazy" decoding="async" alt="Daniel K. Inouye Solar Telescope"></div>
           <div class="gb-body">
             <h3>DKIST - Daniel K. Inouye Solar Telescope</h3>
             <p>High-resolution solar facility designed to study the photosphere, chromosphere, and corona with unprecedented detail.</p>
@@ -301,7 +301,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Goode%20Solar%20Telescope.jpg" alt="Goode Solar Telescope"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/optical-observatory.svg' | relative_url }}" loading="lazy" decoding="async" alt="Goode Solar Telescope"></div>
           <div class="gb-body">
             <h3>GST - Goode Solar Telescope</h3>
             <p>Big Bear Solar Observatory telescope used for high-resolution imaging and magnetic diagnostics of fine solar structure.</p>
@@ -310,7 +310,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Solar%20Telescope%20GREGOR.jpg" alt="GREGOR Solar Telescope"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/optical-observatory.svg' | relative_url }}" loading="lazy" decoding="async" alt="GREGOR Solar Telescope"></div>
           <div class="gb-body">
             <h3>GREGOR Solar Telescope</h3>
             <p>European ground-based solar telescope focused on magnetic fields, fine-scale solar dynamics, and spectropolarimetry.</p>
@@ -319,7 +319,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/National%20solar%20observatory.jpg" alt="Dunn Solar Telescope"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/optical-observatory.svg' | relative_url }}" loading="lazy" decoding="async" alt="Dunn Solar Telescope"></div>
           <div class="gb-body">
             <h3>DST - Dunn Solar Telescope</h3>
             <p>Long-running U.S. solar telescope known for adaptive-optics observations and detailed measurements of active regions.</p>
@@ -328,7 +328,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://kso.iiap.res.in/new/static/images/kso-auditorium.jpeg" alt="Kodaikanal Solar Observatory"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/optical-observatory.svg' | relative_url }}" loading="lazy" decoding="async" alt="Kodaikanal Solar Observatory"></div>
           <div class="gb-body">
             <h3>KSO - Kodaikanal Solar Observatory</h3>
             <p>Historic solar observatory with long-baseline synoptic records central to cycle-scale studies and archival context.</p>
@@ -337,7 +337,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://www.su.se/images/200.1f09f4df19a7bbe0dfd1c43/1763559921747/teleskop_gryning.jpg" alt="Swedish Solar Telescope"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/optical-observatory.svg' | relative_url }}" loading="lazy" decoding="async" alt="Swedish Solar Telescope"></div>
           <div class="gb-body">
             <h3>SST - Swedish Solar Telescope</h3>
             <p>High-resolution telescope widely used for small-scale photospheric and chromospheric structure studies.</p>
@@ -346,7 +346,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dutch%20Open%20Telescope%20sunset.jpg" alt="Dutch Open Telescope"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/optical-observatory.svg' | relative_url }}" loading="lazy" decoding="async" alt="Dutch Open Telescope"></div>
           <div class="gb-body">
             <h3>DOT - Dutch Open Telescope</h3>
             <p>Open-design solar telescope at La Palma, known for high-resolution imaging and multi-wavelength solar studies.</p>
@@ -355,7 +355,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://www.hida.kyoto-u.ac.jp/DST/img_dst2.JPG" alt="Hida Observatory"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/optical-observatory.svg' | relative_url }}" loading="lazy" decoding="async" alt="Hida Observatory"></div>
           <div class="gb-body">
             <h3>HIDA Observatory</h3>
             <p>Japanese solar observing facility associated with high-resolution spectroscopy and long-running solar studies.</p>
@@ -364,7 +364,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Udaipur%20Solar%20Observatory%2001.jpg" alt="MAST at Udaipur Solar Observatory"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/optical-observatory.svg' | relative_url }}" loading="lazy" decoding="async" alt="MAST at Udaipur Solar Observatory"></div>
           <div class="gb-body">
             <h3>MAST - Multi-Application Solar Telescope</h3>
             <p>Off-axis solar telescope at Udaipur Solar Observatory built for high-resolution studies of solar magnetic activity.</p>
@@ -373,7 +373,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Udaipur%20observatory.jpg" alt="GONG related observatory"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/optical-observatory.svg' | relative_url }}" loading="lazy" decoding="async" alt="GONG related observatory"></div>
           <div class="gb-body">
             <h3>GONG - Global Oscillation Network Group</h3>
             <p>Synoptic network used for helioseismology, full-disk magnetic field products, and solar dynamical studies.</p>
@@ -388,7 +388,7 @@ nav: false
       <div class="gb-rule"></div>
       <div class="gb-grid">
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://www.almaobservatory.org/wp-content/uploads/2024/09/02-Atacama2024_0424_211645-9793_AGP-Edit-1200x800.jpg" alt="ALMA observatory"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="ALMA observatory"></div>
           <div class="gb-body">
             <h3>ALMA</h3>
             <p>Millimeter and sub-millimeter observations of the solar atmosphere, especially useful for chromospheric diagnostics.</p>
@@ -397,7 +397,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://solar.nro.nao.ac.jp/norp/html/gallery/norp_icon.jpg" alt="Nobeyama Radioheliograph"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="Nobeyama Radioheliograph"></div>
           <div class="gb-body">
             <h3>NoRH - Nobeyama Radioheliograph</h3>
             <p>Long-running microwave facility that tracks the Sun at 17 and 34 GHz, including flare and active-region evolution.</p>
@@ -406,7 +406,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://www.sao.ru/hq/sun/data/today/last_i.gif" alt="RATAN-600"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="RATAN-600"></div>
           <div class="gb-body">
             <h3>RATAN-600</h3>
             <p>Large radio telescope with solar observing capability used for spectral and magnetic diagnostics.</p>
@@ -415,7 +415,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://www.ovsa.njit.edu/img/landingPage/ovsa.jpg" alt="EOVSA"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="EOVSA"></div>
           <div class="gb-body">
             <h3>EOVSA</h3>
             <p>Microwave interferometer used to probe flare energy release and coronal magnetic structure.</p>
@@ -424,7 +424,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://badary.iszf.irk.ru/corrPlots/2026/srh_20260419_0755.png" alt="SRH or SSRT"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="SRH or SSRT"></div>
           <div class="gb-body">
             <h3>SRH / SSRT</h3>
             <p>Solar radio imaging instruments used for dynamic event monitoring and full-disk radio context.</p>
@@ -433,7 +433,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://www.metsahovi.fi/sun/maps/orig/2026/04/sun20260412_1151.png" alt="MRO radio observatory"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="MRO radio observatory"></div>
           <div class="gb-body">
             <h3>MRO (11.2 GHz, 37 GHz)</h3>
             <p>Microwave radio observations in dedicated bands used for activity monitoring and flare-related diagnostics.</p>
@@ -442,7 +442,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDvaLANt5FTFKGtUQ2jEWtHKK_QFBjaHaegrGEaUFsfed5ofke2yscR-0KP2iGXhyBZJ5gqkLkRvUbNIovZeiVk7i2Orr5dHWNNVSgzPc1QVm9byFDpfoEXDLTBdX4AwYVgiU0W7qo8wuwzT7WK-XI6CIXAS6aR_wv9kstRbBsOK50rvOXiUrjwHxoMwWwPhJgAJ9TUC_N4i5RmQaEVejRVEGcWVHz2Y7Gl=w1280" alt="Sundish radio telescope"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="Sundish radio telescope"></div>
           <div class="gb-body">
             <h3>Sundish (18 - 26 GHz)</h3>
             <p>Microwave Sun-as-a-star style radio measurements useful for tracking variability in the centimeter band.</p>
@@ -457,7 +457,7 @@ nav: false
       <div class="gb-rule"></div>
       <div class="gb-grid">
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCtZD8AY8Qr2LdhGFAe6UjMZnLk-qOW6_ItqxBRm5cpqX2YCnoRaDhCGlUCZenSX0OgIEkdT_W-DSs9IgfJMyJegUksWqs3jNzYK-z8eORhRBecHjxhwV5t9aotQQ4fdNaAxSJjDy8ZtJIo4TAEJhH6tfB23idfL_eBF2ykX7NSQSBhyPUU01yxYbpfP8vyw-IQ3Ap7hS7A1Co_D9nfU5wU8Y8OJ7EiTs0SGWc=w1280" alt="LOFAR solar observations"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/radio-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="LOFAR solar observations"></div>
           <div class="gb-body">
             <h3>LOFAR</h3>
             <p>Low-frequency radio observations of the Sun used to study the corona, bursts, and propagation effects.</p>
@@ -466,7 +466,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUA003wEvqcvJT-EmJLepxPForQ_J8uK3ggXAM4CCZRW_XDqnijKB5iTmHzZIihP_W536Q3ze6rFKyoZGlmuCpN2RzW69QhFLBL7lke64t8pky8MgZyJhOHo4F6WNXzXpW3LPgruRKlk9oDMbQ0uU6Z8U-ssC3RlEeDydqVUaWoVLfecgcDLEXHZb5NBu6GLBVYYDeJhkLB8a1lt9kXvDvwS0XozSDaJ3SOm1O4=w1280" alt="Nancay Radioheliograph"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/radio-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="Nancay Radioheliograph"></div>
           <div class="gb-body">
             <h3>Nancay Radioheliograph</h3>
             <p>Well-known radioheliograph for imaging solar radio activity and large-scale coronal signatures.</p>
@@ -475,7 +475,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://www.e-callisto.org/Callisto_logo_black.png" alt="e-CALLISTO"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/radio-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="e-CALLISTO"></div>
           <div class="gb-body">
             <h3>e-CALLISTO</h3>
             <p>Global network of low-cost radio spectrometers used to monitor solar radio bursts around the world.</p>
