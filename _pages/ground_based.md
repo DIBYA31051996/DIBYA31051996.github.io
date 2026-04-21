@@ -266,16 +266,16 @@ nav: false
   }
 
   .gb-card:hover {
-    transform: translateY(-7px);
+    transform: translateY(-4px);
     border-color: rgba(118, 196, 255, 0.52);
     box-shadow:
-      0 24px 44px rgba(0, 0, 0, 0.3),
+      0 18px 30px rgba(0, 0, 0, 0.24),
       0 0 0 1px rgba(118, 196, 255, 0.18),
-      0 0 28px rgba(77, 173, 255, 0.16);
+      0 0 16px rgba(77, 173, 255, 0.1);
   }
 
   .gb-card:hover .gb-thumb img {
-    transform: scale(1.035);
+    transform: scale(1.02);
   }
 
   @media (max-width: 980px) {

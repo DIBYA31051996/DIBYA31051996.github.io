@@ -65,7 +65,7 @@ nav: false
 
   .lt-card {
     display: grid;
-    grid-template-columns: 300px minmax(0, 1fr);
+    grid-template-columns: 340px minmax(0, 1fr);
     gap: 1rem;
     align-items: stretch;
     border: 1px solid rgba(175, 194, 235, 0.16);
@@ -86,7 +86,7 @@ nav: false
   .lt-card img {
     width: 100%;
     height: 100%;
-    min-height: 190px;
+    min-height: 215px;
     object-fit: cover;
     display: block;
     transition: transform 0.32s ease;
@@ -141,22 +141,21 @@ nav: false
     transform: translateY(-4px);
     border-color: rgba(118, 196, 255, 0.52);
     box-shadow:
-      0 18px 32px rgba(0, 0, 0, 0.22),
+      0 14px 24px rgba(0, 0, 0, 0.18),
       0 0 0 1px rgba(118, 196, 255, 0.18),
-      0 0 18px rgba(77, 173, 255, 0.12);
+      0 0 12px rgba(77, 173, 255, 0.08);
   }
 
   .lt-card:hover img,
   .lt-mini-card:hover img {
-    transform: scale(1.02);
+    transform: scale(1.012);
   }
 
   .lt-subtitle {
     margin: 2rem 0 1rem;
-    color: #7f0b13;
+    color: #a51a22;
     font-size: 1.2rem;
     font-weight: 800;
-    text-transform: uppercase;
     letter-spacing: 0.04em;
   }
 
@@ -212,9 +211,9 @@ nav: false
     transform: translateY(-4px);
     border-color: rgba(118, 196, 255, 0.48);
     box-shadow:
-      0 16px 28px rgba(0, 0, 0, 0.2),
+      0 12px 22px rgba(0, 0, 0, 0.16),
       0 0 0 1px rgba(118, 196, 255, 0.14),
-      0 0 16px rgba(77, 173, 255, 0.1);
+      0 0 10px rgba(77, 173, 255, 0.08);
   }
 
   .lt-mini-card p {
@@ -384,6 +383,54 @@ nav: false
         <div class="lt-mini-body">
           <h4><a href="https://iswa.gsfc.nasa.gov/" target="_blank" rel="noopener">Live Space Weather Status</a></h4>
           <p>A broad operational dashboard for solar, heliospheric, and geospace context.</p>
+        </div>
+      </article>
+
+      <article class="lt-mini-card">
+        <img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar Dynamo Dataverse">
+        <div class="lt-mini-body">
+          <h4><a href="https://solardynamo.org/" target="_blank" rel="noopener">Solar Dynamo Dataverse</a></h4>
+          <p>A collective of databases and products tailored to understanding and predicting the solar cycle.</p>
+        </div>
+      </article>
+
+      <article class="lt-mini-card">
+        <img src="{{ '/assets/img/long-term/resource-forecast.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar activity reconstruction">
+        <div class="lt-mini-body">
+          <h4><a href="https://www2.mps.mpg.de/projects/sun-climate/data.html" target="_blank" rel="noopener">Solar Activity Reconstruction</a></h4>
+          <p>Solar cyclic activity over the last millennium reconstructed from annual proxy records.</p>
+        </div>
+      </article>
+
+      <article class="lt-mini-card">
+        <img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" loading="lazy" decoding="async" alt="SMARPs and SHARPs">
+        <div class="lt-mini-body">
+          <h4><a href="https://catalog.data.gov/dataset/smarp-and-sharp-data" target="_blank" rel="noopener">SMARPs and SHARPs</a></h4>
+          <p>Active-region data products supporting machine-learning studies and solar cycle 23-24 investigations.</p>
+        </div>
+      </article>
+
+      <article class="lt-mini-card">
+        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="VizieR Online Data Catalog">
+        <div class="lt-mini-body">
+          <h4><a href="https://vizier.cds.unistra.fr/" target="_blank" rel="noopener">VizieR Online Data Catalog</a></h4>
+          <p>Historic solar and astrophysical catalogs, including sunspot, faculae, and prominence datasets.</p>
+        </div>
+      </article>
+
+      <article class="lt-mini-card">
+        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="Sunspot Observations in 1719-1720">
+        <div class="lt-mini-body">
+          <h4><a href="https://link.springer.com/article/10.1007/s11207-020-01706-z" target="_blank" rel="noopener">Sunspot Observations in 1719-1720</a></h4>
+          <p>Early telescopic observations that help extend the long-baseline record of solar activity.</p>
+        </div>
+      </article>
+
+      <article class="lt-mini-card">
+        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="SOLIS Data Product">
+        <div class="lt-mini-body">
+          <h4><a href="https://nispdata.nso.edu/ftp/" target="_blank" rel="noopener">SOLIS Data Product</a></h4>
+          <p>Integrated synoptic magnetogram and dopplergram products from the SOLIS program.</p>
         </div>
       </article>
     </div>
