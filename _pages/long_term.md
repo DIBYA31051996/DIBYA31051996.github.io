@@ -231,7 +231,7 @@ nav: false
 
     <div class="lt-list">
       <article class="lt-card">
-        <img src="https://www.solarmonitor.org/data/images/singleframes/2026/04/20/halpha_512.jpg" alt="SolarMonitor">
+        <img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" loading="lazy" decoding="async" alt="SolarMonitor">
         <div class="lt-body">
           <h3><a href="https://www.solarmonitor.org/" target="_blank" rel="noopener">SolarMonitor</a></h3>
           <p>This resource combines near-real-time and archive views of active regions, events, images, and solar-weather context products in one place.</p>
@@ -240,7 +240,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="https://api.helioviewer.org/v2/takeScreenshot/?date=2026-04-20T00:00:00Z&imageScale=3&layers=%5BSDO,AIA,AIA,171,1,100%5D" alt="HelioViewer">
+        <img src="{{ '/assets/img/long-term/resource-dashboard.svg' | relative_url }}" loading="lazy" decoding="async" alt="HelioViewer">
         <div class="lt-body">
           <h3><a href="https://helioviewer.org/" target="_blank" rel="noopener">HelioViewer</a></h3>
           <p>HelioViewer provides quick visual access to multi-mission solar imagery with interactive browsing, overlays, and movie generation for event context.</p>
@@ -249,7 +249,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="https://www.sidc.be/SILSO/IMAGES/SILSO_logo.png" alt="SIDC-SILSO">
+        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="SIDC-SILSO">
         <div class="lt-body">
           <h3><a href="https://www.sidc.be/SILSO/" target="_blank" rel="noopener">SIDC-SILSO</a></h3>
           <p>The SILSO sunspot-number database provides daily, monthly, and long-term indices that are central to solar-cycle monitoring and reconstruction work.</p>
@@ -258,7 +258,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="https://services.swpc.noaa.gov/images/solar-cycle-sunspot-number.gif" alt="Solar cycle forecast">
+        <img src="{{ '/assets/img/long-term/resource-forecast.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar cycle forecast">
         <div class="lt-body">
           <h3><a href="https://www.swpc.noaa.gov/products/solar-cycle-progression" target="_blank" rel="noopener">Marshall Solar Cycle Forecast</a></h3>
           <p>Solar-cycle progression plots and forecast context from operational space-weather resources, useful for broad cycle-phase interpretation.</p>
@@ -267,7 +267,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="https://www.swpc.noaa.gov/themes/custom/awi_swpc/images/observer-page.png" alt="Space Weather Prediction Center">
+        <img src="{{ '/assets/img/long-term/resource-dashboard.svg' | relative_url }}" loading="lazy" decoding="async" alt="Space Weather Prediction Center">
         <div class="lt-body">
           <h3><a href="https://www.swpc.noaa.gov/" target="_blank" rel="noopener">Space Weather Prediction Center</a></h3>
           <p>A comprehensive source of operational space-weather data, products, alerts, forecast summaries, and environment maps.</p>
@@ -276,7 +276,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="https://www.sws.bom.gov.au/Images/Others/sws-daily-solar-and-geophysical-report.png" alt="Australian Space Weather database">
+        <img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" loading="lazy" decoding="async" alt="Australian Space Weather database">
         <div class="lt-body">
           <h3><a href="https://www.sws.bom.gov.au/" target="_blank" rel="noopener">Australian Space Weather Database</a></h3>
           <p>Australian space-weather products, reports, and event summaries for operational monitoring and archive reference.</p>
@@ -285,7 +285,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="https://www.spaceweather.gc.ca/warnings/watch-images/geomag-eng.png" alt="Canadian Space Weather Database">
+        <img src="{{ '/assets/img/long-term/resource-dashboard.svg' | relative_url }}" loading="lazy" decoding="async" alt="Canadian Space Weather Database">
         <div class="lt-body">
           <h3><a href="https://www.spaceweather.gc.ca/" target="_blank" rel="noopener">Canadian Space Weather Database</a></h3>
           <p>Canadian geospace and space-weather observations, services, and data access for geomagnetic and radio-environment context.</p>
@@ -294,7 +294,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="https://kp.gfz-potsdam.de/fileadmin/kp-archiv/png/Kp_ap_Ap_SN_F107_nowcast.png" alt="Geomagnetic Kp index">
+        <img src="{{ '/assets/img/long-term/resource-forecast.svg' | relative_url }}" loading="lazy" decoding="async" alt="Geomagnetic Kp index">
         <div class="lt-body">
           <h3><a href="https://kp.gfz-potsdam.de/en/" target="_blank" rel="noopener">Geomagnetic Kp Index</a></h3>
           <p>The definitive Kp and ap geomagnetic indices for monitoring magnetospheric variability and solar-terrestrial conditions.</p>
@@ -303,7 +303,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="https://www.ngdc.noaa.gov/stp/space-weather/solar-data/solar-features/solar-active-regions/images/arsum.png" alt="Solar Active Region Compilation">
+        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar Active Region Compilation">
         <div class="lt-body">
           <h3><a href="https://www.ngdc.noaa.gov/stp/space-weather/solar-data/solar-features/solar-active-regions/" target="_blank" rel="noopener">Solar Active Region Compilation</a></h3>
           <p>Daily and historical active-region listings with identifiers and compact summaries useful for event cross-reference work.</p>
@@ -312,7 +312,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="https://www.ngdc.noaa.gov/stp/space-weather/solar-data/solar-features/solar-flares/images/xray.png" alt="Solar flare catalog compilation">
+        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar flare catalog compilation">
         <div class="lt-body">
           <h3><a href="https://www.ngdc.noaa.gov/stp/space-weather/solar-data/solar-features/solar-flares/" target="_blank" rel="noopener">Solar Flare Catalog Compilation</a></h3>
           <p>Flare listings and long-baseline event compilations that support event-based studies and historical comparisons.</p>
@@ -324,7 +324,7 @@ nav: false
     <h2 class="lt-subtitle">Other Resources</h2>
     <div class="lt-mini-grid">
       <article class="lt-mini-card">
-        <img src="https://www.solardemon.com/img/logo.png" alt="Solar Demon">
+        <img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar Demon">
         <div class="lt-mini-body">
           <h4><a href="https://www.solardemon.com/" target="_blank" rel="noopener">Solar Demon Database</a></h4>
           <p>A catalog of features and events identified using automated and semi-automated methods.</p>
@@ -332,7 +332,7 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="https://www.sidc.be/ausso/Images/ausso.png" alt="Solar radio monitoring">
+        <img src="{{ '/assets/img/long-term/resource-dashboard.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar radio monitoring">
         <div class="lt-mini-body">
           <h4><a href="https://www.sidc.be/ausso/" target="_blank" rel="noopener">Solar Radio Monitoring</a></h4>
           <p>Daily radio context and complementary long-term solar activity monitoring resources.</p>
@@ -340,7 +340,7 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="https://spaceweather.gmu.edu/seeds/sunspot_anim.gif" alt="GONG Data Archive">
+        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="GONG Data Archive">
         <div class="lt-mini-body">
           <h4><a href="https://gong.nso.edu/data/" target="_blank" rel="noopener">GONG Data Archive</a></h4>
           <p>Synoptic full-disk observations and long-running helioseismic products from the GONG network.</p>
@@ -348,7 +348,7 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="https://iswa.gsfc.nasa.gov/IswaSystemWebApp/iSWA_logo.png" alt="Live Space Weather Status">
+        <img src="{{ '/assets/img/long-term/resource-dashboard.svg' | relative_url }}" loading="lazy" decoding="async" alt="Live Space Weather Status">
         <div class="lt-mini-body">
           <h4><a href="https://iswa.gsfc.nasa.gov/" target="_blank" rel="noopener">Live Space Weather Status</a></h4>
           <p>A broad operational dashboard for solar, heliospheric, and geospace context.</p>
