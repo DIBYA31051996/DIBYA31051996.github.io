@@ -216,6 +216,40 @@ nav: false
     overflow: hidden;
   }
 
+  .gb-section-radio .gb-card {
+    display: grid;
+    grid-template-rows: 235px 195px;
+    min-height: 430px;
+  }
+
+  .gb-section-radio .gb-thumb {
+    flex: none;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .gb-section-radio .gb-body {
+    min-height: 195px;
+    padding: 1rem 1rem 1rem;
+    background: linear-gradient(180deg, rgba(10, 17, 31, 0.98), rgba(8, 14, 28, 0.98));
+  }
+
+  .gb-section-radio .gb-body h3 {
+    min-height: 3.1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .gb-section-radio .gb-body p:not(.gb-link):first-of-type {
+    min-height: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
   .gb-body a {
     color: #9dd2ff;
     text-decoration: none;
@@ -418,7 +452,7 @@ nav: false
       </div>
     </section>
 
-    <section class="gb-section">
+    <section class="gb-section gb-section-radio">
       <h2 class="gb-section-title">Radio</h2>
       <div class="gb-rule"></div>
       <div class="gb-grid">

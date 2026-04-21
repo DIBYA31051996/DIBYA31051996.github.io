@@ -169,9 +169,11 @@ nav_order: 4
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">⏳</div></div>
-          <h3>Long-Term</h3>
-          <p><strong>E.g.</strong> KoSO, MWO, RGO</p>
+          <a class="dt-card-link" href="{{ '/long-term/' | relative_url }}">
+            <div class="dt-visual"><div class="dt-icon">⏳</div></div>
+            <h3>Long-Term</h3>
+            <p><strong>Open page:</strong> monitoring, forecast, archives</p>
+          </a>
         </article>
 
         <article class="dt-card">
