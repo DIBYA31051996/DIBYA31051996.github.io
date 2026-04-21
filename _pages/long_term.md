@@ -41,7 +41,6 @@ nav: false
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
   }
 
   .lt-heading p {
@@ -66,7 +65,7 @@ nav: false
 
   .lt-card {
     display: grid;
-    grid-template-columns: 260px minmax(0, 1fr);
+    grid-template-columns: 300px minmax(0, 1fr);
     gap: 1rem;
     align-items: stretch;
     border: 1px solid rgba(175, 194, 235, 0.16);
@@ -78,14 +77,19 @@ nav: false
     box-shadow:
       0 14px 32px rgba(0, 0, 0, 0.18),
       inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    transition:
+      transform 0.22s ease,
+      box-shadow 0.22s ease,
+      border-color 0.22s ease;
   }
 
   .lt-card img {
     width: 100%;
     height: 100%;
-    min-height: 170px;
+    min-height: 190px;
     object-fit: cover;
     display: block;
+    transition: transform 0.32s ease;
   }
 
   .lt-body {
@@ -133,6 +137,20 @@ nav: false
     text-decoration: underline;
   }
 
+  .lt-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(118, 196, 255, 0.52);
+    box-shadow:
+      0 24px 44px rgba(0, 0, 0, 0.28),
+      0 0 0 1px rgba(118, 196, 255, 0.18),
+      0 0 28px rgba(77, 173, 255, 0.16);
+  }
+
+  .lt-card:hover img,
+  .lt-mini-card:hover img {
+    transform: scale(1.035);
+  }
+
   .lt-subtitle {
     margin: 2rem 0 1rem;
     color: #7f0b13;
@@ -155,6 +173,10 @@ nav: false
     background:
       linear-gradient(180deg, rgba(16, 24, 43, 0.92), rgba(10, 17, 31, 0.96)),
       radial-gradient(circle at top right, rgba(88, 166, 255, 0.12), transparent 40%);
+    transition:
+      transform 0.22s ease,
+      box-shadow 0.22s ease,
+      border-color 0.22s ease;
   }
 
   .lt-mini-card img {
@@ -162,6 +184,7 @@ nav: false
     height: 150px;
     object-fit: cover;
     display: block;
+    transition: transform 0.32s ease;
   }
 
   .lt-mini-card .lt-mini-body {
@@ -183,6 +206,15 @@ nav: false
   .lt-mini-card h4 a:hover {
     color: #ffffff;
     text-decoration: underline;
+  }
+
+  .lt-mini-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(118, 196, 255, 0.48);
+    box-shadow:
+      0 22px 38px rgba(0, 0, 0, 0.24),
+      0 0 0 1px rgba(118, 196, 255, 0.14),
+      0 0 24px rgba(77, 173, 255, 0.14);
   }
 
   .lt-mini-card p {

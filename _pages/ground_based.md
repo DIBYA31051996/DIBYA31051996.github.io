@@ -87,6 +87,10 @@ nav: false
     box-shadow:
       0 14px 32px rgba(0, 0, 0, 0.18),
       inset 0 1px 0 rgba(255, 255, 255, 0.04);
+    transition:
+      transform 0.22s ease,
+      box-shadow 0.22s ease,
+      border-color 0.22s ease;
   }
 
   .gb-thumb {
@@ -109,6 +113,7 @@ nav: false
     object-fit: cover;
     object-position: center;
     display: block;
+    transition: transform 0.32s ease;
   }
 
   .gb-body {
@@ -258,6 +263,19 @@ nav: false
   .gb-body a:hover {
     color: #ffffff;
     text-decoration: underline;
+  }
+
+  .gb-card:hover {
+    transform: translateY(-7px);
+    border-color: rgba(118, 196, 255, 0.52);
+    box-shadow:
+      0 24px 44px rgba(0, 0, 0, 0.3),
+      0 0 0 1px rgba(118, 196, 255, 0.18),
+      0 0 28px rgba(77, 173, 255, 0.16);
+  }
+
+  .gb-card:hover .gb-thumb img {
+    transform: scale(1.035);
   }
 
   @media (max-width: 980px) {
