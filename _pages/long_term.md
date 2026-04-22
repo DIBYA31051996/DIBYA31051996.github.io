@@ -262,7 +262,7 @@ nav: false
 
     <div class="lt-list">
       <article class="lt-card">
-        <img src="{{ '/assets/img/long-term/solarmonitor.png' | relative_url }}" loading="lazy" decoding="async" alt="SolarMonitor">
+        <img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" loading="lazy" decoding="async" alt="SolarMonitor">
         <div class="lt-body">
           <h3><a href="https://www.solarmonitor.org/" target="_blank" rel="noopener">SolarMonitor</a></h3>
           <p>This resource combines near-real-time and archive views of active regions, events, images, and solar-weather context products in one place.</p>
@@ -271,7 +271,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="{{ '/assets/img/long-term/helioviewer.png' | relative_url }}" loading="lazy" decoding="async" alt="HelioViewer">
+        <img src="{{ '/assets/img/long-term/resource-dashboard.svg' | relative_url }}" loading="lazy" decoding="async" alt="HelioViewer">
         <div class="lt-body">
           <h3><a href="https://helioviewer.org/" target="_blank" rel="noopener">HelioViewer</a></h3>
           <p>HelioViewer provides quick visual access to multi-mission solar imagery with interactive browsing, overlays, and movie generation for event context.</p>
@@ -289,7 +289,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="{{ '/assets/img/long-term/marshall-forecast.png' | relative_url }}" loading="lazy" decoding="async" alt="Solar cycle forecast">
+        <img src="{{ '/assets/img/long-term/resource-forecast.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar cycle forecast">
         <div class="lt-body">
           <h3><a href="https://www.nasa.gov/msfcsolar/datasources" target="_blank" rel="noopener">Marshall Solar Cycle Forecast</a></h3>
           <p>Solar-cycle progression plots and forecast context from operational space-weather resources, useful for broad cycle-phase interpretation.</p>
@@ -298,7 +298,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="{{ '/assets/img/long-term/swpc.png' | relative_url }}" loading="lazy" decoding="async" alt="Space Weather Prediction Center">
+        <img src="{{ '/assets/img/long-term/resource-dashboard.svg' | relative_url }}" loading="lazy" decoding="async" alt="Space Weather Prediction Center">
         <div class="lt-body">
           <h3><a href="https://www.swpc.noaa.gov/" target="_blank" rel="noopener">Space Weather Prediction Center</a></h3>
           <p>A comprehensive source of operational space-weather data, products, alerts, forecast summaries, and environment maps.</p>
@@ -307,7 +307,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="{{ '/assets/img/long-term/australian-space-weather.png' | relative_url }}" loading="lazy" decoding="async" alt="Australian Space Weather database">
+        <img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" loading="lazy" decoding="async" alt="Australian Space Weather database">
         <div class="lt-body">
           <h3><a href="https://www.sws.bom.gov.au/" target="_blank" rel="noopener">Australian Space Weather Database</a></h3>
           <p>Australian space-weather products, reports, and event summaries for operational monitoring and archive reference.</p>
@@ -325,7 +325,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="{{ '/assets/img/long-term/geomagnetic-kp.png' | relative_url }}" loading="lazy" decoding="async" alt="Geomagnetic Kp index">
+        <img src="{{ '/assets/img/long-term/resource-forecast.svg' | relative_url }}" loading="lazy" decoding="async" alt="Geomagnetic Kp index">
         <div class="lt-body">
           <h3><a href="https://kp.gfz-potsdam.de/en/" target="_blank" rel="noopener">Geomagnetic Kp Index</a></h3>
           <p>The definitive Kp and ap geomagnetic indices for monitoring magnetospheric variability and solar-terrestrial conditions.</p>
@@ -334,7 +334,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="{{ '/assets/img/long-term/solar-active-region.png' | relative_url }}" loading="lazy" decoding="async" alt="Solar Active Region Compilation">
+        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar Active Region Compilation">
         <div class="lt-body">
           <h3><a href="https://www.nasa.gov/solar-cycle-progression-and-forecast/" target="_blank" rel="noopener">Solar Active Region Compilation</a></h3>
           <p>Daily and historical active-region listings with identifiers and compact summaries useful for event cross-reference work.</p>
@@ -343,7 +343,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="{{ '/assets/img/long-term/solar-flare.png' | relative_url }}" loading="lazy" decoding="async" alt="Solar flare catalog compilation">
+        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar flare catalog compilation">
         <div class="lt-body">
           <h3><a href="https://www.ngdc.noaa.gov/stp/space-weather/solar-data/solar-features/solar-flares/" target="_blank" rel="noopener">Solar Flare Catalog Compilation</a></h3>
           <p>Flare listings and long-baseline event compilations that support event-based studies and historical comparisons.</p>
@@ -363,7 +363,7 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/live-space-weather-status.png' | relative_url }}" loading="lazy" decoding="async" alt="Live Space Weather Status">
+        <img src="{{ '/assets/img/long-term/resource-dashboard.svg' | relative_url }}" loading="lazy" decoding="async" alt="Live Space Weather Status">
         <div class="lt-mini-body">
           <h4><a href="https://sites.google.com/view/indus-solphys/resources/data-tools/long-term-monitoring-forecast?authuser=0#h.plk9in92xt88" target="_blank" rel="noopener">Live Space Weather Status</a></h4>
           <p>A broad operational dashboard for solar, heliospheric, and geospace context.</p>
@@ -371,7 +371,7 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/solar-dynamo.png' | relative_url }}" loading="lazy" decoding="async" alt="Solar Dynamo Dataverse">
+        <img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar Dynamo Dataverse">
         <div class="lt-mini-body">
           <h4><a href="https://dataverse.harvard.edu/dataverse/solardynamo" target="_blank" rel="noopener">Solar Dynamo Dataverse</a></h4>
           <p>A collective of databases and products tailored to understanding and predicting the solar cycle.</p>
@@ -379,7 +379,7 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/solar-activity-reconstruction.png' | relative_url }}" loading="lazy" decoding="async" alt="Solar activity reconstruction">
+        <img src="{{ '/assets/img/long-term/resource-forecast.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar activity reconstruction">
         <div class="lt-mini-body">
           <h4><a href="https://www2.mps.mpg.de/projects/sun-climate/data.html" target="_blank" rel="noopener">Solar Activity Reconstruction</a></h4>
           <p>Solar cyclic activity over the last millennium reconstructed from annual proxy records.</p>
@@ -387,7 +387,7 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/smarp.png' | relative_url }}" loading="lazy" decoding="async" alt="SMARPs and SHARPs">
+        <img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" loading="lazy" decoding="async" alt="SMARPs and SHARPs">
         <div class="lt-mini-body">
           <h4><a href="https://arxiv.org/abs/2108.07918?s=08" target="_blank" rel="noopener">SMARPs and SHARPs</a></h4>
           <p>Active-region data products supporting machine-learning studies and solar cycle 23-24 investigations.</p>
@@ -403,7 +403,7 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/sunspot-observations.png' | relative_url }}" loading="lazy" decoding="async" alt="Sunspot Observations in 1719-1720">
+        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="Sunspot Observations in 1719-1720">
         <div class="lt-mini-body">
           <h4><a href="https://link.springer.com/article/10.1007/s11207-020-01706-z" target="_blank" rel="noopener">Sunspot Observations in 1719-1720</a></h4>
           <p>Early telescopic observations that help extend the long-baseline record of solar activity.</p>
