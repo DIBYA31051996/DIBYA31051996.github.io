@@ -154,10 +154,23 @@ nav: false
 
   .lt-subtitle {
     margin: 2rem 0 1rem;
-    color: #a51a22;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.58rem;
+    color: #f5fbff;
     font-size: 1.2rem;
     font-weight: 800;
     letter-spacing: 0.04em;
+    text-shadow: 0 0 16px rgba(103, 194, 255, 0.18);
+  }
+
+  .lt-subtitle::before {
+    content: "";
+    width: 0.68rem;
+    height: 0.68rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #71ddff 0%, #7d8dff 100%);
+    box-shadow: 0 0 14px rgba(113, 221, 255, 0.5);
   }
 
   .lt-mini-grid {
@@ -372,7 +385,7 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar Dynamo Dataverse">
+        <img src="{{ '/assets/img/long-term/solar-dynamo-user.jpg' | relative_url }}" loading="lazy" decoding="async" alt="Solar Dynamo Dataverse">
         <div class="lt-mini-body">
           <h4><a href="https://dataverse.harvard.edu/dataverse/solardynamo" target="_blank" rel="noopener">Solar Dynamo Dataverse</a></h4>
           <p>A collective of databases and products tailored to understanding and predicting the solar cycle.</p>
@@ -380,7 +393,7 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar activity reconstruction">
+        <img src="{{ '/assets/img/long-term/solar-activity-user.jpg' | relative_url }}" loading="lazy" decoding="async" alt="Solar activity reconstruction">
         <div class="lt-mini-body">
           <h4><a href="https://www2.mps.mpg.de/projects/sun-climate/data.html" target="_blank" rel="noopener">Solar Activity Reconstruction</a></h4>
           <p>Solar cyclic activity over the last millennium reconstructed from annual proxy records.</p>
@@ -404,7 +417,7 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" loading="lazy" decoding="async" alt="Sunspot Observations in 1719-1720">
+        <img src="{{ '/assets/img/long-term/sunspot-chart-user.jpg' | relative_url }}" loading="lazy" decoding="async" alt="Sunspot Observations in 1719-1720">
         <div class="lt-mini-body">
           <h4><a href="https://link.springer.com/article/10.1007/s11207-020-01706-z" target="_blank" rel="noopener">Sunspot Observations in 1719-1720</a></h4>
           <p>Early telescopic observations that help extend the long-baseline record of solar activity.</p>
