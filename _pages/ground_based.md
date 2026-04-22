@@ -37,7 +37,7 @@ nav: false
 
   .gb-heading h1 {
     margin: 0 0 0.55rem;
-    color: #7f0b13;
+    color: #f4f6fb;
     font-size: clamp(2.1rem, 4vw, 3.2rem);
     font-weight: 800;
   }
