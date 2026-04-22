@@ -97,8 +97,8 @@ nav: false
   }
 
   .da-visual {
-    flex: 0 0 150px;
-    height: 150px;
+    flex: 0 0 165px;
+    height: 165px;
     display: grid;
     place-items: center;
     background:
@@ -111,7 +111,7 @@ nav: false
     height: 100%;
     object-fit: contain;
     display: block;
-    padding: 1rem;
+    padding: 0.9rem;
   }
 
   .da-body {
@@ -170,6 +170,30 @@ nav: false
       <h1 class="da-title">Data Analysis</h1>
       <div class="da-rule"></div>
       <div class="da-grid">
+        <article class="da-card">
+          <div class="da-visual"><img src="{{ '/assets/img/space-based/sdo-logo.png' | relative_url }}" alt="SOLARSOFT or IDL"></div>
+          <div class="da-body">
+            <h3>SOLARSOFT/IDL</h3>
+            <p>Classic solar-physics analysis environment for mission data handling, routines, and long-running IDL workflows.</p>
+          </div>
+        </article>
+
+        <article class="da-card">
+          <div class="da-visual"><img src="{{ '/assets/img/long-term/solarmonitor-live.png' | relative_url }}" alt="SunPy"></div>
+          <div class="da-body">
+            <h3>SunPy</h3>
+            <p>Python ecosystem for solar data access, coordinate-aware maps, timeseries handling, and reproducible analysis.</p>
+          </div>
+        </article>
+
+        <article class="da-card">
+          <div class="da-visual"><img src="{{ '/assets/img/ground-based/radio-array.svg' | relative_url }}" alt="CASA"></div>
+          <div class="da-body">
+            <h3>CASA</h3>
+            <p>Radio astronomy analysis software for calibration, imaging, and quality-controlled interferometric workflows.</p>
+          </div>
+        </article>
+
         <article class="da-card">
           <div class="da-visual"><img src="{{ '/assets/img/space-based/soho.jpg' | relative_url }}" alt="STIX Data Center"></div>
           <div class="da-body">

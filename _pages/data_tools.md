@@ -179,28 +179,22 @@ nav_order: 4
   }
 
   .dt-icon {
-    font-size: clamp(1rem, 2vw, 1.2rem);
-    line-height: 1.2;
+    font-size: clamp(1.2rem, 2.6vw, 1.55rem);
+    line-height: 1.1;
     color: #18324a;
     font-weight: 800;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding: 0.9rem 1rem;
-    border-radius: 18px;
+    padding: 1rem 1.2rem;
+    border-radius: 20px;
     background: color-mix(in srgb, var(--dt-badge-bg, rgba(255, 255, 255, 0.48)) 70%, white 28%);
     border: 1px solid color-mix(in srgb, var(--dt-accent, #7cc9ff) 32%, white 18%);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.58);
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-  }
-
-  .dt-icon-mark {
-    width: 0.95rem;
-    height: 0.95rem;
-    border-radius: 999px;
-    background: var(--dt-accent, #7cc9ff);
-    box-shadow: 0 0 14px color-mix(in srgb, var(--dt-accent, #7cc9ff) 55%, transparent);
+    gap: 0.7rem;
+    min-width: 8.5rem;
+    justify-content: center;
   }
 
   .dt-card h3 {
