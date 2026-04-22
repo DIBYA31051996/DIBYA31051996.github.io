@@ -37,11 +37,10 @@ nav: false
 
   .sb-heading h1 {
     margin: 0;
-    color: #7f0b13;
+    color: #f4f6fb;
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 800;
     letter-spacing: 0.04em;
-    text-transform: uppercase;
   }
 
   .sb-rule {
@@ -169,7 +168,7 @@ nav: false
 
     <div class="sb-grid">
       <article class="sb-card">
-        <div class="sb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="Parker Solar Probe"></div>
+        <div class="sb-thumb"><img src="{{ '/assets/img/space-based/parker.jpg' | relative_url }}" loading="lazy" decoding="async" alt="Parker Solar Probe"></div>
         <div class="sb-body">
           <h3>Parker Solar Probe</h3>
           <p>Mission designed to explore the Sun from the inner heliosphere and sample the near-Sun environment more closely than any previous mission.</p>
@@ -178,7 +177,7 @@ nav: false
       </article>
 
       <article class="sb-card">
-        <div class="sb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar Orbiter"></div>
+        <div class="sb-thumb"><img src="{{ '/assets/img/space-based/solar-orbiter.jpg' | relative_url }}" loading="lazy" decoding="async" alt="Solar Orbiter"></div>
         <div class="sb-body">
           <h3>Solar Orbiter</h3>
           <p>ESA and NASA mission combining in-situ measurements and remote imaging to study the solar wind, corona, and polar perspectives of the Sun.</p>
@@ -187,7 +186,7 @@ nav: false
       </article>
 
       <article class="sb-card">
-        <div class="sb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="Solar Dynamics Observatory"></div>
+        <div class="sb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUAsvQXKM3UNwL0BeEJqpo3qre8f9mUBcyqEHKtD5GDTl-mQlShSOo-tMHx6RJwHO-UEFsfw2QQO_GIlxjcxFFVu-Z6CsNmbrs-o_ZM4QorqXz4jiec6VHdss9_tca_AuxnuwRwSoxeIQaOOBcAJz3Vj9esd1rtgee_qx0gxMk5P1KInxc-7P45QijSht719Qp_Kq6X1CT1B59F_qbrSIOwsy9UipC5eJjLv=w1280" loading="lazy" decoding="async" alt="Solar Dynamics Observatory"></div>
         <div class="sb-body">
           <h3>Solar Dynamics Observatory</h3>
           <p>Flagship observatory for high-cadence full-disk imaging and magnetic-field measurements across multiple solar atmosphere layers.</p>
@@ -196,7 +195,7 @@ nav: false
       </article>
 
       <article class="sb-card">
-        <div class="sb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="SOHO"></div>
+        <div class="sb-thumb"><img src="{{ '/assets/img/space-based/soho.jpg' | relative_url }}" loading="lazy" decoding="async" alt="SOHO"></div>
         <div class="sb-body">
           <h3>SOHO - Solar and Heliospheric Observatory</h3>
           <p>Long-running ESA/NASA mission providing helioseismology, coronagraphy, and full-disk solar monitoring from the L1 point.</p>
@@ -205,7 +204,7 @@ nav: false
       </article>
 
       <article class="sb-card">
-        <div class="sb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="RHESSI"></div>
+        <div class="sb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUBzS0Ly6pF9hhDC30ruN1YyZvP_AT2Lm5J0Ffs3MaYqnGjLh1G0EOkPtdy_vOYBGggaGjWaDsAE_W_fSS05AWz5n16nJoA8zQg1cvavaPm7NJs_6IeK3uvOW31tZzLLh6szi9UPdr9SmzlaheXn6z-2BZ4vowrYgNt3pPcTb3mi7Kq24YQzq2NdwWAYLjWTBjiS_yB3sPQgD1DWm2Kh57fJealGm9Y5rKPA4K0=w1280" loading="lazy" decoding="async" alt="RHESSI"></div>
         <div class="sb-body">
           <h3>RHESSI</h3>
           <p>Mission focused on high-energy solar spectroscopy and imaging, central to flare and nonthermal emission studies.</p>
@@ -214,7 +213,7 @@ nav: false
       </article>
 
       <article class="sb-card">
-        <div class="sb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="STEREO"></div>
+        <div class="sb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUA_2LJan0i_B_PIDxP_tVTBiyGBGibS0fC92d9Xe1PRyTs-VjXqP5jgJXTZoD74aeQWoe7sPJres0k9vc5y3Zi9G6YEOoajDjDblabK-UBZYBxm2qJPh72zDigqEu0I_kKEJWZwbZTlFBGmR4UqL6ujV63JHVDtd-PX33gcLFCHB3_nJmZMUWVclHvos2jP6kzdyxIkOd8EUbP2-7MeDD3Br18GUO3MxTivCUI=w1280" loading="lazy" decoding="async" alt="STEREO"></div>
         <div class="sb-body">
           <h3>STEREO</h3>
           <p>Dual-spacecraft mission that provided stereoscopic views of the Sun and inner heliosphere for CME and coronal-structure studies.</p>
@@ -223,7 +222,7 @@ nav: false
       </article>
 
       <article class="sb-card">
-        <div class="sb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="IRIS"></div>
+        <div class="sb-thumb"><img src="{{ '/assets/img/space-based/iris.png' | relative_url }}" loading="lazy" decoding="async" alt="IRIS"></div>
         <div class="sb-body">
           <h3>IRIS - Interface Region Imaging Spectrograph</h3>
           <p>High-resolution imaging spectrograph mission probing the chromosphere and transition region with fine temporal and spatial sampling.</p>
@@ -232,11 +231,11 @@ nav: false
       </article>
 
       <article class="sb-card">
-        <div class="sb-thumb"><img src="{{ '/assets/img/ground-based/microwave-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="Hinode"></div>
+        <div class="sb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDJwECxt1WbXrNddM7diRRpoZY1H7W6r62VgU6vaudCBr46eOKAhs4FzdU4ZyslpaFnsoUlVAqfJm4zs-S_ypl-wYKk_FR_XiujmARAvZjqW2wIfia_gMYPt1Fxz_WdVZzk9FJkGgSqC2ap_i_ZE-RYHLeh1HXn-9xWBc3NgFg0J31-L9SuyPmV3VyYYskrVoXGOZewFDLE6LbDdB6fY6XYDwREdxCQAURD=w1280" loading="lazy" decoding="async" alt="Hinode"></div>
         <div class="sb-body">
           <h3>Hinode</h3>
           <p>Mission dedicated to high-resolution solar imaging and spectroscopy, especially valuable for magnetic-field and coronal heating studies.</p>
-          <p class="sb-link"><a href="https://hinode.nao.ac.jp/en/" target="_blank" rel="noopener">Official site</a></p>
+          <p class="sb-link"><a href="https://sdc.uio.no/sdc/" target="_blank" rel="noopener">Official site</a></p>
         </div>
       </article>
     </div>

@@ -41,7 +41,7 @@ nav_order: 4
     font-size: clamp(2rem, 4vw, 3rem);
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #7f0b13;
+    color: #f4f6fb;
     text-decoration: underline;
     text-decoration-thickness: 3px;
     text-underline-offset: 7px;
@@ -49,7 +49,7 @@ nav_order: 4
   }
 
   .dt-title.tools {
-    color: #7f0b13;
+    color: #f4f6fb;
   }
 
   .dt-rule {
@@ -116,12 +116,12 @@ nav_order: 4
     font-size: 1.45rem;
     line-height: 1.15;
     text-transform: uppercase;
-    color: #9d1419;
+    color: #f4f6fb;
     font-weight: 800;
   }
 
   .dt-tools .dt-card h3 {
-    color: #9d1419;
+    color: #f4f6fb;
   }
 
   .dt-card p {
