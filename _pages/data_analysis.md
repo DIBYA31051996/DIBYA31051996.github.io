@@ -48,18 +48,6 @@ nav: false
     text-shadow: 0 6px 22px rgba(77, 173, 255, 0.24);
   }
 
-  .da-title::before {
-    content: "";
-    position: absolute;
-    top: -0.18rem;
-    left: -1rem;
-    width: 0.68rem;
-    height: 0.68rem;
-    border-radius: 999px;
-    background: linear-gradient(135deg, #72ddff 0%, #7c8dff 100%);
-    box-shadow: 0 0 16px rgba(114, 221, 255, 0.45);
-  }
-
   .da-title::after {
     content: "";
     position: absolute;
@@ -88,6 +76,8 @@ nav: false
   }
 
   .da-card {
+    display: flex;
+    flex-direction: column;
     border: 1px solid rgba(175, 194, 235, 0.16);
     border-radius: 18px;
     overflow: hidden;
@@ -107,6 +97,7 @@ nav: false
   }
 
   .da-visual {
+    flex: 0 0 150px;
     height: 150px;
     display: grid;
     place-items: center;
@@ -124,6 +115,9 @@ nav: false
   }
 
   .da-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
     padding: 0.9rem;
   }
 
@@ -132,6 +126,7 @@ nav: false
     font-size: 1rem;
     line-height: 1.35;
     font-weight: 800;
+    min-height: 2.8rem;
   }
 
   .da-body h3 a {
@@ -149,6 +144,7 @@ nav: false
     color: #d4deef;
     line-height: 1.55;
     font-size: 0.93rem;
+    min-height: 5.2rem;
   }
 
   @media (max-width: 980px) {
@@ -175,66 +171,50 @@ nav: false
       <div class="da-rule"></div>
       <div class="da-grid">
         <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/space-based/sdo-logo.png' | relative_url }}" alt="SolarSoft"></div>
+          <div class="da-visual"><img src="{{ '/assets/img/space-based/soho.jpg' | relative_url }}" alt="STIX Data Center"></div>
           <div class="da-body">
-            <h3><a href="https://www.lmsal.com/solarsoft/" target="_blank" rel="noopener">SolarSoft</a></h3>
-            <p>A broad IDL-based software environment for solar and heliophysics analysis workflows.</p>
+            <h3>STIX Data Center</h3>
+            <p>Access point for Spectrometer/Telescope for Imaging X-rays products, flare records, and quick-look analysis material.</p>
           </div>
         </article>
 
         <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/long-term/solarmonitor-live.png' | relative_url }}" alt="SunPy"></div>
+          <div class="da-visual"><img src="{{ '/assets/img/space-based/stereo-wiki.jpg' | relative_url }}" alt="SpaceML"></div>
           <div class="da-body">
-            <h3><a href="https://sunpy.org/" target="_blank" rel="noopener">SunPy</a></h3>
-            <p>A Python package family for solar physics data access, map handling, and analysis.</p>
+            <h3>SpaceML</h3>
+            <p>Machine-learning oriented tooling and examples for space-science datasets, event detection, and scalable experimentation.</p>
           </div>
         </article>
 
         <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/long-term/resource-forecast.svg' | relative_url }}" alt="MATLAB"></div>
+          <div class="da-visual"><img src="{{ '/assets/img/long-term/solar-dynamo-user.jpg' | relative_url }}" alt="SERPENTINE Tools"></div>
           <div class="da-body">
-            <h3><a href="https://www.mathworks.com/products/matlab.html" target="_blank" rel="noopener">MATLAB</a></h3>
-            <p>Numerical computing software used for matrix-heavy analysis, modeling, and visualization.</p>
+            <h3>SERPENTINE Tools</h3>
+            <p>Analysis support tools for energetic-particle connectivity, propagation context, and heliospheric event interpretation.</p>
           </div>
         </article>
 
         <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/ground-based/radio-array.svg' | relative_url }}" alt="CASA"></div>
+          <div class="da-visual"><img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" alt="CROCS"></div>
           <div class="da-body">
-            <h3><a href="https://casa.nrao.edu/" target="_blank" rel="noopener">CASA</a></h3>
-            <p>Radio astronomy analysis software maintained by NRAO for calibration and imaging workflows.</p>
+            <h3>CROCS</h3>
+            <p>Compact research utilities for catalog handling, comparative diagnostics, and solar-event context studies.</p>
           </div>
         </article>
 
         <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" alt="DS9"></div>
+          <div class="da-visual"><img src="{{ '/assets/img/ground-based/ecallisto.png' | relative_url }}" alt="Radio Monitoring"></div>
           <div class="da-body">
-            <h3><a href="https://sites.google.com/cfa.harvard.edu/saoimageds9" target="_blank" rel="noopener">DS9</a></h3>
-            <p>Widely used FITS image viewer for inspection, overlays, regions, and quick-look analysis.</p>
+            <h3>Radio Monitoring</h3>
+            <p>Radio burst tracking resources and quick-look monitoring tools for dynamic solar activity and event verification.</p>
           </div>
         </article>
 
         <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/long-term/live-space-weather-status-live.jpeg' | relative_url }}" alt="Data Centers"></div>
+          <div class="da-visual"><img src="{{ '/assets/img/space-based/hinode-wiki.jpg' | relative_url }}" alt="HelioML"></div>
           <div class="da-body">
-            <h3><a href="https://sdc.uio.no/search/" target="_blank" rel="noopener">Data Centers</a></h3>
-            <p>Searchable resource hubs for mission products, simulations, observations, and archives.</p>
-          </div>
-        </article>
-
-        <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/long-term/solar-dynamo-user.jpg' | relative_url }}" alt="SuperMAG"></div>
-          <div class="da-body">
-            <h3><a href="https://supermag.jhuapl.edu/" target="_blank" rel="noopener">SuperMAG</a></h3>
-            <p>Magnetometer network products useful for geospace context, comparison studies, and diagnostics.</p>
-          </div>
-        </article>
-
-        <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/long-term/resource-archive.svg' | relative_url }}" alt="SunPy ML"></div>
-          <div class="da-body">
-            <h3><a href="https://docs.sunpy.org/projects/" target="_blank" rel="noopener">SunPy ML and Stats</a></h3>
-            <p>Supporting Python tooling for machine-learning workflows, statistics, and reproducible analysis.</p>
+            <h3>HelioML</h3>
+            <p>Machine-learning resources and project tooling focused on heliophysics datasets, classification, and forecasting tasks.</p>
           </div>
         </article>
       </div>

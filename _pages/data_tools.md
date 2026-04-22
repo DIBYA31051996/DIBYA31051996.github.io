@@ -52,18 +52,6 @@ nav_order: 4
     padding: 0 0.35rem 0.45rem;
   }
 
-  .dt-title::before {
-    content: "";
-    position: absolute;
-    top: -0.18rem;
-    left: -1rem;
-    width: 0.68rem;
-    height: 0.68rem;
-    border-radius: 999px;
-    background: linear-gradient(135deg, #72ddff 0%, #7c8dff 100%);
-    box-shadow: 0 0 16px rgba(114, 221, 255, 0.45);
-  }
-
   .dt-title::after {
     content: "";
     position: absolute;
@@ -263,7 +251,7 @@ nav_order: 4
       <div class="dt-grid">
         <article class="dt-card">
           <a class="dt-card-link" href="{{ '/ground-based/' | relative_url }}">
-            <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>Ground</div></div>
+            <div class="dt-visual"><div class="dt-icon">📡 Ground</div></div>
             <h3>Ground Based</h3>
             <p><strong>Open page:</strong> solar telescopes, microwave, radio</p>
           </a>
@@ -271,7 +259,7 @@ nav_order: 4
 
         <article class="dt-card">
           <a class="dt-card-link" href="{{ '/long-term/' | relative_url }}">
-            <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>Long</div></div>
+            <div class="dt-visual"><div class="dt-icon">⏳ Long</div></div>
             <h3>Long-Term</h3>
             <p><strong>Open page:</strong> monitoring, forecast, archives</p>
           </a>
@@ -279,7 +267,7 @@ nav_order: 4
 
         <article class="dt-card">
           <a class="dt-card-link" href="{{ '/space-based/' | relative_url }}">
-            <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>Space</div></div>
+            <div class="dt-visual"><div class="dt-icon">🚀 Space</div></div>
             <h3>Space Based</h3>
             <p><strong>Open page:</strong> probe, orbiter, observatories</p>
           </a>
@@ -287,7 +275,7 @@ nav_order: 4
 
         <article class="dt-card">
           <a class="dt-card-link" href="https://sdc.uio.no/search/simulations" target="_blank" rel="noopener">
-            <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>Sim</div></div>
+            <div class="dt-visual"><div class="dt-icon">🌊 Sim</div></div>
             <h3>Simulations</h3>
             <p><strong>Open link:</strong> Bifrost, MURaM, archived runs</p>
           </a>
@@ -303,26 +291,26 @@ nav_order: 4
       <div class="dt-grid">
         <article class="dt-card">
           <a class="dt-card-link" href="{{ '/data-analysis/' | relative_url }}">
-            <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>Analyze</div></div>
+            <div class="dt-visual"><div class="dt-icon">📊 Analyze</div></div>
             <h3>Data Analysis</h3>
             <p><strong>Open page:</strong> software, archives, diagnostics</p>
           </a>
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>Visual</div></div>
+          <div class="dt-visual"><div class="dt-icon">📈 Visual</div></div>
           <h3>Data Visualization</h3>
           <p><strong>E.g.</strong> Matplotlib, map plots, diagnostics</p>
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>ML</div></div>
+          <div class="dt-visual"><div class="dt-icon">🤖 ML</div></div>
           <h3>AI &amp; ML</h3>
           <p><strong>E.g.</strong> CNN pipelines, detection models</p>
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>Model</div></div>
+          <div class="dt-visual"><div class="dt-icon">🧩 Model</div></div>
           <h3>Modeling</h3>
           <p><strong>E.g.</strong> Flux transport and reconstruction tools</p>
         </article>
