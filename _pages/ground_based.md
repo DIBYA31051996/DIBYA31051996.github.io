@@ -56,9 +56,23 @@ nav: false
 
   .gb-section-title {
     margin: 0 0 1rem;
-    color: #7f0b13;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.58rem;
+    color: #f5fbff;
     font-size: 1.7rem;
     font-weight: 800;
+    letter-spacing: 0.02em;
+    text-shadow: 0 0 16px rgba(103, 194, 255, 0.18);
+  }
+
+  .gb-section-title::before {
+    content: "";
+    width: 0.72rem;
+    height: 0.72rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #6fe2ff 0%, #7a8cff 100%);
+    box-shadow: 0 0 14px rgba(111, 226, 255, 0.5);
   }
 
   .gb-rule {
@@ -462,7 +476,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/sundish.png' | relative_url }}" loading="lazy" decoding="async" alt="Sundish radio telescope"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/radio-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="Sundish radio telescope"></div>
           <div class="gb-body">
             <h3>Sundish (18 - 26 GHz)</h3>
             <p>Microwave Sun-as-a-star style radio measurements useful for tracking variability in the centimeter band.</p>

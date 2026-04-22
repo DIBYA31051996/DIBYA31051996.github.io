@@ -186,7 +186,7 @@ nav: false
       </article>
 
       <article class="sb-card">
-        <div class="sb-thumb"><img src="https://sdo.gsfc.nasa.gov/assets/img/latest/SDO_2D.jpg" loading="lazy" decoding="async" alt="Solar Dynamics Observatory"></div>
+        <div class="sb-thumb"><img src="{{ '/assets/img/space-based/sdo-logo.png' | relative_url }}" loading="lazy" decoding="async" alt="Solar Dynamics Observatory"></div>
         <div class="sb-body">
           <h3>Solar Dynamics Observatory</h3>
           <p>Flagship observatory for high-cadence full-disk imaging and magnetic-field measurements across multiple solar atmosphere layers.</p>
@@ -213,7 +213,7 @@ nav: false
       </article>
 
       <article class="sb-card">
-        <div class="sb-thumb"><img src="https://stereo.gsfc.nasa.gov/browse/2026/01/16/ahead/euvi/304/256/20260116_104545_n7euA_304.jpg" loading="lazy" decoding="async" alt="STEREO"></div>
+        <div class="sb-thumb"><img src="{{ '/assets/img/space-based/stereo-wiki.jpg' | relative_url }}" loading="lazy" decoding="async" alt="STEREO"></div>
         <div class="sb-body">
           <h3>STEREO</h3>
           <p>Dual-spacecraft mission that provided stereoscopic views of the Sun and inner heliosphere for CME and coronal-structure studies.</p>
@@ -231,7 +231,7 @@ nav: false
       </article>
 
       <article class="sb-card">
-        <div class="sb-thumb"><img src="https://sdc.uio.no/sdc/Hinode-fan.jpg" loading="lazy" decoding="async" alt="Hinode"></div>
+        <div class="sb-thumb"><img src="{{ '/assets/img/space-based/hinode-wiki.jpg' | relative_url }}" loading="lazy" decoding="async" alt="Hinode"></div>
         <div class="sb-body">
           <h3>Hinode</h3>
           <p>Mission dedicated to high-resolution solar imaging and spectroscopy, especially valuable for magnetic-field and coronal heating studies.</p>
