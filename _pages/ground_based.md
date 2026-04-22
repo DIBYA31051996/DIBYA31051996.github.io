@@ -476,7 +476,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/radio-array.svg' | relative_url }}" loading="lazy" decoding="async" alt="Sundish radio telescope"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/mro.png' | relative_url }}" loading="lazy" decoding="async" alt="Sundish radio telescope"></div>
           <div class="gb-body">
             <h3>Sundish (18 - 26 GHz)</h3>
             <p>Microwave Sun-as-a-star style radio measurements useful for tracking variability in the centimeter band.</p>

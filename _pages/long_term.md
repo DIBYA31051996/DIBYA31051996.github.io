@@ -263,7 +263,7 @@ nav: false
 
     <div class="lt-list">
       <article class="lt-card">
-        <img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" loading="lazy" decoding="async" alt="SolarMonitor">
+        <img src="{{ '/assets/img/long-term/solarmonitor-live.png' | relative_url }}" loading="lazy" decoding="async" alt="SolarMonitor">
         <div class="lt-body">
           <h3><a href="https://www.solarmonitor.org/" target="_blank" rel="noopener">SolarMonitor</a></h3>
           <p>This resource combines near-real-time and archive views of active regions, events, images, and solar-weather context products in one place.</p>
@@ -308,7 +308,7 @@ nav: false
       </article>
 
       <article class="lt-card">
-        <img src="{{ '/assets/img/long-term/resource-forecast.svg' | relative_url }}" loading="lazy" decoding="async" alt="Australian Space Weather database">
+        <img src="{{ '/assets/img/long-term/australian-space-weather-live.jpg' | relative_url }}" loading="lazy" decoding="async" alt="Australian Space Weather database">
         <div class="lt-body">
           <h3><a href="https://www.sws.bom.gov.au/" target="_blank" rel="noopener">Australian Space Weather Database</a></h3>
           <p>Australian space-weather products, reports, and event summaries for operational monitoring and archive reference.</p>
