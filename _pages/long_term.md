@@ -377,7 +377,7 @@ nav: false
       </article>
 
       <article class="lt-mini-card">
-        <img src="{{ '/assets/img/long-term/resource-dashboard.svg' | relative_url }}" loading="lazy" decoding="async" alt="Live Space Weather Status">
+        <img src="{{ '/assets/img/long-term/live-space-weather-status-live.jpeg' | relative_url }}" loading="lazy" decoding="async" alt="Live Space Weather Status">
         <div class="lt-mini-body">
           <h4><a href="https://sites.google.com/view/indus-solphys/resources/data-tools/long-term-monitoring-forecast?authuser=0#h.plk9in92xt88" target="_blank" rel="noopener">Live Space Weather Status</a></h4>
           <p>A broad operational dashboard for solar, heliospheric, and geospace context.</p>

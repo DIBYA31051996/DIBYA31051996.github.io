@@ -21,14 +21,16 @@ nav_order: 4
 
   .dt-panel {
     background:
-      radial-gradient(circle at top left, rgba(73, 143, 204, 0.2), transparent 26%),
-      radial-gradient(circle at top right, rgba(39, 148, 113, 0.18), transparent 24%),
+      radial-gradient(circle at 12% 10%, rgba(73, 143, 204, 0.24), transparent 24%),
+      radial-gradient(circle at 88% 12%, rgba(39, 148, 113, 0.2), transparent 22%),
+      radial-gradient(circle at 50% 100%, rgba(95, 126, 255, 0.14), transparent 28%),
       linear-gradient(180deg, rgba(13, 20, 38, 0.96), rgba(8, 14, 28, 0.99));
     border-radius: 24px;
     padding: 2.1rem 2rem 2.3rem;
     box-shadow:
       0 18px 44px rgba(0, 0, 0, 0.18),
-      0 1px 0 rgba(255, 255, 255, 0.08) inset;
+      0 1px 0 rgba(255, 255, 255, 0.08) inset,
+      0 0 0 1px rgba(129, 191, 255, 0.08);
   }
 
   .dt-section + .dt-section {
@@ -40,9 +42,8 @@ nav_order: 4
     text-align: center;
     font-size: clamp(2rem, 4vw, 3rem);
     letter-spacing: 0.04em;
-    text-transform: uppercase;
     color: #f4f6fb;
-    text-shadow: 0 6px 22px rgba(77, 173, 255, 0.18);
+    text-shadow: 0 6px 22px rgba(77, 173, 255, 0.24);
     font-weight: 800;
     position: relative;
     display: inline-block;
@@ -51,8 +52,16 @@ nav_order: 4
     padding: 0 0.35rem 0.45rem;
   }
 
-  .dt-title.tools {
-    color: #f4f6fb;
+  .dt-title::before {
+    content: "";
+    position: absolute;
+    top: -0.18rem;
+    left: -1rem;
+    width: 0.68rem;
+    height: 0.68rem;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #72ddff 0%, #7c8dff 100%);
+    box-shadow: 0 0 16px rgba(114, 221, 255, 0.45);
   }
 
   .dt-title::after {
@@ -102,7 +111,8 @@ nav_order: 4
     transform: translateY(-3px);
     box-shadow:
       0 16px 34px rgba(0, 0, 0, 0.18),
-      inset 0 1px 0 rgba(255, 255, 255, 0.72);
+      inset 0 1px 0 rgba(255, 255, 255, 0.72),
+      0 0 0 1px rgba(117, 207, 255, 0.18);
   }
 
   .dt-visual {
@@ -119,25 +129,41 @@ nav_order: 4
       0 12px 30px rgba(0, 0, 0, 0.12),
       inset 0 1px 0 rgba(255, 255, 255, 0.68);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+  }
+
+  .dt-visual::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(135deg, rgba(114, 221, 255, 0.12), transparent 38%),
+      radial-gradient(circle at 80% 20%, rgba(124, 141, 255, 0.12), transparent 28%);
+    pointer-events: none;
   }
 
   .dt-icon {
-    font-size: clamp(4rem, 7vw, 6rem);
-    line-height: 1;
-    filter: saturate(1.05);
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    line-height: 1.2;
+    color: #18324a;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding: 0.9rem 1rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.48);
+    border: 1px solid rgba(118, 167, 214, 0.2);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.58);
   }
 
   .dt-card h3 {
     margin: 0 0 0.55rem;
     font-size: 1.45rem;
     line-height: 1.15;
-    text-transform: uppercase;
+    text-transform: none;
     color: #f4f6fb;
     font-weight: 800;
-  }
-
-  .dt-tools .dt-card h3 {
-    color: #f4f6fb;
+    text-shadow: 0 0 14px rgba(102, 191, 255, 0.08);
   }
 
   .dt-card p {
@@ -178,7 +204,7 @@ nav_order: 4
       <div class="dt-grid">
         <article class="dt-card">
           <a class="dt-card-link" href="{{ '/ground-based/' | relative_url }}">
-            <div class="dt-visual"><div class="dt-icon">📡</div></div>
+            <div class="dt-visual"><div class="dt-icon">Ground</div></div>
             <h3>Ground Based</h3>
             <p><strong>Open page:</strong> solar telescopes, microwave, radio</p>
           </a>
@@ -186,7 +212,7 @@ nav_order: 4
 
         <article class="dt-card">
           <a class="dt-card-link" href="{{ '/long-term/' | relative_url }}">
-            <div class="dt-visual"><div class="dt-icon">⏳</div></div>
+            <div class="dt-visual"><div class="dt-icon">Long</div></div>
             <h3>Long-Term</h3>
             <p><strong>Open page:</strong> monitoring, forecast, archives</p>
           </a>
@@ -194,46 +220,48 @@ nav_order: 4
 
         <article class="dt-card">
           <a class="dt-card-link" href="{{ '/space-based/' | relative_url }}">
-            <div class="dt-visual"><div class="dt-icon">🚀</div></div>
+            <div class="dt-visual"><div class="dt-icon">Space</div></div>
             <h3>Space Based</h3>
             <p><strong>Open page:</strong> probe, orbiter, observatories</p>
           </a>
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">🌊</div></div>
-          <h3>Simulations</h3>
-          <p><strong>E.g.</strong> Bifrost, MURaM</p>
+          <a class="dt-card-link" href="https://sdc.uio.no/search/simulations" target="_blank" rel="noopener">
+            <div class="dt-visual"><div class="dt-icon">Sim</div></div>
+            <h3>Simulations</h3>
+            <p><strong>Open link:</strong> Bifrost, MURaM, archived runs</p>
+          </a>
         </article>
       </div>
     </section>
 
     <section class="dt-section dt-tools">
       <div class="dt-rule"></div>
-      <h2 class="dt-title tools">Tools</h2>
+      <h2 class="dt-title">Tools</h2>
       <div class="dt-rule"></div>
 
       <div class="dt-grid">
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">📊</div></div>
+          <div class="dt-visual"><div class="dt-icon">Analyze</div></div>
           <h3>Data Analysis</h3>
           <p><strong>E.g.</strong> Python, IDL, Fortran workflows</p>
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">📈</div></div>
+          <div class="dt-visual"><div class="dt-icon">Visual</div></div>
           <h3>Data Visualization</h3>
           <p><strong>E.g.</strong> Matplotlib, map plots, diagnostics</p>
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">🤖</div></div>
+          <div class="dt-visual"><div class="dt-icon">ML</div></div>
           <h3>AI &amp; ML</h3>
           <p><strong>E.g.</strong> CNN pipelines, detection models</p>
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">🧩</div></div>
+          <div class="dt-visual"><div class="dt-icon">Model</div></div>
           <h3>Modeling</h3>
           <p><strong>E.g.</strong> Flux transport and reconstruction tools</p>
         </article>
