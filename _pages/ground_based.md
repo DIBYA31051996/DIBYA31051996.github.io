@@ -40,6 +40,8 @@ nav: false
     color: #f4f6fb;
     font-size: clamp(2.1rem, 4vw, 3.2rem);
     font-weight: 800;
+    letter-spacing: 0.04em;
+    text-shadow: 0 6px 22px rgba(77, 173, 255, 0.18);
   }
 
   .gb-heading p {

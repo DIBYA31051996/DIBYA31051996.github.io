@@ -39,17 +39,33 @@ nav_order: 4
     margin: 0;
     text-align: center;
     font-size: clamp(2rem, 4vw, 3rem);
-    letter-spacing: 0.06em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #f4f6fb;
-    text-decoration: underline;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 7px;
+    text-shadow: 0 6px 22px rgba(77, 173, 255, 0.18);
     font-weight: 800;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 0.35rem 0.45rem;
   }
 
   .dt-title.tools {
     color: #f4f6fb;
+  }
+
+  .dt-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: min(220px, 70%);
+    height: 4px;
+    border-radius: 999px;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, rgba(93, 157, 255, 0.15), rgba(123, 223, 183, 0.95), rgba(93, 157, 255, 0.15));
+    box-shadow: 0 0 18px rgba(123, 223, 183, 0.28);
   }
 
   .dt-rule {
