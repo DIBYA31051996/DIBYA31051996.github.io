@@ -462,7 +462,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDvaLANt5FTFKGtUQ2jEWtHKK_QFBjaHaegrGEaUFsfed5ofke2yscR-0KP2iGXhyBZJ5gqkLkRvUbNIovZeiVk7i2Orr5dHWNNVSgzPc1QVm9byFDpfoEXDLTBdX4AwYVgiU0W7qo8wuwzT7WK-XI6CIXAS6aR_wv9kstRbBsOK50rvOXiUrjwHxoMwWwPhJgAJ9TUC_N4i5RmQaEVejRVEGcWVHz2Y7Gl=w1280" loading="lazy" decoding="async" alt="Sundish radio telescope"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/sundish.png' | relative_url }}" loading="lazy" decoding="async" alt="Sundish radio telescope"></div>
           <div class="gb-body">
             <h3>Sundish (18 - 26 GHz)</h3>
             <p>Microwave Sun-as-a-star style radio measurements useful for tracking variability in the centimeter band.</p>
@@ -477,7 +477,7 @@ nav: false
       <div class="gb-rule"></div>
       <div class="gb-grid">
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUCtZD8AY8Qr2LdhGFAe6UjMZnLk-qOW6_ItqxBRm5cpqX2YCnoRaDhCGlUCZenSX0OgIEkdT_W-DSs9IgfJMyJegUksWqs3jNzYK-z8eORhRBecHjxhwV5t9aotQQ4fdNaAxSJjDy8ZtJIo4TAEJhH6tfB23idfL_eBF2ykX7NSQSBhyPUU01yxYbpfP8vyw-IQ3Ap7hS7A1Co_D9nfU5wU8Y8OJ7EiTs0SGWc=w1280" loading="lazy" decoding="async" alt="LOFAR solar observations"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/lofar.png' | relative_url }}" loading="lazy" decoding="async" alt="LOFAR solar observations"></div>
           <div class="gb-body">
             <h3>LOFAR</h3>
             <p>Low-frequency radio observations of the Sun used to study the corona, bursts, and propagation effects.</p>
@@ -486,7 +486,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUA003wEvqcvJT-EmJLepxPForQ_J8uK3ggXAM4CCZRW_XDqnijKB5iTmHzZIihP_W536Q3ze6rFKyoZGlmuCpN2RzW69QhFLBL7lke64t8pky8MgZyJhOHo4F6WNXzXpW3LPgruRKlk9oDMbQ0uU6Z8U-ssC3RlEeDydqVUaWoVLfecgcDLEXHZb5NBu6GLBVYYDeJhkLB8a1lt9kXvDvwS0XozSDaJ3SOm1O4=w1280" loading="lazy" decoding="async" alt="Nancay Radioheliograph"></div>
+          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/nancay.png' | relative_url }}" loading="lazy" decoding="async" alt="Nancay Radioheliograph"></div>
           <div class="gb-body">
             <h3>Nancay Radioheliograph</h3>
             <p>Well-known radioheliograph for imaging solar radio activity and large-scale coronal signatures.</p>
