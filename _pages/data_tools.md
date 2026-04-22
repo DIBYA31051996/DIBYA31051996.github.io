@@ -96,6 +96,54 @@ nav_order: 4
     color: #f4f6fb;
   }
 
+  .dt-data .dt-card:nth-child(1) {
+    --dt-accent: #67d9ff;
+    --dt-accent-soft: rgba(103, 217, 255, 0.18);
+    --dt-badge-bg: rgba(103, 217, 255, 0.12);
+  }
+
+  .dt-data .dt-card:nth-child(2) {
+    --dt-accent: #77ffc8;
+    --dt-accent-soft: rgba(119, 255, 200, 0.18);
+    --dt-badge-bg: rgba(119, 255, 200, 0.12);
+  }
+
+  .dt-data .dt-card:nth-child(3) {
+    --dt-accent: #8da7ff;
+    --dt-accent-soft: rgba(141, 167, 255, 0.18);
+    --dt-badge-bg: rgba(141, 167, 255, 0.12);
+  }
+
+  .dt-data .dt-card:nth-child(4) {
+    --dt-accent: #ffbf70;
+    --dt-accent-soft: rgba(255, 191, 112, 0.18);
+    --dt-badge-bg: rgba(255, 191, 112, 0.12);
+  }
+
+  .dt-tools .dt-card:nth-child(1) {
+    --dt-accent: #8ae1ff;
+    --dt-accent-soft: rgba(138, 225, 255, 0.16);
+    --dt-badge-bg: rgba(138, 225, 255, 0.12);
+  }
+
+  .dt-tools .dt-card:nth-child(2) {
+    --dt-accent: #ff8fb3;
+    --dt-accent-soft: rgba(255, 143, 179, 0.14);
+    --dt-badge-bg: rgba(255, 143, 179, 0.12);
+  }
+
+  .dt-tools .dt-card:nth-child(3) {
+    --dt-accent: #b68fff;
+    --dt-accent-soft: rgba(182, 143, 255, 0.16);
+    --dt-badge-bg: rgba(182, 143, 255, 0.12);
+  }
+
+  .dt-tools .dt-card:nth-child(4) {
+    --dt-accent: #7fffc0;
+    --dt-accent-soft: rgba(127, 255, 192, 0.14);
+    --dt-badge-bg: rgba(127, 255, 192, 0.12);
+  }
+
   .dt-card-link {
     display: block;
     color: inherit;
@@ -112,7 +160,7 @@ nav_order: 4
     box-shadow:
       0 16px 34px rgba(0, 0, 0, 0.18),
       inset 0 1px 0 rgba(255, 255, 255, 0.72),
-      0 0 0 1px rgba(117, 207, 255, 0.18);
+      0 0 0 1px color-mix(in srgb, var(--dt-accent, #75cfff) 35%, white 10%);
   }
 
   .dt-visual {
@@ -137,8 +185,8 @@ nav_order: 4
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(135deg, rgba(114, 221, 255, 0.12), transparent 38%),
-      radial-gradient(circle at 80% 20%, rgba(124, 141, 255, 0.12), transparent 28%);
+      linear-gradient(135deg, var(--dt-accent-soft, rgba(114, 221, 255, 0.12)), transparent 38%),
+      radial-gradient(circle at 80% 20%, color-mix(in srgb, var(--dt-accent, #7c8dff) 22%, white 10%), transparent 28%);
     pointer-events: none;
   }
 
@@ -151,9 +199,20 @@ nav_order: 4
     text-transform: uppercase;
     padding: 0.9rem 1rem;
     border-radius: 18px;
-    background: rgba(255, 255, 255, 0.48);
-    border: 1px solid rgba(118, 167, 214, 0.2);
+    background: color-mix(in srgb, var(--dt-badge-bg, rgba(255, 255, 255, 0.48)) 70%, white 28%);
+    border: 1px solid color-mix(in srgb, var(--dt-accent, #7cc9ff) 32%, white 18%);
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.58);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .dt-icon-mark {
+    width: 0.95rem;
+    height: 0.95rem;
+    border-radius: 999px;
+    background: var(--dt-accent, #7cc9ff);
+    box-shadow: 0 0 14px color-mix(in srgb, var(--dt-accent, #7cc9ff) 55%, transparent);
   }
 
   .dt-card h3 {
@@ -204,7 +263,7 @@ nav_order: 4
       <div class="dt-grid">
         <article class="dt-card">
           <a class="dt-card-link" href="{{ '/ground-based/' | relative_url }}">
-            <div class="dt-visual"><div class="dt-icon">Ground</div></div>
+            <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>Ground</div></div>
             <h3>Ground Based</h3>
             <p><strong>Open page:</strong> solar telescopes, microwave, radio</p>
           </a>
@@ -212,7 +271,7 @@ nav_order: 4
 
         <article class="dt-card">
           <a class="dt-card-link" href="{{ '/long-term/' | relative_url }}">
-            <div class="dt-visual"><div class="dt-icon">Long</div></div>
+            <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>Long</div></div>
             <h3>Long-Term</h3>
             <p><strong>Open page:</strong> monitoring, forecast, archives</p>
           </a>
@@ -220,7 +279,7 @@ nav_order: 4
 
         <article class="dt-card">
           <a class="dt-card-link" href="{{ '/space-based/' | relative_url }}">
-            <div class="dt-visual"><div class="dt-icon">Space</div></div>
+            <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>Space</div></div>
             <h3>Space Based</h3>
             <p><strong>Open page:</strong> probe, orbiter, observatories</p>
           </a>
@@ -228,7 +287,7 @@ nav_order: 4
 
         <article class="dt-card">
           <a class="dt-card-link" href="https://sdc.uio.no/search/simulations" target="_blank" rel="noopener">
-            <div class="dt-visual"><div class="dt-icon">Sim</div></div>
+            <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>Sim</div></div>
             <h3>Simulations</h3>
             <p><strong>Open link:</strong> Bifrost, MURaM, archived runs</p>
           </a>
@@ -243,25 +302,27 @@ nav_order: 4
 
       <div class="dt-grid">
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">Analyze</div></div>
-          <h3>Data Analysis</h3>
-          <p><strong>E.g.</strong> Python, IDL, Fortran workflows</p>
+          <a class="dt-card-link" href="{{ '/data-analysis/' | relative_url }}">
+            <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>Analyze</div></div>
+            <h3>Data Analysis</h3>
+            <p><strong>Open page:</strong> software, archives, diagnostics</p>
+          </a>
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">Visual</div></div>
+          <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>Visual</div></div>
           <h3>Data Visualization</h3>
           <p><strong>E.g.</strong> Matplotlib, map plots, diagnostics</p>
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">ML</div></div>
+          <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>ML</div></div>
           <h3>AI &amp; ML</h3>
           <p><strong>E.g.</strong> CNN pipelines, detection models</p>
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">Model</div></div>
+          <div class="dt-visual"><div class="dt-icon"><span class="dt-icon-mark"></span>Model</div></div>
           <h3>Modeling</h3>
           <p><strong>E.g.</strong> Flux transport and reconstruction tools</p>
         </article>
