@@ -186,7 +186,7 @@ nav: false
       </article>
 
       <article class="sb-card">
-        <div class="sb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUAsvQXKM3UNwL0BeEJqpo3qre8f9mUBcyqEHKtD5GDTl-mQlShSOo-tMHx6RJwHO-UEFsfw2QQO_GIlxjcxFFVu-Z6CsNmbrs-o_ZM4QorqXz4jiec6VHdss9_tca_AuxnuwRwSoxeIQaOOBcAJz3Vj9esd1rtgee_qx0gxMk5P1KInxc-7P45QijSht719Qp_Kq6X1CT1B59F_qbrSIOwsy9UipC5eJjLv=w1280" loading="lazy" decoding="async" alt="Solar Dynamics Observatory"></div>
+        <div class="sb-thumb"><img src="https://sdo.gsfc.nasa.gov/assets/img/latest/SDO_2D.jpg" loading="lazy" decoding="async" alt="Solar Dynamics Observatory"></div>
         <div class="sb-body">
           <h3>Solar Dynamics Observatory</h3>
           <p>Flagship observatory for high-cadence full-disk imaging and magnetic-field measurements across multiple solar atmosphere layers.</p>
@@ -204,7 +204,7 @@ nav: false
       </article>
 
       <article class="sb-card">
-        <div class="sb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUBzS0Ly6pF9hhDC30ruN1YyZvP_AT2Lm5J0Ffs3MaYqnGjLh1G0EOkPtdy_vOYBGggaGjWaDsAE_W_fSS05AWz5n16nJoA8zQg1cvavaPm7NJs_6IeK3uvOW31tZzLLh6szi9UPdr9SmzlaheXn6z-2BZ4vowrYgNt3pPcTb3mi7Kq24YQzq2NdwWAYLjWTBjiS_yB3sPQgD1DWm2Kh57fJealGm9Y5rKPA4K0=w1280" loading="lazy" decoding="async" alt="RHESSI"></div>
+        <div class="sb-thumb"><img src="https://hesperia.gsfc.nasa.gov/rhessi3/pics/poster_480x576.jpg" loading="lazy" decoding="async" alt="RHESSI"></div>
         <div class="sb-body">
           <h3>RHESSI</h3>
           <p>Mission focused on high-energy solar spectroscopy and imaging, central to flare and nonthermal emission studies.</p>
@@ -213,7 +213,7 @@ nav: false
       </article>
 
       <article class="sb-card">
-        <div class="sb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUA_2LJan0i_B_PIDxP_tVTBiyGBGibS0fC92d9Xe1PRyTs-VjXqP5jgJXTZoD74aeQWoe7sPJres0k9vc5y3Zi9G6YEOoajDjDblabK-UBZYBxm2qJPh72zDigqEu0I_kKEJWZwbZTlFBGmR4UqL6ujV63JHVDtd-PX33gcLFCHB3_nJmZMUWVclHvos2jP6kzdyxIkOd8EUbP2-7MeDD3Br18GUO3MxTivCUI=w1280" loading="lazy" decoding="async" alt="STEREO"></div>
+        <div class="sb-thumb"><img src="https://stereo.gsfc.nasa.gov/browse/2026/01/16/ahead/euvi/304/256/20260116_104545_n7euA_304.jpg" loading="lazy" decoding="async" alt="STEREO"></div>
         <div class="sb-body">
           <h3>STEREO</h3>
           <p>Dual-spacecraft mission that provided stereoscopic views of the Sun and inner heliosphere for CME and coronal-structure studies.</p>
@@ -231,7 +231,7 @@ nav: false
       </article>
 
       <article class="sb-card">
-        <div class="sb-thumb"><img src="https://lh3.googleusercontent.com/sitesv/AA5AbUDJwECxt1WbXrNddM7diRRpoZY1H7W6r62VgU6vaudCBr46eOKAhs4FzdU4ZyslpaFnsoUlVAqfJm4zs-S_ypl-wYKk_FR_XiujmARAvZjqW2wIfia_gMYPt1Fxz_WdVZzk9FJkGgSqC2ap_i_ZE-RYHLeh1HXn-9xWBc3NgFg0J31-L9SuyPmV3VyYYskrVoXGOZewFDLE6LbDdB6fY6XYDwREdxCQAURD=w1280" loading="lazy" decoding="async" alt="Hinode"></div>
+        <div class="sb-thumb"><img src="https://sdc.uio.no/sdc/Hinode-fan.jpg" loading="lazy" decoding="async" alt="Hinode"></div>
         <div class="sb-body">
           <h3>Hinode</h3>
           <p>Mission dedicated to high-resolution solar imaging and spectroscopy, especially valuable for magnetic-field and coronal heating studies.</p>

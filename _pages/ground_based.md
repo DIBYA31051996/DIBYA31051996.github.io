@@ -477,7 +477,7 @@ nav: false
       <div class="gb-rule"></div>
       <div class="gb-grid">
         <article class="gb-card">
-          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/lofar.png' | relative_url }}" loading="lazy" decoding="async" alt="LOFAR solar observations"></div>
+          <div class="gb-thumb"><img src="https://www.astron.nl/wp-content/uploads/2020/05/header_lofar-scaled-e1589880886578.jpg" loading="lazy" decoding="async" alt="LOFAR solar observations"></div>
           <div class="gb-body">
             <h3>LOFAR</h3>
             <p>Low-frequency radio observations of the Sun used to study the corona, bursts, and propagation effects.</p>
@@ -486,7 +486,7 @@ nav: false
         </article>
 
         <article class="gb-card">
-          <div class="gb-thumb"><img src="{{ '/assets/img/ground-based/nancay.png' | relative_url }}" loading="lazy" decoding="async" alt="Nancay Radioheliograph"></div>
+          <div class="gb-thumb"><img src="https://www.obs-nancay.fr/wp-content/uploads/2025/04/Observatoire_de_Paris-CoMarquageORN-RGB-Noir_sideral-scaled-1.jpg" loading="lazy" decoding="async" alt="Nancay Radioheliograph"></div>
           <div class="gb-body">
             <h3>Nancay Radioheliograph</h3>
             <p>Well-known radioheliograph for imaging solar radio activity and large-scale coronal signatures.</p>
