@@ -88,48 +88,56 @@ nav_order: 4
     --dt-accent: #67d9ff;
     --dt-accent-soft: rgba(103, 217, 255, 0.18);
     --dt-badge-bg: rgba(103, 217, 255, 0.12);
+    --dt-bg-image: url('{{ "/assets/img/ground-based/gst.jpg" | relative_url }}');
   }
 
   .dt-data .dt-card:nth-child(2) {
     --dt-accent: #77ffc8;
     --dt-accent-soft: rgba(119, 255, 200, 0.18);
     --dt-badge-bg: rgba(119, 255, 200, 0.12);
+    --dt-bg-image: url('{{ "/assets/img/long-term/solarmonitor-live.png" | relative_url }}');
   }
 
   .dt-data .dt-card:nth-child(3) {
     --dt-accent: #8da7ff;
     --dt-accent-soft: rgba(141, 167, 255, 0.18);
     --dt-badge-bg: rgba(141, 167, 255, 0.12);
+    --dt-bg-image: url('{{ "/assets/img/space-based/sdo-logo.png" | relative_url }}');
   }
 
   .dt-data .dt-card:nth-child(4) {
     --dt-accent: #ffbf70;
     --dt-accent-soft: rgba(255, 191, 112, 0.18);
     --dt-badge-bg: rgba(255, 191, 112, 0.12);
+    --dt-bg-image: url('{{ "/assets/img/long-term/solar-dynamo-user.jpg" | relative_url }}');
   }
 
   .dt-tools .dt-card:nth-child(1) {
     --dt-accent: #8ae1ff;
     --dt-accent-soft: rgba(138, 225, 255, 0.16);
     --dt-badge-bg: rgba(138, 225, 255, 0.12);
+    --dt-bg-image: url('{{ "/assets/img/data-analysis/solarsoft.gif" | relative_url }}');
   }
 
   .dt-tools .dt-card:nth-child(2) {
     --dt-accent: #ff8fb3;
     --dt-accent-soft: rgba(255, 143, 179, 0.14);
     --dt-badge-bg: rgba(255, 143, 179, 0.12);
+    --dt-bg-image: url('{{ "/assets/img/long-term/solar-activity-user.jpg" | relative_url }}');
   }
 
   .dt-tools .dt-card:nth-child(3) {
     --dt-accent: #b68fff;
     --dt-accent-soft: rgba(182, 143, 255, 0.16);
     --dt-badge-bg: rgba(182, 143, 255, 0.12);
+    --dt-bg-image: url('{{ "/assets/img/data-analysis/helioml.png" | relative_url }}');
   }
 
   .dt-tools .dt-card:nth-child(4) {
     --dt-accent: #7fffc0;
     --dt-accent-soft: rgba(127, 255, 192, 0.14);
     --dt-badge-bg: rgba(127, 255, 192, 0.12);
+    --dt-bg-image: url('{{ "/assets/img/data-analysis/crocs.png" | relative_url }}');
   }
 
   .dt-card-link {
@@ -159,8 +167,14 @@ nav_order: 4
     margin-bottom: 1rem;
     overflow: hidden;
     background:
-      linear-gradient(180deg, rgba(243, 246, 255, 0.94), rgba(227, 234, 244, 0.94)),
+      linear-gradient(180deg, rgba(243, 246, 255, 0.84), rgba(227, 234, 244, 0.88)),
       radial-gradient(circle at top right, rgba(88, 166, 255, 0.14), transparent 42%);
+    background-image:
+      linear-gradient(180deg, rgba(243, 246, 255, 0.84), rgba(227, 234, 244, 0.88)),
+      var(--dt-bg-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow:
       0 12px 30px rgba(0, 0, 0, 0.12),
       inset 0 1px 0 rgba(255, 255, 255, 0.68);
@@ -245,7 +259,7 @@ nav_order: 4
       <div class="dt-grid">
         <article class="dt-card">
           <a class="dt-card-link" href="{{ '/ground-based/' | relative_url }}">
-            <div class="dt-visual"><div class="dt-icon">📡 Ground</div></div>
+            <div class="dt-visual"><div class="dt-icon">&#128225; Ground</div></div>
             <h3>Ground Based</h3>
             <p><strong>Open page:</strong> solar telescopes, microwave, radio</p>
           </a>
@@ -253,7 +267,7 @@ nav_order: 4
 
         <article class="dt-card">
           <a class="dt-card-link" href="{{ '/long-term/' | relative_url }}">
-            <div class="dt-visual"><div class="dt-icon">⏳ Long</div></div>
+            <div class="dt-visual"><div class="dt-icon">&#9203; Long</div></div>
             <h3>Long-Term</h3>
             <p><strong>Open page:</strong> monitoring, forecast, archives</p>
           </a>
@@ -261,7 +275,7 @@ nav_order: 4
 
         <article class="dt-card">
           <a class="dt-card-link" href="{{ '/space-based/' | relative_url }}">
-            <div class="dt-visual"><div class="dt-icon">🚀 Space</div></div>
+            <div class="dt-visual"><div class="dt-icon">&#128640; Space</div></div>
             <h3>Space Based</h3>
             <p><strong>Open page:</strong> probe, orbiter, observatories</p>
           </a>
@@ -269,7 +283,7 @@ nav_order: 4
 
         <article class="dt-card">
           <a class="dt-card-link" href="https://sdc.uio.no/search/simulations" target="_blank" rel="noopener">
-            <div class="dt-visual"><div class="dt-icon">🌊 Sim</div></div>
+            <div class="dt-visual"><div class="dt-icon">&#127754; Sim</div></div>
             <h3>Simulations</h3>
             <p><strong>Open link:</strong> Bifrost, MURaM, archived runs</p>
           </a>
@@ -285,26 +299,26 @@ nav_order: 4
       <div class="dt-grid">
         <article class="dt-card">
           <a class="dt-card-link" href="{{ '/data-analysis/' | relative_url }}">
-            <div class="dt-visual"><div class="dt-icon">📊 Analyze</div></div>
+            <div class="dt-visual"><div class="dt-icon">&#128202; Analyze</div></div>
             <h3>Data Analysis</h3>
             <p><strong>Open page:</strong> software, archives, diagnostics</p>
           </a>
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">📈 Visual</div></div>
+          <div class="dt-visual"><div class="dt-icon">&#128200; Visual</div></div>
           <h3>Data Visualization</h3>
           <p><strong>E.g.</strong> Matplotlib, map plots, diagnostics</p>
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">🤖 ML</div></div>
+          <div class="dt-visual"><div class="dt-icon">&#129302; ML</div></div>
           <h3>AI &amp; ML</h3>
           <p><strong>E.g.</strong> CNN pipelines, detection models</p>
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">🧩 Model</div></div>
+          <div class="dt-visual"><div class="dt-icon">&#129513; Model</div></div>
           <h3>Modeling</h3>
           <p><strong>E.g.</strong> Flux transport and reconstruction tools</p>
         </article>

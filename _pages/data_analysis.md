@@ -30,10 +30,6 @@ nav: false
       inset 0 1px 0 rgba(255, 255, 255, 0.08);
   }
 
-  .da-section + .da-section {
-    margin-top: 2.2rem;
-  }
-
   .da-title {
     margin: 0;
     text-align: center;
@@ -78,6 +74,7 @@ nav: false
   .da-card {
     display: flex;
     flex-direction: column;
+    min-height: 355px;
     border: 1px solid rgba(175, 194, 235, 0.16);
     border-radius: 18px;
     overflow: hidden;
@@ -144,7 +141,7 @@ nav: false
     color: #d4deef;
     line-height: 1.55;
     font-size: 0.93rem;
-    min-height: 5.2rem;
+    min-height: 6.2rem;
   }
 
   @media (max-width: 980px) {
@@ -171,73 +168,65 @@ nav: false
       <div class="da-rule"></div>
       <div class="da-grid">
         <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/space-based/sdo-logo.png' | relative_url }}" alt="SOLARSOFT or IDL"></div>
+          <div class="da-visual"><img src="{{ '/assets/img/data-analysis/solarsoft.gif' | relative_url }}" alt="Solarsoft or IDL"></div>
           <div class="da-body">
-            <h3>SOLARSOFT/IDL</h3>
+            <h3><a href="https://soho.nascom.nasa.gov/solarsoft/" target="_blank" rel="noopener">Solarsoft/IDL</a></h3>
             <p>Classic solar-physics analysis environment for mission data handling, routines, and long-running IDL workflows.</p>
           </div>
         </article>
 
         <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/long-term/solarmonitor-live.png' | relative_url }}" alt="SunPy"></div>
+          <div class="da-visual"><img src="{{ '/assets/img/data-analysis/sunpy.svg' | relative_url }}" alt="SunPy"></div>
           <div class="da-body">
-            <h3>SunPy</h3>
+            <h3><a href="https://sunpy.org/" target="_blank" rel="noopener">SunPy</a></h3>
             <p>Python ecosystem for solar data access, coordinate-aware maps, timeseries handling, and reproducible analysis.</p>
           </div>
         </article>
 
         <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/ground-based/radio-array.svg' | relative_url }}" alt="CASA"></div>
+          <div class="da-visual"><img src="{{ '/assets/img/data-analysis/casa.png' | relative_url }}" alt="CASA"></div>
           <div class="da-body">
-            <h3>CASA</h3>
+            <h3><a href="https://casa.nrao.edu/" target="_blank" rel="noopener">CASA</a></h3>
             <p>Radio astronomy analysis software for calibration, imaging, and quality-controlled interferometric workflows.</p>
           </div>
         </article>
 
         <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/space-based/soho.jpg' | relative_url }}" alt="STIX Data Center"></div>
+          <div class="da-visual"><img src="{{ '/assets/img/data-analysis/stix.png' | relative_url }}" alt="STIX Data Center"></div>
           <div class="da-body">
-            <h3>STIX Data Center</h3>
+            <h3><a href="https://datacenter.stix.i4ds.net/stix" target="_blank" rel="noopener">STIX Data Center</a></h3>
             <p>Access point for Spectrometer/Telescope for Imaging X-rays products, flare records, and quick-look analysis material.</p>
           </div>
         </article>
 
         <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/space-based/stereo-wiki.jpg' | relative_url }}" alt="SpaceML"></div>
+          <div class="da-visual"><img src="https://spaceml.org/images/spaceml-logo-new-black.png" alt="SpaceML"></div>
           <div class="da-body">
-            <h3>SpaceML</h3>
+            <h3><a href="https://spaceml.org/" target="_blank" rel="noopener">SpaceML</a></h3>
             <p>Machine-learning oriented tooling and examples for space-science datasets, event detection, and scalable experimentation.</p>
           </div>
         </article>
 
         <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/long-term/solar-dynamo-user.jpg' | relative_url }}" alt="SERPENTINE Tools"></div>
+          <div class="da-visual"><img src="{{ '/assets/img/data-analysis/serpentine.png' | relative_url }}" alt="SERPENTINE Tools"></div>
           <div class="da-body">
-            <h3>SERPENTINE Tools</h3>
+            <h3><a href="https://serpentine-h2020.eu/tools/" target="_blank" rel="noopener">SERPENTINE Tools</a></h3>
             <p>Analysis support tools for energetic-particle connectivity, propagation context, and heliospheric event interpretation.</p>
           </div>
         </article>
 
         <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/long-term/resource-monitor.svg' | relative_url }}" alt="CROCS"></div>
+          <div class="da-visual"><img src="{{ '/assets/img/data-analysis/crocs.png' | relative_url }}" alt="CROCS"></div>
           <div class="da-body">
-            <h3>CROCS</h3>
+            <h3><a href="https://parker.gsfc.nasa.gov/crocs.html" target="_blank" rel="noopener">CROCS</a></h3>
             <p>Compact research utilities for catalog handling, comparative diagnostics, and solar-event context studies.</p>
           </div>
         </article>
 
         <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/ground-based/ecallisto.png' | relative_url }}" alt="Radio Monitoring"></div>
+          <div class="da-visual"><img src="{{ '/assets/img/data-analysis/helioml.png' | relative_url }}" alt="HelioML"></div>
           <div class="da-body">
-            <h3>Radio Monitoring</h3>
-            <p>Radio burst tracking resources and quick-look monitoring tools for dynamic solar activity and event verification.</p>
-          </div>
-        </article>
-
-        <article class="da-card">
-          <div class="da-visual"><img src="{{ '/assets/img/space-based/hinode-wiki.jpg' | relative_url }}" alt="HelioML"></div>
-          <div class="da-body">
-            <h3>HelioML</h3>
+            <h3><a href="https://helioml.org/Introduction/title.html" target="_blank" rel="noopener">HelioML</a></h3>
             <p>Machine-learning resources and project tooling focused on heliophysics datasets, classification, and forecasting tasks.</p>
           </div>
         </article>
