@@ -167,13 +167,13 @@ nav_order: 4
     margin-bottom: 1rem;
     overflow: hidden;
     background:
-      linear-gradient(180deg, rgba(243, 246, 255, 0.84), rgba(227, 234, 244, 0.88)),
+      linear-gradient(180deg, rgba(243, 246, 255, 0.62), rgba(227, 234, 244, 0.7)),
       radial-gradient(circle at top right, rgba(88, 166, 255, 0.14), transparent 42%);
     background-image:
-      linear-gradient(180deg, rgba(243, 246, 255, 0.84), rgba(227, 234, 244, 0.88)),
+      linear-gradient(180deg, rgba(243, 246, 255, 0.6), rgba(227, 234, 244, 0.68)),
       var(--dt-bg-image);
-    background-size: cover;
-    background-position: center;
+    background-size: cover, 118%;
+    background-position: center, center;
     background-repeat: no-repeat;
     box-shadow:
       0 12px 30px rgba(0, 0, 0, 0.12),
@@ -187,27 +187,29 @@ nav_order: 4
     position: absolute;
     inset: 0;
     background:
-      linear-gradient(135deg, var(--dt-accent-soft, rgba(114, 221, 255, 0.12)), transparent 38%),
-      radial-gradient(circle at 80% 20%, color-mix(in srgb, var(--dt-accent, #7c8dff) 22%, white 10%), transparent 28%);
+      linear-gradient(135deg, color-mix(in srgb, var(--dt-accent-soft, rgba(114, 221, 255, 0.12)) 78%, transparent 22%), transparent 45%),
+      radial-gradient(circle at 80% 20%, color-mix(in srgb, var(--dt-accent, #7c8dff) 28%, white 8%), transparent 30%);
     pointer-events: none;
   }
 
   .dt-icon {
-    font-size: clamp(1.2rem, 2.6vw, 1.55rem);
+    font-size: clamp(1.32rem, 2.95vw, 1.75rem);
     line-height: 1.1;
     color: #18324a;
     font-weight: 800;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding: 1rem 1.2rem;
+    padding: 1.05rem 1.35rem;
     border-radius: 20px;
     background: color-mix(in srgb, var(--dt-badge-bg, rgba(255, 255, 255, 0.48)) 70%, white 28%);
-    border: 1px solid color-mix(in srgb, var(--dt-accent, #7cc9ff) 32%, white 18%);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.58);
+    border: 1.5px solid rgba(0, 0, 0, 0.62);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.58),
+      0 10px 18px rgba(0, 0, 0, 0.08);
     display: inline-flex;
     align-items: center;
     gap: 0.7rem;
-    min-width: 8.5rem;
+    min-width: 9.8rem;
     justify-content: center;
   }
 
@@ -306,9 +308,11 @@ nav_order: 4
         </article>
 
         <article class="dt-card">
-          <div class="dt-visual"><div class="dt-icon">&#128200; Visual</div></div>
-          <h3>Data Visualization</h3>
-          <p><strong>E.g.</strong> Matplotlib, map plots, diagnostics</p>
+          <a class="dt-card-link" href="{{ '/data-visualization/' | relative_url }}">
+            <div class="dt-visual"><div class="dt-icon">&#128200; Visual</div></div>
+            <h3>Data Visualization</h3>
+            <p><strong>Open page:</strong> JHelioviewer, VisIt, propagation tools</p>
+          </a>
         </article>
 
         <article class="dt-card">

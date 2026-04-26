@@ -94,8 +94,8 @@ nav: false
   }
 
   .da-visual {
-    flex: 0 0 165px;
-    height: 165px;
+    flex: 0 0 168px;
+    height: 168px;
     display: grid;
     place-items: center;
     background:
@@ -108,7 +108,14 @@ nav: false
     height: 100%;
     object-fit: contain;
     display: block;
-    padding: 0.9rem;
+    padding: 0.7rem;
+  }
+
+  .da-card:nth-child(1) .da-visual img {
+    object-fit: cover;
+    object-position: center;
+    padding: 0.15rem 0.35rem;
+    transform: scale(1.18);
   }
 
   .da-body {
@@ -141,7 +148,7 @@ nav: false
     color: #d4deef;
     line-height: 1.55;
     font-size: 0.93rem;
-    min-height: 6.2rem;
+    min-height: 6.45rem;
   }
 
   @media (max-width: 980px) {
