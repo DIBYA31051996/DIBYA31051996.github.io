@@ -120,6 +120,14 @@ nav: false
     display: block;
   }
 
+  .dv-card:nth-child(2) .dv-visual img,
+  .dv-card:nth-child(4) .dv-visual img,
+  .dv-card:nth-child(5) .dv-visual img {
+    object-fit: contain;
+    padding: 0.8rem;
+    background: linear-gradient(180deg, rgba(243, 246, 255, 0.96), rgba(227, 234, 244, 0.96));
+  }
+
   .dv-body {
     flex: 1 1 auto;
     display: flex;
@@ -177,7 +185,7 @@ nav: false
       <div class="dv-rule"></div>
       <div class="dv-grid">
         <article class="dv-card">
-          <div class="dv-visual"><img src="{{ '/assets/img/long-term/solarmonitor-live.png' | relative_url }}" alt="JHelioviewer"></div>
+          <div class="dv-visual"><img src="{{ '/assets/img/data-visualization/jhelioviewer.png' | relative_url }}" alt="JHelioviewer"></div>
           <div class="dv-body">
             <h3><a href="https://www.jhelioviewer.org/" target="_blank" rel="noopener">JHelioviewer</a></h3>
             <p>JPEG 2000 based solar image browser for quick event exploration, timeline playback, and layered heliophysics context.</p>
@@ -185,7 +193,7 @@ nav: false
         </article>
 
         <article class="dv-card">
-          <div class="dv-visual"><img src="{{ '/assets/img/long-term/solar-activity-user.jpg' | relative_url }}" alt="VisIt"></div>
+          <div class="dv-visual"><img src="{{ '/assets/img/data-visualization/visit.png' | relative_url }}" alt="VisIt"></div>
           <div class="dv-body">
             <h3><a href="https://visit-dav.github.io/visit-website/" target="_blank" rel="noopener">VisIt</a></h3>
             <p>Open-source interactive visualization environment for large multidimensional datasets, animation, and exploratory analysis.</p>
@@ -193,7 +201,7 @@ nav: false
         </article>
 
         <article class="dv-card">
-          <div class="dv-visual"><img src="{{ '/assets/img/long-term/smarp.png' | relative_url }}" alt="Magnetic Connectivity Tool"></div>
+          <div class="dv-visual"><img src="{{ '/assets/img/data-visualization/magnetic-connectivity.png' | relative_url }}" alt="Magnetic Connectivity Tool"></div>
           <div class="dv-body">
             <h3><a href="https://connect-tool.irap.omp.eu/" target="_blank" rel="noopener">Magnetic Connectivity Tool</a></h3>
             <p>Connectivity mapping interface for locating likely solar source regions and tracing particle paths across spacecraft viewpoints.</p>
@@ -201,7 +209,7 @@ nav: false
         </article>
 
         <article class="dv-card">
-          <div class="dv-visual"><img src="{{ '/assets/img/data-analysis/serpentine.png' | relative_url }}" alt="Propagation Tool"></div>
+          <div class="dv-visual"><img src="{{ '/assets/img/data-visualization/propagation-tool.png' | relative_url }}" alt="Propagation Tool"></div>
           <div class="dv-body">
             <h3><a href="https://propagationtool.cdpp.eu/" target="_blank" rel="noopener">Propagation Tool</a></h3>
             <p>Interactive heliospheric propagation visualizer used to inspect streams, shocks, and particle transport through interplanetary space.</p>
@@ -209,7 +217,7 @@ nav: false
         </article>
 
         <article class="dv-card">
-          <div class="dv-visual"><img src="{{ '/assets/img/data-analysis/helioml.png' | relative_url }}" alt="Autoplot"></div>
+          <div class="dv-visual"><img src="{{ '/assets/img/data-visualization/autoplot.png' | relative_url }}" alt="Autoplot"></div>
           <div class="dv-body">
             <h3><a href="https://autoplot.org/" target="_blank" rel="noopener">Autoplot</a></h3>
             <p>Quick-look browser for local files and web data sources that turns raw tables and time series into readable plots with minimal setup.</p>
