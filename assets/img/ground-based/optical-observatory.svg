@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Optical observatory thumbnail</title>
+  <desc id="desc">Stylized optical solar observatory under a clear sky.</desc>
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#88c8ff"/>
+      <stop offset="100%" stop-color="#2a4e88"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#sky)"/>
+  <rect y="630" width="1200" height="170" fill="#4a3f36"/>
+  <rect x="500" y="220" width="210" height="410" rx="26" fill="#f0f3f8"/>
+  <rect x="545" y="170" width="120" height="95" rx="34" fill="#dfe5ef"/>
+  <rect x="560" y="320" width="90" height="180" rx="10" fill="#cfd8e6"/>
+  <rect x="690" y="250" width="24" height="360" fill="#bac4d4"/>
+  <circle cx="603" cy="220" r="58" fill="#f7f9fc"/>
+  <rect x="130" y="95" width="260" height="30" rx="15" fill="#ffffff" opacity="0.55"/>
+</svg>

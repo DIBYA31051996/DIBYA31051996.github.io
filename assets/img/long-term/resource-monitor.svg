@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Monitoring resource thumbnail</title>
+  <desc id="desc">Abstract solar monitoring graphic with charts and panels.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#13233d"/>
+      <stop offset="100%" stop-color="#0b1425"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#66c7ff"/>
+      <stop offset="100%" stop-color="#42e19d"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <circle cx="930" cy="170" r="120" fill="#ffb347" opacity="0.95"/>
+  <circle cx="930" cy="170" r="70" fill="#ffdd8a" opacity="0.9"/>
+  <rect x="80" y="90" width="530" height="300" rx="28" fill="#111d33" stroke="#35527a" stroke-width="6"/>
+  <rect x="110" y="130" width="470" height="24" rx="12" fill="#223757"/>
+  <rect x="110" y="190" width="210" height="150" rx="18" fill="#172742"/>
+  <rect x="340" y="190" width="240" height="150" rx="18" fill="#172742"/>
+  <polyline points="365,300 410,270 455,285 500,240 545,220" fill="none" stroke="url(#glow)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="410" cy="270" r="8" fill="#66c7ff"/>
+  <circle cx="500" cy="240" r="8" fill="#66c7ff"/>
+  <rect x="80" y="450" width="1040" height="220" rx="34" fill="#101a2f" stroke="#35527a" stroke-width="6"/>
+  <rect x="130" y="510" width="90" height="110" rx="16" fill="#1d3150"/>
+  <rect x="250" y="530" width="90" height="90" rx="16" fill="#234162"/>
+  <rect x="370" y="495" width="90" height="125" rx="16" fill="#295678"/>
+  <rect x="490" y="465" width="90" height="155" rx="16" fill="#2f6f8f"/>
+  <rect x="610" y="520" width="430" height="24" rx="12" fill="#223757"/>
+  <rect x="610" y="570" width="340" height="18" rx="9" fill="#314f75"/>
+</svg>
