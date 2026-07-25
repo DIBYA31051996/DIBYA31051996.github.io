@@ -54,7 +54,7 @@ nav_order: 1
         <h3>My Journey: From Odisha to Solar Physics</h3>
         <p>
           My research focuses on the long-term evolution of solar magnetic activity and its implications for solar
-          dynamo theory and solar cycle prediction. I work extensively with century-long Ca II K and HÎ± datasets from
+          dynamo theory and solar cycle prediction. I work extensively with century-long Ca II K and Hα datasets from
           the Kodaikanal Solar Observatory, complemented by observations from Mount Wilson Observatory, PSPT Rome, and
           space-based missions such as the Solar Dynamics Observatory.
         </p>
@@ -67,7 +67,7 @@ nav_order: 1
           construction of long-term Carrington maps using Ca II K observations, multi-wavelength studies of
           upper-atmospheric differential rotation using SDO/AIA data, and the development of ML-based pipelines for
           automated detection of sunspot groups and tilt angles from KoSO white-light data. Additionally, I am involved
-          in efforts to reconstruct pre-1976 magnetograms using Ca II K and HÎ± data through generative AI approaches.
+          in efforts to reconstruct pre-1976 magnetograms using Ca II K and Hα data through generative AI approaches.
         </p>
         <p>
           Overall, my expertise lies at the intersection of archival solar observations, automated feature-extraction
@@ -124,6 +124,11 @@ nav_order: 1
           <p>Times of India coverage of how machine learning transformed Kodaikanal's hand-drawn solar observations into a record of long-term magnetic activity.</p>
         </div>
         <div class="update-item">
+          <small>02 Jul 2026</small>
+          <strong><a href="https://x.com/RT_India_news/status/2072650499149750273?s=20" target="_blank" rel="noopener">Decoding the Sun: Indian scientists use AI to unlock a century of solar secrets</a></strong>
+          <p>RT India interview on transforming historical solar sketches into a record of the Sun's magnetic activity and cycles.</p>
+        </div>
+        <div class="update-item">
           <small>01 Jul 2026</small>
           <strong><a href="https://ddindia.co.in/2026/07/ai-decodes-100-years-of-kodaikanal-solar-records-to-map-suns-magnetic-activity/" target="_blank" rel="noopener">AI Decodes 100 Years of Kodaikanal Solar Records to Map Sun's Magnetic Activity</a></strong>
           <p>DD India feature on using AI to map magnetic activity across nine solar cycles from Kodaikanal's historical suncharts.</p>
@@ -134,24 +139,9 @@ nav_order: 1
           <p>PIB release highlighting the AI-based recovery of century-long plage activity from hand-drawn solar records.</p>
         </div>
         <div class="update-item">
-          <small>19 Nov 2025</small>
-          <strong><a href="https://dst.gov.in/century-long-data-kodaikanal-observatory-reveals-clues-suns-future" target="_blank" rel="noopener">Century-long data of Kodaikanal Observatory reveals clues to Sun's future</a></strong>
-          <p>DST coverage of the Kodaikanal solar-data study and its implications for future solar-cycle understanding.</p>
-        </div>
-        <div class="update-item">
-          <small>19 Nov 2025</small>
-          <strong><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2191662&reg=3&lang=2" target="_blank" rel="noopener">Century-long data of Kodaikanal Observatory reveals clues to Sun's future</a></strong>
-          <p>PIB release highlighting the role of century-long observatory records in understanding the Sun's future behavior.</p>
-        </div>
-        <div class="update-item">
-          <small>19 Nov 2025</small>
-          <strong><a href="https://ddnews.gov.in/en/century-old-kodaikanal-observatory-data-offers-new-insights-into-the-suns-magnetic-future/" target="_blank" rel="noopener">Century-old Kodaikanal Observatory data offers new insights into the Sun's magnetic future</a></strong>
-          <p>DD News coverage of how long-term Kodaikanal observations refine insight into the Sun's magnetic future.</p>
-        </div>
-        <div class="update-item">
-          <small>20 Jan 2026</small>
-          <strong><a href="https://www.swri.org/newsroom/press-releases/using-100-year-old-data-help-predict-future-solar-cycle-activity" target="_blank" rel="noopener">Using 100-year-old data to help predict future solar cycle activity</a></strong>
-          <p>Southwest Research Institute summary of how archival solar records improve forecasting of future cycles.</p>
+          <small>06 Mar 2026</small>
+          <strong><a href="https://www.universetoday.com/articles/making-new-solar-activity-connections-from-old-data" target="_blank" rel="noopener">Making New Solar Activity Connections From Old Data</a></strong>
+          <p>Universe Today feature connecting historical solar observations with new interpretations of solar activity.</p>
         </div>
         <div class="update-item">
           <small>21 Jan 2026</small>
@@ -159,9 +149,24 @@ nav_order: 1
           <p>SpaceDaily report on how old Ca II K records sharpen solar-cycle forecast constraints.</p>
         </div>
         <div class="update-item">
-          <small>06 Mar 2026</small>
-          <strong><a href="https://www.universetoday.com/articles/making-new-solar-activity-connections-from-old-data" target="_blank" rel="noopener">Making New Solar Activity Connections From Old Data</a></strong>
-          <p>Universe Today feature connecting historical solar observations with new interpretations of solar activity.</p>
+          <small>20 Jan 2026</small>
+          <strong><a href="https://www.swri.org/newsroom/press-releases/using-100-year-old-data-help-predict-future-solar-cycle-activity" target="_blank" rel="noopener">Using 100-year-old data to help predict future solar cycle activity</a></strong>
+          <p>Southwest Research Institute summary of how archival solar records improve forecasting of future cycles.</p>
+        </div>
+        <div class="update-item">
+          <small>19 Nov 2025</small>
+          <strong><a href="https://dst.gov.in/century-long-data-kodaikanal-observatory-reveals-clues-suns-future" target="_blank" rel="noopener">Century-long data of Kodaikanal Observatory reveals clues to Sun's future</a></strong>
+          <p>DST coverage of the Kodaikanal solar-data study and its implications for future solar-cycle understanding.</p>
+        </div>
+        <div class="update-item">
+          <small>19 Nov 2025</small>
+          <strong><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2191662&amp;reg=3&amp;lang=2" target="_blank" rel="noopener">Century-long data of Kodaikanal Observatory reveals clues to Sun's future</a></strong>
+          <p>PIB release highlighting the role of century-long observatory records in understanding the Sun's future behavior.</p>
+        </div>
+        <div class="update-item">
+          <small>19 Nov 2025</small>
+          <strong><a href="https://ddnews.gov.in/en/century-old-kodaikanal-observatory-data-offers-new-insights-into-the-suns-magnetic-future/" target="_blank" rel="noopener">Century-old Kodaikanal Observatory data offers new insights into the Sun's magnetic future</a></strong>
+          <p>DD News coverage of how long-term Kodaikanal observations refine insight into the Sun's magnetic future.</p>
         </div>
       </div>
     </aside>
@@ -171,11 +176,11 @@ nav_order: 1
     <div class="meta-strip">
       <article class="meta-card home-card">
         <div class="meta-kicker">Currently Working On</div>
-        <p>Solar cycle â€¢ Synoptic maps</p>
+        <p>Solar cycle • Synoptic maps</p>
       </article>
       <article class="meta-card home-card">
         <div class="meta-kicker">Tooling</div>
-        <p>Python â€¢ HDF5 â€¢ Visualization</p>
+        <p>Python • HDF5 • Visualization</p>
       </article>
     </div>
 
@@ -187,14 +192,14 @@ nav_order: 1
 
     <div class="card-grid card-grid-2">
       <article class="info-card home-card">
-        <h3><strong><span class="theme-icon">â—‰</span> Solar cycle variability</strong></h3>
+        <h3><strong><span class="theme-icon">◉</span> Solar cycle variability</strong></h3>
         <p>Long-baseline evolution, reversals, asymmetry, and cycle-to-cycle structure across multiple observables.</p>
-        <a href="{{ '/projects/' | relative_url }}">Open theme <span aria-hidden="true">â†—</span></a>
+        <a href="{{ '/projects/' | relative_url }}">Open theme <span aria-hidden="true">↗</span></a>
       </article>
       <article class="info-card home-card">
-        <h3><strong><span class="theme-icon">âœ¦</span> ML-ready solar data</strong></h3>
+        <h3><strong><span class="theme-icon">✦</span> ML-ready solar data</strong></h3>
         <p>Calibration, detection, curation, and forecasting-oriented products designed for reuse and analysis.</p>
-        <a href="{{ '/projects/' | relative_url }}">Open theme <span aria-hidden="true">â†—</span></a>
+        <a href="{{ '/projects/' | relative_url }}">Open theme <span aria-hidden="true">↗</span></a>
       </article>
     </div>
   </section>
@@ -240,4 +245,3 @@ nav_order: 1
     </div>
   </section>
 </div>
-
