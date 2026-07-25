@@ -119,6 +119,21 @@ nav_order: 1
       <div class="updates-panel home-card">
         <h3>Recent highlights</h3>
         <div class="update-item">
+          <small>03 Jul 2026</small>
+          <strong><a href="https://timesofindia.indiatimes.com/india/ai-reads-a-century-of-sun-sketches-to-uncover-hidden-patterns-in-solar-activity/articleshow/132152252.cms" target="_blank" rel="noopener">AI reads a century of Sun sketches to uncover hidden patterns in solar activity</a></strong>
+          <p>Times of India coverage of how machine learning transformed Kodaikanal's hand-drawn solar observations into a record of long-term magnetic activity.</p>
+        </div>
+        <div class="update-item">
+          <small>01 Jul 2026</small>
+          <strong><a href="https://ddindia.co.in/2026/07/ai-decodes-100-years-of-kodaikanal-solar-records-to-map-suns-magnetic-activity/" target="_blank" rel="noopener">AI Decodes 100 Years of Kodaikanal Solar Records to Map Sun's Magnetic Activity</a></strong>
+          <p>DD India feature on using AI to map magnetic activity across nine solar cycles from Kodaikanal's historical suncharts.</p>
+        </div>
+        <div class="update-item">
+          <small>01 Jul 2026</small>
+          <strong><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2279849&amp;reg=3&amp;lang=1" target="_blank" rel="noopener">AI studies 100 years of Sun images to track bright solar regions from the Kodaikanal Solar Observatory</a></strong>
+          <p>PIB release highlighting the AI-based recovery of century-long plage activity from hand-drawn solar records.</p>
+        </div>
+        <div class="update-item">
           <small>19 Nov 2025</small>
           <strong><a href="https://dst.gov.in/century-long-data-kodaikanal-observatory-reveals-clues-suns-future" target="_blank" rel="noopener">Century-long data of Kodaikanal Observatory reveals clues to Sun's future</a></strong>
           <p>DST coverage of the Kodaikanal solar-data study and its implications for future solar-cycle understanding.</p>
