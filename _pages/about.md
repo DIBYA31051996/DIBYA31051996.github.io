@@ -54,7 +54,7 @@ nav_order: 1
         <h3>My Journey: From Odisha to Solar Physics</h3>
         <p>
           My research focuses on the long-term evolution of solar magnetic activity and its implications for solar
-          dynamo theory and solar cycle prediction. I work extensively with century-long Ca II K and Hα datasets from
+          dynamo theory and solar cycle prediction. I work extensively with century-long Ca II K and HÎ± datasets from
           the Kodaikanal Solar Observatory, complemented by observations from Mount Wilson Observatory, PSPT Rome, and
           space-based missions such as the Solar Dynamics Observatory.
         </p>
@@ -67,7 +67,7 @@ nav_order: 1
           construction of long-term Carrington maps using Ca II K observations, multi-wavelength studies of
           upper-atmospheric differential rotation using SDO/AIA data, and the development of ML-based pipelines for
           automated detection of sunspot groups and tilt angles from KoSO white-light data. Additionally, I am involved
-          in efforts to reconstruct pre-1976 magnetograms using Ca II K and Hα data through generative AI approaches.
+          in efforts to reconstruct pre-1976 magnetograms using Ca II K and HÎ± data through generative AI approaches.
         </p>
         <p>
           Overall, my expertise lies at the intersection of archival solar observations, automated feature-extraction
@@ -171,11 +171,11 @@ nav_order: 1
     <div class="meta-strip">
       <article class="meta-card home-card">
         <div class="meta-kicker">Currently Working On</div>
-        <p>Solar cycle • Synoptic maps</p>
+        <p>Solar cycle â€¢ Synoptic maps</p>
       </article>
       <article class="meta-card home-card">
         <div class="meta-kicker">Tooling</div>
-        <p>Python • HDF5 • Visualization</p>
+        <p>Python â€¢ HDF5 â€¢ Visualization</p>
       </article>
     </div>
 
@@ -187,14 +187,14 @@ nav_order: 1
 
     <div class="card-grid card-grid-2">
       <article class="info-card home-card">
-        <h3><strong><span class="theme-icon">◉</span> Solar cycle variability</strong></h3>
+        <h3><strong><span class="theme-icon">â—‰</span> Solar cycle variability</strong></h3>
         <p>Long-baseline evolution, reversals, asymmetry, and cycle-to-cycle structure across multiple observables.</p>
-        <a href="{{ '/projects/' | relative_url }}">Open theme <span aria-hidden="true">↗</span></a>
+        <a href="{{ '/projects/' | relative_url }}">Open theme <span aria-hidden="true">â†—</span></a>
       </article>
       <article class="info-card home-card">
-        <h3><strong><span class="theme-icon">✦</span> ML-ready solar data</strong></h3>
+        <h3><strong><span class="theme-icon">âœ¦</span> ML-ready solar data</strong></h3>
         <p>Calibration, detection, curation, and forecasting-oriented products designed for reuse and analysis.</p>
-        <a href="{{ '/projects/' | relative_url }}">Open theme <span aria-hidden="true">↗</span></a>
+        <a href="{{ '/projects/' | relative_url }}">Open theme <span aria-hidden="true">â†—</span></a>
       </article>
     </div>
   </section>
@@ -240,3 +240,4 @@ nav_order: 1
     </div>
   </section>
 </div>
+
