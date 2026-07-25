@@ -54,7 +54,7 @@ nav_order: 1
         <h3>My Journey: From Odisha to Solar Physics</h3>
         <p>
           My research focuses on the long-term evolution of solar magnetic activity and its implications for solar
-          dynamo theory and solar cycle prediction. I work extensively with century-long Ca II K and Hα datasets from
+          dynamo theory and solar cycle prediction. I work extensively with century-long Ca II K and HÎ± datasets from
           the Kodaikanal Solar Observatory, complemented by observations from Mount Wilson Observatory, PSPT Rome, and
           space-based missions such as the Solar Dynamics Observatory.
         </p>
@@ -67,7 +67,7 @@ nav_order: 1
           construction of long-term Carrington maps using Ca II K observations, multi-wavelength studies of
           upper-atmospheric differential rotation using SDO/AIA data, and the development of ML-based pipelines for
           automated detection of sunspot groups and tilt angles from KoSO white-light data. Additionally, I am involved
-          in efforts to reconstruct pre-1976 magnetograms using Ca II K and Hα data through generative AI approaches.
+          in efforts to reconstruct pre-1976 magnetograms using Ca II K and HÎ± data through generative AI approaches.
         </p>
         <p>
           Overall, my expertise lies at the intersection of archival solar observations, automated feature-extraction
@@ -119,6 +119,21 @@ nav_order: 1
       <div class="updates-panel home-card">
         <h3>Recent highlights</h3>
         <div class="update-item">
+          <small>03 Jul 2026</small>
+          <strong><a href="https://timesofindia.indiatimes.com/india/ai-reads-a-century-of-sun-sketches-to-uncover-hidden-patterns-in-solar-activity/articleshow/132152252.cms" target="_blank" rel="noopener">AI reads a century of Sun sketches to uncover hidden patterns in solar activity</a></strong>
+          <p>Times of India coverage of how machine learning transformed Kodaikanal's hand-drawn solar observations into a record of long-term magnetic activity.</p>
+        </div>
+        <div class="update-item">
+          <small>01 Jul 2026</small>
+          <strong><a href="https://ddindia.co.in/2026/07/ai-decodes-100-years-of-kodaikanal-solar-records-to-map-suns-magnetic-activity/" target="_blank" rel="noopener">AI Decodes 100 Years of Kodaikanal Solar Records to Map Sun's Magnetic Activity</a></strong>
+          <p>DD India feature on using AI to map magnetic activity across nine solar cycles from Kodaikanal's historical suncharts.</p>
+        </div>
+        <div class="update-item">
+          <small>01 Jul 2026</small>
+          <strong><a href="https://www.pib.gov.in/PressReleasePage.aspx?PRID=2279849&amp;reg=3&amp;lang=1" target="_blank" rel="noopener">AI studies 100 years of Sun images to track bright solar regions from the Kodaikanal Solar Observatory</a></strong>
+          <p>PIB release highlighting the AI-based recovery of century-long plage activity from hand-drawn solar records.</p>
+        </div>
+        <div class="update-item">
           <small>19 Nov 2025</small>
           <strong><a href="https://dst.gov.in/century-long-data-kodaikanal-observatory-reveals-clues-suns-future" target="_blank" rel="noopener">Century-long data of Kodaikanal Observatory reveals clues to Sun's future</a></strong>
           <p>DST coverage of the Kodaikanal solar-data study and its implications for future solar-cycle understanding.</p>
@@ -156,11 +171,11 @@ nav_order: 1
     <div class="meta-strip">
       <article class="meta-card home-card">
         <div class="meta-kicker">Currently Working On</div>
-        <p>Solar cycle • Synoptic maps</p>
+        <p>Solar cycle â€¢ Synoptic maps</p>
       </article>
       <article class="meta-card home-card">
         <div class="meta-kicker">Tooling</div>
-        <p>Python • HDF5 • Visualization</p>
+        <p>Python â€¢ HDF5 â€¢ Visualization</p>
       </article>
     </div>
 
@@ -172,14 +187,14 @@ nav_order: 1
 
     <div class="card-grid card-grid-2">
       <article class="info-card home-card">
-        <h3><strong><span class="theme-icon">◉</span> Solar cycle variability</strong></h3>
+        <h3><strong><span class="theme-icon">â—‰</span> Solar cycle variability</strong></h3>
         <p>Long-baseline evolution, reversals, asymmetry, and cycle-to-cycle structure across multiple observables.</p>
-        <a href="{{ '/projects/' | relative_url }}">Open theme <span aria-hidden="true">↗</span></a>
+        <a href="{{ '/projects/' | relative_url }}">Open theme <span aria-hidden="true">â†—</span></a>
       </article>
       <article class="info-card home-card">
-        <h3><strong><span class="theme-icon">✦</span> ML-ready solar data</strong></h3>
+        <h3><strong><span class="theme-icon">âœ¦</span> ML-ready solar data</strong></h3>
         <p>Calibration, detection, curation, and forecasting-oriented products designed for reuse and analysis.</p>
-        <a href="{{ '/projects/' | relative_url }}">Open theme <span aria-hidden="true">↗</span></a>
+        <a href="{{ '/projects/' | relative_url }}">Open theme <span aria-hidden="true">â†—</span></a>
       </article>
     </div>
   </section>
@@ -225,3 +240,4 @@ nav_order: 1
     </div>
   </section>
 </div>
+
