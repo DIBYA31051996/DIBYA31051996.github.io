@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Forecast resource thumbnail</title>
+  <desc id="desc">Abstract forecast panel with curves and status bars.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#101a31"/>
+      <stop offset="100%" stop-color="#09111f"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#bg)"/>
+  <rect x="90" y="100" width="1020" height="600" rx="40" fill="#121f39" stroke="#335072" stroke-width="6"/>
+  <rect x="140" y="150" width="920" height="36" rx="18" fill="#223757"/>
+  <rect x="140" y="225" width="920" height="330" rx="26" fill="#0d1730"/>
+  <polyline points="180,470 310,435 440,390 570,345 700,305 830,270 960,235" fill="none" stroke="#6ea8ff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="180,500 310,470 440,450 570,410 700,395 830,360 960,330" fill="none" stroke="#9a7cff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <polyline points="180,525 310,520 440,510 570,490 700,470 830,450 960,430" fill="none" stroke="#47d39b" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <line x1="180" y1="260" x2="180" y2="540" stroke="#35527a" stroke-width="4"/>
+  <line x1="180" y1="540" x2="980" y2="540" stroke="#35527a" stroke-width="4"/>
+  <rect x="140" y="595" width="240" height="56" rx="18" fill="#1c2c48"/>
+  <rect x="405" y="595" width="240" height="56" rx="18" fill="#1c2c48"/>
+  <rect x="670" y="595" width="240" height="56" rx="18" fill="#1c2c48"/>
+</svg>

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://DIBYA31051996.github.io/sitemap.xml
