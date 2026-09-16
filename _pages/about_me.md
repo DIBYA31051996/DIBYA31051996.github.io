@@ -22,7 +22,7 @@ nav_order: 2
       <article class="about-profile-card">
         <h2>Dibya Kirti Mishra</h2>
         <p class="about-role">Solar Physicist</p>
-        <p class="about-location">ARIES, Nainital, Uttarakhand, India</p>
+        <p class="about-location">Indian Institute of Astrophysics (IIA), Bangalore, India</p>
       </article>
 
       <div class="about-nav">
@@ -41,7 +41,7 @@ nav_order: 2
         </div>
         <div class="about-meta-row">
           <span>Base</span>
-          <strong>Nainital, India</strong>
+          <strong>Bangalore, India</strong>
         </div>
         <div class="about-meta-row">
           <span>Next</span>

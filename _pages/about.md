@@ -105,7 +105,7 @@ nav_order: 1
         <img src="{{ '/assets/img/RIP07945.png' | relative_url }}" alt="Portrait of Dibya Kirti Mishra" />
         <div class="profile-panel-body">
           <p class="profile-label">Dibya Kirti Mishra</p>
-          <h2>Solar Researcher</h2>
+          <h2>Solar Researcher, PhD</h2>
           <p class="profile-meta">Indian Institute of Astrophysics (IIA), Bangalore, India</p>
           <div class="profile-tags">
             <a href="{{ '/about-me/' | relative_url }}">Connect</a>
