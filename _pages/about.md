@@ -45,7 +45,7 @@ nav_order: 1
           <span>Research themes</span>
         </div>
         <div class="stat-card">
-          <strong>ARIES</strong>
+          <strong>IIA</strong>
           <span>Long term variability in the sun</span>
         </div>
       </div>
@@ -106,7 +106,7 @@ nav_order: 1
         <div class="profile-panel-body">
           <p class="profile-label">Dibya Kirti Mishra</p>
           <h2>Solar Researcher</h2>
-          <p class="profile-meta">Aryabhatta Research Institute of Observational Sciences (ARIES), Nainital, India</p>
+          <p class="profile-meta">Indian Institute of Astrophysics (IIA), Bangalore, India</p>
           <div class="profile-tags">
             <a href="{{ '/about-me/' | relative_url }}">Connect</a>
             <a href="{{ '/projects/' | relative_url }}">Research</a>
