@@ -198,8 +198,17 @@ nav_order: 2
           <div class="about-journey-item">
             <div class="about-journey-dot"></div>
             <div class="about-journey-body">
-              <h4>Senior Project Associate — ARIES</h4>
+              <h4>Postdoctoral Fellow (PDF) — Indian Institute of Astrophysics (IIA)</h4>
               <small>2026 - Present</small>
+              <p>Postdoctoral research in solar physics.</p>
+            </div>
+          </div>
+
+          <div class="about-journey-item">
+            <div class="about-journey-dot"></div>
+            <div class="about-journey-body">
+              <h4>Senior Project Associate — ARIES</h4>
+              <small>2026</small>
               <p>Long-term solar-surface reconstruction, magnetic diagnostics, and archival data products.</p>
             </div>
           </div>

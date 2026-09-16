@@ -1,18 +1,18 @@
 {
   "basics": {
     "name": "Dibya Kirti Mishra",
-    "label": "Senior Project Associate (SPA) (2026-Present)",
+    "label": "Postdoctoral Fellow (PDF) (2026-Present)",
     "image": "",
-    "email": "dibyakirtimishra@aries.res.in,dibyakirtimishra@gmail.com",
+    "email": "dibya.mishra@iiap.res.in,dibyakirtimishra@gmail.com",
     "phone": "",
     "url": "https://dibya31051996.github.io/",
     "summary": "",
     "location": {
-      "address": "ARIES",
-      "postalCode": "263001",
-      "city": "Nainital",
+      "address": "Indian Institute of Astrophysics (IIA)",
+      "postalCode": "",
+      "city": "Bangalore",
       "countryCode": "India",
-      "region": "Uttarakhand"
+      "region": "Karnataka"
     },
     "profiles": [
       {
@@ -24,11 +24,20 @@
   },
   "work": [
     {
+      "name": "Indian Institute of Astrophysics (IIA)",
+      "position": "Postdoctoral Fellow (PDF)",
+      "url": "https://www.iiap.res.in/",
+      "startDate": "2026",
+      "endDate": "Present",
+      "summary": "Postdoctoral research in solar physics",
+      "highlights": ["Solar Physics"]
+    },
+    {
       "name": "Aryabhatta Research Institute of Observational Sciences (ARIES)",
       "position": "Senior Project Associate (SPA)",
       "url": "https://www.aries.res.in/",
       "startDate": "2026",
-      "endDate": "Present",
+      "endDate": "2026",
       "summary": "Working on long-term study of the Sun",
       "highlights": ["Solar Physics"]
     }
